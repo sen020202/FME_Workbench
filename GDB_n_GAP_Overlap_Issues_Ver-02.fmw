@@ -1,0 +1,3043 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command-line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" C:\FME_Testing\GSINT-Cameroun_GDB\GAP_Overlap_Identify\GS-INT_Cameroun_GAP_Overlap_Issues_Ver-02.fmw
+#              --SourceDataset_DGNV8_2 "C:\FME_Testing\GSINT-Cameroun_GDB\GAP_Overlap_Identify\Belaka_Mbere_3b1_Vegetation.dgn"
+#              --DestDataset_DGNV8 "C:\FME_Testing\GSINT-Cameroun_GDB\GAP_Overlap_Identify\GSINT_ERROR_GAP_OVERLAP.dgn"
+#              --FEATURE_TYPES "Default Hydro_Lake<space>Surface Hydro_Surface<space>Permanent Vegetation_Bare<space>Soil Vegetation_Cultivation<space>area<space>without<space>trees Vegetation_Galery<space>Forest Vegetation_Light<space>Forest Vegetation_Rice<space>field Vegetation_Shrub<space>Savanna Vegetation_Tree<space>Savanna AOI"
+#              --SEED_FILE_DGNV8 "C:\Program Files\FME/design/seed3d_m_v8.dgn"
+#              --CELL_LIBRARY_DGNV8 "C:\Program Files\FME/design/default_v8.cel"
+#    
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="8456.32 2282.04"
+#!   DOC_TOP_LEFT="-4585.39 -3610.14"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="20632"
+#!   FME_DOCUMENT_GUID="6a38aa9f-602b-4e5e-b242-748254db541d"
+#!   FME_DOCUMENT_PRIORGUID="885455ea-198c-4189-a41b-648e43d5876f,88a7471e-a12e-494c-a9a0-2a832aa1602f,ec053cbb-06f8-4dce-be2f-6953d9b09557"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2020.1.3.0 (20201001 - Build 20632 - WIN64)"
+#!   LAST_SAVE_DATE="2020-12-29T10:07:22"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="37"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-5167.2 -2325.6"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="43"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="DGNV8"
+#!   DATASET="$(SourceDataset_DGNV8_2)"
+#!   KEYWORD="DGNV8_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="igds_level  igds_level_comment  igds_level_color 0 igds_level_style 0 igds_level_weight 0 igds_level_display yes igds_level_freeze no igds_level_lock no igds_level_override_color 0 igds_use_level_override_color No igds_level_override_style 0 igds_use_level_override_style No igds_level_override_weight 0 igds_use_level_override_weight No"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="igds_box_around_text integer igds_textstyle_bg_weight integer igds_linkage{}.xfm_parent_uuid char(36) igds_xattributes{}.ref_elem_id integer igds_xattributes{}.isValid char(4) igds_xref_z_back double igds_dim_refx{}.pt.x double igds_mlattrib_endcap.level integer igds_xattributes{}.fullPath string igds_mlinehdr_updv.x double igds_zlow_uor double igds_leader_to_text_dist double igds_dim_refx{}.pt.y double igds_insertion_z double incosada_sequence_num integer igds_startcap_weight integer igds_mlinehdr_version integer igds_class integer igds_dim_text_height double igds_mlattrib_joint.customstyle integer igds_terminator integer igds_color.blue integer igds_linkage{}.key2 integer igds_dim_text{}.font integer igds_weight integer comp_count integer igds_text_elements{}.igds_insertion_y double igds_text_elements{}.igds_text_string string igds_cell_element_color integer igds_fill_angle1 double igds_mlattrib_joint.cap_out_arc integer igds_mlattrib_endcap.usecolor integer igds_mlattrib_joint.useweight integer igds_color.green integer igds_startcap_angle double igds_linkage{}.component_num integer igds_text_horizontal_flip logical igds_textstyle_overline_style integer igds_fill_snappable integer igds_xattributes{}.linkType char(12) igds_xref_model_name string igds_cell_element_level integer igds_linkage{}.xfm_data_prefix char(8) igds_textstyle_color integer igds_original_justification integer igds_linkage{}.xfm_uuid char(36) igds_linkage{}.ibit integer igds_mlattrib_joint.weight integer igds_textstyle_slant integer igds_startcap_color integer igds_options_count integer igds_linkage{}.blob string igds_string_len double igds_base_line_sin_value double link_type_0 char(40) igds_primary_axis double igds_xfmstore_appid_word1 integer igds_element_id integer igds_element_visibility char(5) igds_textstyle_overrides_style1 integer igds_fill_spacing1 double igds_mlinehdr_style_id integer igds_text_weight integer igds_fill_spacing2 double igds_multiline{}.color integer igds_cell_element_class integer igds_mlattrib_startcap.cap_color_from_segment integer igds_xref_ref_origin_y double fme_fill_color char(50) igds_lower_y double igds_xfm_ref_elem_id integer igds_text_elements{}.fme_color integer igds_custom_linestyle_scale double igds_tag_names{} char(50) fme_start_angle double igds_xref_camera_focal_len double igds_linkage{}.rbit integer igds_linkage{}.state_num integer igds_mlattrib_joint.cap_on_arc integer igds_text_color integer igds_xattributes{}.attr_id integer igds_custom_linestyle_class integer igds_custom_linestyle_flags integer igds_dim_refx{}.base_offset_y double igds_fill_pixel_size double igds_textstyle_line_offset.x double igds_xref_file_build_opts integer mslink_1 integer igds_tolerance_present integer fme_basename char(50) igds_dim_text{}.text_width_multiplier double igds_linkage{}.feature_num integer igds_ylow double incosada_fid char(40) igds_dim_type integer igds_fill_pattern_color.green integer igds_fill_rotation double igds_joint_weight integer fme_text_string char(50) igds_num_lines integer incosada_feature_code integer igds_upper_y double igds_transparency double igds_cell_element_weight integer igds_mlattrib_startcap.weight integer igds_fill_scale double igds_text_elements{}.igds_text_size double igds_insertion_x double igds_insertion_y double igds_cell_element_style integer igds_xhigh double igds_mlinehdr_closed integer igds_mlinehdr_endcap_angle double igds_dimstyle_center_left integer igds_xfm_uuid char(36) igds_witness_line_offset double igds_xlow double igds_xref_base_nest_depth integer igds_dim_text{}.original_justification integer igds_fill_island_style_id integer igds_textstyle_underline_style integer igds_textstyle_overline_color integer igds_dim_scale double igds_mlattrib_joint.construction_class integer multi_reader_full_id integer igds_fill_color.blue integer igds_textstyle_id integer multi_reader_id integer igds_dim_text{}.text_used_string_len integer igds_xref_file_num integer igds_mlattrib_startcap.useweight integer igds_linkage{}.display_attribute integer igds_xfmstore_xml string igds_type char(20) igds_xref_z_front double igds_zlow double igds_textstyle_underline_spacing integer igds_cell_insertion_z double igds_dim_refx{}.segment_text_offset integer igds_lower_x double igds_textstyle_overline_weight integer igds_linkage{}.word{} integer igds_textstyle_bg_fill_color integer igds_rotation double igds_level_comment char(80) igds_text_elements{}.igds_rotation double igds_linkage{}.readonly char(4) igds_measure_angle integer igds_cell_num_members integer igds_mlinehdr_updv.z double igds_mlattrib_startcap.cap_line integer igds_sweep_angle double igds_dim_text{}.text_rotation double igds_text_width_multiplier double entity_num_2 integer igds_text_elements{}.igds_font integer igds_dim_text{}.text_string char(80) igds_linkage{}.xml_data_prefix char(64) igds_textstyle_char_spacing integer fme_sweep_angle double igds_quat.z double igds_cell_element_color.blue integer igds_element_new char(4) igds_dimstyle_center_mark integer igds_linkage{}.component_count integer entity_num_0 integer igds_level_name char(80) igds_arc_orientation char(40) multi_reader_keyword char(50) state_num integer igds_dim_refx{}.rxflags.relative integer igds_textstyle_line_offset.y double igds_endcap_angle double igds_node_number integer igds_level integer igds_dimstyle_center_top integer igds_cell_y_scale double igds_dim_weight integer igds_textstyle_bold char(5) igds_xref_parent_attach_id integer igds_xref_rotation double igds_mlattrib_joint.usestyle integer igds_dim_refx{}.base_offset double igds_text_string string igds_fill_color integer igds_style integer igds_witness_line_cos_value double igds_dim_refx{}.primary_text_string string igds_basename char(50) igds_xfm_xml string igds_cell_x_scale double igds_text_elements{}.igds_insertion_x double igds_xref_master_origin_x double igds_mlinebreak{}.point_offset double igds_text_elements{}.igds_insertion_z double igds_mlineStyle{}.lineattrib.level integer igds_xref_clip_pt{}.y double igds_mlinehdr_offset_mode integer mslink_0 integer igds_xref_file_disp_opts integer entity_num_1 integer igds_xref_master_origin_y double igds_xattributes{}.fileName string igds_linkage{}.type char(40) igds_linkage{}.suspectlinkage char(40) fme_dataset char(50) igds_linkage{}.entity_number integer igds_mlattrib_startcap.level integer igds_xattributes{}.data string igds_mlattrib_endcap.weight integer igds_mlineStyle{}.lineattrib.usestyle integer igds_custom_linestyle string igds_textstyle_overline_spacing integer igds_mlattrib_startcap.customstyle integer igds_level_lock char(5) igds_fill_pattern_color.red integer igds_textstyle_exflags integer igds_fill_offset_y double igds_custom_linestyle_start_width double igds_textstyle_bg_border.x double igds_mlattrib_joint.usecolor integer igds_textstyle_txflags integer igds_color integer igds_textstyle_bg_color integer igds_mlinehdr_placement_offset integer igds_fill_hole_style_id integer igds_mlinebreak{}.segmask integer igds_zhigh integer feat_num integer igds_mlattrib_endcap.color integer igds_quat.x double igds_text_vertical_flip logical igds_text_font integer igds_element_locked char(5) igds_oval_around_text integer igds_cell_element_color.green integer igds_fill_color.green integer igds_fill_pattern_type char(16) comp_num integer igds_quat.y double igds_linkage{}.string_id integer fme_rotation double igds_mlattrib_joint.color integer igds_text_elements{}.igds_text_width_multiplier double igds_dimstyle_postfix_symbol integer igds_mlineStyle{}.lineattrib.cap_on_arc integer igds_text_string{} char(80) igds_mlattrib_joint.cap_line integer igds_mlinehdr_freeze_group integer igds_mlattrib_startcap.usecolor integer igds_text_elements{}.igds_color integer igds_xattributes{}.data_prefix string igds_mlattrib_joint.level integer igds_mlattrib_startcap.usestyle integer igds_xfm_url string igds_fill_offset_x double igds_xfmstore_appid_word0 integer igds_xref_ref_origin_z double igds_dimstyle_prefix_symbol integer igds_mlattrib_endcap.usestyle integer igds_dimstyle_center_bottom integer igds_xref_nest_depth integer igds_dim_secondary_accuracy integer igds_xref_parent_file_path string igds_textstyle_underline char(5) igds_xattributes{}.xml string igds_endcap_style integer igds_linkage{}.xml_data string igds_mlinebreak{}.from_joint integer igds_custom_linestyle_distance_shift double igds_mlattrib_endcap.cap_line integer igds_linkage{}.rule_base_id integer igds_mlattrib_endcap.style integer igds_mlineStyle{}.lineattrib.color integer igds_mlinehdr_offset_model_valid integer igds_dimstyle_nofit_vertical integer igds_mlineStyle{}.lineattrib.usecolor integer igds_style_name char(60) igds_startcap_style integer igds_mlattrib_endcap.use_class integer igds_text_elements{}.x double igds_textstyle_underline_weight integer igds_model_id integer igds_dimstyle_first_term integer igds_textstyle_underline_color integer igds_mlineStyle{}.lineattrib.weight integer igds_xref_version integer igds_linkage{}.key integer igds_cell_element_level_name char(80) igds_linkage{}.class integer igds_textstyle_overrides_style2 integer igds_dim_freezegroup integer igds_show_leading_zeroes integer igds_xref_name string igds_mlinehdr_num_breaks integer igds_justification integer igds_cell_element_color.red integer igds_originalType integer igds_dim_refx{}.rxflags.justification integer igds_witness_line_extension double igds_element_priority integer igds_dim_refx{}.rxflags.associative integer igds_use_text_weight integer igds_xref_master_origin_z double igds_mlineStyle{}.lineattrib.use_class integer igds_num_ref_points integer fme_text_size double igds_mlattrib_joint.style integer igds_model_name string igds_color.red integer igds_dimstyle_left_term integer igds_linkage{}.ubit integer fme_geometry char(50) igds_fill_weight integer igds_weight_set_bylevel char(5) igds_text_vert integer igds_element_byteoffset integer igds_linkage{}.firstword integer igds_mlinehdr_arc_cap_by_profile_line integer igds_dimstyle_left_witness integer mslink_2 integer igds_dim_refx{}.pt.z double igds_mlattrib_startcap.cap_out_arc integer igds_xref_camera_pos_z double igds_cell_insertion_y double igds_mlineStyle{}.lineattrib.cap_line integer igds_linkage{}.ltype integer igds_joint_color integer igds_xfm_root_uuid char(36) igds_textstyle_font integer igds_xattributes{}.uuid char(36) igds_show_secondary integer igds_cell_name char(500) igds_dim_refx{}.rxflags.upperText integer igds_dimstyle_right_witness integer igds_cell_size_y double igds_quat.w double igds_num_breaks integer igds_xattributes{}.type char(40) igds_linkage{}.string string igds_mlineStyle{}.lineattrib.construction_class integer igds_multiline_closed char(5) igds_text_elements{}.z double igds_text_elements{}.y double igds_yhigh double igds_text_min_leader double igds_xfm_name string igds_level_freeze char(5) igds_mlinehdr_updv.y double igds_deleted char(4) igds_zhigh_uor integer igds_symbology integer igds_mlattrib_startcap.cap_on_arc integer igds_xref_camera_pos_y double igds_tolerance_type integer igds_cell_sequence_number integer igds_linkage{}.ufid integer igds_xfm_parent_uuid char(36) igds_text_elements{}.igds_justification integer igds_cell_size_x double igds_cell_insertion_x double igds_linkage{}.userId integer igds_mlattrib_startcap.use_class integer igds_custom_linestyle_fraction_shift double igds_use_comma_not_point integer igds_fill_color.red integer igds_xref_priority integer igds_mlattrib_endcap.customstyle integer igds_xfm_data_prefix char(8) igds_custom_linestyle_center_shift char(5) igds_mlinebreak{}.length double igds_secondary_axis double igds_upper_x double igds_align integer igds_xref_path string igds_mlinebreak{}.angle double igds_mlinehdr_styleScale double igds_linkage{}.long{} integer igds_dual_format integer igds_xref_scale double igds_xattributes{}.feature char(80) igds_xref_clip_pt{}.x double igds_mlattrib_joint.cap_color_from_segment integer fme_color char(50) igds_date_last_modified char(20) link_type_2 char(40) igds_dim_version integer igds_mlattrib_endcap.cap_color_from_segment integer igds_text_underlined integer igds_multiline{}.offset double igds_color_set_bylevel char(5) igds_xattributes{}.url string igds_multiline{}.style integer igds_multiline{}.weight integer igds_mlineStyle{}.lineattrib.useweight integer igds_mlineStyle{}.lineattrib.cap_color_from_segment integer igds_linkage{}.trailing_flags integer igds_cell_z_scale double igds_base_to_text_dist double igds_xattributes{}.handler_id integer igds_textstyle_bg_border.y double igds_witness_line_sin_value double igds_joint_style integer igds_chain_number integer igds_fill_pattern_color integer igds_mlattrib_startcap.style integer igds_mlineStyle{}.lineattrib.style integer igds_xref_desc string igds_linkage{}.xfm_root_uuid char(36) igds_mlattrib_endcap.useweight integer igds_mlattrib_endcap.cap_out_arc integer igds_textstyle_codepage integer igds_xref_file_name string igds_cone3d_flags integer igds_start_angle double igds_endcap_color integer igds_custom_linestyle_ibit integer igds_dim_primary_accuracy integer igds_terminator_location integer fme_type char(50) igds_show_trailing_zeroes integer igds_xattributes{}.linkName string igds_mlineStyle{}.offset double igds_use_text_color integer igds_mlinenode_props string igds_textstyle_bg_style integer igds_element_view_independent char(4) igds_mlattrib_endcap.construction_class integer igds_linkage{}.blobsize integer igds_level_group_id char(80) igds_mlineStyle{}.lineattrib.customstyle integer igds_custom_linestyle_rotation double igds_dimstyle_vertical_text integer igds_center_mark_size double igds_fill_pattern_color.blue integer igds_xref_group_id integer igds_snappable char(4) igds_dim_style integer fme_feature_type char(50) igds_mlattrib_endcap.cap_on_arc integer igds_mlattrib_joint.use_class integer fme_secondary_axis double igds_text_size double igds_arrow_width double igds_dim_stack_offset double igds_fill_offset_z double igds_dim_refx{}.rxflags.lowerText integer igds_dim_refx{}.flags integer igds_style_set_bylevel char(5) igds_endcap_weight integer igds_custom_linestyle_end_width double igds_mlattrib_startcap.color integer igds_element_association_id integer igds_dimstyle_center_right integer igds_fill_angle2 double igds_textstyle_tnode_word_wrap_len integer igds_base_line_cos_value double igds_element_modified char(4) igds_xfmstore_storeid char(5) igds_font integer igds_fill_style_id integer igds_dim_text{}.text_insertion_x double igds_mlinebreak{}.to_joint integer igds_xref_ref_origin_x double igds_dimstyle_right_term integer igds_text_elements{}.igds_original_justification integer igds_xattributes{}.handler_type integer igds_xattributes{}.childIds string igds_dim_text_width double igds_custom_linestyle_rbit integer igds_textstyle_overline char(5) igds_view_id integer igds_mlinehdr_num_lines integer igds_dim_textstyle_id integer igds_element_type integer igds_dim_text{}.text_size double igds_fill_tolerance double igds_linkage{}.mbit integer igds_mlattrib_startcap.construction_class integer igds_xref_camera_pos_x double igds_mlineStyle{}.lineattrib.cap_out_arc integer igds_dim_color integer igds_mlinehdr_startcap_angle double igds_linkage{}.flags integer igds_graphic_group integer igds_dim_text{}.text_insertion_y double igds_xfmstore_url string fme_primary_axis double igds_arrow_height double igds_custom_linestyle_mbit integer link_type_1 char(40) multi_reader_type char(50) ufid integer igds_mlinehdr_num_nodes integer"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE="FEATURE_TYPES_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="20632"
+#!   COORDSYS=""
+#!   FEATURE_TYPES="$(FEATURE_TYPES)"
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="DGNV8_IN_EXPAND_UNNAMED_CELLS DGNV8_IN_SPLIT_COMPLEX_CHAINS DGNV8_IN_SPLIT_MULTITEXT DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS DGNV8_IN_EXPLODE_DIMENSION_ELEM DGNV8_IN_USE_XREF_PARENT_MODEL DGNV8_IN_READ_XREF_NEST_DEPTH DGNV8_IN_UOR_SCALE DGNV8_IN_UORS_PER_SUB DGNV8_IN_SUBS_PER_MASTER DGNV8_IN_ELEVATION_SHIFT_FACTOR DGNV8_IN_CURVE_VERTICES DGNV8_IN_READ_TAGS DGNV8_IN_READ_XATTRS_AND_ITEM_SETS COMPUTE_SEED_FILE_PARMS DGNV8_IN_APPLY_WORLD_FILE DGNV8_IN_REMOVE_DUPLICATES DGNV8_IN_PRESERVE_CURVES DGNV8_IN_ASSUME_MATCHING_UNITS UOR_GLOBAL_ORIGIN_X UOR_GLOBAL_ORIGIN_Y UOR_GLOBAL_ORIGIN_Z DGNV8_OUT_UOR_GLOBAL_ORIGIN_X DGNV8_OUT_UOR_GLOBAL_ORIGIN_Y DGNV8_OUT_UOR_GLOBAL_ORIGIN_Z MASTER_UNIT_NAME SUB_UNIT_NAME UORS_PER_SUB SUBS_PER_MASTER DGNV8_OUT_CREATE_LINE_ELEMENTS DGNV8_OUT_MANGLE_DBCS_TEXT DGNV8_OUT_DEFAULT_CELL_NAME DGNV8_OUT_SPLIT_BIG_DGN7_FILES DGNV8_OUT_SPLIT_SIZE_DGN7_FILES DGNV8_OUT_SCALE_CELL_MODELS DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED DGNV8_OUT_RSC_FONT_FILE"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="DGNV8"
+#!   DATASET="$(DestDataset_DGNV8)"
+#!   KEYWORD="DGNV8_2"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="60"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="igds_level  igds_level_comment  igds_level_color 0 igds_level_style 0 igds_level_weight 0 igds_level_display yes igds_level_freeze no igds_level_lock no igds_level_override_color 0 igds_use_level_override_color No igds_level_override_style 0 igds_use_level_override_style No igds_level_override_weight 0 igds_use_level_override_weight No"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="igds_box_around_text integer igds_textstyle_bg_weight integer igds_linkage{}.xfm_parent_uuid char(36) igds_xref_z_back double igds_dim_refx{}.pt.x double igds_mlattrib_endcap.level integer igds_mlinehdr_updv.x double igds_zlow_uor double igds_leader_to_text_dist double igds_dim_refx{}.pt.y double igds_insertion_z double incosada_sequence_num integer igds_mlinehdr_version integer igds_class integer igds_dim_text_height double igds_mlattrib_joint.customstyle integer igds_terminator integer igds_linkage{}.key2 integer igds_weight integer igds_text_elements{}.igds_insertion_y double igds_text_elements{}.igds_text_string string igds_fill_angle1 double igds_mlattrib_joint.cap_out_arc integer igds_mlattrib_endcap.usecolor integer igds_mlattrib_joint.useweight integer igds_linkage{}.component_num integer igds_text_horizontal_flip logical igds_textstyle_overline_style integer igds_xref_model_name string igds_fill_snappable integer igds_original_justification integer igds_linkage{}.xfm_data_prefix char(8) igds_textstyle_color integer igds_linkage{}.ibit integer igds_linkage{}.xfm_uuid char(36) igds_mlattrib_joint.weight integer igds_textstyle_slant integer igds_options_count integer igds_linkage{}.blob string igds_string_len double igds_base_line_sin_value double link_type_0 char(40) igds_primary_axis double igds_xfmstore_appid_word1 integer igds_element_id integer igds_textstyle_overrides_style1 integer igds_fill_spacing1 double igds_mlinehdr_style_id integer igds_text_weight integer igds_fill_spacing2 double igds_mlattrib_startcap.cap_color_from_segment integer igds_xref_ref_origin_y double fme_fill_color char(50) igds_text_elements{}.fme_color integer igds_custom_linestyle_scale double igds_tag_names{} char(50) fme_start_angle double igds_xref_camera_focal_len double igds_linkage{}.rbit integer igds_linkage{}.state_num integer igds_mlattrib_joint.cap_on_arc integer igds_text_color integer igds_custom_linestyle_class integer igds_custom_linestyle_flags integer igds_dim_refx{}.base_offset_y double igds_fill_pixel_size double igds_textstyle_line_offset.x double igds_xref_file_build_opts integer mslink_1 integer igds_tolerance_present integer fme_basename char(50) igds_linkage{}.feature_num integer incosada_fid char(40) igds_dim_type integer igds_fill_rotation double fme_text_string char(50) incosada_feature_code integer igds_transparency double igds_fill_scale double igds_mlattrib_startcap.weight integer igds_text_elements{}.igds_text_size double igds_insertion_x double igds_insertion_y double igds_mlinehdr_closed integer igds_mlinehdr_endcap_angle double igds_dimstyle_center_left integer igds_witness_line_offset double igds_xref_base_nest_depth integer igds_fill_island_style_id integer igds_textstyle_underline_style integer igds_textstyle_overline_color integer igds_dim_scale double igds_mlattrib_joint.construction_class integer igds_textstyle_id integer igds_xref_file_num integer igds_mlattrib_startcap.useweight integer igds_linkage{}.display_attribute integer igds_xfmstore_xml string igds_type char(20) igds_xref_z_front double igds_zlow double igds_textstyle_underline_spacing integer igds_text_num_lines integer igds_dim_refx{}.segment_text_offset integer igds_textstyle_overline_weight integer igds_linkage{}.word{} integer igds_textstyle_bg_fill_color integer igds_rotation double igds_level_comment char(80) igds_text_elements{}.igds_rotation double igds_linkage{}.readonly char(4) igds_measure_angle integer igds_mlinehdr_updv.z double igds_mlattrib_startcap.cap_line integer igds_cell_size double igds_sweep_angle double igds_text_width_multiplier double entity_num_2 integer igds_text_elements{}.igds_font integer igds_linkage{}.xml_data_prefix char(64) igds_textstyle_char_spacing integer fme_sweep_angle double igds_quat.z double igds_element_new char(4) igds_dimstyle_center_mark integer igds_linkage{}.component_count integer entity_num_0 integer igds_level_name char(80) igds_arc_orientation char(40) igds_dim_refx{}.rxflags.relative integer igds_textstyle_line_offset.y double igds_node_number integer igds_level integer igds_dimstyle_center_top integer igds_cell_y_scale double igds_textstyle_bold char(5) igds_dim_weight integer igds_xref_parent_attach_id integer igds_xref_rotation double igds_mlattrib_joint.usestyle integer igds_dim_refx{}.base_offset double igds_text_string string igds_fill_color integer igds_style integer igds_witness_line_cos_value double igds_dim_refx{}.primary_text_string string igds_cell_x_scale double igds_text_elements{}.igds_insertion_x double igds_xref_master_origin_x double igds_mlinebreak{}.point_offset double igds_text_elements{}.igds_insertion_z double igds_mlineStyle{}.lineattrib.level integer igds_xref_clip_pt{}.y double igds_mlinehdr_offset_mode integer igds_xref_file_disp_opts integer mslink_0 integer entity_num_1 integer igds_xref_master_origin_y double igds_linkage{}.type char(40) igds_linkage{}.suspectlinkage char(40) fme_dataset char(50) igds_linkage{}.entity_number integer igds_mlattrib_startcap.level integer igds_mlattrib_endcap.weight integer igds_mlineStyle{}.lineattrib.usestyle integer igds_custom_linestyle string igds_textstyle_overline_spacing integer igds_mlattrib_startcap.customstyle integer igds_textstyle_exflags integer igds_fill_offset_y double igds_custom_linestyle_start_width double igds_textstyle_bg_border.x double igds_mlattrib_joint.usecolor integer igds_textstyle_txflags integer igds_color integer igds_textstyle_bg_color integer igds_mlinehdr_placement_offset integer igds_fill_hole_style_id integer igds_zhigh integer igds_mlinebreak{}.segmask integer igds_mlattrib_endcap.color integer igds_quat.x double igds_text_vertical_flip logical igds_text_font integer igds_element_locked char(5) igds_oval_around_text integer igds_fill_pattern_type char(16) igds_quat.y double igds_linkage{}.string_id integer fme_rotation double igds_mlattrib_joint.color integer igds_text_elements{}.igds_text_width_multiplier double igds_dimstyle_postfix_symbol integer igds_mlineStyle{}.lineattrib.cap_on_arc integer igds_mlattrib_joint.cap_line integer igds_mlinehdr_freeze_group integer igds_mlattrib_startcap.usecolor integer igds_text_elements{}.igds_color integer igds_mlattrib_joint.level integer igds_mlattrib_startcap.usestyle integer igds_fill_offset_x double igds_xfmstore_appid_word0 integer igds_xref_ref_origin_z double igds_dimstyle_prefix_symbol integer igds_dimstyle_center_bottom integer igds_mlattrib_endcap.usestyle integer igds_xref_nest_depth integer igds_dim_secondary_accuracy integer igds_xref_parent_file_path string igds_textstyle_underline char(5) igds_linkage{}.xml_data string igds_mlinebreak{}.from_joint integer igds_custom_linestyle_distance_shift double igds_mlattrib_endcap.cap_line integer igds_linkage{}.rule_base_id integer igds_mlattrib_endcap.style integer igds_mlineStyle{}.lineattrib.color integer igds_mlinehdr_offset_model_valid integer igds_dimstyle_nofit_vertical integer igds_mlineStyle{}.lineattrib.usecolor integer igds_mlattrib_endcap.use_class integer igds_text_elements{}.x double igds_textstyle_underline_weight integer igds_dimstyle_first_term integer igds_textstyle_underline_color integer igds_xref_version integer igds_mlineStyle{}.lineattrib.weight integer igds_linkage{}.key integer igds_linkage{}.class integer igds_textstyle_overrides_style2 integer igds_dim_freezegroup integer igds_show_leading_zeroes integer igds_xref_name string igds_mlinehdr_num_breaks integer igds_justification integer igds_dim_refx{}.rxflags.justification integer igds_witness_line_extension double igds_element_priority integer igds_dim_refx{}.rxflags.associative integer igds_use_text_weight integer igds_xref_master_origin_z double igds_mlineStyle{}.lineattrib.use_class integer igds_num_ref_points integer fme_text_size double igds_mlattrib_joint.style integer igds_linkage{}.ubit integer igds_dimstyle_left_term integer fme_geometry char(50) igds_fill_weight integer igds_weight_set_bylevel char(5) igds_text_vert integer igds_element_byteoffset integer igds_linkage{}.firstword integer igds_mlinehdr_arc_cap_by_profile_line integer igds_dimstyle_left_witness integer mslink_2 integer igds_dim_refx{}.pt.z double igds_mlattrib_startcap.cap_out_arc integer igds_xref_camera_pos_z double igds_mlineStyle{}.lineattrib.cap_line integer igds_linkage{}.ltype integer igds_textstyle_font integer igds_cell_name char(500) igds_show_secondary integer igds_dim_refx{}.rxflags.upperText integer igds_dimstyle_right_witness integer igds_cell_size_y double igds_quat.w double igds_linkage{}.string string igds_mlineStyle{}.lineattrib.construction_class integer igds_text_elements{}.z double igds_text_elements{}.y double igds_text_min_leader double igds_xfm_name string igds_mlinehdr_updv.y double igds_zhigh_uor integer igds_symbology integer igds_mlattrib_startcap.cap_on_arc integer igds_xref_camera_pos_y double igds_tolerance_type integer igds_linkage{}.ufid integer igds_is_graphic_cell_relative char(5) igds_text_elements{}.igds_justification integer igds_cell_size_x double igds_linkage{}.userId integer igds_mlattrib_startcap.use_class integer igds_custom_linestyle_fraction_shift double igds_use_comma_not_point integer igds_xref_priority integer igds_mlattrib_endcap.customstyle integer igds_custom_linestyle_center_shift char(5) igds_mlinebreak{}.length double igds_secondary_axis double igds_align integer igds_xref_path string igds_mlinebreak{}.angle double igds_mlinehdr_styleScale double igds_linkage{}.long{} integer igds_xref_scale double igds_dual_format integer igds_xref_clip_pt{}.x double igds_mlattrib_joint.cap_color_from_segment integer fme_color char(50) link_type_2 char(40) igds_dim_version integer igds_mlattrib_endcap.cap_color_from_segment integer igds_text_underlined integer igds_color_set_bylevel char(5) igds_mlineStyle{}.lineattrib.useweight integer igds_mlineStyle{}.lineattrib.cap_color_from_segment integer igds_linkage{}.trailing_flags integer igds_base_to_text_dist double igds_cell_z_scale double igds_textstyle_bg_border.y double igds_witness_line_sin_value double igds_chain_number integer igds_fill_pattern_color integer igds_mlattrib_startcap.style integer igds_mlineStyle{}.lineattrib.style integer igds_xref_desc string igds_linkage{}.xfm_root_uuid char(36) igds_mlattrib_endcap.useweight integer igds_mlattrib_endcap.cap_out_arc integer igds_textstyle_codepage integer igds_xref_file_name string igds_start_angle double igds_custom_linestyle_ibit integer igds_dim_primary_accuracy integer igds_terminator_location integer fme_type char(50) igds_show_trailing_zeroes integer igds_mlineStyle{}.offset double igds_use_text_color integer igds_mlinenode_props string igds_textstyle_bg_style integer igds_element_view_independent char(4) igds_mlattrib_endcap.construction_class integer igds_linkage{}.blobsize integer igds_mlineStyle{}.lineattrib.customstyle integer igds_custom_linestyle_rotation double igds_dimstyle_vertical_text integer igds_center_mark_size double igds_xref_group_id integer igds_snappable char(4) igds_dim_style integer fme_feature_type char(50) igds_mlattrib_endcap.cap_on_arc integer igds_mlattrib_joint.use_class integer fme_secondary_axis double igds_text_size double igds_arrow_width double igds_dim_stack_offset double igds_fill_offset_z double igds_dim_refx{}.rxflags.lowerText integer igds_dim_refx{}.flags integer igds_style_set_bylevel char(5) igds_custom_linestyle_end_width double igds_mlattrib_startcap.color integer igds_dimstyle_center_right integer igds_fill_angle2 double igds_textstyle_tnode_word_wrap_len integer igds_base_line_cos_value double igds_element_modified char(4) igds_xfmstore_storeid char(5) igds_font integer igds_fill_style_id integer igds_mlinebreak{}.to_joint integer igds_xref_ref_origin_x double igds_dimstyle_right_term integer igds_text_elements{}.igds_original_justification integer igds_dim_text_width double igds_custom_linestyle_rbit integer igds_textstyle_overline char(5) igds_view_id integer igds_mlinehdr_num_lines integer igds_dim_textstyle_id integer igds_element_type integer igds_fill_tolerance double igds_linkage{}.mbit integer igds_mlattrib_startcap.construction_class integer igds_xref_camera_pos_x double igds_mlineStyle{}.lineattrib.cap_out_arc integer igds_dim_color integer igds_mlinehdr_startcap_angle double igds_linkage{}.flags integer igds_graphic_group integer igds_xfmstore_url string fme_primary_axis double igds_arrow_height double igds_custom_linestyle_mbit integer link_type_1 char(40) igds_mlinehdr_num_nodes integer"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP igds_level_properties FME_DISCLOSURE_OPEN%igds_level%igds_level_comment%igds_level_color%igds_level_style%igds_level_weight%igds_level_display%igds_level_freeze%igds_level_lock%igds_level_overrides Level&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER igds_level Number&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT igds_level_comment Comment&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER igds_level_color Color&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER igds_level_style Style&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER igds_level_weight Weight&quot; &quot;&quot; &quot;GUI CHOICE igds_level_display Yes%No Display&quot; Yes &quot;GUI CHOICE igds_level_freeze Yes%No Freeze&quot; No &quot;GUI CHOICE igds_level_lock Yes%No Lock&quot; No &quot;GUI OPTIONAL DISCLOSUREGROUP igds_level_overrides FME_DISCLOSURE_CLOSED%igds_level_override_color%igds_use_level_override_color%igds_level_override_style%igds_use_level_override_style%igds_level_override_weight%igds_use_level_override_weight Level Overrides&quot; &quot;&quot; &quot;GUI INT_OR_CHOICE igds_level_override_color From_Seed_File Color&quot; From_Seed_File &quot;GUI CHOICE igds_use_level_override_color From_Seed_File%Yes%No Use Color&quot; From_Seed_File &quot;GUI INT_OR_CHOICE igds_level_override_style From_Seed_File Style&quot; From_Seed_File &quot;GUI CHOICE igds_use_level_override_style From_Seed_File%Yes%No Use Style&quot; From_Seed_File &quot;GUI INT_OR_CHOICE igds_level_override_weight From_Seed_File Weight&quot; From_Seed_File &quot;GUI CHOICE igds_use_level_override_weight From_Seed_File%Yes%No Use Weight&quot; From_Seed_File "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="20632"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="DGNV8_IN_EXPAND_UNNAMED_CELLS DGNV8_IN_SPLIT_COMPLEX_CHAINS DGNV8_IN_SPLIT_MULTITEXT DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS DGNV8_IN_EXPLODE_DIMENSION_ELEM DGNV8_IN_USE_XREF_PARENT_MODEL DGNV8_IN_READ_XREF_NEST_DEPTH DGNV8_IN_UOR_SCALE DGNV8_IN_UORS_PER_SUB DGNV8_IN_SUBS_PER_MASTER DGNV8_IN_ELEVATION_SHIFT_FACTOR DGNV8_IN_CURVE_VERTICES DGNV8_IN_READ_TAGS DGNV8_IN_READ_XATTRS_AND_ITEM_SETS COMPUTE_SEED_FILE_PARMS DGNV8_IN_APPLY_WORLD_FILE DGNV8_IN_REMOVE_DUPLICATES DGNV8_IN_PRESERVE_CURVES DGNV8_IN_ASSUME_MATCHING_UNITS UOR_GLOBAL_ORIGIN_X UOR_GLOBAL_ORIGIN_Y UOR_GLOBAL_ORIGIN_Z DGNV8_OUT_UOR_GLOBAL_ORIGIN_X DGNV8_OUT_UOR_GLOBAL_ORIGIN_Y DGNV8_OUT_UOR_GLOBAL_ORIGIN_Z MASTER_UNIT_NAME SUB_UNIT_NAME UORS_PER_SUB SUBS_PER_MASTER DGNV8_OUT_CREATE_LINE_ELEMENTS DGNV8_OUT_MANGLE_DBCS_TEXT DGNV8_OUT_DEFAULT_CELL_NAME DGNV8_OUT_SPLIT_BIG_DGN7_FILES DGNV8_OUT_SPLIT_SIZE_DGN7_FILES DGNV8_OUT_SCALE_CELL_MODELS DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED DGNV8_OUT_RSC_FONT_FILE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="dgn file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Level1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Level"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the DGN V8 file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the DGN V8 file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(14)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(6)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(5)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(14)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(6)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(5)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="DGNV8"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_cell"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_shared_cell"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_curve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_multi_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_text_node"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_ellipse"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_3d_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_mesh"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_oriented_arc"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_complex_shape"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_complex_chain"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_xref"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_xfmstore"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_polygon_collection"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_nongeom_collection"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_cell"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_shared_cell"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_curve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_multi_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_text_node"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_ellipse"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_3d_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_mesh"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_oriented_arc"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_complex_shape"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_complex_chain"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_xref"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_xfmstore"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_polygon_collection"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_nongeom_collection"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="DGNV8"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Level1"
+#!   FEATURE_TYPE_NAME="@Value(igds_level_name)"
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="3416.9311723353553 -1984.6337570293936"
+#!   BOUNDING_RECT="3416.9311723353553 -1984.6337570293936 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="DGNV8_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <DEFLINE_PARM PARM_NAME="igds_level" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_color" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_comment" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_display" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_freeze" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_lock" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_override_color" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_override_style" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_override_weight" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_overrides" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_properties" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_style" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_weight" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_use_level_override_color" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_use_level_override_style" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_use_level_override_weight" PARM_VALUE="From_Seed_File"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Vegetation_Grassland Savanna"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="97"
+#!   FEAT_GEOMTYPE="igds_point igds_line igds_shape igds_solid"
+#!   POSITION="-4585.3896686153012 -1371.544103536274"
+#!   BOUNDING_RECT="-4585.3896686153012 -1371.544103536274 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="DGNV8_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="true"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="DGNV8_1"
+#!   OVERRIDE="-DGNV8_1_DATASET"
+#!   DATASET="DGNV8_1/Belaka_Mbere_3b1_Vegetation.dgn"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="DGNV8_2"
+#!   OVERRIDE="-DGNV8_2_DATASET"
+#!   DATASET="DGNV8_2/GSINT_ERROR_GAP_OVERLAP.dgn"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_DGNV8_2 Design_Files(*.dgn)|*.dgn|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Bentley MicroStation Design File(s):"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)Belaka_Mbere_3b1_Vegetation.dgn"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_DGNV8 Design_Files(*.dgn)|*.dgn|All_files(*)|* Destination Bentley MicroStation Design File:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)GSINT_ERROR_GAP_OVERLAP.dgn"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES C:&lt;backslash&gt;FME_Testing&lt;backslash&gt;GSINT-Cameroun_GDB&lt;backslash&gt;GAP_Overlap_Identify&lt;backslash&gt;Belaka_Mbere_3b1_Vegetation.dgn,_FORMAT_OVERRIDE_,dgnv8Names,_DATASET_OVERRIDE_,SourceDataset_DGNV8_2,UNITS,IGDS_MASTER_UNITS,EXPAND_CELLS,no,PRESERVE_CELL_INSERTS,no,EXPAND_UNNAMED_CELLS,no,PRESERVE_UNNAMEDCELL_INSERTS,no,READ_XREF_FILES,NO,READ_XREF_NEST_DEPTH,0,USE_XREF_PARENT_MODEL,&lt;Unused&gt;,READ_XREFS_AS_ELEMENTS,YES,TAGS_AS_TEXT,NO,READ_TAGS,NO,READ_XATTRS_AND_ITEM_SETS,NO,READ_SELECTED_MODELS,NO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,SPLIT_COMPLEX_CHAINS,NO,SPLIT_MULTITEXT,YES,EXPLODE_DIMENSION_ELEM,YES,APPLY_WORLD_FILE,YES,PRESERVE_CURVES,NO,REMOVE_DUPLICATES,NO,ASSUME_MATCHING_UNITS,NO,IGDS_FRAMME,NO,_MERGE_SCHEMAS,YES,USE_RICH_ARC_GEOM,YES,OVERRIDE_GLOBAL_ORIGIN,no,DYNAMIC_WORKFLOW,yes,DGNV8_RDR_ADV_PARM_GROUP,FME_DISCLOSURE_OPEN,READER_META_ATTRIBUTES,fme_dataset,USE_LEVEL_NAMES,YES,METAFILE,dgnv8Names,IGDS_MSLINKS,NO,_MERGE_SCHEMAS,YES Feature Types to Read:"
+#!   DEFAULT_VALUE="Default Hydro_Lake&lt;space&gt;Surface Hydro_Surface&lt;space&gt;Permanent Vegetation_Bare&lt;space&gt;Soil Vegetation_Cultivation&lt;space&gt;area&lt;space&gt;without&lt;space&gt;trees Vegetation_Galery&lt;space&gt;Forest Vegetation_Light&lt;space&gt;Forest Vegetation_Rice&lt;space&gt;field Vegetation_Shrub&lt;space&gt;Savanna Vegetation_Tree&lt;space&gt;Savanna AOI"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME_MUSTEXIST SEED_FILE_DGNV8 Design_Files(*.dgn)|*.dgn|All_files(*)|* Seed File (V8 only):"
+#!   DEFAULT_VALUE="C:\Program Files\FME/design/seed3d_m_v8.dgn"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL MULTIFILE CELL_LIBRARY_DGNV8 Cell_Library_Files(*.cel)|*.cel|All_files(*)|* Cell Library File:"
+#!   DEFAULT_VALUE="C:\Program Files\FME/design/default_v8.cel"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="GeometryFilter"
+#!   VERSION="7"
+#!   POSITION="-1695.112151002249 -2359.0990726603573"
+#!   BOUNDING_RECT="-1695.112151002249 -2359.0990726603573 454 71"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="POINT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="LINE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="AREA"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;UNFILTERED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_PARM PARM_NAME="BREAK_AGG" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="GEOM_PORT_NAMES" PARM_VALUE="Point Line Area"/>
+#!     <XFORM_PARM PARM_NAME="INSTANTIATE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GeometryFilter_4"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="AreaOnAreaOverlayer"
+#!   VERSION="8"
+#!   POSITION="-1668.5899701960261 -3251.5969491674909"
+#!   BOUNDING_RECT="-1668.5899701960261 -3251.5969491674909 544.74044163080578 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="AREA"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="REMNANTS"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="Use Attributes From One Feature"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CLEANING_TOLERANCE" PARM_VALUE="0.0001"/>
+#!     <XFORM_PARM PARM_NAME="CONNECT_Z_MODE" PARM_VALUE="First Wins"/>
+#!     <XFORM_PARM PARM_NAME="DEAGGREGATE_INPUT" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="igds_level_name"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="Selected Attributes"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="_area"/>
+#!     <XFORM_PARM PARM_NAME="OVC_ATTR" PARM_VALUE="_overlaps"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AreaOnAreaOverlayer_4"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="73"
+#!   TYPE="TestFilter"
+#!   VERSION="2"
+#!   POSITION="-306.43145281415843 -2083.1982143994264"
+#!   BOUNDING_RECT="-306.43145281415843 -2083.1982143994264 575.52658859921917 71"
+#!   ORDER="500000000000021"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="GAP_Data"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="No&lt;space&gt;Overlap"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="One_Layer-Overlap"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="Two_Layer-Overlap"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="Three_Layer-Overlap"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <OUTPUT_FEAT NAME="Four_Layer-Overlap"/>
+#!     <FEAT_COLLAPSED COLLAPSED="5"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <OUTPUT_FEAT NAME="Five_Layer-Overlap"/>
+#!     <FEAT_COLLAPSED COLLAPSED="6"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <OUTPUT_FEAT NAME="Six_Layer-Overlap"/>
+#!     <FEAT_COLLAPSED COLLAPSED="7"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <OUTPUT_FEAT NAME="Seven_Layer-Overlap"/>
+#!     <FEAT_COLLAPSED COLLAPSED="8"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <OUTPUT_FEAT NAME="Eight_Layer-Overlap"/>
+#!     <FEAT_COLLAPSED COLLAPSED="9"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="10"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DEFAULT_VALUE" PARM_VALUE="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TESTLISTGRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_LIST" PARM_VALUE="&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_overlaps&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;1&quot;,GAP_Data,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_overlaps&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;2&quot;,No&lt;space&gt;Overlap,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_overlaps&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;3&quot;,One_Layer-Overlap,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_overlaps&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;4&quot;,Two_Layer-Overlap,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_overlaps&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;5&quot;,Three_Layer-Overlap,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_overlaps&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;6&quot;,Four_Layer-Overlap,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_overlaps&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;7&quot;,Five_Layer-Overlap,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_overlaps&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;8&quot;,Six_Layer-Overlap,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_overlaps&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;9&quot;,Seven_Layer-Overlap,&quot;BOOL_OP,OR,COMPOSITE_TEST,&quot;&quot;&quot;&quot;&quot;&quot;1&quot;&quot;&quot;&quot;&quot;&quot;,TEST_CLAUSE,TEST&lt;space&gt;&lt;lt&gt;at&lt;gt&gt;Value&lt;lt&gt;openparen&lt;gt&gt;_overlaps&lt;lt&gt;closeparen&lt;gt&gt;&lt;space&gt;=&lt;space&gt;10&quot;,Eight_Layer-Overlap"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="TestFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="75"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1139.6808560606339 -1932.458396911014"
+#!   BOUNDING_RECT="1139.6808560606339 -1932.458396911014 454 71"
+#!   ORDER="500000000000022"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; igds_level_name SET_TO Err_Gap_&lt;at&gt;Value&lt;openparen&gt;igds_level_name&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="77"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1139.6808560606339 -2275.3574939494888"
+#!   BOUNDING_RECT="1139.6808560606339 -2275.3574939494888 454 71"
+#!   ORDER="500000000000022"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; igds_level_name SET_TO NO_ERRS_&lt;at&gt;Value&lt;openparen&gt;igds_level_name&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="79"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1192.7474244621671 -2594.33131422002"
+#!   BOUNDING_RECT="1192.7474244621671 -2594.33131422002 454 71"
+#!   ORDER="500000000000022"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; igds_level_name SET_TO ERR_Overlap_&lt;at&gt;Value&lt;openparen&gt;igds_level_name&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="80"
+#!   TYPE="Junction"
+#!   VERSION="0"
+#!   POSITION="717.07089137608136 -2511.7833189287458"
+#!   BOUNDING_RECT="717.07089137608136 -2511.7833189287458 61 61"
+#!   ORDER="500000000000024"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="Output"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_area{}.igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_overlaps" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Junction_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="91"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="-245.66815851454885 -2969.642319392261"
+#!   BOUNDING_RECT="-245.66815851454885 -2969.642319392261 454 71"
+#!   ORDER="500000000000022"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; igds_level_name SET_TO ERR_Others_&lt;at&gt;Value&lt;openparen&gt;igds_level_name&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_4"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="94"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="-245.66815851454885 -1766.8893719371513"
+#!   BOUNDING_RECT="-245.66815851454885 -1766.8893719371513 454 71"
+#!   ORDER="500000000000022"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; igds_level_name SET_TO ERR_Invalid_geometry_&lt;at&gt;Value&lt;openparen&gt;igds_level_name&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_5"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="98"
+#!   TYPE="AttributeFilter"
+#!   VERSION="5"
+#!   POSITION="-3527.9472424220266 -1328.0985488155218"
+#!   BOUNDING_RECT="-3527.9472424220266 -1328.0985488155218 979.55189916123481 71"
+#!   ORDER="500000000000025"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;EMPTY&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;MISSING&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;NULL&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <OUTPUT_FEAT NAME="&lt;lt&gt;UNFILTERED&lt;gt&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="3"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="3" />
+#!     <OUTPUT_FEAT NAME="AOI"/>
+#!     <FEAT_COLLAPSED COLLAPSED="4"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="4" />
+#!     <OUTPUT_FEAT NAME="Building_Polygon"/>
+#!     <FEAT_COLLAPSED COLLAPSED="5"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="5" />
+#!     <OUTPUT_FEAT NAME="Building_Urban_built_up_area"/>
+#!     <FEAT_COLLAPSED COLLAPSED="6"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="6" />
+#!     <OUTPUT_FEAT NAME="Hydro_Surface&lt;space&gt;Permanent"/>
+#!     <FEAT_COLLAPSED COLLAPSED="7"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="7" />
+#!     <OUTPUT_FEAT NAME="Hydro_Surface&lt;space&gt;Temporary"/>
+#!     <FEAT_COLLAPSED COLLAPSED="8"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="8" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Bare&lt;space&gt;Soil"/>
+#!     <FEAT_COLLAPSED COLLAPSED="9"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="9" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Cultivation&lt;space&gt;area&lt;space&gt;liable&lt;space&gt;to&lt;space&gt;flooding"/>
+#!     <FEAT_COLLAPSED COLLAPSED="10"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="10" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Cultivation&lt;space&gt;area&lt;space&gt;with&lt;space&gt;trees"/>
+#!     <FEAT_COLLAPSED COLLAPSED="11"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="11" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Cultivation&lt;space&gt;area&lt;space&gt;without&lt;space&gt;trees"/>
+#!     <FEAT_COLLAPSED COLLAPSED="12"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="12" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Dense&lt;space&gt;Forest"/>
+#!     <FEAT_COLLAPSED COLLAPSED="13"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="13" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Galery&lt;space&gt;Forest"/>
+#!     <FEAT_COLLAPSED COLLAPSED="14"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="14" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Grassland"/>
+#!     <FEAT_COLLAPSED COLLAPSED="15"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="15" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Grassland&lt;space&gt;Savanna"/>
+#!     <FEAT_COLLAPSED COLLAPSED="16"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="16" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="16" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="16" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Light&lt;space&gt;Forest"/>
+#!     <FEAT_COLLAPSED COLLAPSED="17"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="17" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="17" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="17" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Mangrove"/>
+#!     <FEAT_COLLAPSED COLLAPSED="18"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="18" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="18" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="18" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Mine-Quarry"/>
+#!     <FEAT_COLLAPSED COLLAPSED="19"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="19" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="19" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="19" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Plantation"/>
+#!     <FEAT_COLLAPSED COLLAPSED="20"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="20" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="20" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="20" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Rice&lt;space&gt;field"/>
+#!     <FEAT_COLLAPSED COLLAPSED="21"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="21" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="21" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="21" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Rocky&lt;space&gt;Terrain"/>
+#!     <FEAT_COLLAPSED COLLAPSED="22"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="22" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="22" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="22" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Shrub&lt;space&gt;Savanna"/>
+#!     <FEAT_COLLAPSED COLLAPSED="23"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="23" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="23" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="23" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Swampy-Marshy-Wetland"/>
+#!     <FEAT_COLLAPSED COLLAPSED="24"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="24" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="24" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="24" />
+#!     <OUTPUT_FEAT NAME="Vegetation_Tree&lt;space&gt;Savanna"/>
+#!     <FEAT_COLLAPSED COLLAPSED="25"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="25" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="25" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="25" />
+#!     <OUTPUT_FEAT NAME="Hydro_Lake&lt;space&gt;Surface"/>
+#!     <FEAT_COLLAPSED COLLAPSED="26"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="26" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="26" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="26" />
+#!     <OUTPUT_FEAT NAME="Landuse_Activity&lt;space&gt;area"/>
+#!     <FEAT_COLLAPSED COLLAPSED="27"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="27" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="27" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="27" />
+#!     <OUTPUT_FEAT NAME="Landuse_Cemetery"/>
+#!     <FEAT_COLLAPSED COLLAPSED="28"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="28" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="28" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="28" />
+#!     <OUTPUT_FEAT NAME="Landuse_Natural&lt;space&gt;soil"/>
+#!     <FEAT_COLLAPSED COLLAPSED="29"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="29" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="29" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="29" />
+#!     <OUTPUT_FEAT NAME="Landuse_Sports&lt;space&gt;field"/>
+#!     <FEAT_COLLAPSED COLLAPSED="30"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="30" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="30" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="30" />
+#!     <OUTPUT_FEAT NAME="Infra_Energy_Facility"/>
+#!     <FEAT_COLLAPSED COLLAPSED="31"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="31" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="31" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="31" />
+#!     <OUTPUT_FEAT NAME="Hydro_Basin&lt;space&gt;surface"/>
+#!     <FEAT_COLLAPSED COLLAPSED="32"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="32" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="32" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="32" />
+#!     <OUTPUT_FEAT NAME="Hydro_Canal&lt;space&gt;Surface"/>
+#!     <FEAT_COLLAPSED COLLAPSED="33"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="33" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="33" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="33" />
+#!     <OUTPUT_FEAT NAME="Hydro_Dam&lt;space&gt;Polygon"/>
+#!     <FEAT_COLLAPSED COLLAPSED="34"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="34" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="34" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="34" />
+#!     <OUTPUT_FEAT NAME="Rail_station"/>
+#!     <FEAT_COLLAPSED COLLAPSED="35"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="35" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="35" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="35" />
+#!     <OUTPUT_FEAT NAME="Rail_bridge&lt;space&gt;polygon"/>
+#!     <FEAT_COLLAPSED COLLAPSED="36"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="36" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="36" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="36" />
+#!     <OUTPUT_FEAT NAME="Road&lt;space&gt;Amenities_Facilities"/>
+#!     <FEAT_COLLAPSED COLLAPSED="37"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="37" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="37" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="37" />
+#!     <OUTPUT_FEAT NAME="Road_bridge&lt;space&gt;Polygon"/>
+#!     <FEAT_COLLAPSED COLLAPSED="38"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="38" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="38" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="38" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_NAME" PARM_VALUE="igds_level_name"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES" PARM_VALUE="&lt;lt&gt;Empty&lt;gt&gt;,&lt;lt&gt;Missing&lt;gt&gt;,&lt;lt&gt;Null&lt;gt&gt;,&lt;lt&gt;Unfiltered&lt;gt&gt;,AOI,Building_Polygon,Building_Urban_built_up_area,Hydro_Surface&lt;space&gt;Permanent,Hydro_Surface&lt;space&gt;Temporary,Vegetation_Bare&lt;space&gt;Soil,Vegetation_Cultivation&lt;space&gt;area&lt;space&gt;liable&lt;space&gt;to&lt;space&gt;flooding,Vegetation_Cultivation&lt;space&gt;area&lt;space&gt;with&lt;space&gt;trees,Vegetation_Cultivation&lt;space&gt;area&lt;space&gt;without&lt;space&gt;trees,Vegetation_Dense&lt;space&gt;Forest,Vegetation_Galery&lt;space&gt;Forest,Vegetation_Grassland,Vegetation_Grassland&lt;space&gt;Savanna,Vegetation_Light&lt;space&gt;Forest,Vegetation_Mangrove,Vegetation_Mine-Quarry,Vegetation_Plantation,Vegetation_Rice&lt;space&gt;field,Vegetation_Rocky&lt;space&gt;Terrain,Vegetation_Shrub&lt;space&gt;Savanna,Vegetation_Swampy-Marshy-Wetland,Vegetation_Tree&lt;space&gt;Savanna,Hydro_Lake&lt;space&gt;Surface,Landuse_Activity&lt;space&gt;area,Landuse_Cemetery,Landuse_Natural&lt;space&gt;soil,Landuse_Sports&lt;space&gt;field,Infra_Energy_Facility,Hydro_Basin&lt;space&gt;surface,Hydro_Canal&lt;space&gt;Surface,Hydro_Dam&lt;space&gt;Polygon,Rail_station,Rail_bridge&lt;space&gt;polygon,Road&lt;space&gt;Amenities_Facilities,Road_bridge&lt;space&gt;Polygon"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_VALUES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeFilter"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="100"
+#!   TYPE="AttributeExposer"
+#!   VERSION="1"
+#!   POSITION="-4539.5746165253831 -1960.362221154679"
+#!   BOUNDING_RECT="-4539.5746165253831 -1960.362221154679 454 71"
+#!   ORDER="500000000000004"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTR_LIST" PARM_VALUE="igds_level,igds_level_name"/>
+#!     <XFORM_PARM PARM_NAME="ATTR_LIST_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeExposer_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="56"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="-245.66815851454885 -1489.7687720533779"
+#!   BOUNDING_RECT="-245.66815851454885 -1489.7687720533779 454 71"
+#!   ORDER="500000000000022"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; igds_level_name SET_TO ERR_Wrong_Level_Name_&lt;at&gt;Value&lt;openparen&gt;igds_level_name&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_6"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="62"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="-245.66815851454885 -3251.5969491674909"
+#!   BOUNDING_RECT="-245.66815851454885 -3251.5969491674909 454 71"
+#!   ORDER="500000000000022"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; igds_level_name SET_TO ERR_Point_&lt;at&gt;Value&lt;openparen&gt;igds_level_name&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_7"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="64"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="-245.66815851454885 -3539.1351598438541"
+#!   BOUNDING_RECT="-245.66815851454885 -3539.1351598438541 454 71"
+#!   ORDER="500000000000022"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="20632"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="igds_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="igds_level" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; igds_level_name SET_TO ERR_Line_&lt;at&gt;Value&lt;openparen&gt;igds_level_name&lt;closeparen&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_8"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="101"
+#!   SOURCE_NODE="97"
+#!   TARGET_NODE="100"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="63"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="62"
+#!   SOURCE_PORT_DESC="fo 0 POINT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="74"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="73"
+#!   SOURCE_PORT_DESC="fo 0 AREA"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="61"
+#!   SOURCE_NODE="56"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="66"
+#!   SOURCE_NODE="62"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="67"
+#!   SOURCE_NODE="64"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="76"
+#!   SOURCE_NODE="73"
+#!   TARGET_NODE="75"
+#!   SOURCE_PORT_DESC="fo 0 GAP_Data"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="89"
+#!   SOURCE_NODE="75"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="90"
+#!   SOURCE_NODE="79"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="83"
+#!   SOURCE_NODE="80"
+#!   TARGET_NODE="79"
+#!   SOURCE_PORT_DESC="fo 0 Output"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="93"
+#!   SOURCE_NODE="91"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="96"
+#!   SOURCE_NODE="94"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="59"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="56"
+#!   SOURCE_PORT_DESC="fo 0 &lt;lt&gt;lt&lt;gt&gt;EMPTY&lt;lt&gt;gt&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="99"
+#!   SOURCE_NODE="100"
+#!   TARGET_NODE="98"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="65"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="64"
+#!   SOURCE_PORT_DESC="fo 1 LINE"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="92"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="91"
+#!   SOURCE_PORT_DESC="fo 1 REMNANTS"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="81"
+#!   SOURCE_NODE="73"
+#!   TARGET_NODE="77"
+#!   SOURCE_PORT_DESC="fo 1 No&lt;lt&gt;space&lt;gt&gt;Overlap"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="58"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="56"
+#!   SOURCE_PORT_DESC="fo 1 &lt;lt&gt;lt&lt;gt&gt;MISSING&lt;lt&gt;gt&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="fo 2 AREA"
+#!   TARGET_PORT_DESC="fi 0 AREA"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="68"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="91"
+#!   SOURCE_PORT_DESC="fo 2 &lt;lt&gt;REJECTED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="82"
+#!   SOURCE_NODE="73"
+#!   TARGET_NODE="80"
+#!   SOURCE_PORT_DESC="fo 2 One_Layer-Overlap"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="60"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="56"
+#!   SOURCE_PORT_DESC="fo 2 &lt;lt&gt;lt&lt;gt&gt;NULL&lt;lt&gt;gt&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="95"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="94"
+#!   SOURCE_PORT_DESC="fo 3 &lt;lt&gt;UNFILTERED&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="78"
+#!   SOURCE_NODE="73"
+#!   TARGET_NODE="80"
+#!   SOURCE_PORT_DESC="fo 3 Two_Layer-Overlap"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="57"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="56"
+#!   SOURCE_PORT_DESC="fo 3 &lt;lt&gt;lt&lt;gt&gt;UNFILTERED&lt;lt&gt;gt&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="84"
+#!   SOURCE_NODE="73"
+#!   TARGET_NODE="80"
+#!   SOURCE_PORT_DESC="fo 4 Three_Layer-Overlap"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="36"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 4 AOI"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="85"
+#!   SOURCE_NODE="73"
+#!   TARGET_NODE="80"
+#!   SOURCE_PORT_DESC="fo 5 Four_Layer-Overlap"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="86"
+#!   SOURCE_NODE="73"
+#!   TARGET_NODE="80"
+#!   SOURCE_PORT_DESC="fo 6 Five_Layer-Overlap"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="37"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 6 Building_Urban_built_up_area"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="87"
+#!   SOURCE_NODE="73"
+#!   TARGET_NODE="80"
+#!   SOURCE_PORT_DESC="fo 10 &lt;lt&gt;lt&lt;gt&gt;UNFILTERED&lt;lt&gt;gt&lt;gt&gt;"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="38"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 7 Hydro_Surface&lt;lt&gt;space&lt;gt&gt;Permanent"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="111"
+#!   SOURCE_NODE="73"
+#!   TARGET_NODE="80"
+#!   SOURCE_PORT_DESC="fo 7 Six_Layer-Overlap"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="39"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 8 Hydro_Surface&lt;lt&gt;space&lt;gt&gt;Temporary"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="112"
+#!   SOURCE_NODE="73"
+#!   TARGET_NODE="80"
+#!   SOURCE_PORT_DESC="fo 8 Seven_Layer-Overlap"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="40"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 9 Vegetation_Bare&lt;lt&gt;space&lt;gt&gt;Soil"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="113"
+#!   SOURCE_NODE="73"
+#!   TARGET_NODE="80"
+#!   SOURCE_PORT_DESC="fo 9 Eight_Layer-Overlap"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="41"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 10 Vegetation_Cultivation&lt;lt&gt;space&lt;gt&gt;area&lt;lt&gt;space&lt;gt&gt;liable&lt;lt&gt;space&lt;gt&gt;to&lt;lt&gt;space&lt;gt&gt;flooding"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="42"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 11 Vegetation_Cultivation&lt;lt&gt;space&lt;gt&gt;area&lt;lt&gt;space&lt;gt&gt;with&lt;lt&gt;space&lt;gt&gt;trees"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="43"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 12 Vegetation_Cultivation&lt;lt&gt;space&lt;gt&gt;area&lt;lt&gt;space&lt;gt&gt;without&lt;lt&gt;space&lt;gt&gt;trees"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="44"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 13 Vegetation_Dense&lt;lt&gt;space&lt;gt&gt;Forest"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="45"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 14 Vegetation_Galery&lt;lt&gt;space&lt;gt&gt;Forest"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="46"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 15 Vegetation_Grassland"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="47"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 16 Vegetation_Grassland&lt;lt&gt;space&lt;gt&gt;Savanna"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="48"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 17 Vegetation_Light&lt;lt&gt;space&lt;gt&gt;Forest"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="49"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 18 Vegetation_Mangrove"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="50"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 19 Vegetation_Mine-Quarry"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="51"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 20 Vegetation_Plantation"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="52"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 21 Vegetation_Rice&lt;lt&gt;space&lt;gt&gt;field"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="53"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 22 Vegetation_Rocky&lt;lt&gt;space&lt;gt&gt;Terrain"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="54"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 23 Vegetation_Shrub&lt;lt&gt;space&lt;gt&gt;Savanna"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="55"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 24 Vegetation_Swampy-Marshy-Wetland"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="34"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 25 Vegetation_Tree&lt;lt&gt;space&lt;gt&gt;Savanna"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="69"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 26 Hydro_Lake&lt;lt&gt;space&lt;gt&gt;Surface"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="70"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 5 Building_Polygon"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="71"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 27 Landuse_Activity&lt;lt&gt;space&lt;gt&gt;area"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="72"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 28 Landuse_Cemetery"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="88"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 29 Landuse_Natural&lt;lt&gt;space&lt;gt&gt;soil"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="102"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 30 Landuse_Sports&lt;lt&gt;space&lt;gt&gt;field"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="103"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 31 Infra_Energy_Facility"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="104"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 32 Hydro_Basin&lt;lt&gt;space&lt;gt&gt;surface"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="105"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 33 Hydro_Canal&lt;lt&gt;space&lt;gt&gt;Surface"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="106"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 34 Hydro_Dam&lt;lt&gt;space&lt;gt&gt;Polygon"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="107"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 35 Rail_station"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="108"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 36 Rail_bridge&lt;lt&gt;space&lt;gt&gt;polygon"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="109"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 37 Road&lt;lt&gt;space&lt;gt&gt;Amenities_Facilities"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="110"
+#!   SOURCE_NODE="98"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 38 Road_bridge&lt;lt&gt;space&lt;gt&gt;Polygon"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 37
+GUI IGNORE SourceDataset_DGNV8_1,UNITS_DGNV8_1,UOR_GLOBAL_ORIGIN_X_DGNV8_1,UOR_GLOBAL_ORIGIN_Y_DGNV8_1,UOR_GLOBAL_ORIGIN_Z_DGNV8_1,DGNV8_IN_FME_GROUP_NAMED1_DGNV8_1,DGNV8_IN_EXPAND_CELLS_DGNV8_1,DGNV8_IN_PRESERVE_CELL_INSERTS_DGNV8_1,DGNV8_IN_EXPAND_UNNAMED_CELLS_DGNV8_1,DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS_DGNV8_1,DGNV8_IN_XREF_OPTIONS_DGNV8_1,DGNV8_IN_READ_XREF_FILES_DGNV8_1,DGNV8_IN_READ_XREF_NEST_DEPTH_DGNV8_1,DGNV8_IN_USE_XREF_PARENT_MODEL_DGNV8_1,DGNV8_IN_READ_XREFS_AS_ELEMENTS_DGNV8_1,DGNV8_IN_TAGS_AS_TEXT_DGNV8_1,DGNV8_IN_FME_GROUP_NAMED2_DGNV8_1,DGNV8_IN_READ_TAGS_DGNV8_1,DGNV8_IN_READ_XATTRS_AND_ITEM_SETS_DGNV8_1,DGNV8_IN_FME_GROUP_NAMED3_DGNV8_1,DGNV8_IN_FME_GROUP_NAMED4_DGNV8_1,DGNV8_IN_READ_SELECTED_MODELS_DGNV8_1,DGNV8_IN_SELECTED_MODELS_DGNV8_1,DGNV8_IN_USE_SEARCH_ENVELOPE_DGNV8_1,DGNV8_IN_SEARCH_ENVELOPE_MINX_DGNV8_1,DGNV8_IN_SEARCH_ENVELOPE_MINY_DGNV8_1,DGNV8_IN_SEARCH_ENVELOPE_MAXX_DGNV8_1,DGNV8_IN_SEARCH_ENVELOPE_MAXY_DGNV8_1,DGNV8_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_DGNV8_1,DGNV8_IN_CLIP_TO_ENVELOPE_DGNV8_1,DGNV8_IN_DGNV8_RDR_ADV_PARM_GROUP_DGNV8_1,DGNV8_IN_SPLIT_COMPLEX_CHAINS_DGNV8_1,DGNV8_IN_SPLIT_MULTITEXT_DGNV8_1,DGNV8_IN_EXPLODE_DIMENSION_ELEM_DGNV8_1,DGNV8_IN_APPLY_WORLD_FILE_DGNV8_1,DGNV8_IN_PRESERVE_CURVES_DGNV8_1,DGNV8_IN_REMOVE_DUPLICATES_DGNV8_1,DGNV8_IN_ASSUME_MATCHING_UNITS_DGNV8_1,DGNV8_IN_UOR_SCALE_DGNV8_1,DGNV8_IN_UORS_PER_SUB_DGNV8_1,DGNV8_IN_SUBS_PER_MASTER_DGNV8_1,DGNV8_IN_ELEVATION_SHIFT_FACTOR_DGNV8_1,DGNV8_IN_CURVE_VERTICES_DGNV8_1,DGNV8_IN_NETWORK_AUTHENTICATION_DGNV8_1,DestDataset_DGNV8_2,SEED_FILE_DGNV8_2,DGNV8_OUT_OUT_UNITS_DGNV8_2,DGNV8_OUT_ALLOW_FILL_DGNV8_2,DGNV8_OUT_WRITE_TAGS_DGNV8_2,DGNV8_OUT_CELL_LIBRARY_DGNV8_2,DGNV8_OUT_DGNV8_WRT_ADV_PARM_GROUP_DGNV8_2,DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_2,DGNV8_OUT_RSC_FONT_FILE_DGNV8_2,DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_2,DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_2,DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_2
+DEFAULT_MACRO SourceDataset_DGNV8_2 $(FME_MF_DIR)Belaka_Mbere_3b1_Vegetation.dgn
+GUI MULTIFILE SourceDataset_DGNV8_2 Design_Files(*.dgn)|*.dgn|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Bentley MicroStation Design File(s):
+DEFAULT_MACRO DestDataset_DGNV8 $(FME_MF_DIR)GSINT_ERROR_GAP_OVERLAP.dgn
+GUI FILENAME DestDataset_DGNV8 Design_Files(*.dgn)|*.dgn|All_files(*)|* Destination Bentley MicroStation Design File:
+DEFAULT_MACRO FEATURE_TYPES Default Hydro_Lake<space>Surface Hydro_Surface<space>Permanent Vegetation_Bare<space>Soil Vegetation_Cultivation<space>area<space>without<space>trees Vegetation_Galery<space>Forest Vegetation_Light<space>Forest Vegetation_Rice<space>field Vegetation_Shrub<space>Savanna Vegetation_Tree<space>Savanna AOI
+GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES C:<backslash>FME_Testing<backslash>GSINT-Cameroun_GDB<backslash>GAP_Overlap_Identify<backslash>Belaka_Mbere_3b1_Vegetation.dgn,_FORMAT_OVERRIDE_,dgnv8Names,_DATASET_OVERRIDE_,SourceDataset_DGNV8_2,UNITS,IGDS_MASTER_UNITS,EXPAND_CELLS,no,PRESERVE_CELL_INSERTS,no,EXPAND_UNNAMED_CELLS,no,PRESERVE_UNNAMEDCELL_INSERTS,no,READ_XREF_FILES,NO,READ_XREF_NEST_DEPTH,0,USE_XREF_PARENT_MODEL,<Unused>,READ_XREFS_AS_ELEMENTS,YES,TAGS_AS_TEXT,NO,READ_TAGS,NO,READ_XATTRS_AND_ITEM_SETS,NO,READ_SELECTED_MODELS,NO,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,CLIP_TO_ENVELOPE,NO,SPLIT_COMPLEX_CHAINS,NO,SPLIT_MULTITEXT,YES,EXPLODE_DIMENSION_ELEM,YES,APPLY_WORLD_FILE,YES,PRESERVE_CURVES,NO,REMOVE_DUPLICATES,NO,ASSUME_MATCHING_UNITS,NO,IGDS_FRAMME,NO,_MERGE_SCHEMAS,YES,USE_RICH_ARC_GEOM,YES,OVERRIDE_GLOBAL_ORIGIN,no,DYNAMIC_WORKFLOW,yes,DGNV8_RDR_ADV_PARM_GROUP,FME_DISCLOSURE_OPEN,READER_META_ATTRIBUTES,fme_dataset,USE_LEVEL_NAMES,YES,METAFILE,dgnv8Names,IGDS_MSLINKS,NO,_MERGE_SCHEMAS,YES Feature Types to Read:
+DEFAULT_MACRO SEED_FILE_DGNV8 C:\Program Files\FME/design/seed3d_m_v8.dgn
+GUI FILENAME_EXISTING SEED_FILE_DGNV8 Design_Files(*.dgn)|*.dgn|All_files(*)|* Seed File (V8 only):
+DEFAULT_MACRO CELL_LIBRARY_DGNV8 C:\Program Files\FME/design/default_v8.cel
+GUI OPTIONAL MULTIFILE CELL_LIBRARY_DGNV8 Cell_Library_Files(*.cel)|*.cel|All_files(*)|* Cell Library File:
+INCLUDE [ if {{$(SourceDataset_DGNV8_2)} == {}} { puts_real {Parameter 'SourceDataset_DGNV8_2' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_DGNV8)} == {}} { puts_real {Parameter 'DestDataset_DGNV8' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SEED_FILE_DGNV8)} == {}} { puts_real {Parameter 'SEED_FILE_DGNV8' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} DGNV8
+MULTI_READER_KEYWORD{0} DGNV8_1
+MULTI_READER_GEN_DIRECTIVES{0} IGDS_FRAMME,NO,_MERGE_SCHEMAS,YES,READ_XREFS_AS_ELEMENTS,YES,READ_SELECTED_MODELS,NO,CURVE_VERTICES,,TAGS_AS_TEXT,NO,READ_XREF_NEST_DEPTH,0,XREF_OPTIONS,,UOR_GLOBAL_ORIGIN_X,,ASSUME_MATCHING_UNITS,NO,DGNV8_EXPOSE_FORMAT_ATTRS,,PRESERVE_UNNAMEDCELL_INSERTS,no,REMOVE_DUPLICATES,NO,READ_XREF_FILES,NO,EXPLODE_DIMENSION_ELEM,YES,EXPAND_CELLS,no,SPLIT_MULTITEXT,YES,USE_RICH_ARC_GEOM,YES,SEARCH_ENVELOPE_MINX,0,OVERRIDE_GLOBAL_ORIGIN,no,USE_SEARCH_ENVELOPE,NO,DYNAMIC_WORKFLOW,yes,USE_XREF_PARENT_MODEL,<lt>Unused<gt>,READ_TAGS,NO,DGNV8_RDR_ADV_PARM_GROUP,FME_DISCLOSURE_OPEN,UOR_SCALE,,UNITS,IGDS_MASTER_UNITS,SELECTED_MODELS,,CLIP_TO_ENVELOPE,NO,ELEVATION_SHIFT_FACTOR,,UOR_GLOBAL_ORIGIN_Y,,PRESERVE_CURVES,NO,READER_META_ATTRIBUTES,fme_dataset,SEARCH_ENVELOPE_MAXY,0,EXPOSE_ATTRS_GROUP,,UORS_PER_SUB,,UOR_GLOBAL_ORIGIN_Z,,USE_LEVEL_NAMES,YES,APPLY_WORLD_FILE,YES,SUBS_PER_MASTER,,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,METAFILE,dgnv8Names,SEARCH_ENVELOPE_MAXX,0,SPLIT_COMPLEX_CHAINS,NO,IGDS_MSLINKS,NO,READ_XATTRS_AND_ITEM_SETS,NO,PRESERVE_CELL_INSERTS,no,EXPAND_UNNAMED_CELLS,no
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} DGNV8
+MULTI_WRITER_KEYWORD{0} DGNV8_2
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "DGNV8_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER DGNV8 DGNV8_1
+DGNV8_1_DYNAMIC_WORKFLOW YES
+# ============================================================================
+# The following GUI line prompts for a file to be used as the
+# source of the Microstation design file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_DGNV8_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER DGNV8 DGNV8_1
+DEFAULT_MACRO SourceDataset_DGNV8_1 $(SourceDataset_DGNV8_2)
+GUI MULTIFILE SourceDataset_DGNV8_1 Design_Files(*.dgn)|*.dgn|All_files(*)|* Source Bentley MicroStation Design File(s):
+# ============================================================================
+# alternative GUI line for nav pane, otherwise specified in the settings box
+# the default macro line and related directive line here are required to allow
+# WB generate calls to get defaults in the nav pane, from the settings box
+DEFAULT_MACRO UNITS_DGNV8_1 IGDS_MASTER_UNITS
+DGNV8_1_UNITS $(UNITS_DGNV8_1)
+GUI LOOKUP_CHOICE UNITS_DGNV8_1 Master<space>Units,IGDS_MASTER_UNITS%Sub<space>Units,IGDS_SUB_UNITS%UORs,IGDS_UORS Input Units:
+DEFAULT_MACRO UOR_GLOBAL_ORIGIN_X_DGNV8_1 
+DGNV8_1_UOR_GLOBAL_ORIGIN_X $(UOR_GLOBAL_ORIGIN_X_DGNV8_1)
+GUI OPTIONAL FLOAT UOR_GLOBAL_ORIGIN_X_DGNV8_1 UOR X Global Origin
+DEFAULT_MACRO UOR_GLOBAL_ORIGIN_Y_DGNV8_1 
+DGNV8_1_UOR_GLOBAL_ORIGIN_Y $(UOR_GLOBAL_ORIGIN_Y_DGNV8_1)
+GUI OPTIONAL FLOAT UOR_GLOBAL_ORIGIN_Y_DGNV8_1 UOR Y Global Origin
+DEFAULT_MACRO UOR_GLOBAL_ORIGIN_Z_DGNV8_1 
+DGNV8_1_UOR_GLOBAL_ORIGIN_Z $(UOR_GLOBAL_ORIGIN_Z_DGNV8_1)
+GUI OPTIONAL FLOAT UOR_GLOBAL_ORIGIN_Z_DGNV8_1 UOR Z Global Origin
+# ============================================================================
+# The following line controls whether or not complex chain element linkages
+# are propagated up to the header element from the members -- only applies
+# when we are NOT dropping complex elements
+#
+#We don't expose _PROPAGATE_CHAIN_ELEMENT_LINKAGES anymore as it is now deprecated since the introduction
+#of rich geometry
+# This is deprecated, and not available in the GUI settings
+DEFAULT_MACRO READ_ELEMENT_TYPE_68_DGNV8_1 NO
+DGNV8_1_READ_ELEMENT_TYPE_68 $(READ_ELEMENT_TYPE_68_DGNV8_1)
+# ============================================================================
+# Indicate if we are to use level names or level numbers as the feature type
+# This is something that is only set when a mapping file or workspace header
+# is originally generated. It should not be modified afterwards.
+DGNV8_1_USE_LEVEL_NAMES YES
+DEFAULT_MACRO DGNV8_IN_READER_META_ATTRIBUTES_DGNV8_1 fme_dataset
+DGNV8_1_READER_META_ATTRIBUTES "$(DGNV8_IN_READER_META_ATTRIBUTES_DGNV8_1)"
+DEFAULT_MACRO DGNV8_IN_FME_GROUP_NAMED1_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_FME_GROUP_NAMED1_DGNV8_1 DGNV8_IN_EXPAND_CELLS_DGNV8_1%DGNV8_IN_EXPAND_UNNAMED_CELLS_DGNV8_1%DGNV8_IN_XREF_OPTIONS_DGNV8_1%DGNV8_IN_TAGS_AS_TEXT_DGNV8_1 Element Options
+# The following line controls whether or not cell elements are to be
+# expanded by the FME as it reads the source file.
+DEFAULT_MACRO DGNV8_IN_EXPAND_CELLS_DGNV8_1 no
+DGNV8_1_EXPAND_CELLS "$(DGNV8_IN_EXPAND_CELLS_DGNV8_1)"
+GUI ACTIVEDISCLOSUREGROUP DGNV8_IN_EXPAND_CELLS_DGNV8_1 FME_DISCLOSURE_CLOSED%DGNV8_IN_PRESERVE_CELL_INSERTS_DGNV8_1 Expand Named Cells
+GUI LOOKUP DGNV8_IN_EXPAND_CELLS_DGNV8_1 YES,yes%NO,no 
+# ============================================================================
+# Ask if the cell insert points should be preserved -- this only matters
+# if cells are being expanded
+DEFAULT_MACRO DGNV8_IN_PRESERVE_CELL_INSERTS_DGNV8_1 no
+DGNV8_1_PRESERVE_CELL_INSERTS "$(DGNV8_IN_PRESERVE_CELL_INSERTS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL DGNV8_IN_PRESERVE_CELL_INSERTS_DGNV8_1 yes%no Preserve Named Cell Insert Points
+GUI LOOKUP DGNV8_IN_PRESERVE_CELL_INSERTS_DGNV8_1 <Unused>,no 
+# The following line controls whether or not unnamed cell elements are to be
+# expanded by the FME as it reads the source file.
+DEFAULT_MACRO DGNV8_IN_EXPAND_UNNAMED_CELLS_DGNV8_1 no
+DGNV8_1_EXPAND_UNNAMED_CELLS "$(DGNV8_IN_EXPAND_UNNAMED_CELLS_DGNV8_1)"
+GUI ACTIVEDISCLOSUREGROUP DGNV8_IN_EXPAND_UNNAMED_CELLS_DGNV8_1 FME_DISCLOSURE_CLOSED%DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS_DGNV8_1 Expand Unnamed (Group Hole) Cells
+GUI LOOKUP DGNV8_IN_EXPAND_UNNAMED_CELLS_DGNV8_1 YES,yes%NO,no 
+# ============================================================================
+#By default we do not output unnamed cell insert points
+DEFAULT_MACRO DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS_DGNV8_1 no
+DGNV8_1_PRESERVE_UNNAMEDCELL_INSERTS "$(DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS_DGNV8_1 yes%no Preserve Unnamed Cell Insert Points
+GUI LOOKUP DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS_DGNV8_1 <Unused>,no 
+DEFAULT_MACRO DGNV8_IN_XREF_OPTIONS_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_XREF_OPTIONS_DGNV8_1 FME_DISCLOSURE_CLOSED%DGNV8_IN_READ_XREF_FILES_DGNV8_1%DGNV8_IN_READ_XREFS_AS_ELEMENTS_DGNV8_1 External Reference File Options
+#By default we don't read elements from reference files
+DEFAULT_MACRO DGNV8_IN_READ_XREF_FILES_DGNV8_1 NO
+DGNV8_1_READ_XREF_FILES "$(DGNV8_IN_READ_XREF_FILES_DGNV8_1)"
+GUI ACTIVEDISCLOSUREGROUP DGNV8_IN_READ_XREF_FILES_DGNV8_1 FME_DISCLOSURE_CLOSED%DGNV8_IN_XREF_ELEMENTS_MSG%DGNV8_IN_READ_XREF_NEST_DEPTH_DGNV8_1%DGNV8_IN_USE_XREF_PARENT_MODEL_DGNV8_1 Read Elements From Reference Files
+# ============================================================================
+#By default we read all the nested levels
+# Now deprecated from the GUI, in lieu of READ_XREF_NEST_DEPTH
+#DEFAULT_VALUE READ_XREF_UPTO_FIRST_LVL NO
+#GUI CHECKBOX READ_XREF_UPTO_FIRST_LVL yes%no Read Reference Files up to First Level
+# ============================================================================
+#By default we read one level of xrefs
+DEFAULT_MACRO DGNV8_IN_READ_XREF_NEST_DEPTH_DGNV8_1 0
+DGNV8_1_READ_XREF_NEST_DEPTH "$(DGNV8_IN_READ_XREF_NEST_DEPTH_DGNV8_1)"
+GUI INTEGER DGNV8_IN_READ_XREF_NEST_DEPTH_DGNV8_1 Max Depth of Reference Files to Read
+GUI LOOKUP DGNV8_IN_READ_XREF_NEST_DEPTH_DGNV8_1 <Unused>,0 
+# ============================================================================
+# PR38292 This is default YES, but will be ignored unless READ_XREF_FILES is YES.
+# Enable USE_XREF_PARENT_MODEL for v8 reader (PR#18510).
+# By default we use xref's parent model when reading reference files
+DEFAULT_MACRO DGNV8_IN_USE_XREF_PARENT_MODEL_DGNV8_1 <Unused>
+DGNV8_1_USE_XREF_PARENT_MODEL "$(DGNV8_IN_USE_XREF_PARENT_MODEL_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_USE_XREF_PARENT_MODEL_DGNV8_1 yes%no Use Reference's Parent Model (V8 only)
+# ============================================================================
+#By default we read reference files as xref elements
+DEFAULT_MACRO DGNV8_IN_READ_XREFS_AS_ELEMENTS_DGNV8_1 YES
+DGNV8_1_READ_XREFS_AS_ELEMENTS "$(DGNV8_IN_READ_XREFS_AS_ELEMENTS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL DGNV8_IN_READ_XREFS_AS_ELEMENTS_DGNV8_1 YES%NO Keep Elements That Represent Reference Files (V8 only)
+# ============================================================================
+# The following line controls whether or not tag elements are to be
+# output as text by the FME as it reads the source file.
+DEFAULT_MACRO DGNV8_IN_TAGS_AS_TEXT_DGNV8_1 NO
+DGNV8_1_TAGS_AS_TEXT "$(DGNV8_IN_TAGS_AS_TEXT_DGNV8_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL DGNV8_IN_TAGS_AS_TEXT_DGNV8_1 YES%NO Output Tags as Text
+DEFAULT_MACRO DGNV8_IN_FME_GROUP_NAMED2_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_FME_GROUP_NAMED2_DGNV8_1 DGNV8_IN_READ_TAGS_DGNV8_1%DGNV8_IN_READ_XATTRS_AND_ITEM_SETS_DGNV8_1 Attribute Options
+# ============================================================================
+# Should we strip off tag information
+# replaces legacy TRIM_DOWN_TAGS, which was default NO, and meant keep tag attributes
+DEFAULT_MACRO DGNV8_IN_READ_TAGS_DGNV8_1 NO
+DGNV8_1_READ_TAGS "$(DGNV8_IN_READ_TAGS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL DGNV8_IN_READ_TAGS_DGNV8_1 YES%NO Read Tag Attributes:
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_READ_XATTRS_AND_ITEM_SETS_DGNV8_1 NO
+DGNV8_1_READ_XATTRS_AND_ITEM_SETS "$(DGNV8_IN_READ_XATTRS_AND_ITEM_SETS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL DGNV8_IN_READ_XATTRS_AND_ITEM_SETS_DGNV8_1 YES%NO Read XAttributes and Item Set attributes (V8 only):
+DEFAULT_MACRO DGNV8_IN_FME_GROUP_NAMED3_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_FME_GROUP_NAMED3_DGNV8_1 2%DGNV8_IN_IGDS_MSLINKS%DGNV8_IN_IGDS_FRAMME Linkage Extraction
+# ============================================================================
+# ============================================================================
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_FME_GROUP_NAMED4_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_FME_GROUP_NAMED4_DGNV8_1 DGNV8_IN_READ_SELECTED_MODELS_DGNV8_1 Model Selection Options
+# Should we read only certain models?
+DEFAULT_MACRO DGNV8_IN_READ_SELECTED_MODELS_DGNV8_1 NO
+DGNV8_1_READ_SELECTED_MODELS "$(DGNV8_IN_READ_SELECTED_MODELS_DGNV8_1)"
+GUI ACTIVEDISCLOSUREGROUP DGNV8_IN_READ_SELECTED_MODELS_DGNV8_1 DGNV8_IN_SELECTED_MODELS_DGNV8_1 Read Only Selected Models
+# Indicate which models we will read
+DEFAULT_MACRO DGNV8_IN_SELECTED_MODELS_DGNV8_1 
+DGNV8_1_SELECTED_MODELS "$(DGNV8_IN_SELECTED_MODELS_DGNV8_1)"
+GUI OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED DGNV8_IN_SELECTED_MODELS_DGNV8_1 $[SourceDataset_DGNV8_3_DGNV8_1],READ_MODEL_NAMES,MODEL_NAMES,_FORMAT_OVERRIDE_,DGNV8 Models
+GUI LOOKUP DGNV8_IN_SELECTED_MODELS_DGNV8_1 <Unused>, 
+# The following line controls how all the FME coordinates read from the
+# design file will be interpreted.
+# Valid values IGDS_MASTER_UNITS -- FME coordinates are treated as Master Units
+# IGDS_SUB_UNITS -- FME coordinates are treated as Sub Units
+# IGDS_UORS -- FME coordinates are treated as UORs
+# ============================================================================
+# ============================================================================
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_EXPOSE_ATTRS_GROUP_DGNV8_1 
+DGNV8_1_EXPOSE_ATTRS_GROUP "$(DGNV8_IN_EXPOSE_ATTRS_GROUP_DGNV8_1)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO DGNV8_IN_USE_SEARCH_ENVELOPE_DGNV8_1 NO
+DGNV8_1_USE_SEARCH_ENVELOPE "$(DGNV8_IN_USE_SEARCH_ENVELOPE_DGNV8_1)"
+GUI ACTIVEDISCLOSUREGROUP DGNV8_IN_USE_SEARCH_ENVELOPE_DGNV8_1 DGNV8_IN_SEARCH_ENVELOPE_MINX_DGNV8_1%DGNV8_IN_SEARCH_ENVELOPE_MINY_DGNV8_1%DGNV8_IN_SEARCH_ENVELOPE_MAXX_DGNV8_1%DGNV8_IN_SEARCH_ENVELOPE_MAXY_DGNV8_1%DGNV8_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_DGNV8_1%DGNV8_IN_CLIP_TO_ENVELOPE_DGNV8_1%DGNV8_IN_SEARCH_METHOD%DGNV8_IN_SEARCH_METHOD_FILTER%DGNV8_IN_SEARCH_ORDER%DGNV8_IN_SEARCH_FEATURE%DGNV8_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP DGNV8_IN_SEARCH_ENVELOPE_MINX_DGNV8_1 <Unused>,0 
+DEFAULT_MACRO DGNV8_IN_SEARCH_ENVELOPE_MINX_DGNV8_1 0
+DGNV8_1_SEARCH_ENVELOPE "$(DGNV8_IN_SEARCH_ENVELOPE_MINX_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_SEARCH_ENVELOPE_MINX_DGNV8_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP DGNV8_IN_SEARCH_ENVELOPE_MINY_DGNV8_1 <Unused>,0 
+DEFAULT_MACRO DGNV8_IN_SEARCH_ENVELOPE_MINY_DGNV8_1 0
+DGNV8_1_SEARCH_ENVELOPE "$(DGNV8_IN_SEARCH_ENVELOPE_MINY_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_SEARCH_ENVELOPE_MINY_DGNV8_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP DGNV8_IN_SEARCH_ENVELOPE_MAXX_DGNV8_1 <Unused>,0 
+DEFAULT_MACRO DGNV8_IN_SEARCH_ENVELOPE_MAXX_DGNV8_1 0
+DGNV8_1_SEARCH_ENVELOPE "$(DGNV8_IN_SEARCH_ENVELOPE_MAXX_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_SEARCH_ENVELOPE_MAXX_DGNV8_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP DGNV8_IN_SEARCH_ENVELOPE_MAXY_DGNV8_1 <Unused>,0 
+DEFAULT_MACRO DGNV8_IN_SEARCH_ENVELOPE_MAXY_DGNV8_1 0
+DGNV8_1_SEARCH_ENVELOPE "$(DGNV8_IN_SEARCH_ENVELOPE_MAXY_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_SEARCH_ENVELOPE_MAXY_DGNV8_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP DGNV8_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_DGNV8_1 <Unused>, 
+DEFAULT_MACRO DGNV8_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_DGNV8_1 
+DGNV8_1_SEARCH_ENVELOPE "$(DGNV8_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_DGNV8_1)"
+GUI OPTIONAL COORDSYS DGNV8_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_DGNV8_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP DGNV8_IN_CLIP_TO_ENVELOPE_DGNV8_1 <Unused>,NO 
+DEFAULT_MACRO DGNV8_IN_CLIP_TO_ENVELOPE_DGNV8_1 NO
+DGNV8_1_CLIP_TO_ENVELOPE "$(DGNV8_IN_CLIP_TO_ENVELOPE_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_CLIP_TO_ENVELOPE_DGNV8_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO DGNV8_IN_DGNV8_RDR_ADV_PARM_GROUP_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_DGNV8_RDR_ADV_PARM_GROUP_DGNV8_1 DGNV8_IN_SPLIT_COMPLEX_CHAINS_DGNV8_1%DGNV8_IN_SPLIT_MULTITEXT_DGNV8_1%DGNV8_IN_EXPLODE_DIMENSION_ELEM_DGNV8_1%DGNV8_IN_APPLY_WORLD_FILE_DGNV8_1%DGNV8_IN_PRESERVE_CURVES_DGNV8_1%DGNV8_IN_REMOVE_DUPLICATES_DGNV8_1%DGNV8_IN_ASSUME_MATCHING_UNITS_DGNV8_1%DGNV8_IN_UOR_SCALE_DGNV8_1%DGNV8_IN_UORS_PER_SUB_DGNV8_1%DGNV8_IN_SUBS_PER_MASTER_DGNV8_1%DGNV8_IN_ELEVATION_SHIFT_FACTOR_DGNV8_1%DGNV8_IN_CURVE_VERTICES_DGNV8_1 Advanced
+# ============================================================================
+# The following line controls whether or not complex elements are dropped
+# while we are reading
+#We don't expose _SPLIT_COMPLEX_CHAINS anymore as it is now deprecated since the introduction
+#of rich geometry
+#Restored _SPLIT_COMPLEX_CHAINS as of May 10, 2009
+DEFAULT_MACRO DGNV8_IN_SPLIT_COMPLEX_CHAINS_DGNV8_1 NO
+DGNV8_1_SPLIT_COMPLEX_CHAINS "$(DGNV8_IN_SPLIT_COMPLEX_CHAINS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_SPLIT_COMPLEX_CHAINS_DGNV8_1 YES%NO Drop Complex Chains/Shapes
+# ============================================================================
+# Should we split multi text
+DEFAULT_MACRO DGNV8_IN_SPLIT_MULTITEXT_DGNV8_1 YES
+DGNV8_1_SPLIT_MULTITEXT "$(DGNV8_IN_SPLIT_MULTITEXT_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_SPLIT_MULTITEXT_DGNV8_1 YES%NO Split Multi Text
+# ============================================================================
+#By default we explode dimension elements into its pieces
+DEFAULT_MACRO DGNV8_IN_EXPLODE_DIMENSION_ELEM_DGNV8_1 YES
+DGNV8_1_EXPLODE_DIMENSION_ELEM "$(DGNV8_IN_EXPLODE_DIMENSION_ELEM_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_EXPLODE_DIMENSION_ELEM_DGNV8_1 YES%NO Drop Dimensions
+# ============================================================================
+# PR#10117 - Indicate whether we want to apply world files (.wld) when reading in the features.
+DEFAULT_MACRO DGNV8_IN_APPLY_WORLD_FILE_DGNV8_1 YES
+DGNV8_1_APPLY_WORLD_FILE "$(DGNV8_IN_APPLY_WORLD_FILE_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_APPLY_WORLD_FILE_DGNV8_1 YES%NO Apply World File (.wld)
+# ============================================================================
+# Should we preserve the curves?
+DEFAULT_MACRO DGNV8_IN_PRESERVE_CURVES_DGNV8_1 NO
+DGNV8_1_PRESERVE_CURVES "$(DGNV8_IN_PRESERVE_CURVES_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_PRESERVE_CURVES_DGNV8_1 YES%NO Preserve curves
+# ============================================================================
+# PR#10553 - Set the boolean to yes if want to remove duplicate points.
+# Metafile default is NO but code default is YES for backwards compatibility
+DEFAULT_MACRO DGNV8_IN_REMOVE_DUPLICATES_DGNV8_1 NO
+DGNV8_1_REMOVE_DUPLICATES "$(DGNV8_IN_REMOVE_DUPLICATES_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_REMOVE_DUPLICATES_DGNV8_1 YES%NO Remove duplicate points:
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_ASSUME_MATCHING_UNITS_DGNV8_1 NO
+DGNV8_1_ASSUME_MATCHING_UNITS "$(DGNV8_IN_ASSUME_MATCHING_UNITS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_ASSUME_MATCHING_UNITS_DGNV8_1 YES%NO Assume master units equal working units:
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_UOR_SCALE_DGNV8_1 
+DGNV8_1_UOR_SCALE "$(DGNV8_IN_UOR_SCALE_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_UOR_SCALE_DGNV8_1 UOR to FME units scale factor:
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_UORS_PER_SUB_DGNV8_1 
+DGNV8_1_UORS_PER_SUB "$(DGNV8_IN_UORS_PER_SUB_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_UORS_PER_SUB_DGNV8_1 UORS PER SUB UNIT:
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_SUBS_PER_MASTER_DGNV8_1 
+DGNV8_1_SUBS_PER_MASTER "$(DGNV8_IN_SUBS_PER_MASTER_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_SUBS_PER_MASTER_DGNV8_1 SUBS PER MASTER UNIT:
+# ============================================================================
+# Value of elevation shift factor
+DEFAULT_MACRO DGNV8_IN_ELEVATION_SHIFT_FACTOR_DGNV8_1 
+DGNV8_1_ELEVATION_SHIFT_FACTOR "$(DGNV8_IN_ELEVATION_SHIFT_FACTOR_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_ELEVATION_SHIFT_FACTOR_DGNV8_1 Elevation Shift Factor
+# ============================================================================
+# Value of number of curve vertices
+DEFAULT_MACRO DGNV8_IN_CURVE_VERTICES_DGNV8_1 
+DGNV8_1_CURVE_VERTICES "$(DGNV8_IN_CURVE_VERTICES_DGNV8_1)"
+GUI OPTIONAL INTEGER DGNV8_IN_CURVE_VERTICES_DGNV8_1 Number of interpolated curve vertices
+DGNV8_1_ASSUME_MATCHING_UNITS "$(DGNV8_IN_ASSUME_MATCHING_UNITS_DGNV8_1)"
+DGNV8_1_USE_XREF_PARENT_MODEL "$(DGNV8_IN_USE_XREF_PARENT_MODEL_DGNV8_1)"
+DEFAULT_MACRO DGNV8_IN_USE_RICH_ARC_GEOM_DGNV8_1 YES
+DGNV8_1_USE_RICH_ARC_GEOM "$(DGNV8_IN_USE_RICH_ARC_GEOM_DGNV8_1)"
+# ===========================================================================
+DEFAULT_MACRO DGNV8_IN_NETWORK_AUTHENTICATION_DGNV8_1 
+DGNV8_1_NETWORK_AUTHENTICATION "$(DGNV8_IN_NETWORK_AUTHENTICATION_DGNV8_1)"
+GUI OPTIONAL AUTHENTICATOR DGNV8_IN_NETWORK_AUTHENTICATION_DGNV8_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================ 
+DEFAULT_MACRO DGNV8_IN_ATTRIBUTE_READING_DGNV8_1 ALL
+DGNV8_1_ATTRIBUTE_READING "$(DGNV8_IN_ATTRIBUTE_READING_DGNV8_1)"
+# ============================================================================ 
+DGNV8_1_GENERATE_FME_BUILD_NUM 20632
+# Allow complex chains to be returned as single feature. If this is turned on,
+# special handling must be done with the feature returned because for each complex
+# chain encountered, an aggregate with several parts of potentially different
+# geometries may be returned. The Workbench cannot handle this currently, so a
+# custom mapping file would be required.
+# DEFAULT_MACRO _AGGREGATE_COMPLEX_CHAINS NO
+# GUI OPTIONAL CHOICE _AGGREGATE_COMPLEX_CHAINS YES%NO Handle Complex Chains as Single Elements:
+# DGNV8_AGGREGATE_COMPLEX_CHAINS $(_AGGREGATE_COMPLEX_CHAINS_DGNV8_1)
+DGNV8_1_DATASET "$(SourceDataset_DGNV8_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "DGNV8_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER DGNV8 DGNV8_2
+# ============================================================================
+# The following GUI line prompts for a design file to be used as the
+# the destination of the data.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_DGNV8_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER DGNV8 DGNV8_2
+DEFAULT_MACRO DestDataset_DGNV8_2 $(DestDataset_DGNV8)
+GUI FILENAME DestDataset_DGNV8_2 Design_Files(*.dgn)|*.dgn|All_files(*)|* Destination Bentley MicroStation Design File:
+DEFAULT_MACRO SEED_FILE_DGNV8_2 $(SEED_FILE_DGNV8)
+GUI FILENAME_MUSTEXIST SEED_FILE_DGNV8_2 Design_Files(*.dgn)|*.dgn|All_files(*)|* Seed File (V8 only)
+DGNV8_2_SEED_FILE "$(SEED_FILE_DGNV8_2)"
+# ============================================================================
+# These settings override the global offset and unit information
+# contained in the seed file. By default they are set to blank
+# which means the seed file settings will be used.
+# technically, these are the same macro and directive names that are used by the
+# source as well. should not be a conflict, with the name generation of DEFAULT_VALUE
+# the default macro line and related directive line here are required to allow
+# WB generate calls to get defaults in the nav pane, from the settings box
+# ============================================================================
+# These settings override the global offset and unit information
+# contained in the seed file. By default they are set to blank
+# which means the seed file settings will be used.
+# ============================================================================
+# The following line controls how all the FME coordinates written to the
+# design file will be interpreted.
+# Valid values IGDS_MASTER_UNITS -- FME coordinates are treated as Master Units
+# IGDS_SUB_UNITS -- FME coordinates are treated as Sub Units
+# IGDS_UORS -- FME coordinates are treated as UORs
+DEFAULT_MACRO DGNV8_OUT_OUT_UNITS_DGNV8_2 IGDS_MASTER_UNITS
+DGNV8_2_OUT_UNITS "$(DGNV8_OUT_OUT_UNITS_DGNV8_2)"
+GUI LOOKUP_CHOICE DGNV8_OUT_OUT_UNITS_DGNV8_2 Master<space>Units,IGDS_MASTER_UNITS%Sub<space>Units,IGDS_SUB_UNITS%UORs,IGDS_UORS Output Units
+# ============================================================================
+# And set whether or not we allow area filling
+# lines.
+DEFAULT_MACRO DGNV8_OUT_ALLOW_FILL_DGNV8_2 YES
+DGNV8_2_ALLOW_FILL "$(DGNV8_OUT_ALLOW_FILL_DGNV8_2)"
+GUI CHOICE DGNV8_OUT_ALLOW_FILL_DGNV8_2 YES%NO Allow Area Fills
+# ============================================================================
+# Allow writing tags. Expose for V7, due to proxy, but only used for V8.
+DEFAULT_MACRO DGNV8_OUT_WRITE_TAGS_DGNV8_2 NO
+DGNV8_2_WRITE_TAGS "$(DGNV8_OUT_WRITE_TAGS_DGNV8_2)"
+GUI CHOICE DGNV8_OUT_WRITE_TAGS_DGNV8_2 YES%NO Write tags
+DEFAULT_MACRO DGNV8_OUT_CELL_LIBRARY_DGNV8_2 $(CELL_LIBRARY_DGNV8)
+DGNV8_2_CELL_LIBRARY "$(DGNV8_OUT_CELL_LIBRARY_DGNV8_2)"
+GUI OPTIONAL MULTIFILE DGNV8_OUT_CELL_LIBRARY_DGNV8_2 Cell_Library_Files(*.cel)|*.cel|All_files(*)|* Cell Library File:
+DEFAULT_MACRO DGNV8_OUT_DGNV8_WRT_ADV_PARM_GROUP_DGNV8_2 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_OUT_DGNV8_WRT_ADV_PARM_GROUP_DGNV8_2 FME_DISCLOSURE_CLOSED%DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_2%DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_2%DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_2%DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_2%DGNV8_OUT_RSC_FONT_FILE_DGNV8_2%DGNV8_OUT_OVERRIDE_ORIGIN Advanced
+# ============================================================================
+# And set whether or not we allow type 3 elements to be created for 2 point
+# lines.
+# override the settings specification for this to create a different navigator pane GUI
+#GUI CHOICE CREATE_LINE_ELEMENTS YES%NO Create Type 3 Line Elements:
+DEFAULT_MACRO DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_2 YES
+DGNV8_2_CREATE_LINE_ELEMENTS "$(DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_2)"
+GUI LOOKUP_CHOICE DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_2 "\"Type 3 Elements\",YES"%"\"Type 4 Elements\",NO" Two Point Line Output
+DEFAULT_MACRO DGNV8_OUT_RSC_FONT_FILE_DGNV8_2 
+DGNV8_2_RSC_FONT_FILE "$(DGNV8_OUT_RSC_FONT_FILE_DGNV8_2)"
+GUI OPTIONAL FILENAME_MUSTEXIST DGNV8_OUT_RSC_FONT_FILE_DGNV8_2 RSC_Files(*.rsc)|*.rsc|All_files(*)|* Resource Font File:
+# ============================================================================
+# If this is set to YES, then when named cells are written, they
+# will have their member coordinates (fromthecellmodel) scaled according to
+# the destination model (theseedfilemodel).
+DEFAULT_MACRO DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_2 YES
+DGNV8_2_SCALE_CELL_MODELS "$(DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_2)"
+GUI CHOICE DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_2 YES%NO Scale Cells to Destination Model
+#Allow user to create XFM store elements in destination, from seed file
+# This applies to both SS1 xfmstores, and SS3 elements type 106 and 107
+DEFAULT_MACRO DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_2 YES
+DGNV8_2_WRITE_XFM_DGNSTORES_FROM_SEED "$(DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_2)"
+GUI CHOICE DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_2 YES%NO Write XFM Reference Elements from Seed File
+#Allow user to specify a default cell to use when a cell is not in cell lib.
+DEFAULT_MACRO DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_2 
+DGNV8_2_DEFAULT_CELL_NAME "$(DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_2)"
+GUI OPTIONAL TEXT DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_2 Default Cell Name:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO DGNV8_OUT_DESTINATION_DATASETTYPE_VALIDATION_DGNV8_2 Yes
+DGNV8_2_DESTINATION_DATASETTYPE_VALIDATION "$(DGNV8_OUT_DESTINATION_DATASETTYPE_VALIDATION_DGNV8_2)"
+# ============================================================================ 
+DGNV8_2_GENERATE_FME_BUILD_NUM 20632
+DGNV8_2_DATASET "$(DestDataset_DGNV8_2)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)GS-INT_Cameroun_GAP_Overlap_Issues_Ver-02.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+DEFAULT_MACRO DATASET_KEYWORD_DGNV8_1 DGNV8_1
+DEFAULT_MACRO DATASET_KEYWORD_DGNV8_2 DGNV8_2
+# -------------------------------------------------------------------------
+
+DGNV8_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+DGNV8_1_FEATURE_TYPES $(FEATURE_TYPES)
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME GS-INT_Cameroun_GAP_Overlap_Issues_Ver-02
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+DGNV8_1_DEF "Vegetation_Grassland Savanna"   igds_level                   ""   igds_level_comment           ""   igds_level_color             0   igds_level_style             0   igds_level_weight            0   igds_level_display           yes   igds_level_freeze            no   igds_level_lock              no   igds_level_override_color    0   igds_use_level_override_color No   igds_level_override_style    0   igds_use_level_override_style No   igds_level_override_weight   0   igds_use_level_override_weight No
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_DGNV8_1)   INPUT FEATURE_TYPE *    ROUTE DGNV8 "DGNV8_1::Vegetation_Grassland Savanna" multi_reader_keyword,$(DATASET_KEYWORD_DGNV8_1) TO FME_GENERIC "::Vegetation_Grassland Savanna" ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+DGNV8_1_MERGE_DEF "DGNV8_1::Vegetation_Grassland Savanna" GLOB *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Vegetation_Grassland Savanna_DGNV8_1 Splitter"    INPUT FEATURE_TYPE "Vegetation_Grassland Savanna"    OUTPUT FEATURE_TYPE "Vegetation_Grassland Savanna_DGNV8_1"
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeExposer_2    INPUT  FEATURE_TYPE "Vegetation_Grassland Savanna_DGNV8_1"    OUTPUT FEATURE_TYPE AttributeExposer_2_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME AttributeFilter    INPUT  FEATURE_TYPE AttributeExposer_2_OUTPUT    OUTPUT FEATURE_TYPE AttributeFilter_FILTER
+FACTORY_DEF * AttributeFilterFactory FACTORY_NAME AttributeFilter_Filter COMMAND_PARM_EVALUATION SINGLE_PASS INPUT FEATURE_TYPE AttributeFilter_FILTER FILTER_ATTRIBUTE igds_level_name FILTER_VALUES <lt>EMPTY<gt> <lt>MISSING<gt> <lt>NULL<gt> <lt>UNFILTERED<gt> AOI Building_Polygon Building_Urban_built_up_area Hydro_Surface<space>Permanent Hydro_Surface<space>Temporary Vegetation_Bare<space>Soil Vegetation_Cultivation<space>area<space>liable<space>to<space>flooding Vegetation_Cultivation<space>area<space>with<space>trees Vegetation_Cultivation<space>area<space>without<space>trees Vegetation_Dense<space>Forest Vegetation_Galery<space>Forest Vegetation_Grassland Vegetation_Grassland<space>Savanna Vegetation_Light<space>Forest Vegetation_Mangrove Vegetation_Mine-Quarry Vegetation_Plantation Vegetation_Rice<space>field Vegetation_Rocky<space>Terrain Vegetation_Shrub<space>Savanna Vegetation_Swampy-Marshy-Wetland Vegetation_Tree<space>Savanna Hydro_Lake<space>Surface Landuse_Activity<space>area Landuse_Cemetery Landuse_Natural<space>soil Landuse_Sports<space>field Infra_Energy_Facility Hydro_Basin<space>surface Hydro_Canal<space>Surface Hydro_Dam<space>Polygon Rail_station Rail_bridge<space>polygon Road<space>Amenities_Facilities Road_bridge<space>Polygon PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT <lt>EMPTY<gt> FEATURE_TYPE AttributeFilter_<lt>EMPTY<gt> OUTPUT <lt>MISSING<gt> FEATURE_TYPE AttributeFilter_<lt>MISSING<gt> OUTPUT <lt>NULL<gt> FEATURE_TYPE AttributeFilter_<lt>NULL<gt> OUTPUT <lt>UNFILTERED<gt> FEATURE_TYPE AttributeFilter_<lt>UNFILTERED<gt> OUTPUT AOI FEATURE_TYPE AttributeFilter_AOI OUTPUT Building_Polygon FEATURE_TYPE AttributeFilter_Building_Polygon OUTPUT Building_Urban_built_up_area FEATURE_TYPE AttributeFilter_Building_Urban_built_up_area OUTPUT Hydro_Surface<space>Permanent FEATURE_TYPE AttributeFilter_Hydro_Surface<space>Permanent OUTPUT Hydro_Surface<space>Temporary FEATURE_TYPE AttributeFilter_Hydro_Surface<space>Temporary OUTPUT Vegetation_Bare<space>Soil FEATURE_TYPE AttributeFilter_Vegetation_Bare<space>Soil OUTPUT Vegetation_Cultivation<space>area<space>liable<space>to<space>flooding FEATURE_TYPE AttributeFilter_Vegetation_Cultivation<space>area<space>liable<space>to<space>flooding OUTPUT Vegetation_Cultivation<space>area<space>with<space>trees FEATURE_TYPE AttributeFilter_Vegetation_Cultivation<space>area<space>with<space>trees OUTPUT Vegetation_Cultivation<space>area<space>without<space>trees FEATURE_TYPE AttributeFilter_Vegetation_Cultivation<space>area<space>without<space>trees OUTPUT Vegetation_Dense<space>Forest FEATURE_TYPE AttributeFilter_Vegetation_Dense<space>Forest OUTPUT Vegetation_Galery<space>Forest FEATURE_TYPE AttributeFilter_Vegetation_Galery<space>Forest OUTPUT Vegetation_Grassland FEATURE_TYPE AttributeFilter_Vegetation_Grassland OUTPUT Vegetation_Grassland<space>Savanna FEATURE_TYPE AttributeFilter_Vegetation_Grassland<space>Savanna OUTPUT Vegetation_Light<space>Forest FEATURE_TYPE AttributeFilter_Vegetation_Light<space>Forest OUTPUT Vegetation_Mangrove FEATURE_TYPE AttributeFilter_Vegetation_Mangrove OUTPUT Vegetation_Mine-Quarry FEATURE_TYPE AttributeFilter_Vegetation_Mine-Quarry OUTPUT Vegetation_Plantation FEATURE_TYPE AttributeFilter_Vegetation_Plantation OUTPUT Vegetation_Rice<space>field FEATURE_TYPE AttributeFilter_Vegetation_Rice<space>field OUTPUT Vegetation_Rocky<space>Terrain FEATURE_TYPE AttributeFilter_Vegetation_Rocky<space>Terrain OUTPUT Vegetation_Shrub<space>Savanna FEATURE_TYPE AttributeFilter_Vegetation_Shrub<space>Savanna OUTPUT Vegetation_Swampy-Marshy-Wetland FEATURE_TYPE AttributeFilter_Vegetation_Swampy-Marshy-Wetland OUTPUT Vegetation_Tree<space>Savanna FEATURE_TYPE AttributeFilter_Vegetation_Tree<space>Savanna OUTPUT Hydro_Lake<space>Surface FEATURE_TYPE AttributeFilter_Hydro_Lake<space>Surface OUTPUT Landuse_Activity<space>area FEATURE_TYPE AttributeFilter_Landuse_Activity<space>area OUTPUT Landuse_Cemetery FEATURE_TYPE AttributeFilter_Landuse_Cemetery OUTPUT Landuse_Natural<space>soil FEATURE_TYPE AttributeFilter_Landuse_Natural<space>soil OUTPUT Landuse_Sports<space>field FEATURE_TYPE AttributeFilter_Landuse_Sports<space>field OUTPUT Infra_Energy_Facility FEATURE_TYPE AttributeFilter_Infra_Energy_Facility OUTPUT Hydro_Basin<space>surface FEATURE_TYPE AttributeFilter_Hydro_Basin<space>surface OUTPUT Hydro_Canal<space>Surface FEATURE_TYPE AttributeFilter_Hydro_Canal<space>Surface OUTPUT Hydro_Dam<space>Polygon FEATURE_TYPE AttributeFilter_Hydro_Dam<space>Polygon OUTPUT Rail_station FEATURE_TYPE AttributeFilter_Rail_station OUTPUT Rail_bridge<space>polygon FEATURE_TYPE AttributeFilter_Rail_bridge<space>polygon OUTPUT Road<space>Amenities_Facilities FEATURE_TYPE AttributeFilter_Road<space>Amenities_Facilities OUTPUT Road_bridge<space>Polygon FEATURE_TYPE AttributeFilter_Road_bridge<space>Polygon
+# -------------------------------------------------------------------------
+MACRO OUTPUT_POINT_FTYPE not_selected
+MACRO OUTPUT_POINT_FTYPE GeometryFilter_4_POINT
+MACRO OUTPUT_LINE_FTYPE not_selected
+MACRO OUTPUT_LINE_FTYPE GeometryFilter_4_LINE
+MACRO OUTPUT_AREA_FTYPE not_selected
+MACRO OUTPUT_AREA_FTYPE GeometryFilter_4_AREA
+MACRO OUTPUT_INSTANCE_FTYPE not_selected
+Lookup GeometryFilter_4_RouterTable   ""  "not_selected"   fme_point $(OUTPUT_POINT_FTYPE)   fme_line $(OUTPUT_LINE_FTYPE)   fme_area $(OUTPUT_AREA_FTYPE)
+MACRO COLLECTION_HANDLING NOT_THIS_TIME
+MACRO INSTANCE_FILTERING *
+INCLUDE [    if 0 {       puts "MACRO COLLECTION_HANDLING *";       if <Unused> {          puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";       };    };    if {{$(OUTPUT_INSTANCE_FTYPE)} == "not_selected"} {       puts "MACRO INSTANCE_FILTERING NOT_THIS_TIME";    }; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_4_InputPassThrough    INPUT  FEATURE_TYPE AttributeFilter_AOI    INPUT  FEATURE_TYPE AttributeFilter_Building_Urban_built_up_area    INPUT  FEATURE_TYPE AttributeFilter_Hydro_Surface<space>Permanent    INPUT  FEATURE_TYPE AttributeFilter_Hydro_Surface<space>Temporary    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Bare<space>Soil    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Cultivation<space>area<space>liable<space>to<space>flooding    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Cultivation<space>area<space>with<space>trees    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Cultivation<space>area<space>without<space>trees    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Dense<space>Forest    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Galery<space>Forest    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Grassland    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Grassland<space>Savanna    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Light<space>Forest    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Mangrove    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Mine-Quarry    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Plantation    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Rice<space>field    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Rocky<space>Terrain    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Shrub<space>Savanna    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Swampy-Marshy-Wetland    INPUT  FEATURE_TYPE AttributeFilter_Vegetation_Tree<space>Savanna    INPUT  FEATURE_TYPE AttributeFilter_Hydro_Lake<space>Surface    INPUT  FEATURE_TYPE AttributeFilter_Building_Polygon    INPUT  FEATURE_TYPE AttributeFilter_Landuse_Activity<space>area    INPUT  FEATURE_TYPE AttributeFilter_Landuse_Cemetery    INPUT  FEATURE_TYPE AttributeFilter_Landuse_Natural<space>soil    INPUT  FEATURE_TYPE AttributeFilter_Landuse_Sports<space>field    INPUT  FEATURE_TYPE AttributeFilter_Infra_Energy_Facility    INPUT  FEATURE_TYPE AttributeFilter_Hydro_Basin<space>surface    INPUT  FEATURE_TYPE AttributeFilter_Hydro_Canal<space>Surface    INPUT  FEATURE_TYPE AttributeFilter_Hydro_Dam<space>Polygon    INPUT  FEATURE_TYPE AttributeFilter_Rail_station    INPUT  FEATURE_TYPE AttributeFilter_Rail_bridge<space>polygon    INPUT  FEATURE_TYPE AttributeFilter_Road<space>Amenities_Facilities    INPUT  FEATURE_TYPE AttributeFilter_Road_bridge<space>Polygon    OUTPUT FEATURE_TYPE GeometryFilter_4___Input___       @Geometry(FIX_FMETYPE_FMEGEOMETRY)
+FACTORY_DEF $(INSTANCE_FILTERING) TestFactory    FACTORY_NAME GeometryFilter_4_InstanceTest    INPUT FEATURE_TYPE GeometryFilter_4___Input___    TEST @Geometry(IS_GEOMETRY_INSTANCE) == 1    OUTPUT PASSED FEATURE_TYPE $(OUTPUT_INSTANCE_FTYPE)    OUTPUT FAILED FEATURE_TYPE GeometryFilter_4___Input___
+FACTORY_DEF $(COLLECTION_HANDLING) TestFactory    FACTORY_NAME GeometryFilter_4_CollectionTest    INPUT FEATURE_TYPE GeometryFilter_4___Input___    TEST &fme_type == "fme_collection"    OUTPUT FAILED FEATURE_TYPE GeometryFilter_4___Not_Collection___    OUTPUT PASSED FEATURE_TYPE GeometryFilter_4___Collection___
+FACTORY_DEF $(COLLECTION_HANDLING) DeaggregateFactory    FACTORY_NAME GeometryFilter_4_Deagg    INPUT FEATURE_TYPE GeometryFilter_4___Collection___    HOMOGENIZE_COLLECTIONS YES    RECURSIVE YES    SET_FME_TYPE YES    INSTANTIATE_GEOMETRY_INSTANCES_NEW <Unused>    OUTPUT POINT FEATURE_TYPE GeometryFilter_4___HomogeneousAggregate___    OUTPUT LINE FEATURE_TYPE GeometryFilter_4___HomogeneousAggregate___    OUTPUT POLYGON FEATURE_TYPE GeometryFilter_4___HomogeneousAggregate___    OUTPUT DONUT FEATURE_TYPE GeometryFilter_4___HomogeneousAggregate___    OUTPUT AGGREGATE FEATURE_TYPE GeometryFilter_4___HomogeneousAggregate___
+FACTORY_DEF * TeeFactory    FACTORY_NAME GeometryFilter_4_RouterPrepper    INPUT FEATURE_TYPE GeometryFilter_4___HomogeneousAggregate___    INPUT FEATURE_TYPE GeometryFilter_4___Not_Collection___    INPUT FEATURE_TYPE GeometryFilter_4___Input___    OUTPUT FEATURE_TYPE GeometryFilter_4___Prepped___        GeometryFilter_4_1739b30d_6a60_4648_b598_bd2677009e6e9_targetFeatureType @Lookup(GeometryFilter_4_RouterTable,&fme_type)
+FACTORY_DEF * TestFactory    FACTORY_NAME GeometryFilter_4_Router    INPUT FEATURE_TYPE GeometryFilter_4___Prepped___    TEST @Value(GeometryFilter_4_1739b30d_6a60_4648_b598_bd2677009e6e9_targetFeatureType) != "not_selected"    OUTPUT PASSED FEATURE_TYPE * @FeatureType(@Value(GeometryFilter_4_1739b30d_6a60_4648_b598_bd2677009e6e9_targetFeatureType))                                 @RemoveAttributes(GeometryFilter_4_1739b30d_6a60_4648_b598_bd2677009e6e9_targetFeatureType)    OUTPUT FAILED FEATURE_TYPE GeometryFilter_4_<UNFILTERED>        @RemoveAttributes(GeometryFilter_4_1739b30d_6a60_4648_b598_bd2677009e6e9_targetFeatureType)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_5    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE GeometryFilter_4_<UNFILTERED>    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "igds_level_name" "SET_TO" "ERR_Invalid_geometry_<at>Value<openparen>igds_level_name<closeparen>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_5_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} OverlayFactory    FACTORY_NAME AreaOnAreaOverlayer_4    INPUT POLYGON FEATURE_TYPE GeometryFilter_4_AREA    FLUSH_WHEN_GROUPS_CHANGE No    ACCUMULATE_ATTRIBUTES ONE    LIST_NAME "_area"    LIST_ATTRS_TO_INCLUDE { igds_level_name }    LIST_ATTRS_TO_INCLUDE_MODE SELECTED    CONNECT_Z_MODE FIRST_WINS    DEAGGREGATE_INPUT Yes    OVERLAP_COUNT_ATTRIBUTE _overlaps    MODE COMPLETE    OVERLAY_TYPE AREA_ON_AREA    CLEANING_TOLERANCE 0.0001    OUTPUT_REMNANTS    SELF_INTERSECTION NO    OUTPUT POLYGON  FEATURE_TYPE AreaOnAreaOverlayer_4_AREA    OUTPUT REMNANTS FEATURE_TYPE AreaOnAreaOverlayer_4_REMNANTS    OUTPUT ILLEGAL_GEOM FEATURE_TYPE AreaOnAreaOverlayer_4_<REJECTED>
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_4    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AreaOnAreaOverlayer_4_REMNANTS    INPUT  FEATURE_TYPE AreaOnAreaOverlayer_4_<REJECTED>    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "igds_level_name" "SET_TO" "ERR_Others_<at>Value<openparen>igds_level_name<closeparen>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_4_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME TestFilter    INPUT  FEATURE_TYPE AreaOnAreaOverlayer_4_AREA    OUTPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_Condition_1 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_0 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_overlaps<closeparen>,TestFilter) = 1 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE TestFilter_GAP_Data OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_Condition_2 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_1 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_overlaps<closeparen>,TestFilter) = 2 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE TestFilter_No<space>Overlap OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_2
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_Condition_3 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_2 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_overlaps<closeparen>,TestFilter) = 3 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE TestFilter_One_Layer-Overlap OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_3
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_Condition_4 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_3 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_overlaps<closeparen>,TestFilter) = 4 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE TestFilter_Two_Layer-Overlap OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_4
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_Condition_5 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_4 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_overlaps<closeparen>,TestFilter) = 5 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE TestFilter_Three_Layer-Overlap OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_5
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_Condition_6 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_5 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_overlaps<closeparen>,TestFilter) = 6 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE TestFilter_Four_Layer-Overlap OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_6
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_Condition_7 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_6 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_overlaps<closeparen>,TestFilter) = 7 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE TestFilter_Five_Layer-Overlap OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_7
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_Condition_8 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_7 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_overlaps<closeparen>,TestFilter) = 8 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE TestFilter_Six_Layer-Overlap OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_8
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_Condition_9 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_8 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_overlaps<closeparen>,TestFilter) = 9 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE TestFilter_Seven_Layer-Overlap OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_9
+FACTORY_DEF * TestFactory FACTORY_NAME TestFilter_Condition_10 INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_9 TEST @EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>_overlaps<closeparen>,TestFilter) = 10 ENCODED BOOLEAN_OPERATOR OR COMPOSITE_TEST_EXPR "1" FEATURE_TABLE_SHIM_SUPPORT Yes PRESERVE_FEATURE_ORDER PER_OUTPUT_PORT OUTPUT PASSED FEATURE_TYPE TestFilter_Eight_Layer-Overlap OUTPUT FAILED FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_10
+FACTORY_DEF * TeeFactory FACTORY_NAME TestFilter_<lt>UNFILTERED<gt> INPUT FEATURE_TYPE TestFilter_TESTFILTERINPUTLINE_10 OUTPUT FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>
+# -------------------------------------------------------------------------
+FACTORY_DEF * TeeFactory    FACTORY_NAME Junction_2    INPUT  FEATURE_TYPE TestFilter_<lt>UNFILTERED<gt>    INPUT  FEATURE_TYPE TestFilter_One_Layer-Overlap    INPUT  FEATURE_TYPE TestFilter_Two_Layer-Overlap    INPUT  FEATURE_TYPE TestFilter_Three_Layer-Overlap    INPUT  FEATURE_TYPE TestFilter_Four_Layer-Overlap    INPUT  FEATURE_TYPE TestFilter_Five_Layer-Overlap    INPUT  FEATURE_TYPE TestFilter_Six_Layer-Overlap    INPUT  FEATURE_TYPE TestFilter_Seven_Layer-Overlap    INPUT  FEATURE_TYPE TestFilter_Eight_Layer-Overlap    OUTPUT FEATURE_TYPE Junction_2_Output
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_3    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Junction_2_Output    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "igds_level_name" "SET_TO" "ERR_Overlap_<at>Value<openparen>igds_level_name<closeparen>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_3_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_2    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE TestFilter_No<space>Overlap    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "igds_level_name" "SET_TO" "NO_ERRS_<at>Value<openparen>igds_level_name<closeparen>" }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE TestFilter_GAP_Data    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "igds_level_name" "SET_TO" "Err_Gap_<at>Value<openparen>igds_level_name<closeparen>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_8    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE GeometryFilter_4_LINE    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "igds_level_name" "SET_TO" "ERR_Line_<at>Value<openparen>igds_level_name<closeparen>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_8_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_7    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE GeometryFilter_4_POINT    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "igds_level_name" "SET_TO" "ERR_Point_<at>Value<openparen>igds_level_name<closeparen>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_7_OUTPUT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME AttributeCreator_6    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE AttributeFilter_<lt>EMPTY<gt>    INPUT  FEATURE_TYPE AttributeFilter_<lt>MISSING<gt>    INPUT  FEATURE_TYPE AttributeFilter_<lt>NULL<gt>    INPUT  FEATURE_TYPE AttributeFilter_<lt>UNFILTERED<gt>    MULTI_FEATURE_MODE NO    NULL_ATTR_MODE NO_OP     ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV     ATTR_ACTION { "" "igds_level_name" "SET_TO" "ERR_Wrong_Level_Name_<at>Value<openparen>igds_level_name<closeparen>" }    OUTPUT OUTPUT FEATURE_TYPE AttributeCreator_6_OUTPUT
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC AttributeCreator_6_OUTPUT TO DGNV8 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Level1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>igds_level_name<lt>closeparen<gt><comma>Level1<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_7_OUTPUT TO DGNV8 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Level1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>igds_level_name<lt>closeparen<gt><comma>Level1<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_8_OUTPUT TO DGNV8 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Level1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>igds_level_name<lt>closeparen<gt><comma>Level1<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_OUTPUT TO DGNV8 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Level1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>igds_level_name<lt>closeparen<gt><comma>Level1<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_3_OUTPUT TO DGNV8 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Level1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>igds_level_name<lt>closeparen<gt><comma>Level1<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_4_OUTPUT TO DGNV8 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Level1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>igds_level_name<lt>closeparen<gt><comma>Level1<closeparen> GEOMETRY    ROUTE FME_GENERIC AttributeCreator_5_OUTPUT TO DGNV8 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Level1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>igds_level_name<lt>closeparen<gt><comma>Level1<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+DGNV8_2_DEF Level1   igds_level                   ""   igds_level_comment           ""   igds_level_color             ""   igds_level_style             ""   igds_level_weight            ""   igds_level_display           Yes   igds_level_freeze            No   igds_level_lock              No   igds_level_override_color    From_Seed_File   igds_use_level_override_color From_Seed_File   igds_level_override_style    From_Seed_File   igds_use_level_override_style From_Seed_File   igds_level_override_weight   From_Seed_File   igds_use_level_override_weight From_Seed_File
