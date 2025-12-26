@@ -1,0 +1,855 @@
+#! <?xml version="1.0" encoding="utf-8" ?>
+#! <WORKSPACE
+#    
+#    
+#    Command-line to run this workspace:
+#    
+#    
+#    Q:\SAFFME2015.V01\VFS\Prog\FME\fme.exe X:\OKG\DataBeheer\GISCompetenceCenter\Systemen\FME\Examples\RasterTransparancy\RasterTransparancy.fmw
+#          --SourceDataset_GEOTIFF "\\geoportaal\GPL_Extern\TOP25_022015\67B.TIF"
+#    
+#    
+#! MULTI_WRITER_DATASET_ORDER="BY_ID"
+#! END_PYTHON=""
+#! WARN_INVALID_XFORM_PARAM="Yes"
+#! END_TCL=""
+#! LOG_MAX_RECORDED_FEATURES="200"
+#! ZOOM_SCALE="100"
+#! LAST_SAVE_DATE="2017-03-29T15:31:37"
+#! LAST_SAVE_BUILD="FME(R) 2015.1.3.1 (20151117 - Build 15573 - WIN32)"
+#! LOG_FILE=""
+#! FME_GEOMETRY_HANDLING="Enhanced"
+#! SOURCE="NONE"
+#! CATEGORY=""
+#! FME_DOCUMENT_PRIORGUID="3a27c2c3-4562-4c4a-8f7d-6b24cbc70432"
+#! FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#! DESTINATION_ROUTING_FILE=""
+#! SHOW_INFO_NODES="true"
+#! FME_SERVER_SERVICES=""
+#! DOC_TOP_LEFT="72.0007 -1170.76"
+#! REQUIREMENTS_KEYWORD=""
+#! DESTINATION="NONE"
+#! TITLE=""
+#! REQUIREMENTS=""
+#! FME_DOCUMENT_GUID="64cce4b3-abc0-403f-bfab-5ba761df2189"
+#! HISTORY=""
+#! DESCRIPTION=""
+#! ATTR_TYPE_ENCODING="SDF"
+#! REDIRECT_TERMINATORS="NONE"
+#! SOURCE_ROUTING_FILE=""
+#! FME_STROKE_MAX_DEVIATION="0"
+#! BEGIN_TCL=""
+#! BEGIN_PYTHON=""
+#! PASSWORD=""
+#! IGNORE_READER_FAILURE="No"
+#! LEGAL_TERMS_CONDITIONS=""
+#! FME_BUILD_NUM="15573"
+#! MAX_LOG_FEATURES="200"
+#! USAGE=""
+#! FME_REPROJECTION_ENGINE="FME"
+#! LOG_MAX_PRECISION="Yes"
+#! WORKSPACE_VERSION="1"
+#! DOC_EXTENTS="851.995 1128.76"
+#! SHOW_ANNOTATIONS="true"
+#! VIEW_POSITION="-90.0009 0"
+#! >
+#! <DATASETS>
+#! <DATASET
+#! IS_SOURCE="true"
+#! ROLE="READER"
+#! FORMAT="GEOTIFF"
+#! DATASET="$(SourceDataset_GEOTIFF)"
+#! KEYWORD="GEOTIFF_1"
+#! MULTI_GEOM_ALLOWED="false"
+#! ATTR_MAX_LENGTH="60"
+#! ATTR_CASE="ANY"
+#! ALLOWED_FEAT_TYPES=""
+#! WRITE_DEFS="true"
+#! DEFLINE_TEMPLATE=""
+#! DEFLINE_ATTRS="true"
+#! EXPOSABLE_ATTRS="fme_sweep_angle float fme_type char(50) multi_reader_full_id integer fme_basename char(50) geotiff_number_of_bits_per_cell decimal(1,0) geotiff_private_keys{}.id integer geotiff_tifftag_documentname char(255) fme_geometry fme_char(50) geotiff_tifftag_copyright char(255) geotiff_photometric_interpretation char(10) fme_text_size float geotiff_tifftag_software char(255) geotiff_tifftag_yresolution float geotiff_type char(255) fme_color char(50) fme_secondary_axis float geotiff_tifftag_artist char(255) geotiff_tifftag_xresolution float multi_reader_type char(50) fme_primary_axis float multi_reader_id integer geotiff_tifftag_minsamplevalue integer fme_feature_type char(50) geotiff_byte_order char(7) fme_text_string char(50) fme_fill_color char(50) geotiff_private_keys{}.value char(255) fme_rotation float fme_dataset char(50) geotiff_area_or_point char(255) geotiff_subdataset_description char(255) multi_reader_keyword char(50) geotiff_tifftag_resolutionunit decimal(1,0) geotiff_tifftag_datetime datetime geotiff_interleaving_type char(3) geotiff_subdataset_name char(255) geotiff_compression_method char(9) geotiff_tifftag_hostcomputer char(255) geotiff_tifftag_maxsamplevalue integer geotiff_tifftag_imagedescription char(255) geotiff_private_keys{}.type char(6) fme_start_angle float"
+#! DEFLINE_PARMS=""
+#! ATTR_INDEX_TYPES=""
+#! ATTR_NAME_INVALID_CHARS=""
+#! SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#! ENABLED="true"
+#! DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#! DATASET_TYPE="FILEDIR"
+#! GENERATE_FME_BUILD_NUM="15573"
+#! START_FEATURE=""
+#! COORDSYS=""
+#! MAX_FEATURES=""
+#! MAX_FEATURES_PER_FEATURE_TYPE=""
+#! MIN_FEATURES=""
+#! FEATURE_TYPES=""
+#! >
+#! <METAFILE_PARAMETER
+#! NAME="WRITER_DATASET_HINT"
+#! VALUE="Specify a folder for the GeoTIFF file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="AUTO_FANOUT_ATTRIBUTE"
+#! VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_AUTO_EXPOSE"
+#! VALUE="fme_basename char(50)"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="ADVANCED_PARMS"
+#! VALUE="GEOTIFF_IN_IGNORE_RASTER_TYPE_KEY GEOTIFF_IN_PREFER_FILE_CS_UNITS GEOTIFF_IN_READ_OFFSETS_IN_CS_UNITS GEOTIFF_OUT_IGNORE_RASTER_TYPE_KEY GEOTIFF_OUT_WRITE_OFFSETS_IN_CS_UNITS GEOTIFF_OUT_WRITE_PROJECTED_COORDSYS_AS_EPSG_CODE GEOTIFF_OUT_WRITE_GEOGRAPHIC_COORDSYS_AS_EPSG_CODE GEOTIFF_OUT_WRITE_GEOGRAPHIC_KEYS_FOR_PROJECTED_COORDSYS GEOTIFF_OUT_WRITE_ESRI_COMPATIBLE_COORDSYS"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="DATASET_NAME"
+#! VALUE="tif file"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="MIME_TYPE"
+#! VALUE="image/TIFF"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_NAME"
+#! VALUE="Raster File"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="READER_DATASET_HINT"
+#! VALUE="Select the GeoTIFF file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#! NAME="FEATURE_TYPE_DEFAULT_NAME"
+#! VALUE="Raster1"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_varchar(width)"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(width)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(254)"
+#! FME_TYPE="fme_buffer"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="char(1)"
+#! FME_TYPE="fme_char(width)"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="datetime"
+#! FME_TYPE="fme_datetime"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="time"
+#! FME_TYPE="fme_time"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="date"
+#! FME_TYPE="fme_date"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="decimal(width,decimal)"
+#! FME_TYPE="fme_decimal(width,decimal)"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real64"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="float"
+#! FME_TYPE="fme_real32"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_int32"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="decimal(11,0)"
+#! FME_TYPE="fme_uint32"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="decimal(20,0)"
+#! FME_TYPE="fme_int64"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="decimal(20,0)"
+#! FME_TYPE="fme_uint64"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="logical"
+#! FME_TYPE="fme_boolean"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="smallint"
+#! FME_TYPE="fme_int16"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="integer"
+#! FME_TYPE="fme_uint16"
+#! FORMAT="GEOTIFF"
+#! />
+#! <DATA_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="smallint"
+#! FME_TYPE="fme_uint8"
+#! FORMAT="GEOTIFF"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geotiff_raster"
+#! FME_TYPE="fme_raster"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geotiff_none"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_point"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_text"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_line"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_arc"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_area"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_ellipse"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_rectangle"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_rounded_rectangle"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_no_geom"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_surface"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_solid"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="fme_no_map"
+#! FME_TYPE="fme_point_cloud"
+#! FORMAT="GEOTIFF"
+#! />
+#! <GEOM_TYPE
+#! IS_SOURCE="true"
+#! FORMAT_TYPE="geotiff_none"
+#! FME_TYPE="fme_collection"
+#! FORMAT="GEOTIFF"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#! IS_SOURCE="true"
+#! NODE_NAME="GEOTIFF"
+#! FEATURE_TYPE_NAME=""
+#! FEATURE_TYPE_NAME_QUALIFIER=""
+#! IS_EDITABLE="false"
+#! IDENTIFIER="1"
+#! FEAT_GEOMTYPE="geotiff_raster"
+#! POSITION="100 -230"
+#! BOUNDING_RECT="100 -230 -1 -1"
+#! ORDER="5e+014"
+#! COLLAPSED="true"
+#! KEYWORD="GEOTIFF_1"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! HIDDEN_USER_ATTRS=""
+#! MERGE_FILTER=""
+#! MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#! MERGE_FILTER_CASE_SENSITIVE="false"
+#! DYNAMIC_SCHEMA="false"
+#! >
+#! <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#! GUI_LINE="GUI MULTIFILE SourceDataset_GEOTIFF GeoTIFF_Files(*.tif;*.tiff;*.itiff;*.ovr)|*.tif;*.tiff;*.itiff;*.ovr|All_Files(*)|* Source GeoTIFF File(s):"
+#! DEFAULT_VALUE="\\geoportaal\GPL_Extern\TOP25_022015\67B.TIF"
+#! IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <COMMENTS>
+#! <COMMENT
+#! IDENTIFIER="14"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Get rid of palettes in the source&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="923.996 -376.003"
+#! TOP_LEFT="923.996 -376.003"
+#! BOTTOM_RIGHT="922.996 -375.003"
+#! BOUNDING_RECT="923.996 -376.003 -1 -1"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="11"
+#! />
+#! <COMMENT
+#! IDENTIFIER="15"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Add an alpha band&lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Be sure to set nodata value to the value used in the source&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="828.999 -627.007"
+#! TOP_LEFT="828.999 -627.007"
+#! BOTTOM_RIGHT="827.999 -626.007"
+#! BOUNDING_RECT="828.999 -627.007 -1 -1"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="4"
+#! />
+#! <COMMENT
+#! IDENTIFIER="17"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Tell the raster that is is from now on a &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;raster using transparancy&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="828.999 -879.759"
+#! TOP_LEFT="828.999 -879.759"
+#! BOTTOM_RIGHT="827.999 -878.759"
+#! BOUNDING_RECT="828.999 -879.759 -1 -1"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="8"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="16"
+#! />
+#! <COMMENT
+#! IDENTIFIER="18"
+#! COMMENT_VALUE="&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;&#10;&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;&#10;p, li { white-space: pre-wrap; }&#10;&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;This applies an alpha band (transparancy) &lt;/p&gt;&#10;&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt; to a raster&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;"
+#! POSITION="72.0007 -42.0004"
+#! TOP_LEFT="72.0007 -42.0004"
+#! BOTTOM_RIGHT="822.001 -92.0004"
+#! BOUNDING_RECT="72.0007 -42.0004 750 50"
+#! ORDER="5e+014"
+#! FOLLOW_ANCHOR="true"
+#! INFO_NODE="false"
+#! COLOUR="1,1,0.784314,0.196078"
+#! SIZE_POLICY="10"
+#! COMMENT_TYPE="REGULAR"
+#! ANCHORED_NODE="0"
+#! />
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#! IDENTIFIER="2"
+#! TYPE="Inspector"
+#! VERSION="3"
+#! POSITION="876.002 -230"
+#! BOUNDING_RECT="876.002 -230 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15573"
+#! >
+#! <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="GEOTIFF"/>
+#! <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#! <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#! <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="4"
+#! TYPE="RasterBandAdder"
+#! VERSION="0"
+#! POSITION="133 -693.007"
+#! BOUNDING_RECT="133 -693.007 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15573"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterBandAdder"/>
+#! <XFORM_PARM PARM_NAME="CELL_VALUE" PARM_VALUE="128"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="DATA_VALUES_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="NODATA_VALUE" PARM_VALUE="255"/>
+#! <XFORM_PARM PARM_NAME="INTERPRETATION_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="INTERPRETATION" PARM_VALUE="Alpha8"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="11"
+#! TYPE="RasterPaletteResolver"
+#! VERSION="0"
+#! POSITION="100 -436.003"
+#! BOUNDING_RECT="100 -436.003 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15573"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterPaletteResolver"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="16"
+#! TYPE="RasterInterpretationCoercer"
+#! VERSION="1"
+#! POSITION="184.999 -930.759"
+#! BOUNDING_RECT="184.999 -930.759 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="true"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15573"
+#! >
+#! <OUTPUT_FEAT NAME="OUTPUT"/>
+#! <FEAT_COLLAPSED COLLAPSED="0"/>
+#! <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#! <XFORM_PARM PARM_NAME="CONVERSION_OPTIONS_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="COLOR_TO_COLOR" PARM_VALUE="Scale by data type"/>
+#! <XFORM_PARM PARM_NAME="NUMERIC_TO_NUMERIC" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterInterpretationCoercer_2"/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="FLOAT_TO_INTEGER" PARM_VALUE="Round"/>
+#! <XFORM_PARM PARM_NAME="NUMERIC_TO_COLOR" PARM_VALUE="Scale by data values"/>
+#! <XFORM_PARM PARM_NAME="COLOR_TO_NUMERIC" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="INTERPRETATION_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="INTERPRETATION" PARM_VALUE="RGB24"/>
+#! <XFORM_PARM PARM_NAME="RGBA_TO_RGB" PARM_VALUE="Apply the alpha band"/>
+#! <XFORM_PARM PARM_NAME="RGB_TO_RGBA" PARM_VALUE="&lt;Unused&gt;"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#! IDENTIFIER="19"
+#! TYPE="Inspector"
+#! VERSION="3"
+#! POSITION="320.996 -1170.76"
+#! BOUNDING_RECT="320.996 -1170.76 -1 -1"
+#! ORDER="5e+014"
+#! PARMS_EDITED="false"
+#! ENABLED="true"
+#! LAST_PARM_EDIT="15573"
+#! >
+#! <XFORM_PARM PARM_NAME="THINNER_INTERVAL" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="TACKATTRS" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="AREA_COLOR" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="RASTER_START_COL" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterInterpretationCoercer_2_Output"/>
+#! <XFORM_PARM PARM_NAME="VECTOR_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="PEN_COLOR" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="RASTER_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="POINTCLOUD_GROUP" PARM_VALUE=""/>
+#! <XFORM_PARM PARM_NAME="THINNER_MAX_NUM_POINTS" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="RASTER_NUM_COLS" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="RASTER_VISUALIZATION_OPTION" PARM_VALUE="No Reduction"/>
+#! <XFORM_PARM PARM_NAME="RASTER_START_ROW" PARM_VALUE="&lt;Unused&gt;"/>
+#! <XFORM_PARM PARM_NAME="THINNER_TYPE_DISPLAY" PARM_VALUE="No Thinning"/>
+#! <XFORM_PARM PARM_NAME="RASTER_NUM_ROWS" PARM_VALUE="&lt;Unused&gt;"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#! IDENTIFIER="3"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="2"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="12"
+#! SOURCE_NODE="1"
+#! TARGET_NODE="11"
+#! SOURCE_PORT_DESC="-1"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="13"
+#! SOURCE_NODE="11"
+#! TARGET_NODE="4"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="22"
+#! SOURCE_NODE="16"
+#! TARGET_NODE="19"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#! IDENTIFIER="20"
+#! SOURCE_NODE="4"
+#! TARGET_NODE="16"
+#! SOURCE_PORT_DESC="fo 0"
+#! TARGET_PORT_DESC="fi 0"
+#! ENABLED="true"
+#! EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+#! 
+GUI IGNORE SourceDataset_GEOTIFF_1,GEOTIFF_IN_APPLY_GCPS_GEOTIFF_1,GEOTIFF_IN_GCP_INTERPOLATION_METHOD_GEOTIFF_1,GEOTIFF_IN_EXPOSE_ATTRS_GROUP_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_MINX_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_MINY_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_MAXX_GEOTIFF_1,GEOTIFF_IN_SEARCH_ENVELOPE_MAXY_GEOTIFF_1,GEOTIFF_IN_CLIP_TO_ENVELOPE_GEOTIFF_1,GEOTIFF_IN_GEOTIFF_RDR_ADV_PARM_GROUP_GEOTIFF_1,GEOTIFF_IN_PREFER_FILE_CS_UNITS_GEOTIFF_1,GEOTIFF_IN_READ_OFFSETS_IN_CS_UNITS_GEOTIFF_1,GEOTIFF_IN_IGNORE_RASTER_TYPE_KEY_GEOTIFF_1,GEOTIFF_IN_NETWORK_AUTHENTICATION_GEOTIFF_1,SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEOTIFF_1
+DEFAULT_MACRO SourceDataset_GEOTIFF \\geoportaal\GPL_Extern\TOP25_022015\67B.TIF
+GUI MULTIFILE SourceDataset_GEOTIFF GeoTIFF_Files(*.tif;*.tiff;*.itiff;*.ovr)|*.tif;*.tiff;*.itiff;*.ovr|All_Files(*)|* Source GeoTIFF File(s):
+INCLUDE [ if {{$(SourceDataset_GEOTIFF)} == {}} { puts_real {Parameter 'SourceDataset_GEOTIFF' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE GEOTIFF
+READER_KEYWORD GEOTIFF_1
+READER_GEN_DIRECTIVES READ_OFFSETS_IN_CS_UNITS,No,GEOTIFF_RDR_ADV_PARM_GROUP,,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXY,0,FEATURE_TYPE_NAME,FORMAT_NAME,USE_SEARCH_ENVELOPE,NO,CLIP_TO_ENVELOPE,NO,APPLY_GCPS,No,GCP_INTERPOLATION_METHOD,<lt>Unused<gt>,EXPOSE_ATTRS_GROUP,,GEOTIFF_EXPOSE_FORMAT_ATTRS,,PREFER_FILE_CS_UNITS,Yes,_MERGE_SCHEMAS,YES,IGNORE_RASTER_TYPE_KEY,No
+WRITER_TYPE NULL
+WRITER_KEYWORD NULL_DEST
+NULL_DEST_DATASET null
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "GEOTIFF_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER GEOTIFF GEOTIFF_1
+# =======================================================================
+# The following GUI line prompts for a file to be used as the source GEOTIFF file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_GEOTIFF_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER GEOTIFF GEOTIFF_1
+DEFAULT_MACRO SourceDataset_GEOTIFF_1 $(SourceDataset_GEOTIFF)
+GUI MULTIFILE SourceDataset_GEOTIFF_1 GeoTIFF_Files(*.tif;*.tiff;*.itiff;*.ovr)|*.tif;*.tiff;*.itiff;*.ovr|All_Files(*)|* Source GeoTIFF File(s):
+GEOTIFF_1_READER_META_ATTRIBUTES fme_dataset fme_basename
+DEFAULT_MACRO GEOTIFF_IN_FEATURE_TYPE_NAME_GEOTIFF_1 FORMAT_NAME
+GEOTIFF_1_FEATURE_TYPE_NAME "$(GEOTIFF_IN_FEATURE_TYPE_NAME_GEOTIFF_1)"
+DEFAULT_MACRO GEOTIFF_IN_APPLY_GCPS_GEOTIFF_1 No
+GEOTIFF_1_APPLY_GCPS "$(GEOTIFF_IN_APPLY_GCPS_GEOTIFF_1)"
+GUI ACTIVECHECK GEOTIFF_IN_APPLY_GCPS_GEOTIFF_1 Yes%No,GEOTIFF_IN_GCP_INTERPOLATION_METHOD Apply GCPs
+DEFAULT_MACRO GEOTIFF_IN_GCP_INTERPOLATION_METHOD_GEOTIFF_1 <Unused>
+GEOTIFF_1_GCP_INTERPOLATION_METHOD "$(GEOTIFF_IN_GCP_INTERPOLATION_METHOD_GEOTIFF_1)"
+GUI RADIO_GROUP GEOTIFF_IN_GCP_INTERPOLATION_METHOD_GEOTIFF_1 1%"Nearest Neighbor",NearestNeighbor%Bilinear,Bilinear%Bicubic,Bicubic GCP Interpolation Method
+DEFAULT_MACRO GEOTIFF_IN_EXPOSE_ATTRS_GROUP_GEOTIFF_1 
+GEOTIFF_1_EXPOSE_ATTRS_GROUP "$(GEOTIFF_IN_EXPOSE_ATTRS_GROUP_GEOTIFF_1)"
+GUI DISCLOSUREGROUP GEOTIFF_IN_EXPOSE_ATTRS_GROUP_GEOTIFF_1 GEOTIFF_EXPOSE_FORMAT_ATTRS Schema Attributes
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+# ===========================================================================
+DEFAULT_MACRO GEOTIFF_IN_SEARCH_ENVELOPE_MINX_GEOTIFF_1 0
+GEOTIFF_1_SEARCH_ENVELOPE "$(GEOTIFF_IN_SEARCH_ENVELOPE_MINX_GEOTIFF_1)"
+GUI OPTIONAL FLOAT GEOTIFF_IN_SEARCH_ENVELOPE_MINX_GEOTIFF_1 Minimum X:
+# ===========================================================================
+DEFAULT_MACRO GEOTIFF_IN_SEARCH_ENVELOPE_MINY_GEOTIFF_1 0
+GEOTIFF_1_SEARCH_ENVELOPE "$(GEOTIFF_IN_SEARCH_ENVELOPE_MINY_GEOTIFF_1)"
+GUI OPTIONAL FLOAT GEOTIFF_IN_SEARCH_ENVELOPE_MINY_GEOTIFF_1 Minimum Y:
+# ===========================================================================
+DEFAULT_MACRO GEOTIFF_IN_SEARCH_ENVELOPE_MAXX_GEOTIFF_1 0
+GEOTIFF_1_SEARCH_ENVELOPE "$(GEOTIFF_IN_SEARCH_ENVELOPE_MAXX_GEOTIFF_1)"
+GUI OPTIONAL FLOAT GEOTIFF_IN_SEARCH_ENVELOPE_MAXX_GEOTIFF_1 Maximum X:
+# ===========================================================================
+DEFAULT_MACRO GEOTIFF_IN_SEARCH_ENVELOPE_MAXY_GEOTIFF_1 0
+GEOTIFF_1_SEARCH_ENVELOPE "$(GEOTIFF_IN_SEARCH_ENVELOPE_MAXY_GEOTIFF_1)"
+GUI OPTIONAL FLOAT GEOTIFF_IN_SEARCH_ENVELOPE_MAXY_GEOTIFF_1 Maximum Y:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+DEFAULT_MACRO GEOTIFF_IN_CLIP_TO_ENVELOPE_GEOTIFF_1 NO
+GEOTIFF_1_CLIP_TO_ENVELOPE "$(GEOTIFF_IN_CLIP_TO_ENVELOPE_GEOTIFF_1)"
+GUI OPTIONAL CHECKBOX GEOTIFF_IN_CLIP_TO_ENVELOPE_GEOTIFF_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO GEOTIFF_IN_GEOTIFF_RDR_ADV_PARM_GROUP_GEOTIFF_1 
+GUI DISCLOSUREGROUP GEOTIFF_IN_GEOTIFF_RDR_ADV_PARM_GROUP_GEOTIFF_1 PREFER_FILE_CS_UNITS%READ_OFFSETS_IN_CS_UNITS%IGNORE_RASTER_TYPE_KEY Advanced
+DEFAULT_MACRO GEOTIFF_IN_PREFER_FILE_CS_UNITS_GEOTIFF_1 Yes
+GEOTIFF_1_PREFER_FILE_CS_UNITS "$(GEOTIFF_IN_PREFER_FILE_CS_UNITS_GEOTIFF_1)"
+GUI CHOICE GEOTIFF_IN_PREFER_FILE_CS_UNITS_GEOTIFF_1 Yes%No Prefer File Coordinate System Units:
+DEFAULT_MACRO GEOTIFF_IN_READ_OFFSETS_IN_CS_UNITS_GEOTIFF_1 No
+GEOTIFF_1_READ_OFFSETS_IN_CS_UNITS "$(GEOTIFF_IN_READ_OFFSETS_IN_CS_UNITS_GEOTIFF_1)"
+GUI CHOICE GEOTIFF_IN_READ_OFFSETS_IN_CS_UNITS_GEOTIFF_1 Yes%No Offsets in Coordinate System Units:
+DEFAULT_MACRO GEOTIFF_IN_IGNORE_RASTER_TYPE_KEY_GEOTIFF_1 No
+GEOTIFF_1_IGNORE_RASTER_TYPE_KEY "$(GEOTIFF_IN_IGNORE_RASTER_TYPE_KEY_GEOTIFF_1)"
+GUI CHOICE GEOTIFF_IN_IGNORE_RASTER_TYPE_KEY_GEOTIFF_1 Yes%No Ignore Raster Type Key:
+# ===========================================================================
+DEFAULT_MACRO GEOTIFF_IN_NETWORK_AUTHENTICATION_GEOTIFF_1 
+GEOTIFF_1_NETWORK_AUTHENTICATION "$(GEOTIFF_IN_NETWORK_AUTHENTICATION_GEOTIFF_1)"
+GUI OPTIONAL AUTHENTICATOR GEOTIFF_IN_NETWORK_AUTHENTICATION_GEOTIFF_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# PR:31021
+# Include this file in workbench source preamble section to enable the ability
+# to specify a coordinate system for search envelope processing
+# ===========================================================================
+DEFAULT_MACRO SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEOTIFF_1 
+GUI OPTIONAL COORDSYS SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEOTIFF_1 Search Envelope Coordinate System:
+GEOTIFF_1_SEARCH_ENVELOPE_COORDINATE_SYSTEM "$(SEARCH_ENVELOPE_COORDINATE_SYSTEM_GEOTIFF_1)"
+# ===========================================================================
+GEOTIFF_1_DATASET "$(SourceDataset_GEOTIFF_1)"
+#! END_SOURCE_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)RasterTransparancy.log"
+LOG_APPEND NO
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+LOG_MAX_PRECISION Yes
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+LOG_FILTER_MASK -1
+DEFAULT_MACRO DATASET_KEYWORD_GEOTIFF_1 GEOTIFF_1
+# -------------------------------------------------------------------------
+
+GEOTIFF_1_READER_META_ATTRIBUTES fme_basename fme_feature_type
+
+# -------------------------------------------------------------------------
+
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME RasterTransparancy
+MACRO FME_VIEWER_APP fmeview
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[info exists env(FME_TEMP)] && [file isdirectory $env(FME_TEMP)]} {set gVisualizerTemp $env(FME_TEMP)}  elseif {[info exists env(TEMP)] && [file isdirectory $env(TEMP)]}  {set gVisualizerTemp $env(TEMP)}  elseif { $tcl_platform(platform) == "unix" } {set gVisualizerTemp "/tmp"} else {set gVisualizerTemp c:};  regsub -all {[ ,&]} {$(WORKSPACE_NAME)} {_} wsname; set gVisualizerTemp $gVisualizerTemp/${wsname}_[clock format [clock seconds] -format %H%M%S];  puts "MACRO WORKSPACE_TEMP_DIR $gVisualizerTemp"; 
+MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/inspector.ffs
+MACRO VISUALIZER_SCHEMA_FILE $(WORKSPACE_TEMP_DIR)/inspector.fsc
+MACRO VISUALIZER_CREATE_SPATIAL_INDEX YES
+# -------------------------------------------------------------------------
+GEOTIFF_1_DEF GEOTIFF
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   INPUT FEATURE_TYPE *       @SupplyAttributes(multi_reader_keyword,GEOTIFF_1)    ROUTE GEOTIFF GEOTIFF_1::GEOTIFF TO FME_GENERIC ::GEOTIFF ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+GEOTIFF_1_MERGE_DEF GEOTIFF_1::GEOTIFF EXACT GEOTIFF
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "GEOTIFF (GEOTIFF_1) Splitter"    INPUT FEATURE_TYPE GEOTIFF    OUTPUT FEATURE_TYPE GEOTIFF_0_kwJgCsiJ+9Y=    OUTPUT FEATURE_TYPE GEOTIFF_1_kwJgCsiJ+9Y=
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+
+# Set the directive to add all the meta-attributes to the features.
+# We do this so users see all possible information in the viewed
+# features.
+
+READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [         set grpByAttrs {};         if { [string length $grpByAttrs] > 0 } {             if { [string first "@EvaluateExpression" $grpByAttrs] == 0 } {                 puts "MACRO CATMAC _$grpByAttrs" ;             } else {                set catter "" ;                set comma "" ;                foreach attr $grpByAttrs {                    set catter "$catter$comma@Value(\"$attr\")" ;                    set comma ",_," ;                } ;                puts "MACRO CATMAC _@Concatenate($catter)" ;             }         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {GEOTIFF} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
+# Make the temporary directory that the FFS files will live in.
+FACTORY_DEF * CreationFactory      FACTORY_NAME GEOTIFF_DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
+FACTORY_DEF * TeeFactory    FACTORY_NAME GEOTIFF_DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
+# Send raster, point cloud and vector features down different paths to prepare
+# them for viewing
+
+FACTORY_DEF * TestFactory    FACTORY_NAME GEOTIFF_FeatureDirector    INPUT  FEATURE_TYPE GEOTIFF_1_kwJgCsiJ+9Y=    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE GEOTIFF___NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE GEOTIFF___RasterFeatures___
+FACTORY_DEF * TestFactory    FACTORY_NAME GEOTIFF___FeatureDirector1    INPUT FEATURE_TYPE GEOTIFF___NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE GEOTIFF___VectorFeatures___    OUTPUT PASSED FEATURE_TYPE GEOTIFF___PointCloudFeatures___
+# Vector features simply may get their colors overridden
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME GEOTIFF_VectorSetterUpper    INPUT FEATURE_TYPE GEOTIFF___VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
+# Point Cloud Features Might Need to be thinned
+
+# Note that we don't call the ThinPointCloud function directly, but rather
+# do it through TCL. This should allow this transformer to be used with a
+# Desktop license, even though ThinPointCloud requires Professional.
+
+Tcl2 proc GEOTIFF_a6891feb_038b_4f4b_a967_d8f90f86f8250_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME GEOTIFF___PointCloudThinner    INPUT FEATURE_TYPE GEOTIFF___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("GEOTIFF_a6891feb_038b_4f4b_a967_d8f90f86f8250_thinPointCloud")
+Tcl2 proc GEOTIFF_a6891feb_038b_4f4b_a967_d8f90f86f8250_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME GEOTIFF_RasterSetterUpper    INPUT FEATURE_TYPE GEOTIFF___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("GEOTIFF_a6891feb_038b_4f4b_a967_d8f90f86f8250_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+# GEOTIFF_a6891feb_038b_4f4b_a967_d8f90f86f8250_VIS_FEAT_TYPE changes the feature types
+# of the features being visualized.
+
+DEFAULT_MACRO GEOTIFF_a6891feb_038b_4f4b_a967_d8f90f86f8250_VIS_FEAT_TYPE GEOTIFF$(CATMAC)
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+
+FACTORY_DEF * RecorderFactory    FACTORY_NAME GEOTIFF_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(GEOTIFF_a6891feb_038b_4f4b_a967_d8f90f86f8250_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA fme_basename,varchar<openparen>255<closeparen>    MODE RECORD    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME RasterPaletteResolver    INPUT  FEATURE_TYPE GEOTIFF_0_kwJgCsiJ+9Y=    OUTPUT FEATURE_TYPE RasterPaletteResolver_OUTPUT       @ResolveRasterPalettes()
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME RasterBandAdder    INPUT  FEATURE_TYPE RasterPaletteResolver_OUTPUT    OUTPUT FEATURE_TYPE RasterBandAdder_OUTPUT       @AddRasterBand(Alpha8,"128","255")
+
+# -------------------------------------------------------------------------
+
+INCLUDE [ if {[string equal {APPLYALPHA}        {<Unused>}]} { puts {MACRO RGBA_TO_RGB_ARG DROPALPHA} }           else { puts {MACRO RGBA_TO_RGB_ARG        APPLYALPHA} }; if {[string equal {<Unused>}        {<Unused>}]} { puts {MACRO RGB_TO_RGBA_ARG CREATEOPAQUEALPHA} }   else { puts {MACRO RGB_TO_RGBA_ARG        <Unused>} }; if {[string equal {TYPESCALE}     {<Unused>}]} { puts {MACRO COLOR_TO_COLOR_ARG TYPESCALE} }        else { puts {MACRO COLOR_TO_COLOR_ARG     TYPESCALE} }; if {[string equal {DATASCALE}   {<Unused>}]} { puts {MACRO NUMERIC_TO_COLOR_ARG DATASCALE} }      else { puts {MACRO NUMERIC_TO_COLOR_ARG   DATASCALE} }; if {[string equal {<Unused>}   {<Unused>}]} { puts {MACRO COLOR_TO_NUMERIC_ARG BOUNDED_CAST} }   else { puts {MACRO COLOR_TO_NUMERIC_ARG   <Unused>} }; if {[string equal {<Unused>} {<Unused>}]} { puts {MACRO NUMERIC_TO_NUMERIC_ARG BOUNDED_CAST} } else { puts {MACRO NUMERIC_TO_NUMERIC_ARG <Unused>} }; if {[string equal {ROUND}   {<Unused>}]} { puts {MACRO FLOAT_TO_INTEGER_ARG ROUND} }          else { puts {MACRO FLOAT_TO_INTEGER_ARG   ROUND} }; puts {MACRO MANY_TO_ONE_ARG AVERAGE}; ]
+FACTORY_DEF * TeeFactory    FACTORY_NAME RasterInterpretationCoercer_2    INPUT  FEATURE_TYPE RasterBandAdder_OUTPUT    OUTPUT FEATURE_TYPE RasterInterpretationCoercer_2_OUTPUT       @ReinterpretRaster(RASTER, RGB24, $(MANY_TO_ONE_ARG), $(RGBA_TO_RGB_ARG), $(COLOR_TO_COLOR_ARG), $(COLOR_TO_NUMERIC_ARG), $(NUMERIC_TO_COLOR_ARG), $(NUMERIC_TO_NUMERIC_ARG), $(FLOAT_TO_INTEGER_ARG), $(RGB_TO_RGBA_ARG))
+
+# -------------------------------------------------------------------------
+
+# Set the directive to add all the meta-attributes to the features.
+# We do this so users see all possible information in the viewed
+# features.
+
+READER_META_ATTRIBUTES fme_feature_type fme_dataset fme_basename
+# Assumption is that the workspace temp dir has been already set and created.  See controldefs.cpp - ControlDefs::writeVisualizerTempDir
+DEFAULT_MACRO WORKSPACE_TEMP_DIR
+INCLUDE [         set grpByAttrs {};         if { [string length $grpByAttrs] > 0 } {             if { [string first "@EvaluateExpression" $grpByAttrs] == 0 } {                 puts "MACRO CATMAC _$grpByAttrs" ;             } else {                set catter "" ;                set comma "" ;                foreach attr $grpByAttrs {                    set catter "$catter$comma@Value(\"$attr\")" ;                    set comma ",_," ;                } ;                puts "MACRO CATMAC _@Concatenate($catter)" ;             }         }         else {             puts "MACRO CATMAC " ;         };         set safeName "[regsub -all {[^a-zA-Z0-9]} {RasterInterpretationCoercer_2_Output} _]_[expr round(rand() * 1000000)]_[clock clicks  -milliseconds]";         puts "MACRO SAFE_FFS_NAME $safeName";         ]
+# Make the temporary directory that the FFS files will live in.
+FACTORY_DEF * CreationFactory      FACTORY_NAME RasterInterpretationCoercer_2_Output_DirCreator      OUTPUT FEATURE_TYPE __nukeme__          @Tcl2("catch {file mkdir {$(WORKSPACE_TEMP_DIR)}}")
+FACTORY_DEF * TeeFactory    FACTORY_NAME RasterInterpretationCoercer_2_Output_DirCreatorCleanerUpper    INPUT FEATURE_TYPE __nukeme__
+# Send raster, point cloud and vector features down different paths to prepare
+# them for viewing
+
+FACTORY_DEF * TestFactory    FACTORY_NAME RasterInterpretationCoercer_2_Output_FeatureDirector    INPUT  FEATURE_TYPE RasterInterpretationCoercer_2_OUTPUT    TEST &fme_type == "fme_raster"    OUTPUT FAILED FEATURE_TYPE RasterInterpretationCoercer_2_Output___NotRasterFeatures___    OUTPUT PASSED FEATURE_TYPE RasterInterpretationCoercer_2_Output___RasterFeatures___
+FACTORY_DEF * TestFactory    FACTORY_NAME RasterInterpretationCoercer_2_Output___FeatureDirector1    INPUT FEATURE_TYPE RasterInterpretationCoercer_2_Output___NotRasterFeatures___    TEST &fme_type == "fme_point_cloud"    OUTPUT FAILED FEATURE_TYPE RasterInterpretationCoercer_2_Output___VectorFeatures___    OUTPUT PASSED FEATURE_TYPE RasterInterpretationCoercer_2_Output___PointCloudFeatures___
+# Vector features simply may get their colors overridden
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME RasterInterpretationCoercer_2_Output_VectorSetterUpper    INPUT FEATURE_TYPE RasterInterpretationCoercer_2_Output___VectorFeatures___    OUTPUT FEATURE_TYPE __viewme__
+# Point Cloud Features Might Need to be thinned
+
+# Note that we don't call the ThinPointCloud function directly, but rather
+# do it through TCL. This should allow this transformer to be used with a
+# Desktop license, even though ThinPointCloud requires Professional.
+
+Tcl2 proc RasterInterpretationCoercer_2_Output_eb225434_66fa_4ee9_95cb_76c38a3f93040_thinPointCloud {} {    if {[string equal {NO_THINNING} {KEEPNPOINT}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {MAXNUMPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {FIRSTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }    elseif {[string equal {NO_THINNING} {LASTNPOINTS}]}    {       FME_Execute ThinPointCloud NO_THINNING "\"<Unused>\"";    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME RasterInterpretationCoercer_2_Output___PointCloudThinner    INPUT FEATURE_TYPE RasterInterpretationCoercer_2_Output___PointCloudFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("RasterInterpretationCoercer_2_Output_eb225434_66fa_4ee9_95cb_76c38a3f93040_thinPointCloud")
+Tcl2 proc RasterInterpretationCoercer_2_Output_eb225434_66fa_4ee9_95cb_76c38a3f93040_prepareRaster {subsetStartRow subsetNumRows subsetStartCol subsetNumCols} {    set useDI [string equal -nocase {$(FME_VIEWER_APP)} {fmedatainspector}];    if {!$useDI} {       FME_Execute ApplyRasterRotation BILINEAR;    };    set doResample [string equal {NoReduction} {Resample}];    set doSubset [string equal {NoReduction} {Subset}];    set doBounds [string equal {NoReduction} {BoundingBoxOnly}];    if {$doBounds}  {       FME_Execute GeometryType fme_polygon;    }    elseif {$doResample || $doSubset} {       set comment {          First, we need to prefix all the attributes. This is done because          we are going to call @RasterProperties, and we want to make sure          it doesn't overwrite any existing attributes.       };       set kAttrPrefix ".";       set allNames [FME_AttributeNames];       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $newName $oldName;       };       FME_Execute RasterProperties RASTER;       if {$doResample} {          set oldNumCols [FME_GetAttribute _num_columns];          set oldNumRows [FME_GetAttribute _num_rows];          set oldSpacingX [FME_GetAttribute _spacing_x];          set oldSpacingY [FME_GetAttribute _spacing_y];          set kMinNumCells 32;          set kMaxNumCells 512;          set comment {             We will only resample if both dimensions are greater than the             minimum num cells, and at least one is greater than the maximum.          };          if {$oldNumRows > $kMinNumCells && $oldNumCols > $kMinNumCells && ($oldNumRows > $kMaxNumCells || $oldNumCols > $kMaxNumCells)} {             set newSpacingX 1.0;             set newSpacingY 1.0;             if {$oldNumRows > $oldNumCols} {                set comment {                   If we have more rows than columns, we need to choose a spacing                   that reduces the number of rows to the maximum we've chosen.                };                set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMaxNumCells];                set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                set comment {                   Now we need to check if doing this will result in the columns                   going below the minimum. If so, choose the spacing such that                   we only go down to the minimum (and not past).                };                set newNumCols [expr $oldNumCols * $oldSpacingX / $newSpacingX];                if {$newNumCols < $kMinNumCells}                {                   set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMinNumCells];                   set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                };             }             else {                set comment {                   This is identical to the above case, except the roles of                   rows and cols are reversed.                };                set newSpacingX [expr 1.0 * $oldNumCols * $oldSpacingX / $kMaxNumCells];                set newSpacingY [expr 1.0 * $newSpacingX / $oldSpacingX * $oldSpacingY];                set newNumRows [expr $oldNumRows * $oldSpacingY / $newSpacingY];                if {$newNumRows < $kMinNumCells}                {                   set newSpacingY [expr 1.0 * $oldNumRows * $oldSpacingY / $kMinNumCells];                   set newSpacingX [expr 1.0 * $newSpacingY / $oldSpacingY * $oldSpacingX];                };             };             FME_Execute ResampleRaster CELL_SIZE $newSpacingX $newSpacingY NearestNeighbor;          };       }       elseif {$doSubset} {          set comment {             Get the value of some strings that may be attributes or constants.             Note that we pass in the attribute prefix we're using, because if             one does turn out to be an attribute, it won't actually be the exact             name in the string (since we renamed all our attributes above).          };          set rasterNumRows [FME_GetAttribute _num_rows];          set rasterNumCols [FME_GetAttribute _num_columns];          set comment {             Only do subsetting if the specified start position is actually             within the raster.          };          if {$subsetStartRow < $rasterNumRows && $subsetStartCol < $rasterNumCols}          {             set comment {                Now bound the subset to the size of the raster, so that                we don't create padding.             };             if {[expr $subsetStartRow + $subsetNumRows] > $rasterNumRows}             {                set subsetNumRows [expr $rasterNumRows - $subsetStartRow];             };             if {[expr $subsetStartCol + $subsetNumCols] > $rasterNumCols}             {                set subsetNumCols [expr $rasterNumCols - $subsetStartCol];             };             FME_Execute SubsetRaster $subsetStartRow $subsetNumRows $subsetStartCol $subsetNumCols;          };       };       set comment {          Remove all the attributes added by @RasterProperties and remove the          prefix from the real attributes. We assume they all start with an          underscore.       };       FME_Execute RemoveAttributes fme_regexp_match {^_};       foreach oldName $allNames {          set newName $kAttrPrefix;          append newName $oldName;          FME_RenameAttribute $oldName $newName;       };    }; }
+FACTORY_DEF * TeeFactory    FACTORY_NAME RasterInterpretationCoercer_2_Output_RasterSetterUpper    INPUT FEATURE_TYPE RasterInterpretationCoercer_2_Output___RasterFeatures___    OUTPUT FEATURE_TYPE __viewme__       @Tcl2("RasterInterpretationCoercer_2_Output_eb225434_66fa_4ee9_95cb_76c38a3f93040_prepareRaster {<Unused>} {<Unused>} {<Unused>} {<Unused>}")
+# Now route all the features into the recorder, changing their
+# feature type to the transformer name so that they view nicely
+# RasterInterpretationCoercer_2_Output_eb225434_66fa_4ee9_95cb_76c38a3f93040_VIS_FEAT_TYPE changes the feature types
+# of the features being visualized.
+
+DEFAULT_MACRO RasterInterpretationCoercer_2_Output_eb225434_66fa_4ee9_95cb_76c38a3f93040_VIS_FEAT_TYPE RasterInterpretationCoercer_2_Output$(CATMAC)
+DEFAULT_MACRO VISUALIZER_FEATURE_FILE $(WORKSPACE_TEMP_DIR)/$(SAFE_FFS_NAME).ffs
+DEFAULT_MACRO VISUALIZER_CREATE_SPATIAL_INDEX NO
+# [PR#45549] The Data Inspector will limit the maximum number of features
+# it reads on WIN32, so we will correspondingly limit the number of
+# features we record here using the MAX_FEATURES_TO_RECORD directive.
+
+FACTORY_DEF * RecorderFactory    FACTORY_NAME RasterInterpretationCoercer_2_Output_Recorder    INPUT FEATURE_TYPE __viewme__  _wb_termination_feature Yes @FeatureType(TERMINATOR_@Value(_wb_termination_xformer))    INPUT FEATURE_TYPE __viewme__  @FeatureType($(RasterInterpretationCoercer_2_Output_eb225434_66fa_4ee9_95cb_76c38a3f93040_VIS_FEAT_TYPE))    FEATURE_FILE "$(VISUALIZER_FEATURE_FILE)"    CREATE_SPATIAL_INDEX "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    INSPECTOR "$(VISUALIZER_CREATE_SPATIAL_INDEX)"    FSC_SCHEMA fme_basename,varchar<openparen>255<closeparen>    MODE RECORD    RECORD_DIRECTLY_TO_DISK YES    MAX_FEATURES_TO_RECORD WIN32 2000000
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   INPUT FEATURE_TYPE *   OUTPUT ROUTED FEATURE_TYPE * @FeatureType(ENCODED,@Value(__wb_out_feat_type__)) @RemoveAttributes(__wb_out_feat_type__)   OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * CreationFactory   CREATE_AT_END   OUTPUT FEATURE_TYPE __NUKEME__   @TCL("if [file exists {$(WORKSPACE_TEMP_DIR)}] {set files [glob -nocomplain -directory  {$(WORKSPACE_TEMP_DIR)} -tails *.ffs];   if {[llength $files] == 1} {    set theFile {$(WORKSPACE_TEMP_DIR)/};   append theFile [lindex $files 0];   eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmeview\042 /ownffs $theFile & \175;  } elseif { [llength $files] == 0 } {  catch { file delete -force {$(WORKSPACE_TEMP_DIR)} };  } else {  set filesNoExt {}; set lastfile {}; foreach {fileName} [lsort $files] { set fileNoExt [string trimright $fileName {.ffs}]; if [regexp {(.*)_[0-9]*$} $fileNoExt wholething fileNoExtBase] {  if { $fileNoExtBase == $lastfile } { continue } }; set lastfile $fileNoExt; lappend filesNoExt $fileNoExt };  eval FME_Execute System \173\042$(FME_HOME_UNIX)/fmeview\042 /ownffs {$(WORKSPACE_TEMP_DIR)} $filesNoExt & \175; }; }; ")
+FACTORY_DEF * TeeFactory   INPUT FEATURE_TYPE __NUKEME__
