@@ -1,0 +1,2915 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME2022\fme.exe" C:\JEGO\Fme\Shape_Drape_by_REF\shapefile_dgnv82shapefile-Drape_All.fmw
+#          --SourceDataset_SHAPEFILE "\"\"C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Cubi_poly.shp\" \"C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Edi_lin.shp\" \"C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Edi_Poly.shp\" \"C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Red_poly.shp\" \"C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Service_poly.shp\"\""
+#          --SourceDataset_DGNV8 "C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\Dgns\Ref\Ref_Final-517.dgn"
+#          --FEATURE_TYPES "REF_1003_Axis_SING_Carriageway_GRD_Use_ENL_Ln REF_1003_Axis_SING_Carriageway_GRD_Use_Trunk_Ln REF_1003_EDGE_SING_carriageway_GRD_Use_ENL_Ln REF_1003_EDGE_SING_carriageway_GRD_Use_Trunk_Ln REF_2000_Urban_road_axis_GRD_Generic_Ln REF_3001_RD_Axis_Paved_GRD_Ln REF_3001_RD_Axis_UnPaved_GRD_Ln REF_3001_RD_EDGE_Paved_GRD_Ln REF_3001_RD_EDGE_UnPaved_GRD_Ln REF_3001_RD_Linear_UnPaved_GRD_Ln REF_03002_Depression_Contour_Ln REF_03002_Master_Contour_Ln REF_03002_Normal_Contour_Ln REF_3002_Trackpath_GRD_Ln REF_03003_Sleep_Foot_Ln REF_03003_Sleep_Head_Ln REF_03003_Slope_foot_cutting_Ln REF_03003_Slope_foot_embankment_Ln REF_03003_Slope_Head_cutting_Ln REF_03003_Slope_head_embankment_Ln REF_03003_Terrace_Margin_Ln REF_04008_Element_Construct_Curb_Use_Ln REF_05002_Mining_FCLTY_Mine_EDGE_Use_Ln REF_05007_Sports_EDGE_Footbal_Ln REF_05007_Sports_EDGE_Multipurpose_Ln REF_05007_Sports_EDGE_Other_Ln REF_05007_Sports_EDGE_Paintlines-Field_Ln REF_05007_Sports_EDGE_Racetrack_Circuit_Ln REF_05007_Sports_EDGE_Tennis_Ln REF_05008_Recreational_EDGE_Playground_Ln REF_06002_ARTIFI_Channel_AXIS_GRD_Use_Ln REF_06002_ARTIFI_Channel_EDGE_GRD_Use_Ln REF_06002_ARTIFI_Channel_LINEAR_GRD_Use_Ln REF_06002_ARTIFI_IRRI_Ditch_EDGE_GRD_Use_Ln REF_06002_ARTIFI_IRRI_Ditch_LINEAR_GRD_Use_Ln REF_06004_NATUR_NON_PER_LINEAR_Water_Unclassified_Ln REF_06004_NATUR_PER_EDGE_Water_Unclassified_Ln REF_06006_Coronation_line_Ln REF_06007_EDGE_Swimming_Pool_Ln REF_06007_NON_PER_Lagoon_EDGE_Water_Ln REF_06007_PER_Lagoon_EDGE_Water_Ln REF_06007_Pond_Generic_EDGE_Water_Ln REF_06007_Pond_Pool_EDGE_water_Ln REF_06007_Pond_Water_Reservoir_EDGE_Water_Ln REF_06007_Water_Reservoir_Edge_Ln REF_07005_CETN_EDGE_RD_Island_Use_Ln REF_07005_Ditch_roadside_GRD_Ln REF_07005_Line_Median_Use_Ln REF_09002_Public_works_Hydro_EDGE_Earth_DAM_Tie_Ln REF_10001_Trans_Infra_FCLTY_EDGE_Paved_Esplanade_Ln REF_10001_Trans_Infra_FCLTY_EDGE_Unpaved_Esplanade_Ln REF_12000_Firewall_Axis_Ln REF_12000_Separation_Use_0_Ln REF_12000L_Firewall_Border_Ln REF_3001_RD_Linear_Paved_GRD_Ln REF_03003_Cliff_Foot_Ln REF_05007_Sports_EDGE_Sports_Zone_Ln REF_05008_Recreational_EDGE_Picnic_area_Ln REF_06004_NATUR_PER_LINEAR_Water_Unclassified_Ln REF_06004_PER_EDGE_Water_Unclassified_Ln REF_06005_Water_Island_Border_Rivers_Reservoirs_Ln"
+#          --DestDataset_SHAPEFILE "C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Out"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="5030.09 1827.23"
+#!   DOC_TOP_LEFT="20 -1186.6"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="21627"
+#!   FME_DOCUMENT_GUID="27a8a2c2-15ce-48e4-9169-482ddb25e427"
+#!   FME_DOCUMENT_PRIORGUID="c9d3e049-1d93-41c2-9fc5-d6f21140967c"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="windows-1252"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2021.1.2.0 (20210903 - Build 21627 - WIN64)"
+#!   LAST_SAVE_DATE="2023-07-08T10:17:30"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="38"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="YES"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-410.16 765.633"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="80"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="SHAPEFILE"
+#!   DATASET="$(SourceDataset_SHAPEFILE)"
+#!   KEYWORD="SHAPEFILE_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="shapefile_type {FME_GEN_GEOMETRY}"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename varchar(50) fme_color varchar(50) fme_dataset varchar(50) fme_feature_type varchar(50) fme_fill_color varchar(50) fme_geometry varchar(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string varchar(50) fme_type varchar(50) multi_reader_full_id long multi_reader_id long multi_reader_keyword varchar(50) multi_reader_type varchar(50) shape_geometry_error varchar(254) shapefile_type varchar(30)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES="Indexed"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE="LISTBOX_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="21627"
+#!   COORDSYS=""
+#!   FEATURE_TYPES=""
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="SHAPEFILE_IN_ENCODING"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="shp file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_GEOMETRY_TYPE"
+#!   VALUE="shapefile_first_feature"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Shapefile1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Esri Shapefile(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the Esri Shapefile"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="DGNV8"
+#!   DATASET="$(SourceDataset_DGNV8)"
+#!   KEYWORD="DGNV8_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="igds_level  igds_level_comment  igds_level_color 0 igds_level_style 0 igds_level_weight 0 igds_level_display yes igds_level_freeze no igds_level_lock no igds_level_override_color 0 igds_use_level_override_color No igds_level_override_style 0 igds_use_level_override_style No igds_level_override_weight 0 igds_use_level_override_weight No"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="comp_count integer comp_num integer entity_num_0 integer entity_num_1 integer entity_num_2 integer feat_num integer fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string char(50) fme_type char(50) igds_align integer igds_arc_orientation char(40) igds_arrow_height double igds_arrow_width double igds_base_line_cos_value double igds_base_line_sin_value double igds_base_to_text_dist double igds_basename char(50) igds_box_around_text integer igds_cell_element_class integer igds_cell_element_color integer igds_cell_element_color.blue integer igds_cell_element_color.green integer igds_cell_element_color.red integer igds_cell_element_level integer igds_cell_element_level_name char(80) igds_cell_element_style integer igds_cell_element_weight integer igds_cell_insertion_x double igds_cell_insertion_y double igds_cell_insertion_z double igds_cell_name char(500) igds_cell_num_members integer igds_cell_sequence_number integer igds_cell_size_x double igds_cell_size_y double igds_cell_x_scale double igds_cell_y_scale double igds_cell_z_scale double igds_center_mark_size double igds_chain_number integer igds_class integer igds_color integer igds_color.blue integer igds_color.green integer igds_color.red integer igds_color_set_bylevel char(5) igds_cone3d_flags integer igds_custom_linestyle string igds_custom_linestyle_center_shift char(5) igds_custom_linestyle_class integer igds_custom_linestyle_distance_shift double igds_custom_linestyle_end_width double igds_custom_linestyle_flags integer igds_custom_linestyle_fraction_shift double igds_custom_linestyle_ibit integer igds_custom_linestyle_mbit integer igds_custom_linestyle_rbit integer igds_custom_linestyle_rotation double igds_custom_linestyle_scale double igds_custom_linestyle_start_width double igds_date_last_modified char(20) igds_deleted char(4) igds_dim_color integer igds_dim_freezegroup integer igds_dim_primary_accuracy integer igds_dim_refx{}.base_offset double igds_dim_refx{}.base_offset_y double igds_dim_refx{}.flags integer igds_dim_refx{}.primary_text_string string igds_dim_refx{}.pt.x double igds_dim_refx{}.pt.y double igds_dim_refx{}.pt.z double igds_dim_refx{}.rxflags.associative integer igds_dim_refx{}.rxflags.justification integer igds_dim_refx{}.rxflags.lowerText integer igds_dim_refx{}.rxflags.relative integer igds_dim_refx{}.rxflags.upperText integer igds_dim_refx{}.segment_text_offset integer igds_dim_scale double igds_dim_secondary_accuracy integer igds_dim_stack_offset double igds_dim_style integer igds_dim_text_height double igds_dim_text_width double igds_dim_textstyle_id integer igds_dim_text{}.font integer igds_dim_text{}.original_justification integer igds_dim_text{}.text_insertion_x double igds_dim_text{}.text_insertion_y double igds_dim_text{}.text_rotation double igds_dim_text{}.text_size double igds_dim_text{}.text_string char(80) igds_dim_text{}.text_used_string_len integer igds_dim_text{}.text_width_multiplier double igds_dim_type integer igds_dim_version integer igds_dim_weight integer igds_dimstyle_center_bottom integer igds_dimstyle_center_left integer igds_dimstyle_center_mark integer igds_dimstyle_center_right integer igds_dimstyle_center_top integer igds_dimstyle_first_term integer igds_dimstyle_left_term integer igds_dimstyle_left_witness integer igds_dimstyle_nofit_vertical integer igds_dimstyle_postfix_symbol integer igds_dimstyle_prefix_symbol integer igds_dimstyle_right_term integer igds_dimstyle_right_witness integer igds_dimstyle_vertical_text integer igds_dual_format integer igds_element_association_id integer igds_element_byteoffset integer igds_element_id integer igds_element_locked char(5) igds_element_modified char(4) igds_element_new char(4) igds_element_priority integer igds_element_type integer igds_element_view_independent char(4) igds_element_visibility char(5) igds_endcap_angle double igds_endcap_color integer igds_endcap_style integer igds_endcap_weight integer igds_fill_angle1 double igds_fill_angle2 double igds_fill_color integer igds_fill_color.blue integer igds_fill_color.green integer igds_fill_color.red integer igds_fill_hole_style_id integer igds_fill_island_style_id integer igds_fill_offset_x double igds_fill_offset_y double igds_fill_offset_z double igds_fill_pattern_color integer igds_fill_pattern_color.blue integer igds_fill_pattern_color.green integer igds_fill_pattern_color.red integer igds_fill_pattern_type char(16) igds_fill_pixel_size double igds_fill_rotation double igds_fill_scale double igds_fill_snappable integer igds_fill_spacing1 double igds_fill_spacing2 double igds_fill_style_id integer igds_fill_tolerance double igds_fill_weight integer igds_font integer igds_graphic_group integer igds_insertion_x double igds_insertion_y double igds_insertion_z double igds_joint_color integer igds_joint_style integer igds_joint_weight integer igds_justification integer igds_leader_to_text_dist double igds_level integer igds_level_comment char(80) igds_level_freeze char(5) igds_level_group_id char(80) igds_level_lock char(5) igds_level_name char(80) igds_linkage{}.blob string igds_linkage{}.blobsize integer igds_linkage{}.class integer igds_linkage{}.component_count integer igds_linkage{}.component_num integer igds_linkage{}.display_attribute integer igds_linkage{}.entity_number integer igds_linkage{}.feature_num integer igds_linkage{}.firstword integer igds_linkage{}.flags integer igds_linkage{}.ibit integer igds_linkage{}.key integer igds_linkage{}.key2 integer igds_linkage{}.long{} integer igds_linkage{}.ltype integer igds_linkage{}.mbit integer igds_linkage{}.rbit integer igds_linkage{}.readonly char(4) igds_linkage{}.rule_base_id integer igds_linkage{}.state_num integer igds_linkage{}.string string igds_linkage{}.string_id integer igds_linkage{}.suspectlinkage char(40) igds_linkage{}.trailing_flags integer igds_linkage{}.type char(40) igds_linkage{}.ubit integer igds_linkage{}.ufid integer igds_linkage{}.userId integer igds_linkage{}.word{} integer igds_linkage{}.xfm_data_prefix char(8) igds_linkage{}.xfm_parent_uuid char(36) igds_linkage{}.xfm_root_uuid char(36) igds_linkage{}.xfm_uuid char(36) igds_linkage{}.xml_data string igds_linkage{}.xml_data_prefix char(64) igds_lower_x double igds_lower_y double igds_measure_angle integer igds_mlattrib_endcap.cap_color_from_segment integer igds_mlattrib_endcap.cap_line integer igds_mlattrib_endcap.cap_on_arc integer igds_mlattrib_endcap.cap_out_arc integer igds_mlattrib_endcap.color integer igds_mlattrib_endcap.construction_class integer igds_mlattrib_endcap.customstyle integer igds_mlattrib_endcap.level integer igds_mlattrib_endcap.style integer igds_mlattrib_endcap.use_class integer igds_mlattrib_endcap.usecolor integer igds_mlattrib_endcap.usestyle integer igds_mlattrib_endcap.useweight integer igds_mlattrib_endcap.weight integer igds_mlattrib_joint.cap_color_from_segment integer igds_mlattrib_joint.cap_line integer igds_mlattrib_joint.cap_on_arc integer igds_mlattrib_joint.cap_out_arc integer igds_mlattrib_joint.color integer igds_mlattrib_joint.construction_class integer igds_mlattrib_joint.customstyle integer igds_mlattrib_joint.level integer igds_mlattrib_joint.style integer igds_mlattrib_joint.use_class integer igds_mlattrib_joint.usecolor integer igds_mlattrib_joint.usestyle integer igds_mlattrib_joint.useweight integer igds_mlattrib_joint.weight integer igds_mlattrib_startcap.cap_color_from_segment integer igds_mlattrib_startcap.cap_line integer igds_mlattrib_startcap.cap_on_arc integer igds_mlattrib_startcap.cap_out_arc integer igds_mlattrib_startcap.color integer igds_mlattrib_startcap.construction_class integer igds_mlattrib_startcap.customstyle integer igds_mlattrib_startcap.level integer igds_mlattrib_startcap.style integer igds_mlattrib_startcap.use_class integer igds_mlattrib_startcap.usecolor integer igds_mlattrib_startcap.usestyle integer igds_mlattrib_startcap.useweight integer igds_mlattrib_startcap.weight integer igds_mlineStyle{}.lineattrib.cap_color_from_segment integer igds_mlineStyle{}.lineattrib.cap_line integer igds_mlineStyle{}.lineattrib.cap_on_arc integer igds_mlineStyle{}.lineattrib.cap_out_arc integer igds_mlineStyle{}.lineattrib.color integer igds_mlineStyle{}.lineattrib.construction_class integer igds_mlineStyle{}.lineattrib.customstyle integer igds_mlineStyle{}.lineattrib.level integer igds_mlineStyle{}.lineattrib.style integer igds_mlineStyle{}.lineattrib.use_class integer igds_mlineStyle{}.lineattrib.usecolor integer igds_mlineStyle{}.lineattrib.usestyle integer igds_mlineStyle{}.lineattrib.useweight integer igds_mlineStyle{}.lineattrib.weight integer igds_mlineStyle{}.offset double igds_mlinebreak{}.angle double igds_mlinebreak{}.from_joint integer igds_mlinebreak{}.length double igds_mlinebreak{}.point_offset double igds_mlinebreak{}.segmask integer igds_mlinebreak{}.to_joint integer igds_mlinehdr_arc_cap_by_profile_line integer igds_mlinehdr_closed integer igds_mlinehdr_endcap_angle double igds_mlinehdr_freeze_group integer igds_mlinehdr_num_breaks integer igds_mlinehdr_num_lines integer igds_mlinehdr_num_nodes integer igds_mlinehdr_offset_mode integer igds_mlinehdr_offset_model_valid integer igds_mlinehdr_placement_offset integer igds_mlinehdr_startcap_angle double igds_mlinehdr_styleScale double igds_mlinehdr_style_id integer igds_mlinehdr_updv.x double igds_mlinehdr_updv.y double igds_mlinehdr_updv.z double igds_mlinehdr_version integer igds_mlinenode_props string igds_model_id integer igds_model_name string igds_multiline_closed char(5) igds_multiline{}.color integer igds_multiline{}.offset double igds_multiline{}.style integer igds_multiline{}.weight integer igds_node_number integer igds_num_breaks integer igds_num_lines integer igds_num_ref_points integer igds_options_count integer igds_originalType integer igds_original_justification integer igds_oval_around_text integer igds_primary_axis double igds_quat.w double igds_quat.x double igds_quat.y double igds_quat.z double igds_rotation double igds_secondary_axis double igds_show_leading_zeroes integer igds_show_secondary integer igds_show_trailing_zeroes integer igds_snappable char(4) igds_start_angle double igds_startcap_angle double igds_startcap_color integer igds_startcap_style integer igds_startcap_weight integer igds_string_len double igds_style integer igds_style_name char(60) igds_style_set_bylevel char(5) igds_sweep_angle double igds_symbology integer igds_tag_names{} char(50) igds_terminator integer igds_terminator_location integer igds_text_color integer igds_text_elements{}.fme_color integer igds_text_elements{}.igds_color integer igds_text_elements{}.igds_font integer igds_text_elements{}.igds_insertion_x double igds_text_elements{}.igds_insertion_y double igds_text_elements{}.igds_insertion_z double igds_text_elements{}.igds_justification integer igds_text_elements{}.igds_original_justification integer igds_text_elements{}.igds_rotation double igds_text_elements{}.igds_text_size double igds_text_elements{}.igds_text_string string igds_text_elements{}.igds_text_width_multiplier double igds_text_elements{}.x double igds_text_elements{}.y double igds_text_elements{}.z double igds_text_font integer igds_text_horizontal_flip logical igds_text_min_leader double igds_text_size double igds_text_string string igds_text_string{} char(80) igds_text_underlined integer igds_text_vert integer igds_text_vertical_flip logical igds_text_weight integer igds_text_width_multiplier double igds_textstyle_bg_border.x double igds_textstyle_bg_border.y double igds_textstyle_bg_color integer igds_textstyle_bg_fill_color integer igds_textstyle_bg_style integer igds_textstyle_bg_weight integer igds_textstyle_bold char(5) igds_textstyle_char_spacing integer igds_textstyle_codepage integer igds_textstyle_color integer igds_textstyle_exflags integer igds_textstyle_font integer igds_textstyle_id integer igds_textstyle_line_offset.x double igds_textstyle_line_offset.y double igds_textstyle_overline char(5) igds_textstyle_overline_color integer igds_textstyle_overline_spacing integer igds_textstyle_overline_style integer igds_textstyle_overline_weight integer igds_textstyle_overrides_style1 integer igds_textstyle_overrides_style2 integer igds_textstyle_slant integer igds_textstyle_tnode_word_wrap_len integer igds_textstyle_txflags integer igds_textstyle_underline char(5) igds_textstyle_underline_color integer igds_textstyle_underline_spacing integer igds_textstyle_underline_style integer igds_textstyle_underline_weight integer igds_tolerance_present integer igds_tolerance_type integer igds_transparency double igds_type char(20) igds_upper_x double igds_upper_y double igds_use_comma_not_point integer igds_use_text_color integer igds_use_text_weight integer igds_view_id integer igds_weight integer igds_weight_set_bylevel char(5) igds_witness_line_cos_value double igds_witness_line_extension double igds_witness_line_offset double igds_witness_line_sin_value double igds_xattributes{}.attr_id integer igds_xattributes{}.childIds string igds_xattributes{}.data string igds_xattributes{}.data_prefix string igds_xattributes{}.feature char(80) igds_xattributes{}.fileName string igds_xattributes{}.fullPath string igds_xattributes{}.handler_id integer igds_xattributes{}.handler_type integer igds_xattributes{}.isValid char(4) igds_xattributes{}.linkName string igds_xattributes{}.linkType char(12) igds_xattributes{}.ref_elem_id integer igds_xattributes{}.type char(40) igds_xattributes{}.url string igds_xattributes{}.uuid char(36) igds_xattributes{}.xml string igds_xfm_data_prefix char(8) igds_xfm_name string igds_xfm_parent_uuid char(36) igds_xfm_ref_elem_id integer igds_xfm_root_uuid char(36) igds_xfm_url string igds_xfm_uuid char(36) igds_xfm_xml string igds_xfmstore_appid_word0 integer igds_xfmstore_appid_word1 integer igds_xfmstore_storeid char(5) igds_xfmstore_url string igds_xfmstore_xml string igds_xhigh double igds_xlow double igds_xref_base_nest_depth integer igds_xref_camera_focal_len double igds_xref_camera_pos_x double igds_xref_camera_pos_y double igds_xref_camera_pos_z double igds_xref_clip_pt{}.x double igds_xref_clip_pt{}.y double igds_xref_desc string igds_xref_file_build_opts integer igds_xref_file_disp_opts integer igds_xref_file_name string igds_xref_file_num integer igds_xref_group_id integer igds_xref_master_origin_x double igds_xref_master_origin_y double igds_xref_master_origin_z double igds_xref_model_name string igds_xref_name string igds_xref_nest_depth integer igds_xref_parent_attach_id integer igds_xref_parent_file_path string igds_xref_path string igds_xref_priority integer igds_xref_ref_origin_x double igds_xref_ref_origin_y double igds_xref_ref_origin_z double igds_xref_rotation double igds_xref_scale double igds_xref_version integer igds_xref_z_back double igds_xref_z_front double igds_yhigh double igds_ylow double igds_zhigh integer igds_zhigh_uor integer igds_zlow double igds_zlow_uor double incosada_feature_code integer incosada_fid string incosada_sequence_num integer link_type_0 char(40) link_type_1 char(40) link_type_2 char(40) mslink_0 integer mslink_1 integer mslink_2 integer multi_reader_full_id integer multi_reader_id integer multi_reader_keyword char(50) multi_reader_type char(50) state_num integer ufid integer"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE="FEATURE_TYPES_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="21627"
+#!   COORDSYS=""
+#!   FEATURE_TYPES="$(FEATURE_TYPES)"
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="DGNV8_IN_EXPAND_UNNAMED_CELLS DGNV8_IN_SPLIT_COMPLEX_CHAINS DGNV8_IN_SPLIT_MULTITEXT DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS DGNV8_IN_EXPLODE_DIMENSION_ELEM DGNV8_IN_USE_XREF_PARENT_MODEL DGNV8_IN_READ_XREF_NEST_DEPTH DGNV8_IN_UOR_SCALE DGNV8_IN_UORS_PER_SUB DGNV8_IN_SUBS_PER_MASTER DGNV8_IN_ELEVATION_SHIFT_FACTOR DGNV8_IN_CURVE_VERTICES DGNV8_IN_READ_TAGS DGNV8_IN_READ_XATTRS_AND_ITEM_SETS COMPUTE_SEED_FILE_PARMS DGNV8_IN_APPLY_WORLD_FILE DGNV8_IN_REMOVE_DUPLICATES DGNV8_IN_PRESERVE_CURVES DGNV8_IN_ASSUME_MATCHING_UNITS UOR_GLOBAL_ORIGIN_X UOR_GLOBAL_ORIGIN_Y UOR_GLOBAL_ORIGIN_Z DGNV8_OUT_UOR_GLOBAL_ORIGIN_X DGNV8_OUT_UOR_GLOBAL_ORIGIN_Y DGNV8_OUT_UOR_GLOBAL_ORIGIN_Z MASTER_UNIT_NAME SUB_UNIT_NAME UORS_PER_SUB SUBS_PER_MASTER DGNV8_OUT_CREATE_LINE_ELEMENTS DGNV8_OUT_MANGLE_DBCS_TEXT DGNV8_OUT_DEFAULT_CELL_NAME DGNV8_OUT_SPLIT_BIG_DGN7_FILES DGNV8_OUT_SPLIT_SIZE_DGN7_FILES DGNV8_OUT_SCALE_CELL_MODELS DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED DGNV8_OUT_RSC_FONT_FILE"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="SHAPEFILE"
+#!   DATASET="$(DestDataset_SHAPEFILE)"
+#!   KEYWORD="SHAPEFILE_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="10"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="shapefile_type {FME_GEN_GEOMETRY}"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="fme_basename varchar(50) fme_color varchar(50) fme_dataset varchar(50) fme_feature_type varchar(50) fme_fill_color varchar(50) fme_geometry varchar(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string varchar(50) fme_type varchar(50) shapefile_type varchar(30)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP shape_layer_group DIMENSION Shapefile&quot; &quot;&quot; &quot;GUI LOOKUP_CHOICE shape_dimension Dimension&lt;space&gt;From&lt;space&gt;First&lt;space&gt;Feature,AUTO%2D,2D%2D&lt;space&gt;+&lt;space&gt;Measures,2DM%3D&lt;space&gt;+&lt;space&gt;Measures,3DM Output Dimension&quot; AUTO "
+#!   ATTR_INDEX_TYPES="Indexed"
+#!   ATTR_NAME_INVALID_CHARS=". -%[]&quot;!?*&apos;&amp;\/{}"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="21627"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="SHAPEFILE_OUT_SURFACE_SOLID_STORAGE SHAPEFILE_OUT_MEASURES_AS_Z"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="shp file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_GEOMETRY_TYPE"
+#!   VALUE="shapefile_first_feature"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Shapefile1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Esri Shapefile(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the Esri Shapefile"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="varchar(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(14)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(6)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(5)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="varchar(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_line"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_first_feature"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_feature_table"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shapefile_first_feature"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_cell"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_shared_cell"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_curve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_multi_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_text_node"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_ellipse"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_3d_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_mesh"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_oriented_arc"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_complex_shape"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_complex_chain"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_xref"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_xfmstore"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_polygon_collection"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_nongeom_collection"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_line"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_first_feature"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_feature_table"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_polygon"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="shapefile_first_feature"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="SHAPEFILE"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Cubi_poly"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="6"
+#!   FEAT_GEOMTYPE="shapefile_polygon"
+#!   POSITION="20 -235"
+#!   BOUNDING_RECT="20 -235 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="SHAPEFILE_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_Fenomen" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_HOJA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FIGURA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CODIGO" ATTR_TYPE="varchar(9)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Area" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="varchar(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Edi_lin"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="7"
+#!   FEAT_GEOMTYPE="shapefile_line"
+#!   POSITION="20 -378"
+#!   BOUNDING_RECT="20 -378 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="SHAPEFILE_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_Fenomen" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_HOJA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ESTADO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BIC" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CLASIF" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SITUACION" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="USO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE" ATTR_TYPE="varchar(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Edi_Poly"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="8"
+#!   FEAT_GEOMTYPE="shapefile_polygon"
+#!   POSITION="20 -521"
+#!   BOUNDING_RECT="20 -521 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="SHAPEFILE_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_Fenomen" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ESTADO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_HOJA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BIC" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CLASIF" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE" ATTR_TYPE="varchar(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SITUACION" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="USO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="C_NUCLEO_I" ATTR_TYPE="varchar(14)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="D_NUCLEO_I" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Area" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Red_poly"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="9"
+#!   FEAT_GEOMTYPE="shapefile_polygon"
+#!   POSITION="20 -664"
+#!   BOUNDING_RECT="20 -664 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="SHAPEFILE_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_Fenomen" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_HOJA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SITUACION" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ESTADOFIS" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TITULAR" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO_TRAMO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ORDEN" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE" ATTR_TYPE="varchar(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE_ALT" ATTR_TYPE="varchar(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ESTADO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VIA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Area" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Service_poly"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="10"
+#!   FEAT_GEOMTYPE="shapefile_polygon"
+#!   POSITION="20 -807"
+#!   BOUNDING_RECT="20 -807 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="SHAPEFILE_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER=""
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="false"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_Fenomen" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CODEXPLOT" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ESTADO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_HOJA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE" ATTR_TYPE="varchar(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TITULAR" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SITUACION" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ENERGIA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CORONACION" ATTR_TYPE="varchar(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="COTAMAX" ATTR_TYPE="varchar(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Area" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="REF_05007_Sports_EDGE_Multipurpose_Ln"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="11"
+#!   FEAT_GEOMTYPE="igds_point igds_line igds_shape igds_solid"
+#!   POSITION="20 489.01562515625164"
+#!   BOUNDING_RECT="20 489.01562515625164 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="DGNV8_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="true"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Red_poly"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="18"
+#!   FEAT_GEOMTYPE="shapefile_polygon"
+#!   POSITION="4596.0916202793005 -726.50062500624995"
+#!   BOUNDING_RECT="4596.0916202793005 -726.50062500624995 454 71"
+#!   ORDER="500000000000094"
+#!   COLLAPSED="true"
+#!   KEYWORD="SHAPEFILE_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_Fenomen" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_HOJA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SITUACION" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ESTADOFIS" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TITULAR" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO_TRAMO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ORDEN" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE" ATTR_TYPE="varchar(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE_ALT" ATTR_TYPE="varchar(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ESTADO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="VIA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Area" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="AUTO"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Cubi_poly"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="19"
+#!   FEAT_GEOMTYPE="shapefile_polygon"
+#!   POSITION="4468.8463078261766 603.08226582265831"
+#!   BOUNDING_RECT="4468.8463078261766 603.08226582265831 454 71"
+#!   ORDER="500000000000095"
+#!   COLLAPSED="true"
+#!   KEYWORD="SHAPEFILE_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_Fenomen" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_HOJA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE" ATTR_TYPE="varchar(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="FIGURA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CODIGO" ATTR_TYPE="varchar(9)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Area" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="AUTO"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Edi_lin"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="20"
+#!   FEAT_GEOMTYPE="shapefile_line"
+#!   POSITION="4507.9091984550832 258.72511725117238"
+#!   BOUNDING_RECT="4507.9091984550832 258.72511725117238 454 71"
+#!   ORDER="500000000000096"
+#!   COLLAPSED="true"
+#!   KEYWORD="SHAPEFILE_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_Fenomen" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_HOJA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ESTADO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BIC" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CLASIF" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SITUACION" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="USO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE" ATTR_TYPE="varchar(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="AUTO"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Service_poly"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="21"
+#!   FEAT_GEOMTYPE="shapefile_polygon"
+#!   POSITION="4596.0916202793005 -1115.5968359683598"
+#!   BOUNDING_RECT="4596.0916202793005 -1115.5968359683598 454 71"
+#!   ORDER="500000000000097"
+#!   COLLAPSED="true"
+#!   KEYWORD="SHAPEFILE_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_Fenomen" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CODEXPLOT" ATTR_TYPE="varchar(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ESTADO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_HOJA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE" ATTR_TYPE="varchar(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TITULAR" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SITUACION" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ENERGIA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CORONACION" ATTR_TYPE="varchar(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="COTAMAX" ATTR_TYPE="varchar(20)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Area" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="AUTO"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Edi_Poly"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="22"
+#!   FEAT_GEOMTYPE="shapefile_polygon"
+#!   POSITION="4596.0916202793005 -470.21824218242153"
+#!   BOUNDING_RECT="4596.0916202793005 -470.21824218242153 454 71"
+#!   ORDER="500000000000098"
+#!   COLLAPSED="true"
+#!   KEYWORD="SHAPEFILE_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_Fenomen" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ESTADO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_HOJA" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="BIC" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CLASIF" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE" ATTR_TYPE="varchar(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SITUACION" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="USO" ATTR_TYPE="varchar(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="C_NUCLEO_I" ATTR_TYPE="varchar(14)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="D_NUCLEO_I" ATTR_TYPE="varchar(80)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Area" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="shape_dimension" PARM_VALUE="AUTO"/>
+#!     <DEFLINE_PARM PARM_NAME="shape_layer_group" PARM_VALUE=""/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="SHAPEFILE_1"
+#!   OVERRIDE="-SHAPEFILE_1_DATASET"
+#!   DATASET="SHAPEFILE_1/Service_poly.shp&quot;&quot;"
+#! />
+#! <DATASET
+#!   NAME="DGNV8_1"
+#!   OVERRIDE="-DGNV8_1_DATASET"
+#!   DATASET="DGNV8_1/Ref_Final-517.dgn"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="SHAPEFILE_2"
+#!   OVERRIDE="-SHAPEFILE_2_DATASET"
+#!   DATASET="SHAPEFILE_2/Out"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_SHAPEFILE Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Source Esri Shapefile(s):"
+#!   DEFAULT_VALUE="&quot;&quot;C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Cubi_poly.shp&quot; &quot;C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Edi_lin.shp&quot; &quot;C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Edi_Poly.shp&quot; &quot;C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Red_poly.shp&quot; &quot;C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Service_poly.shp&quot;&quot;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_DGNV8 Design_Files(*.dgn)|*.dgn|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Bentley MicroStation Design File(s):"
+#!   DEFAULT_VALUE="C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\Dgns\Ref\Ref_Final-517.dgn"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES C:&lt;backslash&gt;JEGO&lt;backslash&gt;Sunshine&lt;backslash&gt;Client-Correction&lt;backslash&gt;P_1_2_4_Height_Errors_From_Client&lt;backslash&gt;Dgns&lt;backslash&gt;Ref&lt;backslash&gt;Ref_Final-517.dgn,_FORMAT_OVERRIDE_,dgnv8Names,_DATASET_OVERRIDE_,SourceDataset_DGNV8,UNITS,IGDS_MASTER_UNITS,UOR_GLOBAL_ORIGIN_X,,UOR_GLOBAL_ORIGIN_Y,,UOR_GLOBAL_ORIGIN_Z,,FME_GROUP_NAMED1,,ENCODING,windows-1252,FME_GROUP_NAMED2,,EXPAND_CELLS,yes,PRESERVE_CELL_INSERTS,no,EXPAND_UNNAMED_CELLS,no,PRESERVE_UNNAMEDCELL_INSERTS,no,XREF_OPTIONS,,READ_XREF_FILES,NO,READ_XREF_NEST_DEPTH,0,USE_XREF_PARENT_MODEL,&lt;Unused&gt;,READ_XREFS_AS_ELEMENTS,YES,TAGS_AS_TEXT,NO,FME_GROUP_NAMED3,,READ_TAGS,NO,READ_XATTRS_AND_ITEM_SETS,NO,FME_GROUP_NAMED4,,FME_GROUP_NAMED5,,READ_SELECTED_MODELS,NO,SELECTED_MODELS,,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,DGNV8_RDR_ADV_PARM_GROUP,,SPLIT_COMPLEX_CHAINS,NO,SPLIT_MULTITEXT,YES,EXPLODE_DIMENSION_ELEM,YES,APPLY_WORLD_FILE,YES,PRESERVE_CURVES,NO,REMOVE_DUPLICATES,NO,ASSUME_MATCHING_UNITS,NO,UOR_SCALE,,UORS_PER_SUB,,SUBS_PER_MASTER,,ELEVATION_SHIFT_FACTOR,,CURVE_VERTICES,,NETWORK_AUTHENTICATION,,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,APPLY_WORLD_FILE_TO_ATTRS,YES,IGDS_FRAMME,NO,OVERRIDE_GLOBAL_ORIGIN,no,METAFILE,dgnv8Names,READER_META_ATTRIBUTES,fme_dataset,IGDS_MSLINKS,NO,_MERGE_SCHEMAS,YES,DYNAMIC_WORKFLOW,yes,USE_RICH_ARC_GEOM,YES,USE_LEVEL_NAMES,YES,_MERGE_SCHEMAS,YES Feature Types to Read"
+#!   DEFAULT_VALUE="REF_1003_Axis_SING_Carriageway_GRD_Use_ENL_Ln REF_1003_Axis_SING_Carriageway_GRD_Use_Trunk_Ln REF_1003_EDGE_SING_carriageway_GRD_Use_ENL_Ln REF_1003_EDGE_SING_carriageway_GRD_Use_Trunk_Ln REF_2000_Urban_road_axis_GRD_Generic_Ln REF_3001_RD_Axis_Paved_GRD_Ln REF_3001_RD_Axis_UnPaved_GRD_Ln REF_3001_RD_EDGE_Paved_GRD_Ln REF_3001_RD_EDGE_UnPaved_GRD_Ln REF_3001_RD_Linear_UnPaved_GRD_Ln REF_03002_Depression_Contour_Ln REF_03002_Master_Contour_Ln REF_03002_Normal_Contour_Ln REF_3002_Trackpath_GRD_Ln REF_03003_Sleep_Foot_Ln REF_03003_Sleep_Head_Ln REF_03003_Slope_foot_cutting_Ln REF_03003_Slope_foot_embankment_Ln REF_03003_Slope_Head_cutting_Ln REF_03003_Slope_head_embankment_Ln REF_03003_Terrace_Margin_Ln REF_04008_Element_Construct_Curb_Use_Ln REF_05002_Mining_FCLTY_Mine_EDGE_Use_Ln REF_05007_Sports_EDGE_Footbal_Ln REF_05007_Sports_EDGE_Multipurpose_Ln REF_05007_Sports_EDGE_Other_Ln REF_05007_Sports_EDGE_Paintlines-Field_Ln REF_05007_Sports_EDGE_Racetrack_Circuit_Ln REF_05007_Sports_EDGE_Tennis_Ln REF_05008_Recreational_EDGE_Playground_Ln REF_06002_ARTIFI_Channel_AXIS_GRD_Use_Ln REF_06002_ARTIFI_Channel_EDGE_GRD_Use_Ln REF_06002_ARTIFI_Channel_LINEAR_GRD_Use_Ln REF_06002_ARTIFI_IRRI_Ditch_EDGE_GRD_Use_Ln REF_06002_ARTIFI_IRRI_Ditch_LINEAR_GRD_Use_Ln REF_06004_NATUR_NON_PER_LINEAR_Water_Unclassified_Ln REF_06004_NATUR_PER_EDGE_Water_Unclassified_Ln REF_06006_Coronation_line_Ln REF_06007_EDGE_Swimming_Pool_Ln REF_06007_NON_PER_Lagoon_EDGE_Water_Ln REF_06007_PER_Lagoon_EDGE_Water_Ln REF_06007_Pond_Generic_EDGE_Water_Ln REF_06007_Pond_Pool_EDGE_water_Ln REF_06007_Pond_Water_Reservoir_EDGE_Water_Ln REF_06007_Water_Reservoir_Edge_Ln REF_07005_CETN_EDGE_RD_Island_Use_Ln REF_07005_Ditch_roadside_GRD_Ln REF_07005_Line_Median_Use_Ln REF_09002_Public_works_Hydro_EDGE_Earth_DAM_Tie_Ln REF_10001_Trans_Infra_FCLTY_EDGE_Paved_Esplanade_Ln REF_10001_Trans_Infra_FCLTY_EDGE_Unpaved_Esplanade_Ln REF_12000_Firewall_Axis_Ln REF_12000_Separation_Use_0_Ln REF_12000L_Firewall_Border_Ln REF_3001_RD_Linear_Paved_GRD_Ln REF_03003_Cliff_Foot_Ln REF_05007_Sports_EDGE_Sports_Zone_Ln REF_05008_Recreational_EDGE_Picnic_area_Ln REF_06004_NATUR_PER_LINEAR_Water_Unclassified_Ln REF_06004_PER_EDGE_Water_Unclassified_Ln REF_06005_Water_Island_Border_Rivers_Reservoirs_Ln"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME DestDataset_SHAPEFILE Destination Esri Shapefile Folder:"
+#!   DEFAULT_VALUE="C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Out"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IlwiXCJDOlxcSkVHT1xcU3Vuc2hpbmVcXENsaWVudC1Db3JyZWN0aW9uXFxQXzFfMl80X0hlaWdodF9FcnJvcnNfRnJvbV9DbGllbnRcXEdEQlxcNTE3XFxDdWJpX3BvbHkuc2hwXCIgXCJDOlxcSkVHT1xcU3Vuc2hpbmVcXENsaWVudC1Db3JyZWN0aW9uXFxQXzFfMl80X0hlaWdodF9FcnJvcnNfRnJvbV9DbGllbnRcXEdEQlxcNTE3XFxFZGlfbGluLnNocFwiIFwiQzpcXEpFR09cXFN1bnNoaW5lXFxDbGllbnQtQ29ycmVjdGlvblxcUF8xXzJfNF9IZWlnaHRfRXJyb3JzX0Zyb21fQ2xpZW50XFxHREJcXDUxN1xcRWRpX1BvbHkuc2hwXCIgXCJDOlxcSkVHT1xcU3Vuc2hpbmVcXENsaWVudC1Db3JyZWN0aW9uXFxQXzFfMl80X0hlaWdodF9FcnJvcnNfRnJvbV9DbGllbnRcXEdEQlxcNTE3XFxSZWRfcG9seS5zaHBcIiBcIkM6XFxKRUdPXFxTdW5zaGluZVxcQ2xpZW50LUNvcnJlY3Rpb25cXFBfMV8yXzRfSGVpZ2h0X0Vycm9yc19Gcm9tX0NsaWVudFxcR0RCXFw1MTdcXFNlcnZpY2VfcG9seS5zaHBcIlwiIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJTaGFwZWZpbGVzIiwiZmlsdGVyIjpbIiouc2hwIl19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIFNoYXBlZmlsZXMiLCJmaWx0ZXIiOlsiKi5zaHoiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBGaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X1NIQVBFRklMRSIsInByb21wdCI6IlNvdXJjZSBFc3JpIFNoYXBlZmlsZShzKToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOnRydWUsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJyZWFkIiwiZGVmYXVsdFZhbHVlIjoiQzpcXEpFR09cXFN1bnNoaW5lXFxDbGllbnQtQ29ycmVjdGlvblxcUF8xXzJfNF9IZWlnaHRfRXJyb3JzX0Zyb21fQ2xpZW50XFxEZ25zXFxSZWZcXFJlZl9GaW5hbC01MTcuZGduIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJEZXNpZ24gRmlsZXMiLCJmaWx0ZXIiOlsiKi5kZ24iXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X0RHTlY4IiwicHJvbXB0IjoiU291cmNlIEJlbnRsZXkgTWljcm9TdGF0aW9uIERlc2lnbiBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiY2hvaWNlU2V0dGluZ3MiOnsiY2hvaWNlU2V0IjoicmVhZGVyVmFsdWVzIiwiY29uZmlndXJhdGlvbiI6W3sibmFtZSI6IlVOSVRTIiwidmFsdWUiOiJJR0RTX01BU1RFUl9VTklUUyJ9LHsibmFtZSI6IlVPUl9HTE9CQUxfT1JJR0lOX1giLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlVPUl9HTE9CQUxfT1JJR0lOX1kiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlVPUl9HTE9CQUxfT1JJR0lOX1oiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkZNRV9HUk9VUF9OQU1FRDEiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkVOQ09ESU5HIiwidmFsdWUiOiJ3aW5kb3dzLTEyNTIifSx7Im5hbWUiOiJGTUVfR1JPVVBfTkFNRUQyIiwidmFsdWUiOiIifSx7Im5hbWUiOiJFWFBBTkRfQ0VMTFMiLCJ2YWx1ZSI6InllcyJ9LHsibmFtZSI6IlBSRVNFUlZFX0NFTExfSU5TRVJUUyIsInZhbHVlIjoibm8ifSx7Im5hbWUiOiJFWFBBTkRfVU5OQU1FRF9DRUxMUyIsInZhbHVlIjoibm8ifSx7Im5hbWUiOiJQUkVTRVJWRV9VTk5BTUVEQ0VMTF9JTlNFUlRTIiwidmFsdWUiOiJubyJ9LHsibmFtZSI6IlhSRUZfT1BUSU9OUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiUkVBRF9YUkVGX0ZJTEVTIiwidmFsdWUiOiJOTyJ9LHsibmFtZSI6IlJFQURfWFJFRl9ORVNUX0RFUFRIIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiVVNFX1hSRUZfUEFSRU5UX01PREVMIiwidmFsdWUiOiI8VW51c2VkPiJ9LHsibmFtZSI6IlJFQURfWFJFRlNfQVNfRUxFTUVOVFMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IlRBR1NfQVNfVEVYVCIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJGTUVfR1JPVVBfTkFNRUQzIiwidmFsdWUiOiIifSx7Im5hbWUiOiJSRUFEX1RBR1MiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiUkVBRF9YQVRUUlNfQU5EX0lURU1fU0VUUyIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJGTUVfR1JPVVBfTkFNRUQ0IiwidmFsdWUiOiIifSx7Im5hbWUiOiJGTUVfR1JPVVBfTkFNRUQ1IiwidmFsdWUiOiIifSx7Im5hbWUiOiJSRUFEX1NFTEVDVEVEX01PREVMUyIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJTRUxFQ1RFRF9NT0RFTFMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlVTRV9TRUFSQ0hfRU5WRUxPUEUiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01JTlgiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUlOWSIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9NQVhYIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01BWFkiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfQ09PUkRJTkFURV9TWVNURU0iLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkNMSVBfVE9fRU5WRUxPUEUiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiREdOVjhfUkRSX0FEVl9QQVJNX0dST1VQIiwidmFsdWUiOiIifSx7Im5hbWUiOiJTUExJVF9DT01QTEVYX0NIQUlOUyIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJTUExJVF9NVUxUSVRFWFQiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IkVYUExPREVfRElNRU5TSU9OX0VMRU0iLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IkFQUExZX1dPUkxEX0ZJTEUiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IlBSRVNFUlZFX0NVUlZFUyIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJSRU1PVkVfRFVQTElDQVRFUyIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJBU1NVTUVfTUFUQ0hJTkdfVU5JVFMiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiVU9SX1NDQUxFIiwidmFsdWUiOiIifSx7Im5hbWUiOiJVT1JTX1BFUl9TVUIiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlNVQlNfUEVSX01BU1RFUiIsInZhbHVlIjoiIn0seyJuYW1lIjoiRUxFVkFUSU9OX1NISUZUX0ZBQ1RPUiIsInZhbHVlIjoiIn0seyJuYW1lIjoiQ1VSVkVfVkVSVElDRVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik5FVFdPUktfQVVUSEVOVElDQVRJT04iLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkNPT1JEU1lTIiwidmFsdWUiOiIifSx7Im5hbWUiOiJTVEFSVF9GRUFUVVJFIiwidmFsdWUiOiIifSx7Im5hbWUiOiJNQVhfRkVBVFVSRVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1BWF9GRUFUVVJFU19QRVJfRkVBVFVSRV9UWVBFIiwidmFsdWUiOiIifSx7Im5hbWUiOiJNSU5fRkVBVFVSRVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkFQUExZX1dPUkxEX0ZJTEVfVE9fQVRUUlMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IklHRFNfRlJBTU1FIiwidmFsdWUiOiJOTyJ9LHsibmFtZSI6Ik9WRVJSSURFX0dMT0JBTF9PUklHSU4iLCJ2YWx1ZSI6Im5vIn0seyJuYW1lIjoiUkVBREVSX01FVEFfQVRUUklCVVRFUyIsInZhbHVlIjoiZm1lX2RhdGFzZXQifSx7Im5hbWUiOiJJR0RTX01TTElOS1MiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiX01FUkdFX1NDSEVNQVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IkRZTkFNSUNfV09SS0ZMT1ciLCJ2YWx1ZSI6InllcyJ9LHsibmFtZSI6IlVTRV9SSUNIX0FSQ19HRU9NIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJVU0VfTEVWRUxfTkFNRVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6Il9NRVJHRV9TQ0hFTUFTIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJSRVRSSUVWRV9BTExfVEFCTEVfTkFNRVMiLCJ2YWx1ZSI6IllFUyJ9XSwiZGF0YXNldCI6eyJwYXJhbWV0ZXIiOiJTb3VyY2VEYXRhc2V0X0RHTlY4In0sImZvcm1hdCI6ImRnbnY4TmFtZXMiLCJtZXRhZmlsZSI6ImRnbnY4TmFtZXMiLCJ2YWx1ZXNUb1VzZSI6ImZlYXR1cmVUeXBlcyJ9LCJkZWZhdWx0VmFsdWUiOiJSRUZfMTAwM19BeGlzX1NJTkdfQ2FycmlhZ2V3YXlfR1JEX1VzZV9FTkxfTG4gUkVGXzEwMDNfQXhpc19TSU5HX0NhcnJpYWdld2F5X0dSRF9Vc2VfVHJ1bmtfTG4gUkVGXzEwMDNfRURHRV9TSU5HX2NhcnJpYWdld2F5X0dSRF9Vc2VfRU5MX0xuIFJFRl8xMDAzX0VER0VfU0lOR19jYXJyaWFnZXdheV9HUkRfVXNlX1RydW5rX0xuIFJFRl8yMDAwX1VyYmFuX3JvYWRfYXhpc19HUkRfR2VuZXJpY19MbiBSRUZfMzAwMV9SRF9BeGlzX1BhdmVkX0dSRF9MbiBSRUZfMzAwMV9SRF9BeGlzX1VuUGF2ZWRfR1JEX0xuIFJFRl8zMDAxX1JEX0VER0VfUGF2ZWRfR1JEX0xuIFJFRl8zMDAxX1JEX0VER0VfVW5QYXZlZF9HUkRfTG4gUkVGXzMwMDFfUkRfTGluZWFyX1VuUGF2ZWRfR1JEX0xuIFJFRl8wMzAwMl9EZXByZXNzaW9uX0NvbnRvdXJfTG4gUkVGXzAzMDAyX01hc3Rlcl9Db250b3VyX0xuIFJFRl8wMzAwMl9Ob3JtYWxfQ29udG91cl9MbiBSRUZfMzAwMl9UcmFja3BhdGhfR1JEX0xuIFJFRl8wMzAwM19TbGVlcF9Gb290X0xuIFJFRl8wMzAwM19TbGVlcF9IZWFkX0xuIFJFRl8wMzAwM19TbG9wZV9mb290X2N1dHRpbmdfTG4gUkVGXzAzMDAzX1Nsb3BlX2Zvb3RfZW1iYW5rbWVudF9MbiBSRUZfMDMwMDNfU2xvcGVfSGVhZF9jdXR0aW5nX0xuIFJFRl8wMzAwM19TbG9wZV9oZWFkX2VtYmFua21lbnRfTG4gUkVGXzAzMDAzX1RlcnJhY2VfTWFyZ2luX0xuIFJFRl8wNDAwOF9FbGVtZW50X0NvbnN0cnVjdF9DdXJiX1VzZV9MbiBSRUZfMDUwMDJfTWluaW5nX0ZDTFRZX01pbmVfRURHRV9Vc2VfTG4gUkVGXzA1MDA3X1Nwb3J0c19FREdFX0Zvb3RiYWxfTG4gUkVGXzA1MDA3X1Nwb3J0c19FREdFX011bHRpcHVycG9zZV9MbiBSRUZfMDUwMDdfU3BvcnRzX0VER0VfT3RoZXJfTG4gUkVGXzA1MDA3X1Nwb3J0c19FREdFX1BhaW50bGluZXMtRmllbGRfTG4gUkVGXzA1MDA3X1Nwb3J0c19FREdFX1JhY2V0cmFja19DaXJjdWl0X0xuIFJFRl8wNTAwN19TcG9ydHNfRURHRV9UZW5uaXNfTG4gUkVGXzA1MDA4X1JlY3JlYXRpb25hbF9FREdFX1BsYXlncm91bmRfTG4gUkVGXzA2MDAyX0FSVElGSV9DaGFubmVsX0FYSVNfR1JEX1VzZV9MbiBSRUZfMDYwMDJfQVJUSUZJX0NoYW5uZWxfRURHRV9HUkRfVXNlX0xuIFJFRl8wNjAwMl9BUlRJRklfQ2hhbm5lbF9MSU5FQVJfR1JEX1VzZV9MbiBSRUZfMDYwMDJfQVJUSUZJX0lSUklfRGl0Y2hfRURHRV9HUkRfVXNlX0xuIFJFRl8wNjAwMl9BUlRJRklfSVJSSV9EaXRjaF9MSU5FQVJfR1JEX1VzZV9MbiBSRUZfMDYwMDRfTkFUVVJfTk9OX1BFUl9MSU5FQVJfV2F0ZXJfVW5jbGFzc2lmaWVkX0xuIFJFRl8wNjAwNF9OQVRVUl9QRVJfRURHRV9XYXRlcl9VbmNsYXNzaWZpZWRfTG4gUkVGXzA2MDA2X0Nvcm9uYXRpb25fbGluZV9MbiBSRUZfMDYwMDdfRURHRV9Td2ltbWluZ19Qb29sX0xuIFJFRl8wNjAwN19OT05fUEVSX0xhZ29vbl9FREdFX1dhdGVyX0xuIFJFRl8wNjAwN19QRVJfTGFnb29uX0VER0VfV2F0ZXJfTG4gUkVGXzA2MDA3X1BvbmRfR2VuZXJpY19FREdFX1dhdGVyX0xuIFJFRl8wNjAwN19Qb25kX1Bvb2xfRURHRV93YXRlcl9MbiBSRUZfMDYwMDdfUG9uZF9XYXRlcl9SZXNlcnZvaXJfRURHRV9XYXRlcl9MbiBSRUZfMDYwMDdfV2F0ZXJfUmVzZXJ2b2lyX0VkZ2VfTG4gUkVGXzA3MDA1X0NFVE5fRURHRV9SRF9Jc2xhbmRfVXNlX0xuIFJFRl8wNzAwNV9EaXRjaF9yb2Fkc2lkZV9HUkRfTG4gUkVGXzA3MDA1X0xpbmVfTWVkaWFuX1VzZV9MbiBSRUZfMDkwMDJfUHVibGljX3dvcmtzX0h5ZHJvX0VER0VfRWFydGhfREFNX1RpZV9MbiBSRUZfMTAwMDFfVHJhbnNfSW5mcmFfRkNMVFlfRURHRV9QYXZlZF9Fc3BsYW5hZGVfTG4gUkVGXzEwMDAxX1RyYW5zX0luZnJhX0ZDTFRZX0VER0VfVW5wYXZlZF9Fc3BsYW5hZGVfTG4gUkVGXzEyMDAwX0ZpcmV3YWxsX0F4aXNfTG4gUkVGXzEyMDAwX1NlcGFyYXRpb25fVXNlXzBfTG4gUkVGXzEyMDAwTF9GaXJld2FsbF9Cb3JkZXJfTG4gUkVGXzMwMDFfUkRfTGluZWFyX1BhdmVkX0dSRF9MbiBSRUZfMDMwMDNfQ2xpZmZfRm9vdF9MbiBSRUZfMDUwMDdfU3BvcnRzX0VER0VfU3BvcnRzX1pvbmVfTG4gUkVGXzA1MDA4X1JlY3JlYXRpb25hbF9FREdFX1BpY25pY19hcmVhX0xuIFJFRl8wNjAwNF9OQVRVUl9QRVJfTElORUFSX1dhdGVyX1VuY2xhc3NpZmllZF9MbiBSRUZfMDYwMDRfUEVSX0VER0VfV2F0ZXJfVW5jbGFzc2lmaWVkX0xuIFJFRl8wNjAwNV9XYXRlcl9Jc2xhbmRfQm9yZGVyX1JpdmVyc19SZXNlcnZvaXJzX0xuIiwibmFtZSI6IkZFQVRVUkVfVFlQRVMiLCJwcm9tcHQiOiJGZWF0dXJlIFR5cGVzIHRvIFJlYWQiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJsaXN0Ym94IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZFBhcnRzIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiJDOlxcSkVHT1xcU3Vuc2hpbmVcXENsaWVudC1Db3JyZWN0aW9uXFxQXzFfMl80X0hlaWdodF9FcnJvcnNfRnJvbV9DbGllbnRcXEdEQlxcNTE3XFxPdXQiLCJpdGVtc1RvU2VsZWN0IjoiZm9sZGVycyIsIm5hbWUiOiJEZXN0RGF0YXNldF9TSEFQRUZJTEUiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBFc3JpIFNoYXBlZmlsZSBGb2xkZXI6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="DestDataset_SHAPEFILE" IS_STAND_ALONE="false" />
+#!     <INFO NAME="FEATURE_TYPES" IS_STAND_ALONE="false" />
+#!     <INFO NAME="SourceDataset_DGNV8" IS_STAND_ALONE="false" />
+#!     <INFO NAME="SourceDataset_SHAPEFILE" IS_STAND_ALONE="false" />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="2"
+#!   TYPE="SurfaceDraper"
+#!   VERSION="7"
+#!   POSITION="2116.2715420785198 -159.42835928359267"
+#!   BOUNDING_RECT="2116.2715420785198 -159.42835928359267 430 71"
+#!   ORDER="500000000000086"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21627"
+#! >
+#!     <OUTPUT_FEAT NAME="DRAPED_FEATURES"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIGURA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CODIGO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BIC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="USO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="C_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="D_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CODEXPLOT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TITULAR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ENERGIA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CORONACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COTAMAX" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADOFIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO_TRAMO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ORDEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE_ALT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VIA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADDZ_TYPE" PARM_VALUE="Replace Z"/>
+#!     <XFORM_PARM PARM_NAME="DRAPE_TYPE" PARM_VALUE="VERTEX"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE" PARM_VALUE="AUTO"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TOLERANCE" PARM_VALUE="0.01"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="SurfaceDraper"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="3"
+#!   TYPE="Chopper"
+#!   VERSION="7"
+#!   POSITION="1274.0756201192996 489.01562515625164"
+#!   BOUNDING_RECT="1274.0756201192996 489.01562515625164 454 71"
+#!   ORDER="500000000000093"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21627"
+#! >
+#!     <OUTPUT_FEAT NAME="CHOPPED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="_remnant" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="UNTOUCHED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="2"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="2" />
+#!     <XFORM_PARM PARM_NAME="APPROX_LENGTH" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="DEAGGREGATE_INPUT" PARM_VALUE="Deaggregate"/>
+#!     <XFORM_PARM PARM_NAME="GRID_AREAS" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MAX_VERTICES" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="MODE" PARM_VALUE="By Vertex"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="REMNANT_ATTR" PARM_VALUE="_remnant"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Chopper"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="28"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="3578.1607816078181 640.63140631406293"
+#!   BOUNDING_RECT="3578.1607816078181 640.63140631406293 454 71"
+#!   ORDER="500000000000099"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21627"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIGURA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CODIGO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BIC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="USO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="C_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="D_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CODEXPLOT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TITULAR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ENERGIA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CORONACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COTAMAX" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADOFIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO_TRAMO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ORDEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE_ALT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VIA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FIGURA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CODIGO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Area" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BIC" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="USO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="C_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="D_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CODEXPLOT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TITULAR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ENERGIA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CORONACION" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COTAMAX" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADOFIS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO_TRAMO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ORDEN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE_ALT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="VIA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;fme_basename&lt;closeparen&gt; = Cubi_poly"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="31"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="3578.1607816078181 187.92066420664219"
+#!   BOUNDING_RECT="3578.1607816078181 187.92066420664219 454 71"
+#!   ORDER="500000000000099"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21627"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIGURA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CODIGO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BIC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="USO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="C_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="D_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CODEXPLOT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TITULAR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ENERGIA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CORONACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COTAMAX" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADOFIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO_TRAMO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ORDEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE_ALT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VIA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FIGURA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CODIGO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Area" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BIC" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="USO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="C_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="D_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CODEXPLOT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TITULAR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ENERGIA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CORONACION" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COTAMAX" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADOFIS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO_TRAMO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ORDEN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE_ALT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="VIA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;fme_basename&lt;closeparen&gt; = Edi_lin"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="34"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="3597.2578620683685 -315.90253902539064"
+#!   BOUNDING_RECT="3597.2578620683685 -315.90253902539064 454 71"
+#!   ORDER="500000000000099"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21627"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIGURA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CODIGO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BIC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="USO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="C_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="D_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CODEXPLOT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TITULAR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ENERGIA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CORONACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COTAMAX" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADOFIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO_TRAMO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ORDEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE_ALT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VIA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FIGURA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CODIGO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Area" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BIC" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="USO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="C_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="D_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CODEXPLOT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TITULAR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ENERGIA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CORONACION" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COTAMAX" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADOFIS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO_TRAMO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ORDEN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE_ALT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="VIA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;fme_basename&lt;closeparen&gt; = Edi_Poly"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester_3"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="37"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="3640.2270417601649 -659.65597655976569"
+#!   BOUNDING_RECT="3640.2270417601649 -659.65597655976569 454 71"
+#!   ORDER="500000000000099"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21627"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIGURA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CODIGO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BIC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="USO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="C_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="D_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CODEXPLOT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TITULAR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ENERGIA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CORONACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COTAMAX" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADOFIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO_TRAMO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ORDEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE_ALT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VIA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FIGURA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CODIGO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Area" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BIC" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="USO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="C_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="D_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CODEXPLOT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TITULAR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ENERGIA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CORONACION" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COTAMAX" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADOFIS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO_TRAMO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ORDEN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE_ALT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="VIA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;fme_basename&lt;closeparen&gt; = Red_poly"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester_4"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="40"
+#!   TYPE="Tester"
+#!   VERSION="3"
+#!   POSITION="3648.0396198859466 -995.59683596835976"
+#!   BOUNDING_RECT="3648.0396198859466 -995.59683596835976 454 71"
+#!   ORDER="500000000000099"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="21627"
+#! >
+#!     <OUTPUT_FEAT NAME="PASSED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="FIGURA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CODIGO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Area" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="BIC" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="USO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="C_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="D_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CODEXPLOT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TITULAR" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ENERGIA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CORONACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COTAMAX" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADOFIS" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO_TRAMO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ORDEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE_ALT" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="VIA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="FAILED"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="FIGURA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CODIGO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Area" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="BIC" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="USO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="C_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="D_NUCLEO_I" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CODEXPLOT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TITULAR" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ENERGIA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CORONACION" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COTAMAX" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADOFIS" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO_TRAMO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ORDEN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE_ALT" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="VIA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ADVANCED_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="BOOL_OP" PARM_VALUE="OR"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_MSG" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COMPOSITE_TEST" PARM_VALUE="1"/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE_FEATURE_ORDER" PARM_VALUE="Per Output Port"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE" PARM_VALUE="TEST &lt;at&gt;Value&lt;openparen&gt;fme_basename&lt;closeparen&gt; = Service_poly"/>
+#!     <XFORM_PARM PARM_NAME="TEST_CLAUSE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEST_MODE" PARM_VALUE="TEST"/>
+#!     <XFORM_PARM PARM_NAME="TEST_PREVIEW_GROUP" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="Tester_5"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="13"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 2 DRAPE_FEATURES"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="7"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 2 DRAPE_FEATURES"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="8"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 2 DRAPE_FEATURES"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="16"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 2 DRAPE_FEATURES"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="17"
+#!   SOURCE_NODE="10"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 2 DRAPE_FEATURES"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="12"
+#!   SOURCE_NODE="11"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="29"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="28"
+#!   SOURCE_PORT_DESC="fo 0 DRAPED_FEATURES"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="32"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="31"
+#!   SOURCE_PORT_DESC="fo 0 DRAPED_FEATURES"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="1"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="35"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="34"
+#!   SOURCE_PORT_DESC="fo 0 DRAPED_FEATURES"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="2"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="38"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="37"
+#!   SOURCE_PORT_DESC="fo 0 DRAPED_FEATURES"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="3"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="41"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="40"
+#!   SOURCE_PORT_DESC="fo 0 DRAPED_FEATURES"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="4"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="4"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 0 CHOPPED"
+#!   TARGET_PORT_DESC="fi 0 POINTS&lt;solidus&gt;LINES"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="30"
+#!   SOURCE_NODE="28"
+#!   TARGET_NODE="19"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="33"
+#!   SOURCE_NODE="31"
+#!   TARGET_NODE="20"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="36"
+#!   SOURCE_NODE="34"
+#!   TARGET_NODE="22"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="39"
+#!   SOURCE_NODE="37"
+#!   TARGET_NODE="18"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="42"
+#!   SOURCE_NODE="40"
+#!   TARGET_NODE="21"
+#!   SOURCE_PORT_DESC="fo 0 PASSED"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="5"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="2"
+#!   SOURCE_PORT_DESC="fo 1 UNTOUCHED"
+#!   TARGET_PORT_DESC="fi 1 BREAKLINES"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 38
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_SHAPEFILE_1,SHAPEFILE_IN_READER_PARAMETERS_SHAPEFILE_1,SHAPEFILE_IN_ENCODING_SHAPEFILE_1,SHAPEFILE_IN_USE_SEARCH_ENVELOPE_SHAPEFILE_1,SHAPEFILE_IN_SEARCH_ENVELOPE_MINX_SHAPEFILE_1,SHAPEFILE_IN_SEARCH_ENVELOPE_MINY_SHAPEFILE_1,SHAPEFILE_IN_SEARCH_ENVELOPE_MAXX_SHAPEFILE_1,SHAPEFILE_IN_SEARCH_ENVELOPE_MAXY_SHAPEFILE_1,SHAPEFILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_SHAPEFILE_1,SHAPEFILE_IN_CLIP_TO_ENVELOPE_SHAPEFILE_1,SHAPEFILE_IN_ADVANCED_SHAPEFILE_1,SHAPEFILE_IN_TRIM_PRECEDING_SPACES_SHAPEFILE_1,SHAPEFILE_IN_READ_NUMERIC_PADDING_AS_SHAPEFILE_1,SHAPEFILE_IN_READ_BLANK_AS_SHAPEFILE_1,SHAPEFILE_IN_DONUT_DETECTION_SHAPEFILE_1,SHAPEFILE_IN_MEASURES_AS_Z_SHAPEFILE_1,SHAPEFILE_IN_REPORT_BAD_GEOMETRY_SHAPEFILE_1,SHAPEFILE_IN_NETWORK_AUTHENTICATION_SHAPEFILE_1,SourceDataset_DGNV8_1,UNITS_DGNV8_1,UOR_GLOBAL_ORIGIN_X_DGNV8_1,UOR_GLOBAL_ORIGIN_Y_DGNV8_1,UOR_GLOBAL_ORIGIN_Z_DGNV8_1,DGNV8_IN_FME_GROUP_NAMED1_DGNV8_1,DGNV8_IN_ENCODING_DGNV8_1,DGNV8_IN_FME_GROUP_NAMED2_DGNV8_1,DGNV8_IN_EXPAND_CELLS_DGNV8_1,DGNV8_IN_PRESERVE_CELL_INSERTS_DGNV8_1,DGNV8_IN_EXPAND_UNNAMED_CELLS_DGNV8_1,DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS_DGNV8_1,DGNV8_IN_XREF_OPTIONS_DGNV8_1,DGNV8_IN_READ_XREF_FILES_DGNV8_1,DGNV8_IN_READ_XREF_NEST_DEPTH_DGNV8_1,DGNV8_IN_USE_XREF_PARENT_MODEL_DGNV8_1,DGNV8_IN_READ_XREFS_AS_ELEMENTS_DGNV8_1,DGNV8_IN_TAGS_AS_TEXT_DGNV8_1,DGNV8_IN_FME_GROUP_NAMED3_DGNV8_1,DGNV8_IN_READ_TAGS_DGNV8_1,DGNV8_IN_READ_XATTRS_AND_ITEM_SETS_DGNV8_1,DGNV8_IN_FME_GROUP_NAMED4_DGNV8_1,DGNV8_IN_FME_GROUP_NAMED5_DGNV8_1,DGNV8_IN_READ_SELECTED_MODELS_DGNV8_1,DGNV8_IN_SELECTED_MODELS_DGNV8_1,DGNV8_IN_USE_SEARCH_ENVELOPE_DGNV8_1,DGNV8_IN_SEARCH_ENVELOPE_MINX_DGNV8_1,DGNV8_IN_SEARCH_ENVELOPE_MINY_DGNV8_1,DGNV8_IN_SEARCH_ENVELOPE_MAXX_DGNV8_1,DGNV8_IN_SEARCH_ENVELOPE_MAXY_DGNV8_1,DGNV8_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_DGNV8_1,DGNV8_IN_CLIP_TO_ENVELOPE_DGNV8_1,DGNV8_IN_DGNV8_RDR_ADV_PARM_GROUP_DGNV8_1,DGNV8_IN_SPLIT_COMPLEX_CHAINS_DGNV8_1,DGNV8_IN_SPLIT_MULTITEXT_DGNV8_1,DGNV8_IN_EXPLODE_DIMENSION_ELEM_DGNV8_1,DGNV8_IN_APPLY_WORLD_FILE_DGNV8_1,DGNV8_IN_PRESERVE_CURVES_DGNV8_1,DGNV8_IN_REMOVE_DUPLICATES_DGNV8_1,DGNV8_IN_ASSUME_MATCHING_UNITS_DGNV8_1,DGNV8_IN_UOR_SCALE_DGNV8_1,DGNV8_IN_UORS_PER_SUB_DGNV8_1,DGNV8_IN_SUBS_PER_MASTER_DGNV8_1,DGNV8_IN_ELEVATION_SHIFT_FACTOR_DGNV8_1,DGNV8_IN_CURVE_VERTICES_DGNV8_1,DGNV8_IN_NETWORK_AUTHENTICATION_DGNV8_1,DestDataset_SHAPEFILE_2,SHAPEFILE_OUT_WRITER_PARAMS_SHAPEFILE_2,SHAPEFILE_OUT_ENCODING_SHAPEFILE_2,SHAPEFILE_OUT_SPATIAL_INDEXES_SHAPEFILE_2,SHAPEFILE_OUT_COMPRESSED_FILE_SHAPEFILE_2,SHAPEFILE_OUT_DATETIME_STORAGE_SHAPEFILE_2,SHAPEFILE_OUT_ADVANCED_SHAPEFILE_2,SHAPEFILE_OUT_SURFACE_SOLID_STORAGE_SHAPEFILE_2,SHAPEFILE_OUT_MEASURES_AS_Z_SHAPEFILE_2,SHAPEFILE_OUT_DATASET_SPLITTING_SHAPEFILE_2
+# ============================================================================
+DEFAULT_MACRO SourceDataset_SHAPEFILE ""C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Cubi_poly.shp" "C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Edi_lin.shp" "C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Edi_Poly.shp" "C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Red_poly.shp" "C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Service_poly.shp""
+DEFAULT_MACRO SourceDataset_DGNV8 C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\Dgns\Ref\Ref_Final-517.dgn
+DEFAULT_MACRO FEATURE_TYPES REF_1003_Axis_SING_Carriageway_GRD_Use_ENL_Ln REF_1003_Axis_SING_Carriageway_GRD_Use_Trunk_Ln REF_1003_EDGE_SING_carriageway_GRD_Use_ENL_Ln REF_1003_EDGE_SING_carriageway_GRD_Use_Trunk_Ln REF_2000_Urban_road_axis_GRD_Generic_Ln REF_3001_RD_Axis_Paved_GRD_Ln REF_3001_RD_Axis_UnPaved_GRD_Ln REF_3001_RD_EDGE_Paved_GRD_Ln REF_3001_RD_EDGE_UnPaved_GRD_Ln REF_3001_RD_Linear_UnPaved_GRD_Ln REF_03002_Depression_Contour_Ln REF_03002_Master_Contour_Ln REF_03002_Normal_Contour_Ln REF_3002_Trackpath_GRD_Ln REF_03003_Sleep_Foot_Ln REF_03003_Sleep_Head_Ln REF_03003_Slope_foot_cutting_Ln REF_03003_Slope_foot_embankment_Ln REF_03003_Slope_Head_cutting_Ln REF_03003_Slope_head_embankment_Ln REF_03003_Terrace_Margin_Ln REF_04008_Element_Construct_Curb_Use_Ln REF_05002_Mining_FCLTY_Mine_EDGE_Use_Ln REF_05007_Sports_EDGE_Footbal_Ln REF_05007_Sports_EDGE_Multipurpose_Ln REF_05007_Sports_EDGE_Other_Ln REF_05007_Sports_EDGE_Paintlines-Field_Ln REF_05007_Sports_EDGE_Racetrack_Circuit_Ln REF_05007_Sports_EDGE_Tennis_Ln REF_05008_Recreational_EDGE_Playground_Ln REF_06002_ARTIFI_Channel_AXIS_GRD_Use_Ln REF_06002_ARTIFI_Channel_EDGE_GRD_Use_Ln REF_06002_ARTIFI_Channel_LINEAR_GRD_Use_Ln REF_06002_ARTIFI_IRRI_Ditch_EDGE_GRD_Use_Ln REF_06002_ARTIFI_IRRI_Ditch_LINEAR_GRD_Use_Ln REF_06004_NATUR_NON_PER_LINEAR_Water_Unclassified_Ln REF_06004_NATUR_PER_EDGE_Water_Unclassified_Ln REF_06006_Coronation_line_Ln REF_06007_EDGE_Swimming_Pool_Ln REF_06007_NON_PER_Lagoon_EDGE_Water_Ln REF_06007_PER_Lagoon_EDGE_Water_Ln REF_06007_Pond_Generic_EDGE_Water_Ln REF_06007_Pond_Pool_EDGE_water_Ln REF_06007_Pond_Water_Reservoir_EDGE_Water_Ln REF_06007_Water_Reservoir_Edge_Ln REF_07005_CETN_EDGE_RD_Island_Use_Ln REF_07005_Ditch_roadside_GRD_Ln REF_07005_Line_Median_Use_Ln REF_09002_Public_works_Hydro_EDGE_Earth_DAM_Tie_Ln REF_10001_Trans_Infra_FCLTY_EDGE_Paved_Esplanade_Ln REF_10001_Trans_Infra_FCLTY_EDGE_Unpaved_Esplanade_Ln REF_12000_Firewall_Axis_Ln REF_12000_Separation_Use_0_Ln REF_12000L_Firewall_Border_Ln REF_3001_RD_Linear_Paved_GRD_Ln REF_03003_Cliff_Foot_Ln REF_05007_Sports_EDGE_Sports_Zone_Ln REF_05008_Recreational_EDGE_Picnic_area_Ln REF_06004_NATUR_PER_LINEAR_Water_Unclassified_Ln REF_06004_PER_EDGE_Water_Unclassified_Ln REF_06005_Water_Island_Border_Rivers_Reservoirs_Ln
+DEFAULT_MACRO DestDataset_SHAPEFILE C:\JEGO\Sunshine\Client-Correction\P_1_2_4_Height_Errors_From_Client\GDB\517\Out
+# ============================================================================
+GUI MULTIFILE SourceDataset_SHAPEFILE Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Source Esri Shapefile(s):
+GUI MULTIFILE SourceDataset_DGNV8 Design_Files(*.dgn)|*.dgn|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_files(*)|* Source Bentley MicroStation Design File(s):
+GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES C:<backslash>JEGO<backslash>Sunshine<backslash>Client-Correction<backslash>P_1_2_4_Height_Errors_From_Client<backslash>Dgns<backslash>Ref<backslash>Ref_Final-517.dgn,_FORMAT_OVERRIDE_,dgnv8Names,_DATASET_OVERRIDE_,SourceDataset_DGNV8,UNITS,IGDS_MASTER_UNITS,UOR_GLOBAL_ORIGIN_X,,UOR_GLOBAL_ORIGIN_Y,,UOR_GLOBAL_ORIGIN_Z,,FME_GROUP_NAMED1,,ENCODING,windows-1252,FME_GROUP_NAMED2,,EXPAND_CELLS,yes,PRESERVE_CELL_INSERTS,no,EXPAND_UNNAMED_CELLS,no,PRESERVE_UNNAMEDCELL_INSERTS,no,XREF_OPTIONS,,READ_XREF_FILES,NO,READ_XREF_NEST_DEPTH,0,USE_XREF_PARENT_MODEL,<Unused>,READ_XREFS_AS_ELEMENTS,YES,TAGS_AS_TEXT,NO,FME_GROUP_NAMED3,,READ_TAGS,NO,READ_XATTRS_AND_ITEM_SETS,NO,FME_GROUP_NAMED4,,FME_GROUP_NAMED5,,READ_SELECTED_MODELS,NO,SELECTED_MODELS,,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,DGNV8_RDR_ADV_PARM_GROUP,,SPLIT_COMPLEX_CHAINS,NO,SPLIT_MULTITEXT,YES,EXPLODE_DIMENSION_ELEM,YES,APPLY_WORLD_FILE,YES,PRESERVE_CURVES,NO,REMOVE_DUPLICATES,NO,ASSUME_MATCHING_UNITS,NO,UOR_SCALE,,UORS_PER_SUB,,SUBS_PER_MASTER,,ELEVATION_SHIFT_FACTOR,,CURVE_VERTICES,,NETWORK_AUTHENTICATION,,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,APPLY_WORLD_FILE_TO_ATTRS,YES,IGDS_FRAMME,NO,OVERRIDE_GLOBAL_ORIGIN,no,METAFILE,dgnv8Names,READER_META_ATTRIBUTES,fme_dataset,IGDS_MSLINKS,NO,_MERGE_SCHEMAS,YES,DYNAMIC_WORKFLOW,yes,USE_RICH_ARC_GEOM,YES,USE_LEVEL_NAMES,YES,_MERGE_SCHEMAS,YES Feature Types to Read
+GUI DIRNAME DestDataset_SHAPEFILE Destination Esri Shapefile Folder:
+# ============================================================================
+USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IlwiXCJDOlxcSkVHT1xcU3Vuc2hpbmVcXENsaWVudC1Db3JyZWN0aW9uXFxQXzFfMl80X0hlaWdodF9FcnJvcnNfRnJvbV9DbGllbnRcXEdEQlxcNTE3XFxDdWJpX3BvbHkuc2hwXCIgXCJDOlxcSkVHT1xcU3Vuc2hpbmVcXENsaWVudC1Db3JyZWN0aW9uXFxQXzFfMl80X0hlaWdodF9FcnJvcnNfRnJvbV9DbGllbnRcXEdEQlxcNTE3XFxFZGlfbGluLnNocFwiIFwiQzpcXEpFR09cXFN1bnNoaW5lXFxDbGllbnQtQ29ycmVjdGlvblxcUF8xXzJfNF9IZWlnaHRfRXJyb3JzX0Zyb21fQ2xpZW50XFxHREJcXDUxN1xcRWRpX1BvbHkuc2hwXCIgXCJDOlxcSkVHT1xcU3Vuc2hpbmVcXENsaWVudC1Db3JyZWN0aW9uXFxQXzFfMl80X0hlaWdodF9FcnJvcnNfRnJvbV9DbGllbnRcXEdEQlxcNTE3XFxSZWRfcG9seS5zaHBcIiBcIkM6XFxKRUdPXFxTdW5zaGluZVxcQ2xpZW50LUNvcnJlY3Rpb25cXFBfMV8yXzRfSGVpZ2h0X0Vycm9yc19Gcm9tX0NsaWVudFxcR0RCXFw1MTdcXFNlcnZpY2VfcG9seS5zaHBcIlwiIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJTaGFwZWZpbGVzIiwiZmlsdGVyIjpbIiouc2hwIl19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIFNoYXBlZmlsZXMiLCJmaWx0ZXIiOlsiKi5zaHoiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBGaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X1NIQVBFRklMRSIsInByb21wdCI6IlNvdXJjZSBFc3JpIFNoYXBlZmlsZShzKToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOnRydWUsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImFjY2Vzc01vZGUiOiJyZWFkIiwiZGVmYXVsdFZhbHVlIjoiQzpcXEpFR09cXFN1bnNoaW5lXFxDbGllbnQtQ29ycmVjdGlvblxcUF8xXzJfNF9IZWlnaHRfRXJyb3JzX0Zyb21fQ2xpZW50XFxEZ25zXFxSZWZcXFJlZl9GaW5hbC01MTcuZGduIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJEZXNpZ24gRmlsZXMiLCJmaWx0ZXIiOlsiKi5kZ24iXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJTb3VyY2VEYXRhc2V0X0RHTlY4IiwicHJvbXB0IjoiU291cmNlIEJlbnRsZXkgTWljcm9TdGF0aW9uIERlc2lnbiBGaWxlKHMpOiIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiY2hvaWNlU2V0dGluZ3MiOnsiY2hvaWNlU2V0IjoicmVhZGVyVmFsdWVzIiwiY29uZmlndXJhdGlvbiI6W3sibmFtZSI6IlVOSVRTIiwidmFsdWUiOiJJR0RTX01BU1RFUl9VTklUUyJ9LHsibmFtZSI6IlVPUl9HTE9CQUxfT1JJR0lOX1giLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlVPUl9HTE9CQUxfT1JJR0lOX1kiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlVPUl9HTE9CQUxfT1JJR0lOX1oiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkZNRV9HUk9VUF9OQU1FRDEiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkVOQ09ESU5HIiwidmFsdWUiOiJ3aW5kb3dzLTEyNTIifSx7Im5hbWUiOiJGTUVfR1JPVVBfTkFNRUQyIiwidmFsdWUiOiIifSx7Im5hbWUiOiJFWFBBTkRfQ0VMTFMiLCJ2YWx1ZSI6InllcyJ9LHsibmFtZSI6IlBSRVNFUlZFX0NFTExfSU5TRVJUUyIsInZhbHVlIjoibm8ifSx7Im5hbWUiOiJFWFBBTkRfVU5OQU1FRF9DRUxMUyIsInZhbHVlIjoibm8ifSx7Im5hbWUiOiJQUkVTRVJWRV9VTk5BTUVEQ0VMTF9JTlNFUlRTIiwidmFsdWUiOiJubyJ9LHsibmFtZSI6IlhSRUZfT1BUSU9OUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiUkVBRF9YUkVGX0ZJTEVTIiwidmFsdWUiOiJOTyJ9LHsibmFtZSI6IlJFQURfWFJFRl9ORVNUX0RFUFRIIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiVVNFX1hSRUZfUEFSRU5UX01PREVMIiwidmFsdWUiOiI8VW51c2VkPiJ9LHsibmFtZSI6IlJFQURfWFJFRlNfQVNfRUxFTUVOVFMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IlRBR1NfQVNfVEVYVCIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJGTUVfR1JPVVBfTkFNRUQzIiwidmFsdWUiOiIifSx7Im5hbWUiOiJSRUFEX1RBR1MiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiUkVBRF9YQVRUUlNfQU5EX0lURU1fU0VUUyIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJGTUVfR1JPVVBfTkFNRUQ0IiwidmFsdWUiOiIifSx7Im5hbWUiOiJGTUVfR1JPVVBfTkFNRUQ1IiwidmFsdWUiOiIifSx7Im5hbWUiOiJSRUFEX1NFTEVDVEVEX01PREVMUyIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJTRUxFQ1RFRF9NT0RFTFMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlVTRV9TRUFSQ0hfRU5WRUxPUEUiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01JTlgiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUlOWSIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9NQVhYIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01BWFkiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfQ09PUkRJTkFURV9TWVNURU0iLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkNMSVBfVE9fRU5WRUxPUEUiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiREdOVjhfUkRSX0FEVl9QQVJNX0dST1VQIiwidmFsdWUiOiIifSx7Im5hbWUiOiJTUExJVF9DT01QTEVYX0NIQUlOUyIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJTUExJVF9NVUxUSVRFWFQiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IkVYUExPREVfRElNRU5TSU9OX0VMRU0iLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IkFQUExZX1dPUkxEX0ZJTEUiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IlBSRVNFUlZFX0NVUlZFUyIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJSRU1PVkVfRFVQTElDQVRFUyIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJBU1NVTUVfTUFUQ0hJTkdfVU5JVFMiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiVU9SX1NDQUxFIiwidmFsdWUiOiIifSx7Im5hbWUiOiJVT1JTX1BFUl9TVUIiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlNVQlNfUEVSX01BU1RFUiIsInZhbHVlIjoiIn0seyJuYW1lIjoiRUxFVkFUSU9OX1NISUZUX0ZBQ1RPUiIsInZhbHVlIjoiIn0seyJuYW1lIjoiQ1VSVkVfVkVSVElDRVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik5FVFdPUktfQVVUSEVOVElDQVRJT04iLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkNPT1JEU1lTIiwidmFsdWUiOiIifSx7Im5hbWUiOiJTVEFSVF9GRUFUVVJFIiwidmFsdWUiOiIifSx7Im5hbWUiOiJNQVhfRkVBVFVSRVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1BWF9GRUFUVVJFU19QRVJfRkVBVFVSRV9UWVBFIiwidmFsdWUiOiIifSx7Im5hbWUiOiJNSU5fRkVBVFVSRVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkFQUExZX1dPUkxEX0ZJTEVfVE9fQVRUUlMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IklHRFNfRlJBTU1FIiwidmFsdWUiOiJOTyJ9LHsibmFtZSI6Ik9WRVJSSURFX0dMT0JBTF9PUklHSU4iLCJ2YWx1ZSI6Im5vIn0seyJuYW1lIjoiUkVBREVSX01FVEFfQVRUUklCVVRFUyIsInZhbHVlIjoiZm1lX2RhdGFzZXQifSx7Im5hbWUiOiJJR0RTX01TTElOS1MiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiX01FUkdFX1NDSEVNQVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IkRZTkFNSUNfV09SS0ZMT1ciLCJ2YWx1ZSI6InllcyJ9LHsibmFtZSI6IlVTRV9SSUNIX0FSQ19HRU9NIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJVU0VfTEVWRUxfTkFNRVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6Il9NRVJHRV9TQ0hFTUFTIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJSRVRSSUVWRV9BTExfVEFCTEVfTkFNRVMiLCJ2YWx1ZSI6IllFUyJ9XSwiZGF0YXNldCI6eyJwYXJhbWV0ZXIiOiJTb3VyY2VEYXRhc2V0X0RHTlY4In0sImZvcm1hdCI6ImRnbnY4TmFtZXMiLCJtZXRhZmlsZSI6ImRnbnY4TmFtZXMiLCJ2YWx1ZXNUb1VzZSI6ImZlYXR1cmVUeXBlcyJ9LCJkZWZhdWx0VmFsdWUiOiJSRUZfMTAwM19BeGlzX1NJTkdfQ2FycmlhZ2V3YXlfR1JEX1VzZV9FTkxfTG4gUkVGXzEwMDNfQXhpc19TSU5HX0NhcnJpYWdld2F5X0dSRF9Vc2VfVHJ1bmtfTG4gUkVGXzEwMDNfRURHRV9TSU5HX2NhcnJpYWdld2F5X0dSRF9Vc2VfRU5MX0xuIFJFRl8xMDAzX0VER0VfU0lOR19jYXJyaWFnZXdheV9HUkRfVXNlX1RydW5rX0xuIFJFRl8yMDAwX1VyYmFuX3JvYWRfYXhpc19HUkRfR2VuZXJpY19MbiBSRUZfMzAwMV9SRF9BeGlzX1BhdmVkX0dSRF9MbiBSRUZfMzAwMV9SRF9BeGlzX1VuUGF2ZWRfR1JEX0xuIFJFRl8zMDAxX1JEX0VER0VfUGF2ZWRfR1JEX0xuIFJFRl8zMDAxX1JEX0VER0VfVW5QYXZlZF9HUkRfTG4gUkVGXzMwMDFfUkRfTGluZWFyX1VuUGF2ZWRfR1JEX0xuIFJFRl8wMzAwMl9EZXByZXNzaW9uX0NvbnRvdXJfTG4gUkVGXzAzMDAyX01hc3Rlcl9Db250b3VyX0xuIFJFRl8wMzAwMl9Ob3JtYWxfQ29udG91cl9MbiBSRUZfMzAwMl9UcmFja3BhdGhfR1JEX0xuIFJFRl8wMzAwM19TbGVlcF9Gb290X0xuIFJFRl8wMzAwM19TbGVlcF9IZWFkX0xuIFJFRl8wMzAwM19TbG9wZV9mb290X2N1dHRpbmdfTG4gUkVGXzAzMDAzX1Nsb3BlX2Zvb3RfZW1iYW5rbWVudF9MbiBSRUZfMDMwMDNfU2xvcGVfSGVhZF9jdXR0aW5nX0xuIFJFRl8wMzAwM19TbG9wZV9oZWFkX2VtYmFua21lbnRfTG4gUkVGXzAzMDAzX1RlcnJhY2VfTWFyZ2luX0xuIFJFRl8wNDAwOF9FbGVtZW50X0NvbnN0cnVjdF9DdXJiX1VzZV9MbiBSRUZfMDUwMDJfTWluaW5nX0ZDTFRZX01pbmVfRURHRV9Vc2VfTG4gUkVGXzA1MDA3X1Nwb3J0c19FREdFX0Zvb3RiYWxfTG4gUkVGXzA1MDA3X1Nwb3J0c19FREdFX011bHRpcHVycG9zZV9MbiBSRUZfMDUwMDdfU3BvcnRzX0VER0VfT3RoZXJfTG4gUkVGXzA1MDA3X1Nwb3J0c19FREdFX1BhaW50bGluZXMtRmllbGRfTG4gUkVGXzA1MDA3X1Nwb3J0c19FREdFX1JhY2V0cmFja19DaXJjdWl0X0xuIFJFRl8wNTAwN19TcG9ydHNfRURHRV9UZW5uaXNfTG4gUkVGXzA1MDA4X1JlY3JlYXRpb25hbF9FREdFX1BsYXlncm91bmRfTG4gUkVGXzA2MDAyX0FSVElGSV9DaGFubmVsX0FYSVNfR1JEX1VzZV9MbiBSRUZfMDYwMDJfQVJUSUZJX0NoYW5uZWxfRURHRV9HUkRfVXNlX0xuIFJFRl8wNjAwMl9BUlRJRklfQ2hhbm5lbF9MSU5FQVJfR1JEX1VzZV9MbiBSRUZfMDYwMDJfQVJUSUZJX0lSUklfRGl0Y2hfRURHRV9HUkRfVXNlX0xuIFJFRl8wNjAwMl9BUlRJRklfSVJSSV9EaXRjaF9MSU5FQVJfR1JEX1VzZV9MbiBSRUZfMDYwMDRfTkFUVVJfTk9OX1BFUl9MSU5FQVJfV2F0ZXJfVW5jbGFzc2lmaWVkX0xuIFJFRl8wNjAwNF9OQVRVUl9QRVJfRURHRV9XYXRlcl9VbmNsYXNzaWZpZWRfTG4gUkVGXzA2MDA2X0Nvcm9uYXRpb25fbGluZV9MbiBSRUZfMDYwMDdfRURHRV9Td2ltbWluZ19Qb29sX0xuIFJFRl8wNjAwN19OT05fUEVSX0xhZ29vbl9FREdFX1dhdGVyX0xuIFJFRl8wNjAwN19QRVJfTGFnb29uX0VER0VfV2F0ZXJfTG4gUkVGXzA2MDA3X1BvbmRfR2VuZXJpY19FREdFX1dhdGVyX0xuIFJFRl8wNjAwN19Qb25kX1Bvb2xfRURHRV93YXRlcl9MbiBSRUZfMDYwMDdfUG9uZF9XYXRlcl9SZXNlcnZvaXJfRURHRV9XYXRlcl9MbiBSRUZfMDYwMDdfV2F0ZXJfUmVzZXJ2b2lyX0VkZ2VfTG4gUkVGXzA3MDA1X0NFVE5fRURHRV9SRF9Jc2xhbmRfVXNlX0xuIFJFRl8wNzAwNV9EaXRjaF9yb2Fkc2lkZV9HUkRfTG4gUkVGXzA3MDA1X0xpbmVfTWVkaWFuX1VzZV9MbiBSRUZfMDkwMDJfUHVibGljX3dvcmtzX0h5ZHJvX0VER0VfRWFydGhfREFNX1RpZV9MbiBSRUZfMTAwMDFfVHJhbnNfSW5mcmFfRkNMVFlfRURHRV9QYXZlZF9Fc3BsYW5hZGVfTG4gUkVGXzEwMDAxX1RyYW5zX0luZnJhX0ZDTFRZX0VER0VfVW5wYXZlZF9Fc3BsYW5hZGVfTG4gUkVGXzEyMDAwX0ZpcmV3YWxsX0F4aXNfTG4gUkVGXzEyMDAwX1NlcGFyYXRpb25fVXNlXzBfTG4gUkVGXzEyMDAwTF9GaXJld2FsbF9Cb3JkZXJfTG4gUkVGXzMwMDFfUkRfTGluZWFyX1BhdmVkX0dSRF9MbiBSRUZfMDMwMDNfQ2xpZmZfRm9vdF9MbiBSRUZfMDUwMDdfU3BvcnRzX0VER0VfU3BvcnRzX1pvbmVfTG4gUkVGXzA1MDA4X1JlY3JlYXRpb25hbF9FREdFX1BpY25pY19hcmVhX0xuIFJFRl8wNjAwNF9OQVRVUl9QRVJfTElORUFSX1dhdGVyX1VuY2xhc3NpZmllZF9MbiBSRUZfMDYwMDRfUEVSX0VER0VfV2F0ZXJfVW5jbGFzc2lmaWVkX0xuIFJFRl8wNjAwNV9XYXRlcl9Jc2xhbmRfQm9yZGVyX1JpdmVyc19SZXNlcnZvaXJzX0xuIiwibmFtZSI6IkZFQVRVUkVfVFlQRVMiLCJwcm9tcHQiOiJGZWF0dXJlIFR5cGVzIHRvIFJlYWQiLCJyZXF1aXJlZCI6ZmFsc2UsInR5cGUiOiJsaXN0Ym94IiwidmFsdWVUeXBlIjoic3RyaW5nRW5jb2RlZFBhcnRzIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiJDOlxcSkVHT1xcU3Vuc2hpbmVcXENsaWVudC1Db3JyZWN0aW9uXFxQXzFfMl80X0hlaWdodF9FcnJvcnNfRnJvbV9DbGllbnRcXEdEQlxcNTE3XFxPdXQiLCJpdGVtc1RvU2VsZWN0IjoiZm9sZGVycyIsIm5hbWUiOiJEZXN0RGF0YXNldF9TSEFQRUZJTEUiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBFc3JpIFNoYXBlZmlsZSBGb2xkZXI6IiwicmVxdWlyZWQiOnRydWUsInNlbGVjdE11bHRpcGxlIjpmYWxzZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9XX0=
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_SHAPEFILE)} == {}} { puts_real {Parameter 'SourceDataset_SHAPEFILE' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_DGNV8)} == {}} { puts_real {Parameter 'SourceDataset_DGNV8' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_SHAPEFILE)} == {}} { puts_real {Parameter 'DestDataset_SHAPEFILE' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} SHAPEFILE
+MULTI_READER_KEYWORD{0} SHAPEFILE_1
+MULTI_READER_GEN_DIRECTIVES{0} READ_NUMERIC_PADDING_AS,ZERO,DONUT_DETECTION,ORIENTATION,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,ADVANCED,,ENCODING,fme-source-encoding,READ_BLANK_AS,MISSING,REPORT_BAD_GEOMETRY,No,EXPOSE_ATTRS_GROUP,,MEASURES_AS_Z,No,TRIM_PRECEDING_SPACES,Yes,SEARCH_ENVELOPE_MAXX,0,SHAPEFILE_EXPOSE_FORMAT_ATTRS,,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_MINY,0,NUMERIC_TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,_EXTRA_DATASETS,C:<backslash>JEGO<backslash>Sunshine<backslash>Client-Correction<backslash>Priority-11<backslash>20230704<backslash>286<backslash>Edi_lin.shp<comma>C:<backslash>JEGO<backslash>Sunshine<backslash>Client-Correction<backslash>Priority-11<backslash>20230704<backslash>286<backslash>Edi_Poly.shp<comma>C:<backslash>JEGO<backslash>Sunshine<backslash>Client-Correction<backslash>Priority-11<backslash>20230704<backslash>286<backslash>Red_poly.shp<comma>C:<backslash>JEGO<backslash>Sunshine<backslash>Client-Correction<backslash>Priority-11<backslash>20230704<backslash>286<backslash>Service_poly.shp,_MERGE_SCHEMAS,YES,CLIP_TO_ENVELOPE,NO
+MULTI_READER_TYPE{1} DGNV8
+MULTI_READER_KEYWORD{1} DGNV8_1
+MULTI_READER_GEN_DIRECTIVES{1} USE_SEARCH_ENVELOPE,NO,READ_SELECTED_MODELS,NO,SPLIT_COMPLEX_CHAINS,NO,APPLY_WORLD_FILE,YES,READ_XREF_NEST_DEPTH,0,READ_XREFS_AS_ELEMENTS,YES,SPLIT_MULTITEXT,YES,DGNV8_RDR_ADV_PARM_GROUP,,READ_TAGS,NO,REMOVE_DUPLICATES,NO,PRESERVE_CELL_INSERTS,no,ELEVATION_SHIFT_FACTOR,,UOR_GLOBAL_ORIGIN_Z,,APPLY_WORLD_FILE_TO_ATTRS,YES,UOR_GLOBAL_ORIGIN_X,,UOR_SCALE,,EXPAND_CELLS,yes,SUBS_PER_MASTER,,SEARCH_ENVELOPE_MINX,0,IGDS_FRAMME,NO,EXPAND_UNNAMED_CELLS,no,ENCODING,windows-1252,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,ASSUME_MATCHING_UNITS,NO,DGNV8_EXPOSE_FORMAT_ATTRS,,OVERRIDE_GLOBAL_ORIGIN,no,UNITS,IGDS_MASTER_UNITS,CURVE_VERTICES,,METAFILE,dgnv8Names,READER_META_ATTRIBUTES,fme_dataset,PRESERVE_UNNAMEDCELL_INSERTS,no,EXPOSE_ATTRS_GROUP,,UORS_PER_SUB,,SEARCH_ENVELOPE_MINY,0,TAGS_AS_TEXT,NO,EXPLODE_DIMENSION_ELEM,YES,READ_XATTRS_AND_ITEM_SETS,NO,PRESERVE_CURVES,NO,USE_XREF_PARENT_MODEL,<lt>Unused<gt>,IGDS_MSLINKS,NO,SEARCH_ENVELOPE_MAXY,0,_MERGE_SCHEMAS,YES,DYNAMIC_WORKFLOW,yes,UOR_GLOBAL_ORIGIN_Y,,SEARCH_ENVELOPE_MAXX,0,USE_RICH_ARC_GEOM,YES,SELECTED_MODELS,,CLIP_TO_ENVELOPE,NO,USE_LEVEL_NAMES,YES,READ_XREF_FILES,NO,XREF_OPTIONS,
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} SHAPEFILE
+MULTI_WRITER_KEYWORD{0} SHAPEFILE_2
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "SHAPEFILE_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER SHAPEFILE SHAPEFILE_1
+# ============================================================================
+# The following GUI line prompts for the source shapefiles
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_SHAPEFILE_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER SHAPEFILE SHAPEFILE_1
+DEFAULT_MACRO SourceDataset_SHAPEFILE_1 $(SourceDataset_SHAPEFILE)
+GUI MULTIFILE SourceDataset_SHAPEFILE_1 Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|All_Files(*)|* Source Esri Shapefile(s):
+DEFAULT_MACRO SHAPEFILE_IN_READER_PARAMETERS_SHAPEFILE_1 
+GUI OPTIONAL DISCLOSUREGROUP SHAPEFILE_IN_READER_PARAMETERS_SHAPEFILE_1 SHAPEFILE_IN_ENCODING_SHAPEFILE_1%SHAPEFILE_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING Reader Parameters
+# ============================================================================
+# The following keyword allows the user to choose what encoding to
+# use for reading the shapefile, overrides dbf file LDID or .cpg
+# file if present.
+DEFAULT_MACRO SHAPEFILE_IN_ENCODING_SHAPEFILE_1 fme-source-encoding
+SHAPEFILE_1_ENCODING "$(SHAPEFILE_IN_ENCODING_SHAPEFILE_1)"
+GUI STRING_OR_ENCODING SHAPEFILE_IN_ENCODING_SHAPEFILE_1 fme-source-encoding%UTF-8%ISO*%Big5%ibm*%Shift_JIS%GB2312%GBK%win*%KSC_5601%macintosh%x-mac* Character Encoding
+# ============================================================================
+# Determines whether numeric attributes should be interpreted as binary or as
+# bound number fields (ActualDBFrepresentation)
+DEFAULT_MACRO SHAPEFILE_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_SHAPEFILE_1 STANDARD_TYPES
+SHAPEFILE_1_NUMERIC_TYPE_ATTRIBUTE_HANDLING "$(SHAPEFILE_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_SHAPEFILE_1)"
+#Note: Using the search envelope requires the shape index files (.sbnand.sbx)
+DEFAULT_MACRO SHAPEFILE_IN_EXPOSE_ATTRS_GROUP_SHAPEFILE_1 
+SHAPEFILE_1_EXPOSE_ATTRS_GROUP "$(SHAPEFILE_IN_EXPOSE_ATTRS_GROUP_SHAPEFILE_1)"
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO SHAPEFILE_IN_USE_SEARCH_ENVELOPE_SHAPEFILE_1 NO
+SHAPEFILE_1_USE_SEARCH_ENVELOPE "$(SHAPEFILE_IN_USE_SEARCH_ENVELOPE_SHAPEFILE_1)"
+GUI ACTIVEDISCLOSUREGROUP SHAPEFILE_IN_USE_SEARCH_ENVELOPE_SHAPEFILE_1 SHAPEFILE_IN_SEARCH_ENVELOPE_MINX_SHAPEFILE_1%SHAPEFILE_IN_SEARCH_ENVELOPE_MINY_SHAPEFILE_1%SHAPEFILE_IN_SEARCH_ENVELOPE_MAXX_SHAPEFILE_1%SHAPEFILE_IN_SEARCH_ENVELOPE_MAXY_SHAPEFILE_1%SHAPEFILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_SHAPEFILE_1%SHAPEFILE_IN_CLIP_TO_ENVELOPE_SHAPEFILE_1%SHAPEFILE_IN_SEARCH_METHOD%SHAPEFILE_IN_SEARCH_METHOD_FILTER%SHAPEFILE_IN_SEARCH_ORDER%SHAPEFILE_IN_SEARCH_FEATURE%SHAPEFILE_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP SHAPEFILE_IN_SEARCH_ENVELOPE_MINX_SHAPEFILE_1 <Unused>,0 
+DEFAULT_MACRO SHAPEFILE_IN_SEARCH_ENVELOPE_MINX_SHAPEFILE_1 0
+SHAPEFILE_1_SEARCH_ENVELOPE "$(SHAPEFILE_IN_SEARCH_ENVELOPE_MINX_SHAPEFILE_1)"
+GUI OPTIONAL FLOAT SHAPEFILE_IN_SEARCH_ENVELOPE_MINX_SHAPEFILE_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP SHAPEFILE_IN_SEARCH_ENVELOPE_MINY_SHAPEFILE_1 <Unused>,0 
+DEFAULT_MACRO SHAPEFILE_IN_SEARCH_ENVELOPE_MINY_SHAPEFILE_1 0
+SHAPEFILE_1_SEARCH_ENVELOPE "$(SHAPEFILE_IN_SEARCH_ENVELOPE_MINY_SHAPEFILE_1)"
+GUI OPTIONAL FLOAT SHAPEFILE_IN_SEARCH_ENVELOPE_MINY_SHAPEFILE_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP SHAPEFILE_IN_SEARCH_ENVELOPE_MAXX_SHAPEFILE_1 <Unused>,0 
+DEFAULT_MACRO SHAPEFILE_IN_SEARCH_ENVELOPE_MAXX_SHAPEFILE_1 0
+SHAPEFILE_1_SEARCH_ENVELOPE "$(SHAPEFILE_IN_SEARCH_ENVELOPE_MAXX_SHAPEFILE_1)"
+GUI OPTIONAL FLOAT SHAPEFILE_IN_SEARCH_ENVELOPE_MAXX_SHAPEFILE_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP SHAPEFILE_IN_SEARCH_ENVELOPE_MAXY_SHAPEFILE_1 <Unused>,0 
+DEFAULT_MACRO SHAPEFILE_IN_SEARCH_ENVELOPE_MAXY_SHAPEFILE_1 0
+SHAPEFILE_1_SEARCH_ENVELOPE "$(SHAPEFILE_IN_SEARCH_ENVELOPE_MAXY_SHAPEFILE_1)"
+GUI OPTIONAL FLOAT SHAPEFILE_IN_SEARCH_ENVELOPE_MAXY_SHAPEFILE_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP SHAPEFILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_SHAPEFILE_1 <Unused>, 
+DEFAULT_MACRO SHAPEFILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_SHAPEFILE_1 
+SHAPEFILE_1_SEARCH_ENVELOPE "$(SHAPEFILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_SHAPEFILE_1)"
+GUI OPTIONAL COORDSYS SHAPEFILE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_SHAPEFILE_1 Search Envelope Coordinate System:
+# ===========================================================================
+GUI LOOKUP SHAPEFILE_IN_CLIP_TO_ENVELOPE_SHAPEFILE_1 <Unused>,NO 
+DEFAULT_MACRO SHAPEFILE_IN_CLIP_TO_ENVELOPE_SHAPEFILE_1 NO
+SHAPEFILE_1_CLIP_TO_ENVELOPE "$(SHAPEFILE_IN_CLIP_TO_ENVELOPE_SHAPEFILE_1)"
+GUI OPTIONAL CHECKBOX SHAPEFILE_IN_CLIP_TO_ENVELOPE_SHAPEFILE_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO SHAPEFILE_IN_ADVANCED_SHAPEFILE_1 
+GUI OPTIONAL DISCLOSUREGROUP SHAPEFILE_IN_ADVANCED_SHAPEFILE_1 SHAPEFILE_IN_TRIM_PRECEDING_SPACES_SHAPEFILE_1%SHAPEFILE_IN_READ_NUMERIC_PADDING_AS_SHAPEFILE_1%SHAPEFILE_IN_READ_BLANK_AS_SHAPEFILE_1%SHAPEFILE_IN_DONUT_DETECTION_SHAPEFILE_1%SHAPEFILE_IN_MEASURES_AS_Z_SHAPEFILE_1%SHAPEFILE_IN_REPORT_BAD_GEOMETRY_SHAPEFILE_1 Advanced
+DEFAULT_MACRO SHAPEFILE_IN_TRIM_PRECEDING_SPACES_SHAPEFILE_1 Yes
+SHAPEFILE_1_TRIM_PRECEDING_SPACES "$(SHAPEFILE_IN_TRIM_PRECEDING_SPACES_SHAPEFILE_1)"
+GUI CHOICE SHAPEFILE_IN_TRIM_PRECEDING_SPACES_SHAPEFILE_1 Yes%No Trim Preceding Spaces
+DEFAULT_MACRO SHAPEFILE_IN_READ_NUMERIC_PADDING_AS_SHAPEFILE_1 ZERO
+SHAPEFILE_1_READ_NUMERIC_PADDING_AS "$(SHAPEFILE_IN_READ_NUMERIC_PADDING_AS_SHAPEFILE_1)"
+GUI LOOKUP_CHOICE SHAPEFILE_IN_READ_NUMERIC_PADDING_AS_SHAPEFILE_1 "\"Zero (0)\",ZERO"%Blank,BLANK Read Fully Padded Numeric Fields as:
+DEFAULT_MACRO SHAPEFILE_IN_READ_BLANK_AS_SHAPEFILE_1 MISSING
+SHAPEFILE_1_READ_BLANK_AS "$(SHAPEFILE_IN_READ_BLANK_AS_SHAPEFILE_1)"
+GUI LOOKUP_CHOICE SHAPEFILE_IN_READ_BLANK_AS_SHAPEFILE_1 Missing,MISSING%Null,NULL Read Blank Fields as:
+# ============================================================================
+# Option to use simple donut geometry creation, which is faster than the
+# original creation method, but less meticulous at detecting and correcting
+# geometric anomalies (i.e.holeswithinholes)
+DEFAULT_MACRO SHAPEFILE_IN_DONUT_DETECTION_SHAPEFILE_1 ORIENTATION
+SHAPEFILE_1_DONUT_DETECTION "$(SHAPEFILE_IN_DONUT_DETECTION_SHAPEFILE_1)"
+GUI LOOKUP_CHOICE SHAPEFILE_IN_DONUT_DETECTION_SHAPEFILE_1 "\"Orientation Only\",ORIENTATION"%"\"Orientation and Spatial Relationship\",SPATIAL" Donut Geometry Detection
+# ============================================================================
+# The following GUI line sets whether measure values in the shapefiles should
+# be treated as elevations.
+DEFAULT_MACRO SHAPEFILE_IN_MEASURES_AS_Z_SHAPEFILE_1 No
+SHAPEFILE_1_MEASURES_AS_Z "$(SHAPEFILE_IN_MEASURES_AS_Z_SHAPEFILE_1)"
+GUI CHOICE SHAPEFILE_IN_MEASURES_AS_Z_SHAPEFILE_1 Yes%No Treat Measures as Elevation
+# ============================================================================
+# The following keyword sets whether bad geometry should be reported via
+# the shape_geometry_errors attribute.
+DEFAULT_MACRO SHAPEFILE_IN_REPORT_BAD_GEOMETRY_SHAPEFILE_1 No
+SHAPEFILE_1_REPORT_BAD_GEOMETRY "$(SHAPEFILE_IN_REPORT_BAD_GEOMETRY_SHAPEFILE_1)"
+GUI CHOICE SHAPEFILE_IN_REPORT_BAD_GEOMETRY_SHAPEFILE_1 Yes%No Report Geometry Anomalies
+# ===========================================================================
+DEFAULT_MACRO SHAPEFILE_IN_NETWORK_AUTHENTICATION_SHAPEFILE_1 
+SHAPEFILE_1_NETWORK_AUTHENTICATION "$(SHAPEFILE_IN_NETWORK_AUTHENTICATION_SHAPEFILE_1)"
+GUI OPTIONAL AUTHENTICATOR SHAPEFILE_IN_NETWORK_AUTHENTICATION_SHAPEFILE_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO SHAPEFILE_IN_ATTRIBUTE_READING_SHAPEFILE_1 ALL
+SHAPEFILE_1_ATTRIBUTE_READING "$(SHAPEFILE_IN_ATTRIBUTE_READING_SHAPEFILE_1)"
+# ============================================================================
+SHAPEFILE_1_GENERATE_FME_BUILD_NUM 21627
+SHAPEFILE_1_DATASET "$(SourceDataset_SHAPEFILE_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "DGNV8_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER DGNV8 DGNV8_1
+DGNV8_1_DYNAMIC_WORKFLOW YES
+# ============================================================================
+# The following GUI line prompts for a file to be used as the
+# source of the Microstation design file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_DGNV8_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER DGNV8 DGNV8_1
+DEFAULT_MACRO SourceDataset_DGNV8_1 $(SourceDataset_DGNV8)
+GUI MULTIFILE SourceDataset_DGNV8_1 Design_Files(*.dgn)|*.dgn|All_files(*)|* Source Bentley MicroStation Design File(s):
+# ============================================================================
+# alternative GUI line for nav pane, otherwise specified in the settings box
+# the default macro line and related directive line here are required to allow
+# WB generate calls to get defaults in the nav pane, from the settings box
+DEFAULT_MACRO UNITS_DGNV8_1 IGDS_MASTER_UNITS
+DGNV8_1_UNITS $(UNITS_DGNV8_1)
+GUI LOOKUP_CHOICE UNITS_DGNV8_1 Master<space>Units,IGDS_MASTER_UNITS%Sub<space>Units,IGDS_SUB_UNITS%UORs,IGDS_UORS Input Units:
+DEFAULT_MACRO UOR_GLOBAL_ORIGIN_X_DGNV8_1 
+DGNV8_1_UOR_GLOBAL_ORIGIN_X $(UOR_GLOBAL_ORIGIN_X_DGNV8_1)
+GUI OPTIONAL FLOAT UOR_GLOBAL_ORIGIN_X_DGNV8_1 UOR X Global Origin
+DEFAULT_MACRO UOR_GLOBAL_ORIGIN_Y_DGNV8_1 
+DGNV8_1_UOR_GLOBAL_ORIGIN_Y $(UOR_GLOBAL_ORIGIN_Y_DGNV8_1)
+GUI OPTIONAL FLOAT UOR_GLOBAL_ORIGIN_Y_DGNV8_1 UOR Y Global Origin
+DEFAULT_MACRO UOR_GLOBAL_ORIGIN_Z_DGNV8_1 
+DGNV8_1_UOR_GLOBAL_ORIGIN_Z $(UOR_GLOBAL_ORIGIN_Z_DGNV8_1)
+GUI OPTIONAL FLOAT UOR_GLOBAL_ORIGIN_Z_DGNV8_1 UOR Z Global Origin
+# ============================================================================
+# The following line controls whether or not complex chain element linkages
+# are propagated up to the header element from the members -- only applies
+# when we are NOT dropping complex elements
+#
+#We don't expose _PROPAGATE_CHAIN_ELEMENT_LINKAGES anymore as it is now deprecated since the introduction
+#of rich geometry
+# This is deprecated, and not available in the GUI settings
+DEFAULT_MACRO READ_ELEMENT_TYPE_68_DGNV8_1 NO
+DGNV8_1_READ_ELEMENT_TYPE_68 $(READ_ELEMENT_TYPE_68_DGNV8_1)
+# ============================================================================
+# Indicate if we are to use level names or level numbers as the feature type
+# This is something that is only set when a mapping file or workspace header
+# is originally generated. It should not be modified afterwards.
+DGNV8_1_USE_LEVEL_NAMES YES
+DEFAULT_MACRO DGNV8_IN_READER_META_ATTRIBUTES_DGNV8_1 fme_dataset
+DGNV8_1_READER_META_ATTRIBUTES "$(DGNV8_IN_READER_META_ATTRIBUTES_DGNV8_1)"
+# Expose the encoding keyword
+DEFAULT_MACRO DGNV8_IN_FME_GROUP_NAMED1_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_FME_GROUP_NAMED1_DGNV8_1 DGNV8_IN_ENCODING_DGNV8_1 File Contents
+DEFAULT_MACRO DGNV8_IN_ENCODING_DGNV8_1 windows-1252
+DGNV8_1_ENCODING "$(DGNV8_IN_ENCODING_DGNV8_1)"
+GUI STRING_OR_ENCODING DGNV8_IN_ENCODING_DGNV8_1 fme-system%SJIS%CP437%CP850%CP852%CP855%CP857%CP860%CP861%CP863%CP864%CP865%CP869%CP874%CP932%CP936%CP950%CP1250%CP1251%CP1252%CP1253%CP1254%CP1255%CP1256%CP1257%ISO8859-1%ISO8859-2%ISO8859-3%ISO8859-4%ISO8859-5%ISO8859-6%ISO8859-7%ISO8859-8%ISO8859-9 Character Encoding
+DEFAULT_MACRO DGNV8_IN_FME_GROUP_NAMED2_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_FME_GROUP_NAMED2_DGNV8_1 DGNV8_IN_EXPAND_CELLS_DGNV8_1%DGNV8_IN_EXPAND_UNNAMED_CELLS_DGNV8_1%DGNV8_IN_XREF_OPTIONS_DGNV8_1%DGNV8_IN_TAGS_AS_TEXT_DGNV8_1 Element Options
+# The following line controls whether or not cell elements are to be
+# expanded by the FME as it reads the source file.
+DEFAULT_MACRO DGNV8_IN_EXPAND_CELLS_DGNV8_1 yes
+DGNV8_1_EXPAND_CELLS "$(DGNV8_IN_EXPAND_CELLS_DGNV8_1)"
+GUI ACTIVEDISCLOSUREGROUP DGNV8_IN_EXPAND_CELLS_DGNV8_1 FME_DISCLOSURE_CLOSED%DGNV8_IN_PRESERVE_CELL_INSERTS_DGNV8_1 Expand Named Cells
+GUI LOOKUP DGNV8_IN_EXPAND_CELLS_DGNV8_1 YES,yes%NO,no 
+# ============================================================================
+# Ask if the cell insert points should be preserved -- this only matters
+# if cells are being expanded
+DEFAULT_MACRO DGNV8_IN_PRESERVE_CELL_INSERTS_DGNV8_1 no
+DGNV8_1_PRESERVE_CELL_INSERTS "$(DGNV8_IN_PRESERVE_CELL_INSERTS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL DGNV8_IN_PRESERVE_CELL_INSERTS_DGNV8_1 yes%no Preserve Named Cell Insert Points
+GUI LOOKUP DGNV8_IN_PRESERVE_CELL_INSERTS_DGNV8_1 <Unused>,no 
+# The following line controls whether or not unnamed cell elements are to be
+# expanded by the FME as it reads the source file.
+DEFAULT_MACRO DGNV8_IN_EXPAND_UNNAMED_CELLS_DGNV8_1 no
+DGNV8_1_EXPAND_UNNAMED_CELLS "$(DGNV8_IN_EXPAND_UNNAMED_CELLS_DGNV8_1)"
+GUI ACTIVEDISCLOSUREGROUP DGNV8_IN_EXPAND_UNNAMED_CELLS_DGNV8_1 FME_DISCLOSURE_CLOSED%DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS_DGNV8_1 Expand Unnamed (Group Hole) Cells
+GUI LOOKUP DGNV8_IN_EXPAND_UNNAMED_CELLS_DGNV8_1 YES,yes%NO,no 
+# ============================================================================
+#By default we do not output unnamed cell insert points
+DEFAULT_MACRO DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS_DGNV8_1 no
+DGNV8_1_PRESERVE_UNNAMEDCELL_INSERTS "$(DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS_DGNV8_1 yes%no Preserve Unnamed Cell Insert Points
+GUI LOOKUP DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS_DGNV8_1 <Unused>,no 
+DEFAULT_MACRO DGNV8_IN_XREF_OPTIONS_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_XREF_OPTIONS_DGNV8_1 FME_DISCLOSURE_CLOSED%DGNV8_IN_READ_XREF_FILES_DGNV8_1%DGNV8_IN_READ_XREFS_AS_ELEMENTS_DGNV8_1 External Reference File Options
+#By default we don't read elements from reference files
+DEFAULT_MACRO DGNV8_IN_READ_XREF_FILES_DGNV8_1 NO
+DGNV8_1_READ_XREF_FILES "$(DGNV8_IN_READ_XREF_FILES_DGNV8_1)"
+GUI ACTIVEDISCLOSUREGROUP DGNV8_IN_READ_XREF_FILES_DGNV8_1 FME_DISCLOSURE_CLOSED%DGNV8_IN_XREF_ELEMENTS_MSG%DGNV8_IN_READ_XREF_NEST_DEPTH_DGNV8_1%DGNV8_IN_USE_XREF_PARENT_MODEL_DGNV8_1 Read Elements From Reference Files
+# ============================================================================
+#By default we read all the nested levels
+# Now deprecated from the GUI, in lieu of READ_XREF_NEST_DEPTH
+#DEFAULT_VALUE READ_XREF_UPTO_FIRST_LVL NO
+#GUI CHECKBOX READ_XREF_UPTO_FIRST_LVL yes%no Read Reference Files up to First Level
+# ============================================================================
+#By default we read one level of xrefs
+DEFAULT_MACRO DGNV8_IN_READ_XREF_NEST_DEPTH_DGNV8_1 0
+DGNV8_1_READ_XREF_NEST_DEPTH "$(DGNV8_IN_READ_XREF_NEST_DEPTH_DGNV8_1)"
+GUI INTEGER DGNV8_IN_READ_XREF_NEST_DEPTH_DGNV8_1 Max Depth of Reference Files to Read
+GUI LOOKUP DGNV8_IN_READ_XREF_NEST_DEPTH_DGNV8_1 <Unused>,0 
+# ============================================================================
+# PR38292 This is default YES, but will be ignored unless READ_XREF_FILES is YES.
+# Enable USE_XREF_PARENT_MODEL for v8 reader (PR#18510).
+# By default we use xref's parent model when reading reference files
+DEFAULT_MACRO DGNV8_IN_USE_XREF_PARENT_MODEL_DGNV8_1 <Unused>
+DGNV8_1_USE_XREF_PARENT_MODEL "$(DGNV8_IN_USE_XREF_PARENT_MODEL_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_USE_XREF_PARENT_MODEL_DGNV8_1 yes%no Use Reference's Parent Model (V8 only)
+# ============================================================================
+#By default we read reference files as xref elements
+DEFAULT_MACRO DGNV8_IN_READ_XREFS_AS_ELEMENTS_DGNV8_1 YES
+DGNV8_1_READ_XREFS_AS_ELEMENTS "$(DGNV8_IN_READ_XREFS_AS_ELEMENTS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL DGNV8_IN_READ_XREFS_AS_ELEMENTS_DGNV8_1 YES%NO Keep Elements That Represent Reference Files (V8 only)
+# ============================================================================
+# The following line controls whether or not tag elements are to be
+# output as text by the FME as it reads the source file.
+DEFAULT_MACRO DGNV8_IN_TAGS_AS_TEXT_DGNV8_1 NO
+DGNV8_1_TAGS_AS_TEXT "$(DGNV8_IN_TAGS_AS_TEXT_DGNV8_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL DGNV8_IN_TAGS_AS_TEXT_DGNV8_1 YES%NO Output Tags as Text
+DEFAULT_MACRO DGNV8_IN_FME_GROUP_NAMED3_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_FME_GROUP_NAMED3_DGNV8_1 DGNV8_IN_READ_TAGS_DGNV8_1%DGNV8_IN_READ_XATTRS_AND_ITEM_SETS_DGNV8_1 Attribute Options
+# ============================================================================
+# Should we strip off tag information
+# replaces legacy TRIM_DOWN_TAGS, which was default NO, and meant keep tag attributes
+DEFAULT_MACRO DGNV8_IN_READ_TAGS_DGNV8_1 NO
+DGNV8_1_READ_TAGS "$(DGNV8_IN_READ_TAGS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL DGNV8_IN_READ_TAGS_DGNV8_1 YES%NO Read Tag Attributes:
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_READ_XATTRS_AND_ITEM_SETS_DGNV8_1 NO
+DGNV8_1_READ_XATTRS_AND_ITEM_SETS "$(DGNV8_IN_READ_XATTRS_AND_ITEM_SETS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX_WITHLABEL DGNV8_IN_READ_XATTRS_AND_ITEM_SETS_DGNV8_1 YES%NO Read XAttributes and Item Set attributes (V8 only):
+DEFAULT_MACRO DGNV8_IN_FME_GROUP_NAMED4_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_FME_GROUP_NAMED4_DGNV8_1 2%DGNV8_IN_IGDS_MSLINKS%DGNV8_IN_IGDS_FRAMME Linkage Extraction
+# ============================================================================
+# ============================================================================
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_FME_GROUP_NAMED5_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_FME_GROUP_NAMED5_DGNV8_1 DGNV8_IN_READ_SELECTED_MODELS_DGNV8_1 Model Selection Options
+# Should we read only certain models?
+DEFAULT_MACRO DGNV8_IN_READ_SELECTED_MODELS_DGNV8_1 NO
+DGNV8_1_READ_SELECTED_MODELS "$(DGNV8_IN_READ_SELECTED_MODELS_DGNV8_1)"
+GUI ACTIVEDISCLOSUREGROUP DGNV8_IN_READ_SELECTED_MODELS_DGNV8_1 DGNV8_IN_SELECTED_MODELS_DGNV8_1 Read Only Selected Models
+# Indicate which models we will read
+DEFAULT_MACRO DGNV8_IN_SELECTED_MODELS_DGNV8_1 
+DGNV8_1_SELECTED_MODELS "$(DGNV8_IN_SELECTED_MODELS_DGNV8_1)"
+GUI OPTIONAL DYNAMIC_MULTI_SELECT_ENCODED DGNV8_IN_SELECTED_MODELS_DGNV8_1 $[SourceDataset_DGNV8_1],READ_MODEL_NAMES,MODEL_NAMES,_FORMAT_OVERRIDE_,DGNV8 Models
+GUI LOOKUP DGNV8_IN_SELECTED_MODELS_DGNV8_1 <Unused>, 
+# The following line controls how all the FME coordinates read from the
+# design file will be interpreted.
+# Valid values IGDS_MASTER_UNITS -- FME coordinates are treated as Master Units
+# IGDS_SUB_UNITS -- FME coordinates are treated as Sub Units
+# IGDS_UORS -- FME coordinates are treated as UORs
+# ============================================================================
+# ============================================================================
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_EXPOSE_ATTRS_GROUP_DGNV8_1 
+DGNV8_1_EXPOSE_ATTRS_GROUP "$(DGNV8_IN_EXPOSE_ATTRS_GROUP_DGNV8_1)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO DGNV8_IN_USE_SEARCH_ENVELOPE_DGNV8_1 NO
+DGNV8_1_USE_SEARCH_ENVELOPE "$(DGNV8_IN_USE_SEARCH_ENVELOPE_DGNV8_1)"
+GUI ACTIVEDISCLOSUREGROUP DGNV8_IN_USE_SEARCH_ENVELOPE_DGNV8_1 DGNV8_IN_SEARCH_ENVELOPE_MINX_DGNV8_1%DGNV8_IN_SEARCH_ENVELOPE_MINY_DGNV8_1%DGNV8_IN_SEARCH_ENVELOPE_MAXX_DGNV8_1%DGNV8_IN_SEARCH_ENVELOPE_MAXY_DGNV8_1%DGNV8_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_DGNV8_1%DGNV8_IN_CLIP_TO_ENVELOPE_DGNV8_1%DGNV8_IN_SEARCH_METHOD%DGNV8_IN_SEARCH_METHOD_FILTER%DGNV8_IN_SEARCH_ORDER%DGNV8_IN_SEARCH_FEATURE%DGNV8_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP DGNV8_IN_SEARCH_ENVELOPE_MINX_DGNV8_1 <Unused>,0 
+DEFAULT_MACRO DGNV8_IN_SEARCH_ENVELOPE_MINX_DGNV8_1 0
+DGNV8_1_SEARCH_ENVELOPE "$(DGNV8_IN_SEARCH_ENVELOPE_MINX_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_SEARCH_ENVELOPE_MINX_DGNV8_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP DGNV8_IN_SEARCH_ENVELOPE_MINY_DGNV8_1 <Unused>,0 
+DEFAULT_MACRO DGNV8_IN_SEARCH_ENVELOPE_MINY_DGNV8_1 0
+DGNV8_1_SEARCH_ENVELOPE "$(DGNV8_IN_SEARCH_ENVELOPE_MINY_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_SEARCH_ENVELOPE_MINY_DGNV8_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP DGNV8_IN_SEARCH_ENVELOPE_MAXX_DGNV8_1 <Unused>,0 
+DEFAULT_MACRO DGNV8_IN_SEARCH_ENVELOPE_MAXX_DGNV8_1 0
+DGNV8_1_SEARCH_ENVELOPE "$(DGNV8_IN_SEARCH_ENVELOPE_MAXX_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_SEARCH_ENVELOPE_MAXX_DGNV8_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP DGNV8_IN_SEARCH_ENVELOPE_MAXY_DGNV8_1 <Unused>,0 
+DEFAULT_MACRO DGNV8_IN_SEARCH_ENVELOPE_MAXY_DGNV8_1 0
+DGNV8_1_SEARCH_ENVELOPE "$(DGNV8_IN_SEARCH_ENVELOPE_MAXY_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_SEARCH_ENVELOPE_MAXY_DGNV8_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP DGNV8_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_DGNV8_1 <Unused>, 
+DEFAULT_MACRO DGNV8_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_DGNV8_1 
+DGNV8_1_SEARCH_ENVELOPE "$(DGNV8_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_DGNV8_1)"
+GUI OPTIONAL COORDSYS DGNV8_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_DGNV8_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP DGNV8_IN_CLIP_TO_ENVELOPE_DGNV8_1 <Unused>,NO 
+DEFAULT_MACRO DGNV8_IN_CLIP_TO_ENVELOPE_DGNV8_1 NO
+DGNV8_1_CLIP_TO_ENVELOPE "$(DGNV8_IN_CLIP_TO_ENVELOPE_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_CLIP_TO_ENVELOPE_DGNV8_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO DGNV8_IN_DGNV8_RDR_ADV_PARM_GROUP_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_IN_DGNV8_RDR_ADV_PARM_GROUP_DGNV8_1 DGNV8_IN_SPLIT_COMPLEX_CHAINS_DGNV8_1%DGNV8_IN_SPLIT_MULTITEXT_DGNV8_1%DGNV8_IN_EXPLODE_DIMENSION_ELEM_DGNV8_1%DGNV8_IN_APPLY_WORLD_FILE_DGNV8_1%DGNV8_IN_PRESERVE_CURVES_DGNV8_1%DGNV8_IN_REMOVE_DUPLICATES_DGNV8_1%DGNV8_IN_ASSUME_MATCHING_UNITS_DGNV8_1%DGNV8_IN_UOR_SCALE_DGNV8_1%DGNV8_IN_UORS_PER_SUB_DGNV8_1%DGNV8_IN_SUBS_PER_MASTER_DGNV8_1%DGNV8_IN_ELEVATION_SHIFT_FACTOR_DGNV8_1%DGNV8_IN_CURVE_VERTICES_DGNV8_1 Advanced
+# ============================================================================
+# The following line controls whether or not complex elements are dropped
+# while we are reading
+#We don't expose _SPLIT_COMPLEX_CHAINS anymore as it is now deprecated since the introduction
+#of rich geometry
+#Restored _SPLIT_COMPLEX_CHAINS as of May 10, 2009
+DEFAULT_MACRO DGNV8_IN_SPLIT_COMPLEX_CHAINS_DGNV8_1 NO
+DGNV8_1_SPLIT_COMPLEX_CHAINS "$(DGNV8_IN_SPLIT_COMPLEX_CHAINS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_SPLIT_COMPLEX_CHAINS_DGNV8_1 YES%NO Drop Complex Chains/Shapes
+# ============================================================================
+# Should we split multi text
+DEFAULT_MACRO DGNV8_IN_SPLIT_MULTITEXT_DGNV8_1 YES
+DGNV8_1_SPLIT_MULTITEXT "$(DGNV8_IN_SPLIT_MULTITEXT_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_SPLIT_MULTITEXT_DGNV8_1 YES%NO Split Multi Text
+# ============================================================================
+#By default we explode dimension elements into its pieces
+DEFAULT_MACRO DGNV8_IN_EXPLODE_DIMENSION_ELEM_DGNV8_1 YES
+DGNV8_1_EXPLODE_DIMENSION_ELEM "$(DGNV8_IN_EXPLODE_DIMENSION_ELEM_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_EXPLODE_DIMENSION_ELEM_DGNV8_1 YES%NO Drop Dimensions
+# ============================================================================
+# PR#10117 - Indicate whether we want to apply world files (.wld) when reading in the features.
+DEFAULT_MACRO DGNV8_IN_APPLY_WORLD_FILE_DGNV8_1 YES
+DGNV8_1_APPLY_WORLD_FILE "$(DGNV8_IN_APPLY_WORLD_FILE_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_APPLY_WORLD_FILE_DGNV8_1 YES%NO Apply World File (.wld)
+# ============================================================================
+# Should we preserve the curves?
+DEFAULT_MACRO DGNV8_IN_PRESERVE_CURVES_DGNV8_1 NO
+DGNV8_1_PRESERVE_CURVES "$(DGNV8_IN_PRESERVE_CURVES_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_PRESERVE_CURVES_DGNV8_1 YES%NO Preserve curves
+# ============================================================================
+# PR#10553 - Set the boolean to yes if want to remove duplicate points.
+# Metafile default is NO but code default is YES for backwards compatibility
+DEFAULT_MACRO DGNV8_IN_REMOVE_DUPLICATES_DGNV8_1 NO
+DGNV8_1_REMOVE_DUPLICATES "$(DGNV8_IN_REMOVE_DUPLICATES_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_REMOVE_DUPLICATES_DGNV8_1 YES%NO Remove duplicate points:
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_ASSUME_MATCHING_UNITS_DGNV8_1 NO
+DGNV8_1_ASSUME_MATCHING_UNITS "$(DGNV8_IN_ASSUME_MATCHING_UNITS_DGNV8_1)"
+GUI OPTIONAL CHECKBOX DGNV8_IN_ASSUME_MATCHING_UNITS_DGNV8_1 YES%NO Assume master units equal working units:
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_UOR_SCALE_DGNV8_1 
+DGNV8_1_UOR_SCALE "$(DGNV8_IN_UOR_SCALE_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_UOR_SCALE_DGNV8_1 UOR to FME units scale factor:
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_UORS_PER_SUB_DGNV8_1 
+DGNV8_1_UORS_PER_SUB "$(DGNV8_IN_UORS_PER_SUB_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_UORS_PER_SUB_DGNV8_1 UORS PER SUB UNIT:
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_SUBS_PER_MASTER_DGNV8_1 
+DGNV8_1_SUBS_PER_MASTER "$(DGNV8_IN_SUBS_PER_MASTER_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_SUBS_PER_MASTER_DGNV8_1 SUBS PER MASTER UNIT:
+# ============================================================================
+# Value of elevation shift factor
+DEFAULT_MACRO DGNV8_IN_ELEVATION_SHIFT_FACTOR_DGNV8_1 
+DGNV8_1_ELEVATION_SHIFT_FACTOR "$(DGNV8_IN_ELEVATION_SHIFT_FACTOR_DGNV8_1)"
+GUI OPTIONAL FLOAT DGNV8_IN_ELEVATION_SHIFT_FACTOR_DGNV8_1 Elevation Shift Factor
+# ============================================================================
+# Value of number of curve vertices
+DEFAULT_MACRO DGNV8_IN_CURVE_VERTICES_DGNV8_1 
+DGNV8_1_CURVE_VERTICES "$(DGNV8_IN_CURVE_VERTICES_DGNV8_1)"
+GUI OPTIONAL INTEGER DGNV8_IN_CURVE_VERTICES_DGNV8_1 Number of interpolated curve vertices
+DGNV8_1_ASSUME_MATCHING_UNITS "$(DGNV8_IN_ASSUME_MATCHING_UNITS_DGNV8_1)"
+DGNV8_1_USE_XREF_PARENT_MODEL "$(DGNV8_IN_USE_XREF_PARENT_MODEL_DGNV8_1)"
+DEFAULT_MACRO DGNV8_IN_USE_RICH_ARC_GEOM_DGNV8_1 YES
+DGNV8_1_USE_RICH_ARC_GEOM "$(DGNV8_IN_USE_RICH_ARC_GEOM_DGNV8_1)"
+DEFAULT_MACRO DGNV8_IN_APPLY_WORLD_FILE_TO_ATTRS_DGNV8_1 YES
+DGNV8_1_APPLY_WORLD_FILE_TO_ATTRS "$(DGNV8_IN_APPLY_WORLD_FILE_TO_ATTRS_DGNV8_1)"
+# ===========================================================================
+DEFAULT_MACRO DGNV8_IN_NETWORK_AUTHENTICATION_DGNV8_1 
+DGNV8_1_NETWORK_AUTHENTICATION "$(DGNV8_IN_NETWORK_AUTHENTICATION_DGNV8_1)"
+GUI OPTIONAL AUTHENTICATOR DGNV8_IN_NETWORK_AUTHENTICATION_DGNV8_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO DGNV8_IN_ATTRIBUTE_READING_DGNV8_1 ALL
+DGNV8_1_ATTRIBUTE_READING "$(DGNV8_IN_ATTRIBUTE_READING_DGNV8_1)"
+# ============================================================================
+DGNV8_1_GENERATE_FME_BUILD_NUM 21627
+# Allow complex chains to be returned as single feature. If this is turned on,
+# special handling must be done with the feature returned because for each complex
+# chain encountered, an aggregate with several parts of potentially different
+# geometries may be returned. The Workbench cannot handle this currently, so a
+# custom mapping file would be required.
+# DEFAULT_MACRO _AGGREGATE_COMPLEX_CHAINS NO
+# GUI OPTIONAL CHOICE _AGGREGATE_COMPLEX_CHAINS YES%NO Handle Complex Chains as Single Elements:
+# DGNV8_AGGREGATE_COMPLEX_CHAINS $(_AGGREGATE_COMPLEX_CHAINS_DGNV8_1)
+DGNV8_1_DATASET "$(SourceDataset_DGNV8_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "SHAPEFILE_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER SHAPEFILE SHAPEFILE_2
+# ============================================================================
+# The following GUI line prompts for a folder to be used as the
+# the destination for the Esri Shapefiles.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be written.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_SHAPEFILE_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER SHAPEFILE SHAPEFILE_2
+DEFAULT_MACRO DestDataset_SHAPEFILE_2 $(DestDataset_SHAPEFILE)
+GUI DIRNAME DestDataset_SHAPEFILE_2 Destination Esri Shapefile Folder:
+SHAPEFILE_2_COORDINATE_SYSTEM_GRANULARITY FEATURE_TYPE
+DEFAULT_MACRO SHAPEFILE_OUT_WRITER_PARAMS_SHAPEFILE_2 
+GUI OPTIONAL DISCLOSUREGROUP SHAPEFILE_OUT_WRITER_PARAMS_SHAPEFILE_2 SHAPEFILE_OUT_ENCODING_SHAPEFILE_2%SHAPEFILE_OUT_SPATIAL_INDEXES_SHAPEFILE_2%SHAPEFILE_OUT_COMPRESSED_FILE_SHAPEFILE_2%SHAPEFILE_OUT_DIMENSION%SHAPEFILE_OUT_DATETIME_STORAGE_SHAPEFILE_2 Writer Parameters
+# ============================================================================
+# The following keyword allows the user to choose what encoding to
+# use for outputting the shapefile
+DEFAULT_MACRO SHAPEFILE_OUT_ENCODING_SHAPEFILE_2 fme-source-encoding
+SHAPEFILE_2_ENCODING "$(SHAPEFILE_OUT_ENCODING_SHAPEFILE_2)"
+GUI STRING_OR_ENCODING SHAPEFILE_OUT_ENCODING_SHAPEFILE_2 fme-source-encoding%fme-system%* Character Encoding
+# ============================================================================
+# Specifies whether or not the reader will generate spatial index files
+DEFAULT_MACRO SHAPEFILE_OUT_SPATIAL_INDEXES_SHAPEFILE_2 NONE
+SHAPEFILE_2_SPATIAL_INDEXES "$(SHAPEFILE_OUT_SPATIAL_INDEXES_SHAPEFILE_2)"
+GUI LOOKUP_CHOICE SHAPEFILE_OUT_SPATIAL_INDEXES_SHAPEFILE_2 None,NONE%"\"ArcGIS Compatible Spatial Index (.sbn)\",SBN"%"\"QGIS and MapServer Spatial Index (.qix)\",QIX"%"\"Both ArcGIS and QGIS/MapServer Compatible (.sbn<space>and<space>.qix)\",BOTH" Create Spatial Index:
+DEFAULT_MACRO SHAPEFILE_OUT_COMPRESSED_FILE_SHAPEFILE_2 No
+SHAPEFILE_2_COMPRESSED_FILE "$(SHAPEFILE_OUT_COMPRESSED_FILE_SHAPEFILE_2)"
+GUI OPTIONAL CHECKBOX SHAPEFILE_OUT_COMPRESSED_FILE_SHAPEFILE_2 Yes%No Create Compressed Shapefile (.shz)
+DEFAULT_MACRO SHAPEFILE_OUT_DIMENSION_SHAPEFILE_2 AUTO
+SHAPEFILE_2_DIMENSION "$(SHAPEFILE_OUT_DIMENSION_SHAPEFILE_2)"
+DEFAULT_MACRO SHAPEFILE_OUT_DATETIME_STORAGE_SHAPEFILE_2 TIMESTAMP_STRING
+SHAPEFILE_2_DATETIME_STORAGE "$(SHAPEFILE_OUT_DATETIME_STORAGE_SHAPEFILE_2)"
+GUI LOOKUP_CHOICE SHAPEFILE_OUT_DATETIME_STORAGE_SHAPEFILE_2 "\"As String <openparen>FME Datetime Format<closeparen>\",TIMESTAMP_STRING"%"\"Date <openparen>YYYYMMDD only<closeparen>\",DATE_ONLY" Datetime Type Storage
+DEFAULT_MACRO SHAPEFILE_OUT_ADVANCED_SHAPEFILE_2 
+GUI OPTIONAL DISCLOSUREGROUP SHAPEFILE_OUT_ADVANCED_SHAPEFILE_2 SHAPEFILE_OUT_SURFACE_SOLID_STORAGE_SHAPEFILE_2%SHAPEFILE_OUT_MEASURES_AS_Z_SHAPEFILE_2%SHAPEFILE_OUT_DATASET_SPLITTING_SHAPEFILE_2 Advanced
+DEFAULT_MACRO SHAPEFILE_OUT_SURFACE_SOLID_STORAGE_SHAPEFILE_2 PATCH
+SHAPEFILE_2_SURFACE_SOLID_STORAGE "$(SHAPEFILE_OUT_SURFACE_SOLID_STORAGE_SHAPEFILE_2)"
+GUI LOOKUP_CHOICE SHAPEFILE_OUT_SURFACE_SOLID_STORAGE_SHAPEFILE_2 Multipatch,PATCH%Polygon,POLYGON Surface and Solid Storage
+# ============================================================================
+# The following GUI line sets whether measure values in the shapefiles should
+# be treated as elevations.
+DEFAULT_MACRO SHAPEFILE_OUT_MEASURES_AS_Z_SHAPEFILE_2 No
+SHAPEFILE_2_MEASURES_AS_Z "$(SHAPEFILE_OUT_MEASURES_AS_Z_SHAPEFILE_2)"
+GUI CHOICE SHAPEFILE_OUT_MEASURES_AS_Z_SHAPEFILE_2 Yes%No Treat Elevation as Measures
+DEFAULT_MACRO SHAPEFILE_OUT_DATASET_SPLITTING_SHAPEFILE_2 Yes
+SHAPEFILE_2_DATASET_SPLITTING "$(SHAPEFILE_OUT_DATASET_SPLITTING_SHAPEFILE_2)"
+GUI OPTIONAL CHECKBOX SHAPEFILE_OUT_DATASET_SPLITTING_SHAPEFILE_2 Yes%No Split Dataset into 2GB Files
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO SHAPEFILE_OUT_DESTINATION_DATASETTYPE_VALIDATION_SHAPEFILE_2 Yes
+SHAPEFILE_2_DESTINATION_DATASETTYPE_VALIDATION "$(SHAPEFILE_OUT_DESTINATION_DATASETTYPE_VALIDATION_SHAPEFILE_2)"
+# ============================================================================
+SHAPEFILE_2_GENERATE_FME_BUILD_NUM 21627
+SHAPEFILE_2_ENCODING $(SHAPEFILE_OUT_ENCODING_SHAPEFILE_2)
+SHAPEFILE_2_DATASET "$(DestDataset_SHAPEFILE_2)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)shapefile_dgnv82shapefile-Drape_All.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING windows-1252
+DEFAULT_MACRO DATASET_KEYWORD_SHAPEFILE_1 SHAPEFILE_1
+DEFAULT_MACRO DATASET_KEYWORD_DGNV8_1 DGNV8_1
+DEFAULT_MACRO DATASET_KEYWORD_SHAPEFILE_2 SHAPEFILE_2
+# -------------------------------------------------------------------------
+
+SHAPEFILE_1_READER_META_ATTRIBUTES fme_basename fme_feature_type
+
+# -------------------------------------------------------------------------
+
+DGNV8_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+DGNV8_1_FEATURE_TYPES $(FEATURE_TYPES)
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME shapefile_dgnv82shapefile-Drape_All
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+SHAPEFILE_1_DEF Edi_lin   shapefile_type               shapefile_line   OBJECTID                     long   ID_Fenomen                   varchar(5)   ID_HOJA                      varchar(5)   TIPO                         varchar(5)   ESTADO                       varchar(5)   BIC                          varchar(5)   CLASIF                       varchar(5)   SITUACION                    varchar(5)   USO                          varchar(5)   NOMBRE                       varchar(250)   SHAPE_Leng                   double
+# -------------------------------------------------------------------------
+SHAPEFILE_1_DEF Red_poly   shapefile_type               shapefile_polygon   OBJECTID                     long   ID_Fenomen                   varchar(5)   ID_HOJA                      varchar(5)   SITUACION                    varchar(5)   ESTADOFIS                    varchar(5)   TITULAR                      varchar(5)   TIPO_TRAMO                   varchar(5)   ORDEN                        varchar(5)   NOMBRE                       varchar(250)   NOMBRE_ALT                   varchar(250)   ESTADO                       varchar(5)   TIPO                         varchar(5)   VIA                          varchar(5)   SHAPE_Leng                   double   SHAPE_Area                   double
+# -------------------------------------------------------------------------
+SHAPEFILE_1_DEF Edi_Poly   shapefile_type               shapefile_polygon   OBJECTID                     long   ID_Fenomen                   varchar(5)   ESTADO                       varchar(5)   ID_HOJA                      varchar(5)   TIPO                         varchar(5)   BIC                          varchar(5)   CLASIF                       varchar(5)   NOMBRE                       varchar(250)   SITUACION                    varchar(5)   USO                          varchar(5)   C_NUCLEO_I                   varchar(14)   D_NUCLEO_I                   varchar(80)   SHAPE_Leng                   double   SHAPE_Area                   double
+# -------------------------------------------------------------------------
+SHAPEFILE_1_DEF Service_poly   shapefile_type               shapefile_polygon   OBJECTID                     long   ID_Fenomen                   varchar(5)   CODEXPLOT                    varchar(50)   ESTADO                       varchar(5)   ID_HOJA                      varchar(5)   NOMBRE                       varchar(250)   TIPO                         varchar(5)   TITULAR                      varchar(5)   SITUACION                    varchar(5)   ENERGIA                      varchar(5)   CORONACION                   varchar(20)   COTAMAX                      varchar(20)   SHAPE_Leng                   double   SHAPE_Area                   double
+# -------------------------------------------------------------------------
+SHAPEFILE_1_DEF Cubi_poly   shapefile_type               shapefile_polygon   OBJECTID                     long   ID_Fenomen                   varchar(5)   ID_HOJA                      varchar(5)   NOMBRE                       varchar(254)   TIPO                         varchar(5)   FIGURA                       varchar(5)   CODIGO                       varchar(9)   SHAPE_Leng                   double   SHAPE_Area                   double
+# -------------------------------------------------------------------------
+DGNV8_1_DEF REF_05007_Sports_EDGE_Multipurpose_Ln   igds_level                   ""   igds_level_comment           ""   igds_level_color             0   igds_level_style             0   igds_level_weight            0   igds_level_display           yes   igds_level_freeze            no   igds_level_lock              no   igds_level_override_color    0   igds_use_level_override_color No   igds_level_override_style    0   igds_use_level_override_style No   igds_level_override_weight   0   igds_use_level_override_weight No
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE SHAPEFILE SHAPEFILE_1::Edi_lin multi_reader_keyword,$(DATASET_KEYWORD_SHAPEFILE_1) TO FME_GENERIC ::Edi_lin ALIAS_GEOMETRY    ROUTE SHAPEFILE SHAPEFILE_1::Red_poly multi_reader_keyword,$(DATASET_KEYWORD_SHAPEFILE_1) TO FME_GENERIC ::Red_poly ALIAS_GEOMETRY    ROUTE SHAPEFILE SHAPEFILE_1::Edi_Poly multi_reader_keyword,$(DATASET_KEYWORD_SHAPEFILE_1) TO FME_GENERIC ::Edi_Poly ALIAS_GEOMETRY    ROUTE SHAPEFILE SHAPEFILE_1::Service_poly multi_reader_keyword,$(DATASET_KEYWORD_SHAPEFILE_1) TO FME_GENERIC ::Service_poly ALIAS_GEOMETRY    ROUTE SHAPEFILE SHAPEFILE_1::Cubi_poly multi_reader_keyword,$(DATASET_KEYWORD_SHAPEFILE_1) TO FME_GENERIC ::Cubi_poly ALIAS_GEOMETRY    ROUTE DGNV8 DGNV8_1::REF_05007_Sports_EDGE_Multipurpose_Ln multi_reader_keyword,$(DATASET_KEYWORD_DGNV8_1) TO FME_GENERIC ::REF_05007_Sports_EDGE_Multipurpose_Ln ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+SHAPEFILE_1_MERGE_DEF SHAPEFILE_1::Edi_lin EXACT Edi_lin
+SHAPEFILE_1_MERGE_DEF SHAPEFILE_1::Red_poly EXACT Red_poly
+SHAPEFILE_1_MERGE_DEF SHAPEFILE_1::Edi_Poly EXACT Edi_Poly
+SHAPEFILE_1_MERGE_DEF SHAPEFILE_1::Service_poly EXACT Service_poly
+SHAPEFILE_1_MERGE_DEF SHAPEFILE_1::Cubi_poly EXACT Cubi_poly
+DGNV8_1_MERGE_DEF DGNV8_1::REF_05007_Sports_EDGE_Multipurpose_Ln GLOB *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "REF_05007_Sports_EDGE_Multipurpose_Ln_DGNV8_1 Splitter"    INPUT FEATURE_TYPE REF_05007_Sports_EDGE_Multipurpose_Ln    OUTPUT FEATURE_TYPE REF_05007_Sports_EDGE_Multipurpose_Ln_DGNV8_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Cubi_poly_SHAPEFILE_1 Splitter"    INPUT FEATURE_TYPE Cubi_poly    OUTPUT FEATURE_TYPE Cubi_poly_SHAPEFILE_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Edi_lin_SHAPEFILE_1 Splitter"    INPUT FEATURE_TYPE Edi_lin    OUTPUT FEATURE_TYPE Edi_lin_SHAPEFILE_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Edi_Poly_SHAPEFILE_1 Splitter"    INPUT FEATURE_TYPE Edi_Poly    OUTPUT FEATURE_TYPE Edi_Poly_SHAPEFILE_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Red_poly_SHAPEFILE_1 Splitter"    INPUT FEATURE_TYPE Red_poly    OUTPUT FEATURE_TYPE Red_poly_SHAPEFILE_1
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Service_poly_SHAPEFILE_1 Splitter"    INPUT FEATURE_TYPE Service_poly    OUTPUT FEATURE_TYPE Service_poly_SHAPEFILE_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} ChoppingFactory    FACTORY_NAME { Chopper }    INPUT  FEATURE_TYPE REF_05007_Sports_EDGE_Multipurpose_Ln_DGNV8_1    MODE { VERTEX }    MAX_VERTICES { "1" }    APPROX_LENGTH { "<Unused>" }    REMNANT_ATTRIBUTE { "_remnant" }    CHOP_POLYGONS { <Unused> }    REJECT_INVALID_GEOM Yes    DEAGGREGATE_INPUT { Deaggregate }    OUTPUT { CHOPPED FEATURE_TYPE Chopper_CHOPPED          }    OUTPUT { UNTOUCHED FEATURE_TYPE Chopper_UNTOUCHED          }    OUTPUT { REJECTED FEATURE_TYPE Chopper_<REJECTED>          }
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME Chopper_<Rejected> INPUT FEATURE_TYPE Chopper_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, Chopper<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} SurfaceModelFactory    FACTORY_NAME { SurfaceDraper }    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    INPUT BREAKLINES FEATURE_TYPE Chopper_UNTOUCHED    INPUT DRAPE_FEATURES FEATURE_TYPE Cubi_poly_SHAPEFILE_1    INPUT DRAPE_FEATURES FEATURE_TYPE Edi_lin_SHAPEFILE_1    INPUT DRAPE_FEATURES FEATURE_TYPE Edi_Poly_SHAPEFILE_1    INPUT DRAPE_FEATURES FEATURE_TYPE Red_poly_SHAPEFILE_1    INPUT DRAPE_FEATURES FEATURE_TYPE Service_poly_SHAPEFILE_1    INPUT POINTS FEATURE_TYPE Chopper_CHOPPED    REJECT_INVALID_GEOM Yes    TOLERANCE { 0.01 }    DRAPE_TYPE { VERTEX }    ADDITIVE_Z { NO }    INTERPOLATION_TYPE { AUTO }    OUTPUT { DRAPED_FEATURES FEATURE_TYPE SurfaceDraper_DRAPED_FEATURES       }    OUTPUT { REJECTED FEATURE_TYPE SurfaceDraper_<REJECTED>       }
+FACTORY_DEF * TeeFactory   FACTORY_NAME "SurfaceDraper DRAPED_FEATURES Splitter"   INPUT FEATURE_TYPE SurfaceDraper_DRAPED_FEATURES   OUTPUT FEATURE_TYPE SurfaceDraper_DRAPED_FEATURES_0_vdFSshywj78=   OUTPUT FEATURE_TYPE SurfaceDraper_DRAPED_FEATURES_1_qBXJ+xzi0Zs=   OUTPUT FEATURE_TYPE SurfaceDraper_DRAPED_FEATURES_2_AjrxlEvfcQs=   OUTPUT FEATURE_TYPE SurfaceDraper_DRAPED_FEATURES_3_rPCqvpaujZE=   OUTPUT FEATURE_TYPE SurfaceDraper_DRAPED_FEATURES_4_4QDp2oxObR4=
+DEFAULT_MACRO _WB_BYPASS_TERMINATION No
+FACTORY_DEF * TeeFactory FACTORY_NAME SurfaceDraper_<Rejected> INPUT FEATURE_TYPE SurfaceDraper_<REJECTED>  OUTPUT FAILED FEATURE_TYPE * @Abort(ENCODED, SurfaceDraper<space>output<space>a<space><lt>Rejected<gt><space>feature.<space><space>To<space>continue<space>translation<space>when<space>features<space>are<space>rejected<comma><space>change<space><apos>Workspace<space>Parameters<apos><space><gt><space>Translation<space><gt><space><apos>Rejected<space>Feature<space>Handling<apos><space>to<space><apos>Continue<space>Translation<apos>)
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester }    INPUT  FEATURE_TYPE SurfaceDraper_DRAPED_FEATURES_0_vdFSshywj78=    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>fme_basename<closeparen>,Tester)" = Cubi_poly ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_PASSED         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_2 }    INPUT  FEATURE_TYPE SurfaceDraper_DRAPED_FEATURES_1_qBXJ+xzi0Zs=    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>fme_basename<closeparen>,Tester_2)" = Edi_lin ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_2_PASSED         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_3 }    INPUT  FEATURE_TYPE SurfaceDraper_DRAPED_FEATURES_2_AjrxlEvfcQs=    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>fme_basename<closeparen>,Tester_3)" = Edi_Poly ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_3_PASSED         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_4 }    INPUT  FEATURE_TYPE SurfaceDraper_DRAPED_FEATURES_3_rPCqvpaujZE=    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>fme_basename<closeparen>,Tester_4)" = Red_poly ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_4_PASSED         }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} TestFactory    FACTORY_NAME { Tester_5 }    INPUT  FEATURE_TYPE SurfaceDraper_DRAPED_FEATURES_4_4QDp2oxObR4=    TEST { "@EvaluateExpression(FDIV,STRING_ENCODED,<at>Value<openparen>fme_basename<closeparen>,Tester_5)" = Service_poly ENCODED }    BOOLEAN_OPERATOR { OR }    COMPOSITE_TEST_EXPR { "1" }    FEATURE_TABLE_SHIM_SUPPORT Yes    PRESERVE_FEATURE_ORDER { PER_OUTPUT_PORT }    OUTPUT { PASSED FEATURE_TYPE Tester_5_PASSED         }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC Tester_4_PASSED TO SHAPEFILE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Red_poly<closeparen> GEOMETRY    ROUTE FME_GENERIC Tester_PASSED TO SHAPEFILE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Cubi_poly<closeparen> GEOMETRY    ROUTE FME_GENERIC Tester_2_PASSED TO SHAPEFILE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Edi_lin<closeparen> GEOMETRY    ROUTE FME_GENERIC Tester_5_PASSED TO SHAPEFILE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Service_poly<closeparen> GEOMETRY    ROUTE FME_GENERIC Tester_3_PASSED TO SHAPEFILE __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>Edi_Poly<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+SHAPEFILE_2_DEF Edi_lin   shapefile_type               shapefile_line   shape_dimension              AUTO   OBJECTID                     long   ID_Fenomen                   varchar(5)   ID_HOJA                      varchar(5)   TIPO                         varchar(5)   ESTADO                       varchar(5)   BIC                          varchar(5)   CLASIF                       varchar(5)   SITUACION                    varchar(5)   USO                          varchar(5)   NOMBRE                       varchar(250)   SHAPE_Leng                   double
+# -------------------------------------------------------------------------
+SHAPEFILE_2_DEF Red_poly   shapefile_type               shapefile_polygon   shape_dimension              AUTO   OBJECTID                     long   ID_Fenomen                   varchar(5)   ID_HOJA                      varchar(5)   SITUACION                    varchar(5)   ESTADOFIS                    varchar(5)   TITULAR                      varchar(5)   TIPO_TRAMO                   varchar(5)   ORDEN                        varchar(5)   NOMBRE                       varchar(250)   NOMBRE_ALT                   varchar(250)   ESTADO                       varchar(5)   TIPO                         varchar(5)   VIA                          varchar(5)   SHAPE_Leng                   double   SHAPE_Area                   double
+# -------------------------------------------------------------------------
+SHAPEFILE_2_DEF Edi_Poly   shapefile_type               shapefile_polygon   shape_dimension              AUTO   OBJECTID                     long   ID_Fenomen                   varchar(5)   ESTADO                       varchar(5)   ID_HOJA                      varchar(5)   TIPO                         varchar(5)   BIC                          varchar(5)   CLASIF                       varchar(5)   NOMBRE                       varchar(250)   SITUACION                    varchar(5)   USO                          varchar(5)   C_NUCLEO_I                   varchar(14)   D_NUCLEO_I                   varchar(80)   SHAPE_Leng                   double   SHAPE_Area                   double
+# -------------------------------------------------------------------------
+SHAPEFILE_2_DEF Service_poly   shapefile_type               shapefile_polygon   shape_dimension              AUTO   OBJECTID                     long   ID_Fenomen                   varchar(5)   CODEXPLOT                    varchar(50)   ESTADO                       varchar(5)   ID_HOJA                      varchar(5)   NOMBRE                       varchar(250)   TIPO                         varchar(5)   TITULAR                      varchar(5)   SITUACION                    varchar(5)   ENERGIA                      varchar(5)   CORONACION                   varchar(20)   COTAMAX                      varchar(20)   SHAPE_Leng                   double   SHAPE_Area                   double
+# -------------------------------------------------------------------------
+SHAPEFILE_2_DEF Cubi_poly   shapefile_type               shapefile_polygon   shape_dimension              AUTO   OBJECTID                     long   ID_Fenomen                   varchar(5)   ID_HOJA                      varchar(5)   NOMBRE                       varchar(254)   TIPO                         varchar(5)   FIGURA                       varchar(5)   CODIGO                       varchar(9)   SHAPE_Leng                   double   SHAPE_Area                   double
