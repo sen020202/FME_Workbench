@@ -1,0 +1,1072 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME-2023_0\fme.exe" C:\FME_MKGG_Tools\LEICS_ECW_MERGE\Leice_ECW_Merge_ecw2ecw.fmw
+#          --SourceDataset_ECW "\"\"$(FME_MF_DIR_USERTYPED)Input\2023_56000_438000_RGB_hr.ecw\" \"$(FME_MF_DIR_USERTYPED)Input\2023_56000_438750_RGB_hr.ecw\" \"$(FME_MF_DIR_USERTYPED)Input\2023_56000_439500_RGB_hr.ecw\" \"$(FME_MF_DIR_USERTYPED)Input\2023_56000_440250_RGB_hr.ecw\" \"$(FME_MF_DIR_USERTYPED)Input\2023_56000_441000_RGB_hr.ecw\" \"$(FME_MF_DIR_USERTYPED)Input\2023_56000_441750_RGB_hr.ecw\" \"$(FME_MF_DIR_USERTYPED)Input\2023_56000_442500_RGB_hr.ecw\" \"$(FME_MF_DIR_USERTYPED)Input\2023_56000_443250_RGB_hr.ecw\"\""
+#          --FEATURE_TYPES "ECW"
+#          --DestDataset_ECW "$(FME_MF_DIR_USERTYPED)output"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   A0_PREVIEW_IMAGE="data:image/png;base64,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Tz995vTJvjMjkdCmaMS8fUuzUsqsrkmEDFN5JdUWnDzUHp8faojdef1TamuKzFq+MuP5+bnN7U173jjxo9cGolWhLz7U43q+0rzyB4v4RuT6t43LsQ9rxdlzbN6yCsFgSL/iLaE9/NIp/b6e933K56U73b1v/8mXXnzu3yo41cr6+l/99dcevHQBVYl9WL7vZ/PFyfliS0MoEI7/ZF/v3R9qPXhyYmImt6qu2tBVwXJ/4dbWn03W33PfZ5c4FgjWSvTVP/16+YbjOIZhGsZij7j76sKnYHV2dH7hkU9XYnbL6NX9+1766WsX7hq67r570XhFaJpmuulPbo8Wi0XfV5qmNKUSNeHekeJnHv1DzmxYOoIFVNip44f6j7xSG7Fra0Ljs7ZlrL7/wUfNK49l4PoRLGBZWIXcXGpqTcv6Gz2RDxSCBUAM3lQDEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARCDYAEQg2ABEINgARDjfwA6EpezNPZ2TAAAAABJRU5ErkJggg=="
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="2633.99 231.003"
+#!   DOC_TOP_LEFT="82.5006 -662.88"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="23332"
+#!   FME_BULK_MODE_THRESHOLD="2000"
+#!   FME_DOCUMENT_GUID="fccc82cc-169e-43d5-87d9-5a1c8cfaff0c"
+#!   FME_DOCUMENT_PRIORGUID=""
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="UTF-8"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2023.0.1.0 (20230630 - Build 23332 - WIN64)"
+#!   LAST_SAVE_DATE="2023-10-12T10:44:27"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="38"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-178.127 0"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="100"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="ECW"
+#!   DATASET="$(SourceDataset_ECW)"
+#!   KEYWORD="ECW_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE=""
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="ecw_clockwise_rotation_deg float ecw_compression_date datetime ecw_compression_rate_actual float ecw_compression_rate_target float ecw_file_metadata_address char(255) ecw_file_metadata_aquisition_date datetime ecw_file_metadata_aquisition_sensor_name char(255) ecw_file_metadata_author char(255) ecw_file_metadata_classification char(255) ecw_file_metadata_company char(255) ecw_file_metadata_compression_software char(255) ecw_file_metadata_copyright char(255) ecw_file_metadata_email char(255) ecw_file_metadata_telephone char(255) ecw_format_version integer ecw_pyramid_level{}.num_columns integer ecw_pyramid_level{}.num_rows integer ecw_pyramid_num_levels integer ecw_type char(255) fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string char(50) fme_type char(50) multi_reader_full_id integer multi_reader_id integer multi_reader_keyword char(50) multi_reader_type char(50)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE="FEATURE_TYPES_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="23332"
+#!   COORDSYS=""
+#!   FEATURE_TYPES="$(FEATURE_TYPES)"
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ECW_IN_PYRAMID_LEVEL ECW_IN_COMPRESSION_CACHE_SIZE_CALCULATION ECW_OUT_COMPRESSION_CACHE_SIZE_CALCULATION ECW_IN_COMPRESSION_CACHE_SIZE_MB ECW_OUT_COMPRESSION_CACHE_SIZE_MB"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="AUTO_FANOUT_ATTRIBUTE"
+#!   VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Raster1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Raster File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_AUTO_EXPOSE"
+#!   VALUE="fme_basename char(50)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the ECW file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the ECW file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="ECW"
+#!   DATASET="$(DestDataset_ECW)"
+#!   KEYWORD="ECW_2"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="64"
+#!   ATTR_CASE="ANY_FIRST_NONNUMERIC"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="ecw_compression_level $(_ECW_WRITER_COMPRESSION_LEVEL) ecw_tab_file_generation $(_ECW_WRITER_TAB_FILE_GENERATION) ecw_format_version $(_ECW_WRITER_FORMAT_VERSION) ecw_use_epsg_code_for_projection $(_ECW_WRITER_USE_EPSG_CODE_FOR_PROJECTION)"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="ecw_compression_level float ecw_format_version integer ecw_tab_file_generation char(3) ecw_type char(255) ecw_use_epsg_code_for_projection char(255) fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis float fme_rotation float fme_secondary_axis float fme_start_angle float fme_sweep_angle float fme_text_size float fme_text_string char(50) fme_type char(50)"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP ecw_layer_group ecw_format_version%ecw_compression_level%ecw_tab_file_generation%ecw_use_epsg_code_for_projection Raster&quot; &quot;&quot; &quot;GUI ACTIVECHOICE ecw_format_version 2,ecw_use_epsg_code_for_projection%3 ECW Format Version&quot; 3 &quot;GUI FLOAT ecw_compression_level Compress By Percentage (0 - 99)&quot; 75 &quot;GUI CHOICE ecw_tab_file_generation yes%no TAB File Generation&quot; no &quot;GUI LOOKUP_CHOICE ecw_use_epsg_code_for_projection Always,ALWAYS%When&lt;space&gt;Known&lt;space&gt;Good,WHEN_KNOWN_GOOD%Never,NEVER Use EPSG Code For Projection:&quot; WHEN_KNOWN_GOOD "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS="&quot; ()"
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="23332"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION=""
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ECW_IN_PYRAMID_LEVEL ECW_IN_COMPRESSION_CACHE_SIZE_CALCULATION ECW_OUT_COMPRESSION_CACHE_SIZE_CALCULATION ECW_IN_COMPRESSION_CACHE_SIZE_MB ECW_OUT_COMPRESSION_CACHE_SIZE_MB"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="AUTO_FANOUT_ATTRIBUTE"
+#!   VALUE="fme_basename"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Raster1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Raster File"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_AUTO_EXPOSE"
+#!   VALUE="fme_basename char(50)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the ECW file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the ECW file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="decimal(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="largeint"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="decimal(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="largeint"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="datetime"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="time"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="decimal(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="largeint"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="decimal(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="largeint"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ECW"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="smallint"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ECW"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ecw_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ecw_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ecw_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="ecw_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ecw_raster"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ecw_none"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="fme_no_map"
+#!   FME_TYPE="fme_voxel_grid"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ecw_none"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ECW"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="ecw_none"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ECW"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="ECW"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="ecw_raster"
+#!   POSITION="82.500625006250061 -431.87696876968766"
+#!   BOUNDING_RECT="82.500625006250061 -431.87696876968766 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="ECW_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="true"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="ECW"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="2262.4916249162493 -591.87971879718805"
+#!   BOUNDING_RECT="2262.4916249162493 -591.87971879718805 454 71"
+#!   ORDER="500000000000001"
+#!   COLLAPSED="true"
+#!   KEYWORD="ECW_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ecw_compression_level" PARM_VALUE="0"/>
+#!     <DEFLINE_PARM PARM_NAME="ecw_format_version" PARM_VALUE="3"/>
+#!     <DEFLINE_PARM PARM_NAME="ecw_layer_group" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="ecw_tab_file_generation" PARM_VALUE="yes"/>
+#!     <DEFLINE_PARM PARM_NAME="ecw_use_epsg_code_for_projection" PARM_VALUE="WHEN_KNOWN_GOOD"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="ECW_1"
+#!   OVERRIDE="-ECW_1_DATASET"
+#!   DATASET="ECW_1/2023_56000_443250_RGB_hr.ecw&quot;&quot;"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="ECW_2"
+#!   OVERRIDE="-ECW_2_DATASET"
+#!   DATASET="ECW_2/output"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_ECW INCLUDE_WEB_BROWSER%ECW_Files(*.ecw)|*.ecw|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_Files(*)|* Source ER Mapper ECW File(s):"
+#!   DEFAULT_VALUE="&quot;&quot;$(FME_MF_DIR)Input\2023_56000_438000_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_438750_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_439500_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_440250_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_441000_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_441750_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_442500_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_443250_RGB_hr.ecw&quot;&quot;"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES &lt;quote&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_438000_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_438750_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_439500_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_440250_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_441000_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_441750_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_442500_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_443250_RGB_hr.ecw&lt;quote&gt;&lt;quote&gt;,_FORMAT_OVERRIDE_,ECW,_DATASET_OVERRIDE_,SourceDataset_ECW,APPLY_GCPS,NO,GCP_INTERPOLATION_METHOD,NearestNeighbor,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,RDR_ADV_PARM_GROUP,,PYRAMID_LEVEL,,COMPRESSION_CACHE_SIZE_CALCULATION,AUTO,COMPRESSION_CACHE_SIZE_MB,250,NETWORK_AUTHENTICATION,,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,GROUP_BY_DATASET,No,OUTPUT_ECW_FORMAT_VERSION_FOR_V2,YES,_MERGE_SCHEMAS,YES,READER_META_ATTRIBUTES,fme_basename,OUTPUT_COMPRESSION_RATE_TARGET_FOR_V2,YES,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,DYNAMIC_WORKFLOW,yes,_MERGE_SCHEMAS,YES Feature Types to Read"
+#!   DEFAULT_VALUE="ECW"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI DIRNAME DestDataset_ECW Destination ER Mapper ECW Folder:"
+#!   DEFAULT_VALUE="$(FME_MF_DIR)output"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6IlwiXCIkKEZNRV9NRl9ESVIpSW5wdXRcXDIwMjNfNTYwMDBfNDM4MDAwX1JHQl9oci5lY3dcIiBcIiQoRk1FX01GX0RJUilJbnB1dFxcMjAyM181NjAwMF80Mzg3NTBfUkdCX2hyLmVjd1wiIFwiJChGTUVfTUZfRElSKUlucHV0XFwyMDIzXzU2MDAwXzQzOTUwMF9SR0JfaHIuZWN3XCIgXCIkKEZNRV9NRl9ESVIpSW5wdXRcXDIwMjNfNTYwMDBfNDQwMjUwX1JHQl9oci5lY3dcIiBcIiQoRk1FX01GX0RJUilJbnB1dFxcMjAyM181NjAwMF80NDEwMDBfUkdCX2hyLmVjd1wiIFwiJChGTUVfTUZfRElSKUlucHV0XFwyMDIzXzU2MDAwXzQ0MTc1MF9SR0JfaHIuZWN3XCIgXCIkKEZNRV9NRl9ESVIpSW5wdXRcXDIwMjNfNTYwMDBfNDQyNTAwX1JHQl9oci5lY3dcIiBcIiQoRk1FX01GX0RJUilJbnB1dFxcMjAyM181NjAwMF80NDMyNTBfUkdCX2hyLmVjd1wiXCIiLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkVDVyBGaWxlcyIsImZpbHRlciI6WyIqLmVjdyJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIEZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpbmNsdWRlV2ViQnJvd3NlciI6dHJ1ZSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IlNvdXJjZURhdGFzZXRfRUNXIiwicHJvbXB0IjoiU291cmNlIEVSIE1hcHBlciBFQ1cgRmlsZShzKToiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOnRydWUsInN1cHBvcnRlZFZhbHVlVHlwZXMiOlsiZ2xvYmFsUGFyYW1ldGVyIl0sInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImNob2ljZVNldHRpbmdzIjp7ImNob2ljZVNldCI6InJlYWRlclZhbHVlcyIsImNvbmZpZ3VyYXRpb24iOlt7Im5hbWUiOiJfREFUQVNFVF9PVkVSUklERV8iLCJ2YWx1ZSI6IlNvdXJjZURhdGFzZXRfRUNXIn0seyJuYW1lIjoiQVBQTFlfR0NQUyIsInZhbHVlIjoiTk8ifSx7Im5hbWUiOiJHQ1BfSU5URVJQT0xBVElPTl9NRVRIT0QiLCJ2YWx1ZSI6Ik5lYXJlc3ROZWlnaGJvciJ9LHsibmFtZSI6IlVTRV9TRUFSQ0hfRU5WRUxPUEUiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01JTlgiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUlOWSIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9NQVhYIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01BWFkiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfQ09PUkRJTkFURV9TWVNURU0iLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkNMSVBfVE9fRU5WRUxPUEUiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiUkRSX0FEVl9QQVJNX0dST1VQIiwidmFsdWUiOiIifSx7Im5hbWUiOiJQWVJBTUlEX0xFVkVMIiwidmFsdWUiOiIifSx7Im5hbWUiOiJDT01QUkVTU0lPTl9DQUNIRV9TSVpFX0NBTENVTEFUSU9OIiwidmFsdWUiOiJBVVRPIn0seyJuYW1lIjoiQ09NUFJFU1NJT05fQ0FDSEVfU0laRV9NQiIsInZhbHVlIjoiMjUwIn0seyJuYW1lIjoiTkVUV09SS19BVVRIRU5USUNBVElPTiIsInZhbHVlIjoiIn0seyJuYW1lIjoiQ09PUkRTWVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlNUQVJUX0ZFQVRVUkUiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1BWF9GRUFUVVJFUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiTUFYX0ZFQVRVUkVTX1BFUl9GRUFUVVJFX1RZUEUiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1JTl9GRUFUVVJFUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiR1JPVVBfQllfREFUQVNFVCIsInZhbHVlIjoiTm8ifSx7Im5hbWUiOiJPVVRQVVRfRUNXX0ZPUk1BVF9WRVJTSU9OX0ZPUl9WMiIsInZhbHVlIjoiWUVTIn0seyJuYW1lIjoiX01FUkdFX1NDSEVNQVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IlJFQURFUl9NRVRBX0FUVFJJQlVURVMiLCJ2YWx1ZSI6ImZtZV9iYXNlbmFtZSJ9LHsibmFtZSI6Ik9VVFBVVF9DT01QUkVTU0lPTl9SQVRFX1RBUkdFVF9GT1JfVjIiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IkVYUE9TRV9BVFRSU19HUk9VUCIsInZhbHVlIjoiRk1FX0RJU0NMT1NVUkVfT1BFTiJ9LHsibmFtZSI6IkRZTkFNSUNfV09SS0ZMT1ciLCJ2YWx1ZSI6InllcyJ9LHsibmFtZSI6Il9NRVJHRV9TQ0hFTUFTIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJSRVRSSUVWRV9BTExfVEFCTEVfTkFNRVMiLCJ2YWx1ZSI6IllFUyJ9XSwiZGF0YXNldCI6IjxxdW90ZT48cXVvdGU+Qzo8YmFja3NsYXNoPkZNRV9NS0dHX1Rvb2xzPGJhY2tzbGFzaD5MRUlDU19FQ1dfTUVSR0U8YmFja3NsYXNoPklucHV0PGJhY2tzbGFzaD4yMDIzXzU2MDAwXzQzODAwMF9SR0JfaHIuZWN3PHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPkZNRV9NS0dHX1Rvb2xzPGJhY2tzbGFzaD5MRUlDU19FQ1dfTUVSR0U8YmFja3NsYXNoPklucHV0PGJhY2tzbGFzaD4yMDIzXzU2MDAwXzQzODc1MF9SR0JfaHIuZWN3PHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPkZNRV9NS0dHX1Rvb2xzPGJhY2tzbGFzaD5MRUlDU19FQ1dfTUVSR0U8YmFja3NsYXNoPklucHV0PGJhY2tzbGFzaD4yMDIzXzU2MDAwXzQzOTUwMF9SR0JfaHIuZWN3PHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPkZNRV9NS0dHX1Rvb2xzPGJhY2tzbGFzaD5MRUlDU19FQ1dfTUVSR0U8YmFja3NsYXNoPklucHV0PGJhY2tzbGFzaD4yMDIzXzU2MDAwXzQ0MDI1MF9SR0JfaHIuZWN3PHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPkZNRV9NS0dHX1Rvb2xzPGJhY2tzbGFzaD5MRUlDU19FQ1dfTUVSR0U8YmFja3NsYXNoPklucHV0PGJhY2tzbGFzaD4yMDIzXzU2MDAwXzQ0MTAwMF9SR0JfaHIuZWN3PHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPkZNRV9NS0dHX1Rvb2xzPGJhY2tzbGFzaD5MRUlDU19FQ1dfTUVSR0U8YmFja3NsYXNoPklucHV0PGJhY2tzbGFzaD4yMDIzXzU2MDAwXzQ0MTc1MF9SR0JfaHIuZWN3PHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPkZNRV9NS0dHX1Rvb2xzPGJhY2tzbGFzaD5MRUlDU19FQ1dfTUVSR0U8YmFja3NsYXNoPklucHV0PGJhY2tzbGFzaD4yMDIzXzU2MDAwXzQ0MjUwMF9SR0JfaHIuZWN3PHF1b3RlPjxzcGFjZT48cXVvdGU+Qzo8YmFja3NsYXNoPkZNRV9NS0dHX1Rvb2xzPGJhY2tzbGFzaD5MRUlDU19FQ1dfTUVSR0U8YmFja3NsYXNoPklucHV0PGJhY2tzbGFzaD4yMDIzXzU2MDAwXzQ0MzI1MF9SR0JfaHIuZWN3PHF1b3RlPjxxdW90ZT4iLCJmb3JtYXQiOiJFQ1ciLCJ2YWx1ZXNUb1VzZSI6ImZlYXR1cmVUeXBlcyJ9LCJkZWZhdWx0VmFsdWUiOiJFQ1ciLCJuYW1lIjoiRkVBVFVSRV9UWVBFUyIsInByb21wdCI6IkZlYXR1cmUgVHlwZXMgdG8gUmVhZCIsInJlcXVpcmVkIjpmYWxzZSwidHlwZSI6Imxpc3Rib3giLCJ2YWx1ZVR5cGUiOiJzdHJpbmdFbmNvZGVkUGFydHMifSx7ImFjY2Vzc01vZGUiOiJ3cml0ZSIsImRlZmF1bHRWYWx1ZSI6IiQoRk1FX01GX0RJUilvdXRwdXQiLCJpdGVtc1RvU2VsZWN0IjoiZm9sZGVycyIsIm5hbWUiOiJEZXN0RGF0YXNldF9FQ1ciLCJwcm9tcHQiOiJEZXN0aW5hdGlvbiBFUiBNYXBwZXIgRUNXIEZvbGRlcjoiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="SourceDataset_ECW" 
+#!   DEFAULT_VALUE="&quot;&quot;$(FME_MF_DIR)Input\2023_56000_438000_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_438750_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_439500_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_440250_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_441000_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_441750_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_442500_RGB_hr.ecw&quot; &quot;$(FME_MF_DIR)Input\2023_56000_443250_RGB_hr.ecw&quot;&quot;"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_ECW INCLUDE_WEB_BROWSER%ECW_Files(*.ecw)|*.ecw|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|All_Files(*)|* Source ER Mapper ECW File(s):"
+#! />
+#!     <INFO NAME="FEATURE_TYPES" 
+#!   DEFAULT_VALUE="ECW"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="false"
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES &lt;quote&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_438000_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_438750_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_439500_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_440250_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_441000_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_441750_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_442500_RGB_hr.ecw&lt;quote&gt;&lt;space&gt;&lt;quote&gt;C:&lt;backslash&gt;FME_MKGG_Tools&lt;backslash&gt;LEICS_ECW_MERGE&lt;backslash&gt;Input&lt;backslash&gt;2023_56000_443250_RGB_hr.ecw&lt;quote&gt;&lt;quote&gt;,_FORMAT_OVERRIDE_,ECW,_DATASET_OVERRIDE_,SourceDataset_ECW,APPLY_GCPS,NO,GCP_INTERPOLATION_METHOD,NearestNeighbor,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,RDR_ADV_PARM_GROUP,,PYRAMID_LEVEL,,COMPRESSION_CACHE_SIZE_CALCULATION,AUTO,COMPRESSION_CACHE_SIZE_MB,250,NETWORK_AUTHENTICATION,,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,GROUP_BY_DATASET,No,OUTPUT_ECW_FORMAT_VERSION_FOR_V2,YES,_MERGE_SCHEMAS,YES,READER_META_ATTRIBUTES,fme_basename,OUTPUT_COMPRESSION_RATE_TARGET_FOR_V2,YES,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,DYNAMIC_WORKFLOW,yes,_MERGE_SCHEMAS,YES Feature Types to Read"
+#! />
+#!     <INFO NAME="DestDataset_ECW" 
+#!   DEFAULT_VALUE="$(FME_MF_DIR)output"
+#!   SCOPE="DEPENDENT"
+#!   GENERATED_GUI_LINE="true"
+#!   GUI_LINE="GUI DIRNAME DestDataset_ECW Destination ER Mapper ECW Folder:"
+#! />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="5"
+#!   TYPE="RasterMosaicker"
+#!   VERSION="7"
+#!   POSITION="1243.7624376243762 -471.87971879718805"
+#!   BOUNDING_RECT="1243.7624376243762 -471.87971879718805 454 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="23332"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_message" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="Use Attributes From One Feature"/>
+#!     <XFORM_PARM PARM_NAME="ALIGNMENT_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="COUNT_ATTR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="DATA_VALUES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_BY_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="GROUP_PROCESSING_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="INTERPOLATION_TYPE_NAME" PARM_VALUE="Nearest Neighbor"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="MERGE_PALETTES_NAME" PARM_VALUE="Yes"/>
+#!     <XFORM_PARM PARM_NAME="NODATA_OVERWRITE" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="OAN_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="OVERLAPPING_VALUES" PARM_VALUE="last"/>
+#!     <XFORM_PARM PARM_NAME="PALETTES_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="SNAPPING_TYPE_NAME" PARM_VALUE="Resample"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="RasterMosaicker"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="6"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="5"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="8"
+#!   SOURCE_NODE="5"
+#!   TARGET_NODE="3"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0.30196078431372547,0.30196078431372547,0.30196078431372547,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 38
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_ECW_1,ECW_IN_APPLY_GCPS_ECW_1,ECW_IN_GCP_INTERPOLATION_METHOD_ECW_1,ECW_IN_USE_SEARCH_ENVELOPE_ECW_1,ECW_IN_SEARCH_ENVELOPE_MINX_ECW_1,ECW_IN_SEARCH_ENVELOPE_MINY_ECW_1,ECW_IN_SEARCH_ENVELOPE_MAXX_ECW_1,ECW_IN_SEARCH_ENVELOPE_MAXY_ECW_1,ECW_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ECW_1,ECW_IN_CLIP_TO_ENVELOPE_ECW_1,ECW_IN_RDR_ADV_PARM_GROUP_ECW_1,ECW_IN_PYRAMID_LEVEL_ECW_1,ECW_IN_COMPRESSION_CACHE_SIZE_CALCULATION_ECW_1,ECW_IN_COMPRESSION_CACHE_SIZE_MB_ECW_1,ECW_IN_NETWORK_AUTHENTICATION_ECW_1,DestDataset_ECW_2,ECW_OUT_ADVANCED_GROUP_ECW_2,ECW_OUT_COMPRESSION_CACHE_SIZE_CALCULATION_ECW_2,ECW_OUT_COMPRESSION_CACHE_SIZE_MB_ECW_2
+# ============================================================================
+DEFAULT_MACRO SourceDataset_ECW ""$(FME_MF_DIR)Input\2023_56000_438000_RGB_hr.ecw" "$(FME_MF_DIR)Input\2023_56000_438750_RGB_hr.ecw" "$(FME_MF_DIR)Input\2023_56000_439500_RGB_hr.ecw" "$(FME_MF_DIR)Input\2023_56000_440250_RGB_hr.ecw" "$(FME_MF_DIR)Input\2023_56000_441000_RGB_hr.ecw" "$(FME_MF_DIR)Input\2023_56000_441750_RGB_hr.ecw" "$(FME_MF_DIR)Input\2023_56000_442500_RGB_hr.ecw" "$(FME_MF_DIR)Input\2023_56000_443250_RGB_hr.ecw""
+
+DEFAULT_MACRO FEATURE_TYPES ECW
+
+DEFAULT_MACRO DestDataset_ECW $(FME_MF_DIR)output
+
+# ============================================================================
+INCLUDE [ if {{$(SourceDataset_ECW$encode)} == {}} { puts_real {Parameter 'SourceDataset_ECW' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_ECW$encode)} == {}} { puts_real {Parameter 'DestDataset_ECW' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} ECW
+MULTI_READER_KEYWORD{0} ECW_1
+MULTI_READER_GEN_DIRECTIVES{0} ECW_EXPOSE_FORMAT_ATTRS,,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MINX,0,GROUP_BY_DATASET,No,PYRAMID_LEVEL,,OUTPUT_ECW_FORMAT_VERSION_FOR_V2,YES,_MERGE_SCHEMAS,YES,_EXTRA_DATASETS,C:<backslash>FME_MKGG_Tools<backslash>LEICS_ECW_MERGE<backslash>Input<backslash>2023_56000_438750_RGB_hr.ecw<comma>C:<backslash>FME_MKGG_Tools<backslash>LEICS_ECW_MERGE<backslash>Input<backslash>2023_56000_439500_RGB_hr.ecw<comma>C:<backslash>FME_MKGG_Tools<backslash>LEICS_ECW_MERGE<backslash>Input<backslash>2023_56000_440250_RGB_hr.ecw<comma>C:<backslash>FME_MKGG_Tools<backslash>LEICS_ECW_MERGE<backslash>Input<backslash>2023_56000_441000_RGB_hr.ecw<comma>C:<backslash>FME_MKGG_Tools<backslash>LEICS_ECW_MERGE<backslash>Input<backslash>2023_56000_441750_RGB_hr.ecw<comma>C:<backslash>FME_MKGG_Tools<backslash>LEICS_ECW_MERGE<backslash>Input<backslash>2023_56000_442500_RGB_hr.ecw<comma>C:<backslash>FME_MKGG_Tools<backslash>LEICS_ECW_MERGE<backslash>Input<backslash>2023_56000_443250_RGB_hr.ecw,CLIP_TO_ENVELOPE,NO,GCP_INTERPOLATION_METHOD,NearestNeighbor,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MAXY,0,APPLY_GCPS,NO,RDR_ADV_PARM_GROUP,FME_DISCLOSURE_OPEN,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,COMPRESSION_CACHE_SIZE_CALCULATION,AUTO,SEARCH_ENVELOPE_MINY,0,COMPRESSION_CACHE_SIZE_MB,250,READER_META_ATTRIBUTES,fme_basename,OUTPUT_COMPRESSION_RATE_TARGET_FOR_V2,YES,EXPOSE_ATTRS_GROUP,FME_DISCLOSURE_OPEN,DYNAMIC_WORKFLOW,yes
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} ECW
+MULTI_WRITER_KEYWORD{0} ECW_2
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ECW_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ECW ECW_1
+ECW_1_DYNAMIC_WORKFLOW YES
+# =======================================================================
+# The following GUI line prompts for a file to be used as the source ECW file.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be read.
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ECW_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ECW ECW_1
+DEFAULT_MACRO SourceDataset_ECW_1 $(SourceDataset_ECW)
+GUI MULTIFILE SourceDataset_ECW_1 ECW_Files(*.ecw)|*.ecw|All_Files(*)|* Source ER Mapper ECW File(s):
+DEFAULT_MACRO ECW_IN_READER_META_ATTRIBUTES_ECW_1 fme_basename
+ECW_1_READER_META_ATTRIBUTES "$(ECW_IN_READER_META_ATTRIBUTES_ECW_1)"
+DEFAULT_MACRO ECW_IN_GROUP_BY_DATASET_ECW_1 No
+ECW_1_GROUP_BY_DATASET "$(ECW_IN_GROUP_BY_DATASET_ECW_1)"
+DEFAULT_MACRO ECW_IN_APPLY_GCPS_ECW_1 NO
+ECW_1_APPLY_GCPS "$(ECW_IN_APPLY_GCPS_ECW_1)"
+GUI ACTIVEDISCLOSUREGROUP ECW_IN_APPLY_GCPS_ECW_1 ECW_IN_GCP_INTERPOLATION_METHOD_ECW_1 Apply GCP's
+DEFAULT_MACRO ECW_IN_GCP_INTERPOLATION_METHOD_ECW_1 NearestNeighbor
+ECW_1_GCP_INTERPOLATION_METHOD "$(ECW_IN_GCP_INTERPOLATION_METHOD_ECW_1)"
+GUI LOOKUP_CHOICE ECW_IN_GCP_INTERPOLATION_METHOD_ECW_1 Nearest<space>Neighbor,NearestNeighbor%Bilinear,Bilinear%Bicubic,Bicubic GCP Interpolation Method
+GUI LOOKUP ECW_IN_GCP_INTERPOLATION_METHOD_ECW_1 <Unused>,NearestNeighbor 
+DEFAULT_MACRO ECW_IN_EXPOSE_ATTRS_GROUP_ECW_1 FME_DISCLOSURE_OPEN
+ECW_1_EXPOSE_ATTRS_GROUP "$(ECW_IN_EXPOSE_ATTRS_GROUP_ECW_1)"
+# Include this file in source setting section to add external search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO ECW_IN_USE_SEARCH_ENVELOPE_ECW_1 NO
+ECW_1_USE_SEARCH_ENVELOPE "$(ECW_IN_USE_SEARCH_ENVELOPE_ECW_1)"
+GUI ACTIVEDISCLOSUREGROUP ECW_IN_USE_SEARCH_ENVELOPE_ECW_1 ECW_IN_SEARCH_ENVELOPE_MINX_ECW_1%ECW_IN_SEARCH_ENVELOPE_MINY_ECW_1%ECW_IN_SEARCH_ENVELOPE_MAXX_ECW_1%ECW_IN_SEARCH_ENVELOPE_MAXY_ECW_1%ECW_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ECW_1%ECW_IN_CLIP_TO_ENVELOPE_ECW_1%ECW_IN_SEARCH_METHOD%ECW_IN_SEARCH_METHOD_FILTER%ECW_IN_SEARCH_ORDER%ECW_IN_SEARCH_FEATURE%ECW_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP ECW_IN_SEARCH_ENVELOPE_MINX_ECW_1 <Unused>,0 
+DEFAULT_MACRO ECW_IN_SEARCH_ENVELOPE_MINX_ECW_1 0
+ECW_1_SEARCH_ENVELOPE "$(ECW_IN_SEARCH_ENVELOPE_MINX_ECW_1)"
+GUI OPTIONAL FLOAT ECW_IN_SEARCH_ENVELOPE_MINX_ECW_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP ECW_IN_SEARCH_ENVELOPE_MINY_ECW_1 <Unused>,0 
+DEFAULT_MACRO ECW_IN_SEARCH_ENVELOPE_MINY_ECW_1 0
+ECW_1_SEARCH_ENVELOPE "$(ECW_IN_SEARCH_ENVELOPE_MINY_ECW_1)"
+GUI OPTIONAL FLOAT ECW_IN_SEARCH_ENVELOPE_MINY_ECW_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP ECW_IN_SEARCH_ENVELOPE_MAXX_ECW_1 <Unused>,0 
+DEFAULT_MACRO ECW_IN_SEARCH_ENVELOPE_MAXX_ECW_1 0
+ECW_1_SEARCH_ENVELOPE "$(ECW_IN_SEARCH_ENVELOPE_MAXX_ECW_1)"
+GUI OPTIONAL FLOAT ECW_IN_SEARCH_ENVELOPE_MAXX_ECW_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP ECW_IN_SEARCH_ENVELOPE_MAXY_ECW_1 <Unused>,0 
+DEFAULT_MACRO ECW_IN_SEARCH_ENVELOPE_MAXY_ECW_1 0
+ECW_1_SEARCH_ENVELOPE "$(ECW_IN_SEARCH_ENVELOPE_MAXY_ECW_1)"
+GUI OPTIONAL FLOAT ECW_IN_SEARCH_ENVELOPE_MAXY_ECW_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP ECW_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ECW_1 <Unused>, 
+DEFAULT_MACRO ECW_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ECW_1 
+ECW_1_SEARCH_ENVELOPE "$(ECW_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ECW_1)"
+GUI OPTIONAL COORDSYS ECW_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ECW_1 Search Envelope Coordinate System:
+# ===========================================================================
+# BUG18999: We now have a soft clip to fall back on like native spatial index
+# thus we are reintroducing the clip to envelop as an option for users.
+# Defualt to soft clip as per the existing database readers we are emulating
+GUI LOOKUP ECW_IN_CLIP_TO_ENVELOPE_ECW_1 <Unused>,NO 
+DEFAULT_MACRO ECW_IN_CLIP_TO_ENVELOPE_ECW_1 NO
+ECW_1_CLIP_TO_ENVELOPE "$(ECW_IN_CLIP_TO_ENVELOPE_ECW_1)"
+GUI OPTIONAL CHECKBOX ECW_IN_CLIP_TO_ENVELOPE_ECW_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO ECW_IN_RDR_ADV_PARM_GROUP_ECW_1 
+GUI OPTIONAL DISCLOSUREGROUP ECW_IN_RDR_ADV_PARM_GROUP_ECW_1 ECW_IN_PYRAMID_LEVEL_ECW_1%ECW_IN_COMPRESSION_CACHE_SIZE_CALCULATION_ECW_1%ECW_IN_COMPRESSION_CACHE_SIZE_MB_ECW_1 Advanced
+DEFAULT_MACRO ECW_IN_PYRAMID_LEVEL_ECW_1 
+ECW_1_PYRAMID_LEVEL "$(ECW_IN_PYRAMID_LEVEL_ECW_1)"
+GUI OPTIONAL INTEGER ECW_IN_PYRAMID_LEVEL_ECW_1 Pyramid Level to Read:
+DEFAULT_MACRO ECW_IN_COMPRESSION_CACHE_SIZE_CALCULATION_ECW_1 AUTO
+ECW_1_COMPRESSION_CACHE_SIZE_CALCULATION "$(ECW_IN_COMPRESSION_CACHE_SIZE_CALCULATION_ECW_1)"
+GUI ACTIVECHOICE_LOOKUP ECW_IN_COMPRESSION_CACHE_SIZE_CALCULATION_ECW_1 Auto,AUTO,ECW_IN_COMPRESSION_CACHE_SIZE_MB_ECW_1%Manual,MANUAL Cache Size Calculation:
+GUI LOOKUP ECW_IN_COMPRESSION_CACHE_SIZE_MB_ECW_1 <Unused>,250 
+DEFAULT_MACRO ECW_IN_COMPRESSION_CACHE_SIZE_MB_ECW_1 250
+ECW_1_COMPRESSION_CACHE_SIZE_MB "$(ECW_IN_COMPRESSION_CACHE_SIZE_MB_ECW_1)"
+GUI RANGE_SLIDER ECW_IN_COMPRESSION_CACHE_SIZE_MB_ECW_1 1%MAX%0%OFF Compression Cache Size (MB):
+DEFAULT_MACRO ECW_IN_OUTPUT_ECW_FORMAT_VERSION_FOR_V2_ECW_1 YES
+ECW_1_OUTPUT_ECW_FORMAT_VERSION_FOR_V2 "$(ECW_IN_OUTPUT_ECW_FORMAT_VERSION_FOR_V2_ECW_1)"
+DEFAULT_MACRO ECW_IN_OUTPUT_COMPRESSION_RATE_TARGET_FOR_V2_ECW_1 YES
+ECW_1_OUTPUT_COMPRESSION_RATE_TARGET_FOR_V2 "$(ECW_IN_OUTPUT_COMPRESSION_RATE_TARGET_FOR_V2_ECW_1)"
+# ===========================================================================
+DEFAULT_MACRO ECW_IN_NETWORK_AUTHENTICATION_ECW_1 
+ECW_1_NETWORK_AUTHENTICATION "$(ECW_IN_NETWORK_AUTHENTICATION_ECW_1)"
+GUI OPTIONAL AUTHENTICATOR ECW_IN_NETWORK_AUTHENTICATION_ECW_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================
+DEFAULT_MACRO ECW_IN_ATTRIBUTE_READING_ECW_1 ALL
+ECW_1_ATTRIBUTE_READING "$(ECW_IN_ATTRIBUTE_READING_ECW_1)"
+# ============================================================================
+ECW_1_GENERATE_FME_BUILD_NUM 23332
+ECW_1_DATASET "$(SourceDataset_ECW_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ECW_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER ECW ECW_2
+# The following GUI lines prompt for a ECW file to be used as the
+# the destination of the data.
+# The user input is stored in a macro, which is then used to define
+# the dataset to be written.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_ECW_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER ECW ECW_2
+DEFAULT_MACRO DestDataset_ECW_2 $(DestDataset_ECW)
+GUI DIRNAME DestDataset_ECW_2 Destination ER Mapper ECW Folder:
+DEFAULT_MACRO _ECW_WRITER_COMPRESSION_LEVEL_ECW_2 75
+DEFAULT_MACRO _ECW_WRITER_FORMAT_VERSION_ECW_2 3
+DEFAULT_MACRO _ECW_WRITER_USE_EPSG_CODE_FOR_PROJECTION_ECW_2 WHEN_KNOWN_GOOD
+DEFAULT_MACRO ECW_OUT_COORDINATE_SYSTEM_GRANULARITY_ECW_2 FEATURE
+ECW_2_COORDINATE_SYSTEM_GRANULARITY "$(ECW_OUT_COORDINATE_SYSTEM_GRANULARITY_ECW_2)"
+DEFAULT_MACRO ECW_OUT_ADVANCED_GROUP_ECW_2 
+GUI OPTIONAL DISCLOSUREGROUP ECW_OUT_ADVANCED_GROUP_ECW_2 ECW_OUT_COMPRESSION_CACHE_SIZE_CALCULATION_ECW_2%ECW_OUT_COMPRESSION_CACHE_SIZE_MB_ECW_2 Advanced
+DEFAULT_MACRO ECW_OUT_COMPRESSION_CACHE_SIZE_CALCULATION_ECW_2 AUTO
+ECW_2_COMPRESSION_CACHE_SIZE_CALCULATION "$(ECW_OUT_COMPRESSION_CACHE_SIZE_CALCULATION_ECW_2)"
+GUI ACTIVECHOICE_LOOKUP ECW_OUT_COMPRESSION_CACHE_SIZE_CALCULATION_ECW_2 Auto,AUTO,ECW_OUT_COMPRESSION_CACHE_SIZE_MB_ECW_2%Manual,MANUAL Cache Size Calculation:
+DEFAULT_MACRO ECW_OUT_COMPRESSION_CACHE_SIZE_MB_ECW_2 <Unused>
+ECW_2_COMPRESSION_CACHE_SIZE_MB "$(ECW_OUT_COMPRESSION_CACHE_SIZE_MB_ECW_2)"
+GUI RANGE_SLIDER ECW_OUT_COMPRESSION_CACHE_SIZE_MB_ECW_2 1%MAX%0%OFF Compression Cache Size (MB):
+DEFAULT_MACRO ECW_OUT_ALWAYS_TREAT_FIRST_THREE_BANDS_AS_COLOR_BANDS_ECW_2 NO
+ECW_2_ALWAYS_TREAT_FIRST_THREE_BANDS_AS_COLOR_BANDS "$(ECW_OUT_ALWAYS_TREAT_FIRST_THREE_BANDS_AS_COLOR_BANDS_ECW_2)"
+# ============================================================================
+ECW_2_GENERATE_FME_BUILD_NUM 23332
+ECW_2_DATASET "$(DestDataset_ECW_2)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)Leice_ECW_Merge_ecw2ecw.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING UTF-8
+FME_BULK_MODE_THRESHOLD 2000
+LAST_SAVE_BUILD "FME 2023.0.1.0 (20230630 - Build 23332 - WIN64)"
+DEFAULT_MACRO DATASET_KEYWORD_ECW_1 ECW_1
+DEFAULT_MACRO DATASET_KEYWORD_ECW_2 ECW_2
+# -------------------------------------------------------------------------
+
+ECW_1_READER_META_ATTRIBUTES fme_basename fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ECW_1_FEATURE_TYPES $(FEATURE_TYPES)
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME Leice_ECW_Merge_ecw2ecw
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+ECW_1_DEF ECW
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   MULTI_READER_KEYWORD $(DATASET_KEYWORD_ECW_1)   INPUT FEATURE_TYPE *    ROUTE ECW ECW_1::ECW multi_reader_keyword,$(DATASET_KEYWORD_ECW_1) TO FME_GENERIC ::ECW ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+ECW_1_MERGE_DEF ECW_1::ECW GLOB *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "ECW_ECW_1 Splitter"    INPUT FEATURE_TYPE ECW    OUTPUT FEATURE_TYPE ECW_ECW_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} RasterMosaicFactory    FACTORY_NAME { RasterMosaicker }    INPUT  FEATURE_TYPE ECW_ECW_1    FLUSH_WHEN_GROUPS_CHANGE { <Unused> }    ACCUMULATE_ATTRIBUTES { ONE }    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE { <Unused> }    OVERLAPPING_VALUES { last }    NODATA_OVERWRITE { No }    INTERPOLATION_TYPE_NAME { NearestNeighbor    }    SNAPPING_TYPE { RESAMPLE }    MERGE_PALETTES { Yes }    REJECT_INVALID_FEATURES YES    OUTPUT { MOSAICKED FEATURE_TYPE RasterMosaicker_OUTPUT          }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC RasterMosaicker_OUTPUT TO ECW __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>__wb_out_feat_type__<comma>ECW<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+ECW_2_DEF ECW   ecw_compression_level        0   ecw_tab_file_generation      yes   ecw_format_version           3   ecw_use_epsg_code_for_projection WHEN_KNOWN_GOOD
