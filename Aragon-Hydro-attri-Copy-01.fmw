@@ -1,0 +1,2026 @@
+#! <?xml version="1.0" encoding="UTF-8" ?>
+#! <WORKSPACE
+#    Command line to run this workspace:
+#        "C:\Program Files\FME\fme.exe" \\lgs-net.com\ablr\ablrdata\Vector\Projects\Sunshine_Validation_2022\Inputs\FME\FME_HYDRO_ATTRIBUTE_ASSIGN\Aragon-Hydro-attri-Copy-01.fmw
+#          --Hexagon_Hydro_Lines "H:\Vector\Projects\Sunshine_Validation_2022\3229740005XXXV\Data\520\520_Hidrografia_lin.shp"
+#          --FEATURE_TYPES "520_Hidrografia_lin"
+#          --SourceDataset_ESRISHAPE_3 "H:\Vector\Projects\Sunshine_Validation_2022\3229740005XXXV\Data\520\Hydrography\520_Client_referance_Hidro_Teruel.shp"
+#          --FEATURE_TYPES_2 "520_Client_referance_Hidro_Teruel"
+#          --DestDataset_DGNV8 "H:\Vector\Projects\Sunshine_Validation_2022\3229740005XXXV\Data\520\DGN\520_Client_Reference_Lines.dgn"
+#          --DestDataset_DGNV8_3 "H:\Vector\Projects\Sunshine_Validation_2022\3229740005XXXV\Data\520\DGN\520_Hydro_Line_Hexagon_Lines.dgn"
+#          --FME_LAUNCH_VIEWER_APP "YES"
+#    
+#!   ARCGIS_COMPATIBILITY="ARCGIS_AUTO"
+#!   ATTR_TYPE_ENCODING="SDF"
+#!   BEGIN_PYTHON=""
+#!   BEGIN_TCL=""
+#!   CATEGORY=""
+#!   DESCRIPTION=""
+#!   DESTINATION="NONE"
+#!   DESTINATION_ROUTING_FILE=""
+#!   DOC_EXTENTS="4239.76 716.721"
+#!   DOC_TOP_LEFT="-22.9692 -831.721"
+#!   END_PYTHON=""
+#!   END_TCL=""
+#!   EXPLICIT_BOOKMARK_ORDER="false"
+#!   FME_BUILD_NUM="21627"
+#!   FME_DOCUMENT_GUID="9fea31d7-691a-40d3-9b88-efed9ee8c4e7"
+#!   FME_DOCUMENT_PRIORGUID="87b5ee52-10d8-4ddf-8a35-1364ec63235d,5f0213d8-ee9f-404a-bad5-3d68fe5dea9a,5e74533b-265d-42a0-8630-5b346abc7b14"
+#!   FME_GEOMETRY_HANDLING="Enhanced"
+#!   FME_IMPLICIT_CSMAP_REPROJECTION_MODE="Auto"
+#!   FME_NAMES_ENCODING="windows-1252"
+#!   FME_REPROJECTION_ENGINE="FME"
+#!   FME_SERVER_SERVICES=""
+#!   FME_STROKE_MAX_DEVIATION="0"
+#!   HISTORY=""
+#!   IGNORE_READER_FAILURE="No"
+#!   LAST_SAVE_BUILD="FME(R) 2021.1.2.0 (20210903 - Build 21627 - WIN64)"
+#!   LAST_SAVE_DATE="2023-01-02T15:38:01"
+#!   LOG_FILE=""
+#!   LOG_MAX_RECORDED_FEATURES="200"
+#!   MARKDOWN_DESCRIPTION=""
+#!   MARKDOWN_USAGE=""
+#!   MAX_LOG_FEATURES="200"
+#!   MULTI_WRITER_DATASET_ORDER="BY_ID"
+#!   PASSWORD=""
+#!   PYTHON_COMPATIBILITY="38"
+#!   REDIRECT_TERMINATORS="NONE"
+#!   SAVE_ON_PROMPT_AND_RUN="Yes"
+#!   SHOW_ANNOTATIONS="true"
+#!   SHOW_INFO_NODES="true"
+#!   SOURCE="NONE"
+#!   SOURCE_ROUTING_FILE=""
+#!   TERMINATE_REJECTED="NO"
+#!   TITLE=""
+#!   USAGE=""
+#!   USE_MARKDOWN=""
+#!   VIEW_POSITION="-1177.1 432.296"
+#!   WARN_INVALID_XFORM_PARAM="Yes"
+#!   WORKSPACE_VERSION="1"
+#!   ZOOM_SCALE="60"
+#! >
+#! <DATASETS>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="ESRISHAPE"
+#!   DATASET="$(Hexagon_Hydro_Lines)"
+#!   KEYWORD="ESRISHAPE_1"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="SHAPE_GEOMETRY {FME_GEN_GEOMETRY}"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="SHAPE_GEOMETRY char(50) fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string char(50) fme_type char(50) multi_reader_full_id long multi_reader_id long multi_reader_keyword char(50) multi_reader_type char(50) shape_geometry_error{} char(254) shape_measures char(254)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES="Indexed"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE="FEATURE_TYPES_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="19642"
+#!   COORDSYS=""
+#!   FEATURE_TYPES="$(FEATURE_TYPES)"
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ESRISHAPE_IN_ENCODING ESRISHAPE_IN_TRIM_PRECEDING_SPACES ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY ESRISHAPE_IN_MEASURES_AS_Z ESRISHAPE_IN_DISSOLVE_HOLES ESRISHAPE_IN_REPORT_BAD_GEOMETRY ESRISHAPE_OUT_STRICT_COMPATIBILITY ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER ESRISHAPE_OUT_SURFACE_AND_SOLID_STORAGE ESRISHAPE_OUT_MEASURES_AS_Z"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="shp file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_GEOMETRY_TYPE"
+#!   VALUE="shape_first_feature"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Shapefile1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Esri Shapefile(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the Esri Shapefile"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="true"
+#!   ROLE="READER"
+#!   FORMAT="ESRISHAPE"
+#!   DATASET="$(SourceDataset_ESRISHAPE_3)"
+#!   KEYWORD="ESRISHAPE_2"
+#!   MULTI_GEOM_ALLOWED="false"
+#!   ATTR_MAX_LENGTH="0"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="SHAPE_GEOMETRY {FME_GEN_GEOMETRY}"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="SHAPE_GEOMETRY char(50) fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string char(50) fme_type char(50) multi_reader_full_id long multi_reader_id long multi_reader_keyword char(50) multi_reader_type char(50) shape_geometry_error{} char(254) shape_measures char(254)"
+#!   DEFLINE_PARMS=""
+#!   ATTR_INDEX_TYPES="Indexed"
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILEDIR"
+#!   FTTR_TYPE="FEATURE_TYPES_ENCODED"
+#!   GENERATE_FME_BUILD_NUM="19642"
+#!   COORDSYS=""
+#!   FEATURE_TYPES="$(FEATURE_TYPES_2)"
+#!   MAX_FEATURES=""
+#!   MAX_FEATURES_PER_FEATURE_TYPE=""
+#!   MIN_FEATURES=""
+#!   START_FEATURE=""
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="ESRISHAPE_IN_ENCODING ESRISHAPE_IN_TRIM_PRECEDING_SPACES ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY ESRISHAPE_IN_MEASURES_AS_Z ESRISHAPE_IN_DISSOLVE_HOLES ESRISHAPE_IN_REPORT_BAD_GEOMETRY ESRISHAPE_OUT_STRICT_COMPATIBILITY ESRISHAPE_OUT_PRESERVE_RING_VERTEX_ORDER ESRISHAPE_OUT_SURFACE_AND_SOLID_STORAGE ESRISHAPE_OUT_MEASURES_AS_Z"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="shp file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DEFAULT_GEOMETRY_TYPE"
+#!   VALUE="shape_first_feature"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Shapefile1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Shapefile"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the Esri Shapefile(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a folder for the Esri Shapefile"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="DGNV8"
+#!   DATASET="$(DestDataset_DGNV8)"
+#!   KEYWORD="DGNV8_1"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="60"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="igds_level  igds_level_comment  igds_level_color 0 igds_level_style 0 igds_level_weight 0 igds_level_display yes igds_level_freeze no igds_level_lock no igds_level_override_color 0 igds_use_level_override_color No igds_level_override_style 0 igds_use_level_override_style No igds_level_override_weight 0 igds_use_level_override_weight No"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="entity_num_0 integer entity_num_1 integer entity_num_2 integer fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string char(50) fme_type char(50) igds_align integer igds_arc_orientation char(40) igds_arrow_height double igds_arrow_width double igds_base_line_cos_value double igds_base_line_sin_value double igds_base_to_text_dist double igds_box_around_text integer igds_cell_name char(500) igds_cell_size double igds_cell_size_x double igds_cell_size_y double igds_cell_x_scale double igds_cell_y_scale double igds_cell_z_scale double igds_center_mark_size double igds_chain_number integer igds_class integer igds_color integer igds_color_set_bylevel char(5) igds_custom_linestyle string igds_custom_linestyle_center_shift char(5) igds_custom_linestyle_class integer igds_custom_linestyle_distance_shift double igds_custom_linestyle_end_width double igds_custom_linestyle_flags integer igds_custom_linestyle_fraction_shift double igds_custom_linestyle_ibit integer igds_custom_linestyle_mbit integer igds_custom_linestyle_rbit integer igds_custom_linestyle_rotation double igds_custom_linestyle_scale double igds_custom_linestyle_start_width double igds_dim_color integer igds_dim_freezegroup integer igds_dim_primary_accuracy integer igds_dim_refx{}.base_offset double igds_dim_refx{}.base_offset_y double igds_dim_refx{}.flags integer igds_dim_refx{}.primary_text_string string igds_dim_refx{}.pt.x double igds_dim_refx{}.pt.y double igds_dim_refx{}.pt.z double igds_dim_refx{}.rxflags.associative integer igds_dim_refx{}.rxflags.justification integer igds_dim_refx{}.rxflags.lowerText integer igds_dim_refx{}.rxflags.relative integer igds_dim_refx{}.rxflags.upperText integer igds_dim_refx{}.segment_text_offset integer igds_dim_scale double igds_dim_secondary_accuracy integer igds_dim_stack_offset double igds_dim_style integer igds_dim_text_height double igds_dim_text_width double igds_dim_textstyle_id integer igds_dim_type integer igds_dim_version integer igds_dim_weight integer igds_dimstyle_center_bottom integer igds_dimstyle_center_left integer igds_dimstyle_center_mark integer igds_dimstyle_center_right integer igds_dimstyle_center_top integer igds_dimstyle_first_term integer igds_dimstyle_left_term integer igds_dimstyle_left_witness integer igds_dimstyle_nofit_vertical integer igds_dimstyle_postfix_symbol integer igds_dimstyle_prefix_symbol integer igds_dimstyle_right_term integer igds_dimstyle_right_witness integer igds_dimstyle_vertical_text integer igds_dual_format integer igds_element_byteoffset integer igds_element_id integer igds_element_locked char(5) igds_element_modified char(4) igds_element_new char(4) igds_element_priority integer igds_element_type integer igds_element_view_independent char(4) igds_fill_angle1 double igds_fill_angle2 double igds_fill_color integer igds_fill_hole_style_id integer igds_fill_island_style_id integer igds_fill_offset_x double igds_fill_offset_y double igds_fill_offset_z double igds_fill_pattern_color integer igds_fill_pattern_type char(16) igds_fill_pixel_size double igds_fill_rotation double igds_fill_scale double igds_fill_snappable integer igds_fill_spacing1 double igds_fill_spacing2 double igds_fill_style_id integer igds_fill_tolerance double igds_fill_weight integer igds_font integer igds_graphic_group integer igds_insertion_x double igds_insertion_y double igds_insertion_z double igds_is_graphic_cell_relative char(5) igds_justification integer igds_leader_to_text_dist double igds_level integer igds_level_comment char(80) igds_level_name char(80) igds_linkage{}.blob string igds_linkage{}.blobsize integer igds_linkage{}.class integer igds_linkage{}.component_count integer igds_linkage{}.component_num integer igds_linkage{}.display_attribute integer igds_linkage{}.entity_number integer igds_linkage{}.feature_num integer igds_linkage{}.firstword integer igds_linkage{}.flags integer igds_linkage{}.ibit integer igds_linkage{}.key integer igds_linkage{}.key2 integer igds_linkage{}.long{} integer igds_linkage{}.ltype integer igds_linkage{}.mbit integer igds_linkage{}.rbit integer igds_linkage{}.readonly char(4) igds_linkage{}.rule_base_id integer igds_linkage{}.state_num integer igds_linkage{}.string string igds_linkage{}.string_id integer igds_linkage{}.suspectlinkage char(40) igds_linkage{}.trailing_flags integer igds_linkage{}.type char(40) igds_linkage{}.ubit integer igds_linkage{}.ufid integer igds_linkage{}.userId integer igds_linkage{}.word{} integer igds_linkage{}.xfm_data_prefix char(8) igds_linkage{}.xfm_parent_uuid char(36) igds_linkage{}.xfm_root_uuid char(36) igds_linkage{}.xfm_uuid char(36) igds_linkage{}.xml_data string igds_linkage{}.xml_data_prefix char(64) igds_measure_angle integer igds_mlattrib_endcap.cap_color_from_segment integer igds_mlattrib_endcap.cap_line integer igds_mlattrib_endcap.cap_on_arc integer igds_mlattrib_endcap.cap_out_arc integer igds_mlattrib_endcap.color integer igds_mlattrib_endcap.construction_class integer igds_mlattrib_endcap.customstyle integer igds_mlattrib_endcap.level integer igds_mlattrib_endcap.style integer igds_mlattrib_endcap.use_class integer igds_mlattrib_endcap.usecolor integer igds_mlattrib_endcap.usestyle integer igds_mlattrib_endcap.useweight integer igds_mlattrib_endcap.weight integer igds_mlattrib_joint.cap_color_from_segment integer igds_mlattrib_joint.cap_line integer igds_mlattrib_joint.cap_on_arc integer igds_mlattrib_joint.cap_out_arc integer igds_mlattrib_joint.color integer igds_mlattrib_joint.construction_class integer igds_mlattrib_joint.customstyle integer igds_mlattrib_joint.level integer igds_mlattrib_joint.style integer igds_mlattrib_joint.use_class integer igds_mlattrib_joint.usecolor integer igds_mlattrib_joint.usestyle integer igds_mlattrib_joint.useweight integer igds_mlattrib_joint.weight integer igds_mlattrib_startcap.cap_color_from_segment integer igds_mlattrib_startcap.cap_line integer igds_mlattrib_startcap.cap_on_arc integer igds_mlattrib_startcap.cap_out_arc integer igds_mlattrib_startcap.color integer igds_mlattrib_startcap.construction_class integer igds_mlattrib_startcap.customstyle integer igds_mlattrib_startcap.level integer igds_mlattrib_startcap.style integer igds_mlattrib_startcap.use_class integer igds_mlattrib_startcap.usecolor integer igds_mlattrib_startcap.usestyle integer igds_mlattrib_startcap.useweight integer igds_mlattrib_startcap.weight integer igds_mlineStyle{}.lineattrib.cap_color_from_segment integer igds_mlineStyle{}.lineattrib.cap_line integer igds_mlineStyle{}.lineattrib.cap_on_arc integer igds_mlineStyle{}.lineattrib.cap_out_arc integer igds_mlineStyle{}.lineattrib.color integer igds_mlineStyle{}.lineattrib.construction_class integer igds_mlineStyle{}.lineattrib.customstyle integer igds_mlineStyle{}.lineattrib.level integer igds_mlineStyle{}.lineattrib.style integer igds_mlineStyle{}.lineattrib.use_class integer igds_mlineStyle{}.lineattrib.usecolor integer igds_mlineStyle{}.lineattrib.usestyle integer igds_mlineStyle{}.lineattrib.useweight integer igds_mlineStyle{}.lineattrib.weight integer igds_mlineStyle{}.offset double igds_mlinebreak{}.angle double igds_mlinebreak{}.from_joint integer igds_mlinebreak{}.length double igds_mlinebreak{}.point_offset double igds_mlinebreak{}.segmask integer igds_mlinebreak{}.to_joint integer igds_mlinehdr_arc_cap_by_profile_line integer igds_mlinehdr_closed integer igds_mlinehdr_endcap_angle double igds_mlinehdr_freeze_group integer igds_mlinehdr_num_breaks integer igds_mlinehdr_num_lines integer igds_mlinehdr_num_nodes integer igds_mlinehdr_offset_mode integer igds_mlinehdr_offset_model_valid integer igds_mlinehdr_placement_offset integer igds_mlinehdr_startcap_angle double igds_mlinehdr_styleScale double igds_mlinehdr_style_id integer igds_mlinehdr_updv.x double igds_mlinehdr_updv.y double igds_mlinehdr_updv.z double igds_mlinehdr_version integer igds_mlinenode_props string igds_node_number integer igds_num_ref_points integer igds_options_count integer igds_original_justification integer igds_oval_around_text integer igds_primary_axis double igds_quat.w double igds_quat.x double igds_quat.y double igds_quat.z double igds_rotation double igds_secondary_axis double igds_show_leading_zeroes integer igds_show_secondary integer igds_show_trailing_zeroes integer igds_snappable char(4) igds_start_angle double igds_string_len double igds_style integer igds_style_set_bylevel char(5) igds_sweep_angle double igds_symbology integer igds_tag_names{} char(50) igds_terminator integer igds_terminator_location integer igds_text_color integer igds_text_elements{}.fme_color integer igds_text_elements{}.igds_color integer igds_text_elements{}.igds_font integer igds_text_elements{}.igds_insertion_x double igds_text_elements{}.igds_insertion_y double igds_text_elements{}.igds_insertion_z double igds_text_elements{}.igds_justification integer igds_text_elements{}.igds_original_justification integer igds_text_elements{}.igds_rotation double igds_text_elements{}.igds_text_size double igds_text_elements{}.igds_text_string string igds_text_elements{}.igds_text_width_multiplier double igds_text_elements{}.x double igds_text_elements{}.y double igds_text_elements{}.z double igds_text_font integer igds_text_horizontal_flip logical igds_text_min_leader double igds_text_num_lines integer igds_text_size double igds_text_string string igds_text_underlined integer igds_text_vert integer igds_text_vertical_flip logical igds_text_weight integer igds_text_width_multiplier double igds_textstyle_bg_border.x double igds_textstyle_bg_border.y double igds_textstyle_bg_color integer igds_textstyle_bg_fill_color integer igds_textstyle_bg_style integer igds_textstyle_bg_weight integer igds_textstyle_bold char(5) igds_textstyle_char_spacing integer igds_textstyle_codepage integer igds_textstyle_color integer igds_textstyle_exflags integer igds_textstyle_font integer igds_textstyle_id integer igds_textstyle_line_offset.x double igds_textstyle_line_offset.y double igds_textstyle_overline char(5) igds_textstyle_overline_color integer igds_textstyle_overline_spacing integer igds_textstyle_overline_style integer igds_textstyle_overline_weight integer igds_textstyle_overrides_style1 integer igds_textstyle_overrides_style2 integer igds_textstyle_slant integer igds_textstyle_tnode_word_wrap_len integer igds_textstyle_txflags integer igds_textstyle_underline char(5) igds_textstyle_underline_color integer igds_textstyle_underline_spacing integer igds_textstyle_underline_style integer igds_textstyle_underline_weight integer igds_tolerance_present integer igds_tolerance_type integer igds_transparency double igds_type char(20) igds_use_comma_not_point integer igds_use_text_color integer igds_use_text_weight integer igds_view_id integer igds_weight integer igds_weight_set_bylevel char(5) igds_witness_line_cos_value double igds_witness_line_extension double igds_witness_line_offset double igds_witness_line_sin_value double igds_xfm_name string igds_xfmstore_appid_word0 integer igds_xfmstore_appid_word1 integer igds_xfmstore_storeid char(5) igds_xfmstore_url string igds_xfmstore_xml string igds_xref_base_nest_depth integer igds_xref_camera_focal_len double igds_xref_camera_pos_x double igds_xref_camera_pos_y double igds_xref_camera_pos_z double igds_xref_clip_pt{}.x double igds_xref_clip_pt{}.y double igds_xref_desc string igds_xref_file_build_opts integer igds_xref_file_disp_opts integer igds_xref_file_name string igds_xref_file_num integer igds_xref_group_id integer igds_xref_master_origin_x double igds_xref_master_origin_y double igds_xref_master_origin_z double igds_xref_model_name string igds_xref_name string igds_xref_nest_depth integer igds_xref_parent_attach_id integer igds_xref_parent_file_path string igds_xref_path string igds_xref_priority integer igds_xref_ref_origin_x double igds_xref_ref_origin_y double igds_xref_ref_origin_z double igds_xref_rotation double igds_xref_scale double igds_xref_version integer igds_xref_z_back double igds_xref_z_front double igds_zhigh integer igds_zhigh_uor integer igds_zlow double igds_zlow_uor double incosada_feature_code integer incosada_fid char(40) incosada_sequence_num integer link_type_0 char(40) link_type_1 char(40) link_type_2 char(40) mslink_0 integer mslink_1 integer mslink_2 integer"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP igds_level_properties FME_DISCLOSURE_OPEN%igds_level%igds_level_comment%igds_level_color%igds_level_style%igds_level_weight%igds_level_display%igds_level_freeze%igds_level_lock%igds_level_overrides Level&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER igds_level Number&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT igds_level_comment Comment&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER igds_level_color Color&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER igds_level_style Style&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER igds_level_weight Weight&quot; &quot;&quot; &quot;GUI CHOICE igds_level_display Yes%No Display&quot; Yes &quot;GUI CHOICE igds_level_freeze Yes%No Freeze&quot; No &quot;GUI CHOICE igds_level_lock Yes%No Lock&quot; No &quot;GUI OPTIONAL DISCLOSUREGROUP igds_level_overrides FME_DISCLOSURE_CLOSED%igds_level_override_color%igds_use_level_override_color%igds_level_override_style%igds_use_level_override_style%igds_level_override_weight%igds_use_level_override_weight Level Overrides&quot; &quot;&quot; &quot;GUI INT_OR_CHOICE igds_level_override_color From_Seed_File Color&quot; From_Seed_File &quot;GUI CHOICE igds_use_level_override_color From_Seed_File%Yes%No Use Color&quot; From_Seed_File &quot;GUI INT_OR_CHOICE igds_level_override_style From_Seed_File Style&quot; From_Seed_File &quot;GUI CHOICE igds_use_level_override_style From_Seed_File%Yes%No Use Style&quot; From_Seed_File &quot;GUI INT_OR_CHOICE igds_level_override_weight From_Seed_File Weight&quot; From_Seed_File &quot;GUI CHOICE igds_use_level_override_weight From_Seed_File%Yes%No Use Weight&quot; From_Seed_File "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="19642"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="DGNV8_IN_EXPAND_UNNAMED_CELLS DGNV8_IN_SPLIT_COMPLEX_CHAINS DGNV8_IN_SPLIT_MULTITEXT DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS DGNV8_IN_EXPLODE_DIMENSION_ELEM DGNV8_IN_USE_XREF_PARENT_MODEL DGNV8_IN_READ_XREF_NEST_DEPTH DGNV8_IN_UOR_SCALE DGNV8_IN_UORS_PER_SUB DGNV8_IN_SUBS_PER_MASTER DGNV8_IN_ELEVATION_SHIFT_FACTOR DGNV8_IN_CURVE_VERTICES DGNV8_IN_READ_TAGS DGNV8_IN_READ_XATTR_LIST COMPUTE_SEED_FILE_PARMS DGNV8_IN_APPLY_WORLD_FILE DGNV8_IN_REMOVE_DUPLICATES DGNV8_IN_PRESERVE_CURVES DGNV8_IN_ASSUME_MATCHING_UNITS UOR_GLOBAL_ORIGIN_X UOR_GLOBAL_ORIGIN_Y UOR_GLOBAL_ORIGIN_Z DGNV8_OUT_UOR_GLOBAL_ORIGIN_X DGNV8_OUT_UOR_GLOBAL_ORIGIN_Y DGNV8_OUT_UOR_GLOBAL_ORIGIN_Z MASTER_UNIT_NAME SUB_UNIT_NAME UORS_PER_SUB SUBS_PER_MASTER DGNV8_OUT_CREATE_LINE_ELEMENTS DGNV8_OUT_MANGLE_DBCS_TEXT DGNV8_OUT_DEFAULT_CELL_NAME DGNV8_OUT_SPLIT_BIG_DGN7_FILES DGNV8_OUT_SPLIT_SIZE_DGN7_FILES DGNV8_OUT_SCALE_CELL_MODELS DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED DGNV8_OUT_RSC_FONT_FILE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="dgn file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Level1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Level"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the DGN V8 file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the DGN V8 file"
+#! />
+#! </DATASET>
+#! <DATASET
+#!   IS_SOURCE="false"
+#!   ROLE="WRITER"
+#!   FORMAT="DGNV8"
+#!   DATASET="$(DestDataset_DGNV8_3)"
+#!   KEYWORD="DGNV8_2"
+#!   MULTI_GEOM_ALLOWED="true"
+#!   ATTR_MAX_LENGTH="60"
+#!   ATTR_CASE="ANY"
+#!   ALLOWED_FEAT_TYPES=""
+#!   WRITE_DEFS="true"
+#!   DEFLINE_TEMPLATE="igds_level  igds_level_comment  igds_level_color 0 igds_level_style 0 igds_level_weight 0 igds_level_display yes igds_level_freeze no igds_level_lock no igds_level_override_color 0 igds_use_level_override_color No igds_level_override_style 0 igds_use_level_override_style No igds_level_override_weight 0 igds_use_level_override_weight No"
+#!   DEFLINE_ATTRS="true"
+#!   EXPOSABLE_ATTRS="entity_num_0 integer entity_num_1 integer entity_num_2 integer fme_basename char(50) fme_color char(50) fme_dataset char(50) fme_feature_type char(50) fme_fill_color char(50) fme_geometry char(50) fme_primary_axis double fme_rotation double fme_secondary_axis double fme_start_angle double fme_sweep_angle double fme_text_size double fme_text_string char(50) fme_type char(50) igds_align integer igds_arc_orientation char(40) igds_arrow_height double igds_arrow_width double igds_base_line_cos_value double igds_base_line_sin_value double igds_base_to_text_dist double igds_box_around_text integer igds_cell_name char(500) igds_cell_size double igds_cell_size_x double igds_cell_size_y double igds_cell_x_scale double igds_cell_y_scale double igds_cell_z_scale double igds_center_mark_size double igds_chain_number integer igds_class integer igds_color integer igds_color_set_bylevel char(5) igds_custom_linestyle string igds_custom_linestyle_center_shift char(5) igds_custom_linestyle_class integer igds_custom_linestyle_distance_shift double igds_custom_linestyle_end_width double igds_custom_linestyle_flags integer igds_custom_linestyle_fraction_shift double igds_custom_linestyle_ibit integer igds_custom_linestyle_mbit integer igds_custom_linestyle_rbit integer igds_custom_linestyle_rotation double igds_custom_linestyle_scale double igds_custom_linestyle_start_width double igds_dim_color integer igds_dim_freezegroup integer igds_dim_primary_accuracy integer igds_dim_refx{}.base_offset double igds_dim_refx{}.base_offset_y double igds_dim_refx{}.flags integer igds_dim_refx{}.primary_text_string string igds_dim_refx{}.pt.x double igds_dim_refx{}.pt.y double igds_dim_refx{}.pt.z double igds_dim_refx{}.rxflags.associative integer igds_dim_refx{}.rxflags.justification integer igds_dim_refx{}.rxflags.lowerText integer igds_dim_refx{}.rxflags.relative integer igds_dim_refx{}.rxflags.upperText integer igds_dim_refx{}.segment_text_offset integer igds_dim_scale double igds_dim_secondary_accuracy integer igds_dim_stack_offset double igds_dim_style integer igds_dim_text_height double igds_dim_text_width double igds_dim_textstyle_id integer igds_dim_type integer igds_dim_version integer igds_dim_weight integer igds_dimstyle_center_bottom integer igds_dimstyle_center_left integer igds_dimstyle_center_mark integer igds_dimstyle_center_right integer igds_dimstyle_center_top integer igds_dimstyle_first_term integer igds_dimstyle_left_term integer igds_dimstyle_left_witness integer igds_dimstyle_nofit_vertical integer igds_dimstyle_postfix_symbol integer igds_dimstyle_prefix_symbol integer igds_dimstyle_right_term integer igds_dimstyle_right_witness integer igds_dimstyle_vertical_text integer igds_dual_format integer igds_element_byteoffset integer igds_element_id integer igds_element_locked char(5) igds_element_modified char(4) igds_element_new char(4) igds_element_priority integer igds_element_type integer igds_element_view_independent char(4) igds_fill_angle1 double igds_fill_angle2 double igds_fill_color integer igds_fill_hole_style_id integer igds_fill_island_style_id integer igds_fill_offset_x double igds_fill_offset_y double igds_fill_offset_z double igds_fill_pattern_color integer igds_fill_pattern_type char(16) igds_fill_pixel_size double igds_fill_rotation double igds_fill_scale double igds_fill_snappable integer igds_fill_spacing1 double igds_fill_spacing2 double igds_fill_style_id integer igds_fill_tolerance double igds_fill_weight integer igds_font integer igds_graphic_group integer igds_insertion_x double igds_insertion_y double igds_insertion_z double igds_is_graphic_cell_relative char(5) igds_justification integer igds_leader_to_text_dist double igds_level integer igds_level_comment char(80) igds_level_name char(80) igds_linkage{}.blob string igds_linkage{}.blobsize integer igds_linkage{}.class integer igds_linkage{}.component_count integer igds_linkage{}.component_num integer igds_linkage{}.display_attribute integer igds_linkage{}.entity_number integer igds_linkage{}.feature_num integer igds_linkage{}.firstword integer igds_linkage{}.flags integer igds_linkage{}.ibit integer igds_linkage{}.key integer igds_linkage{}.key2 integer igds_linkage{}.long{} integer igds_linkage{}.ltype integer igds_linkage{}.mbit integer igds_linkage{}.rbit integer igds_linkage{}.readonly char(4) igds_linkage{}.rule_base_id integer igds_linkage{}.state_num integer igds_linkage{}.string string igds_linkage{}.string_id integer igds_linkage{}.suspectlinkage char(40) igds_linkage{}.trailing_flags integer igds_linkage{}.type char(40) igds_linkage{}.ubit integer igds_linkage{}.ufid integer igds_linkage{}.userId integer igds_linkage{}.word{} integer igds_linkage{}.xfm_data_prefix char(8) igds_linkage{}.xfm_parent_uuid char(36) igds_linkage{}.xfm_root_uuid char(36) igds_linkage{}.xfm_uuid char(36) igds_linkage{}.xml_data string igds_linkage{}.xml_data_prefix char(64) igds_measure_angle integer igds_mlattrib_endcap.cap_color_from_segment integer igds_mlattrib_endcap.cap_line integer igds_mlattrib_endcap.cap_on_arc integer igds_mlattrib_endcap.cap_out_arc integer igds_mlattrib_endcap.color integer igds_mlattrib_endcap.construction_class integer igds_mlattrib_endcap.customstyle integer igds_mlattrib_endcap.level integer igds_mlattrib_endcap.style integer igds_mlattrib_endcap.use_class integer igds_mlattrib_endcap.usecolor integer igds_mlattrib_endcap.usestyle integer igds_mlattrib_endcap.useweight integer igds_mlattrib_endcap.weight integer igds_mlattrib_joint.cap_color_from_segment integer igds_mlattrib_joint.cap_line integer igds_mlattrib_joint.cap_on_arc integer igds_mlattrib_joint.cap_out_arc integer igds_mlattrib_joint.color integer igds_mlattrib_joint.construction_class integer igds_mlattrib_joint.customstyle integer igds_mlattrib_joint.level integer igds_mlattrib_joint.style integer igds_mlattrib_joint.use_class integer igds_mlattrib_joint.usecolor integer igds_mlattrib_joint.usestyle integer igds_mlattrib_joint.useweight integer igds_mlattrib_joint.weight integer igds_mlattrib_startcap.cap_color_from_segment integer igds_mlattrib_startcap.cap_line integer igds_mlattrib_startcap.cap_on_arc integer igds_mlattrib_startcap.cap_out_arc integer igds_mlattrib_startcap.color integer igds_mlattrib_startcap.construction_class integer igds_mlattrib_startcap.customstyle integer igds_mlattrib_startcap.level integer igds_mlattrib_startcap.style integer igds_mlattrib_startcap.use_class integer igds_mlattrib_startcap.usecolor integer igds_mlattrib_startcap.usestyle integer igds_mlattrib_startcap.useweight integer igds_mlattrib_startcap.weight integer igds_mlineStyle{}.lineattrib.cap_color_from_segment integer igds_mlineStyle{}.lineattrib.cap_line integer igds_mlineStyle{}.lineattrib.cap_on_arc integer igds_mlineStyle{}.lineattrib.cap_out_arc integer igds_mlineStyle{}.lineattrib.color integer igds_mlineStyle{}.lineattrib.construction_class integer igds_mlineStyle{}.lineattrib.customstyle integer igds_mlineStyle{}.lineattrib.level integer igds_mlineStyle{}.lineattrib.style integer igds_mlineStyle{}.lineattrib.use_class integer igds_mlineStyle{}.lineattrib.usecolor integer igds_mlineStyle{}.lineattrib.usestyle integer igds_mlineStyle{}.lineattrib.useweight integer igds_mlineStyle{}.lineattrib.weight integer igds_mlineStyle{}.offset double igds_mlinebreak{}.angle double igds_mlinebreak{}.from_joint integer igds_mlinebreak{}.length double igds_mlinebreak{}.point_offset double igds_mlinebreak{}.segmask integer igds_mlinebreak{}.to_joint integer igds_mlinehdr_arc_cap_by_profile_line integer igds_mlinehdr_closed integer igds_mlinehdr_endcap_angle double igds_mlinehdr_freeze_group integer igds_mlinehdr_num_breaks integer igds_mlinehdr_num_lines integer igds_mlinehdr_num_nodes integer igds_mlinehdr_offset_mode integer igds_mlinehdr_offset_model_valid integer igds_mlinehdr_placement_offset integer igds_mlinehdr_startcap_angle double igds_mlinehdr_styleScale double igds_mlinehdr_style_id integer igds_mlinehdr_updv.x double igds_mlinehdr_updv.y double igds_mlinehdr_updv.z double igds_mlinehdr_version integer igds_mlinenode_props string igds_node_number integer igds_num_ref_points integer igds_options_count integer igds_original_justification integer igds_oval_around_text integer igds_primary_axis double igds_quat.w double igds_quat.x double igds_quat.y double igds_quat.z double igds_rotation double igds_secondary_axis double igds_show_leading_zeroes integer igds_show_secondary integer igds_show_trailing_zeroes integer igds_snappable char(4) igds_start_angle double igds_string_len double igds_style integer igds_style_set_bylevel char(5) igds_sweep_angle double igds_symbology integer igds_tag_names{} char(50) igds_terminator integer igds_terminator_location integer igds_text_color integer igds_text_elements{}.fme_color integer igds_text_elements{}.igds_color integer igds_text_elements{}.igds_font integer igds_text_elements{}.igds_insertion_x double igds_text_elements{}.igds_insertion_y double igds_text_elements{}.igds_insertion_z double igds_text_elements{}.igds_justification integer igds_text_elements{}.igds_original_justification integer igds_text_elements{}.igds_rotation double igds_text_elements{}.igds_text_size double igds_text_elements{}.igds_text_string string igds_text_elements{}.igds_text_width_multiplier double igds_text_elements{}.x double igds_text_elements{}.y double igds_text_elements{}.z double igds_text_font integer igds_text_horizontal_flip logical igds_text_min_leader double igds_text_num_lines integer igds_text_size double igds_text_string string igds_text_underlined integer igds_text_vert integer igds_text_vertical_flip logical igds_text_weight integer igds_text_width_multiplier double igds_textstyle_bg_border.x double igds_textstyle_bg_border.y double igds_textstyle_bg_color integer igds_textstyle_bg_fill_color integer igds_textstyle_bg_style integer igds_textstyle_bg_weight integer igds_textstyle_bold char(5) igds_textstyle_char_spacing integer igds_textstyle_codepage integer igds_textstyle_color integer igds_textstyle_exflags integer igds_textstyle_font integer igds_textstyle_id integer igds_textstyle_line_offset.x double igds_textstyle_line_offset.y double igds_textstyle_overline char(5) igds_textstyle_overline_color integer igds_textstyle_overline_spacing integer igds_textstyle_overline_style integer igds_textstyle_overline_weight integer igds_textstyle_overrides_style1 integer igds_textstyle_overrides_style2 integer igds_textstyle_slant integer igds_textstyle_tnode_word_wrap_len integer igds_textstyle_txflags integer igds_textstyle_underline char(5) igds_textstyle_underline_color integer igds_textstyle_underline_spacing integer igds_textstyle_underline_style integer igds_textstyle_underline_weight integer igds_tolerance_present integer igds_tolerance_type integer igds_transparency double igds_type char(20) igds_use_comma_not_point integer igds_use_text_color integer igds_use_text_weight integer igds_view_id integer igds_weight integer igds_weight_set_bylevel char(5) igds_witness_line_cos_value double igds_witness_line_extension double igds_witness_line_offset double igds_witness_line_sin_value double igds_xfm_name string igds_xfmstore_appid_word0 integer igds_xfmstore_appid_word1 integer igds_xfmstore_storeid char(5) igds_xfmstore_url string igds_xfmstore_xml string igds_xref_base_nest_depth integer igds_xref_camera_focal_len double igds_xref_camera_pos_x double igds_xref_camera_pos_y double igds_xref_camera_pos_z double igds_xref_clip_pt{}.x double igds_xref_clip_pt{}.y double igds_xref_desc string igds_xref_file_build_opts integer igds_xref_file_disp_opts integer igds_xref_file_name string igds_xref_file_num integer igds_xref_group_id integer igds_xref_master_origin_x double igds_xref_master_origin_y double igds_xref_master_origin_z double igds_xref_model_name string igds_xref_name string igds_xref_nest_depth integer igds_xref_parent_attach_id integer igds_xref_parent_file_path string igds_xref_path string igds_xref_priority integer igds_xref_ref_origin_x double igds_xref_ref_origin_y double igds_xref_ref_origin_z double igds_xref_rotation double igds_xref_scale double igds_xref_version integer igds_xref_z_back double igds_xref_z_front double igds_zhigh integer igds_zhigh_uor integer igds_zlow double igds_zlow_uor double incosada_feature_code integer incosada_fid char(40) incosada_sequence_num integer link_type_0 char(40) link_type_1 char(40) link_type_2 char(40) mslink_0 integer mslink_1 integer mslink_2 integer"
+#!   DEFLINE_PARMS="&quot;GUI OPTIONAL NAMEDGROUP igds_level_properties FME_DISCLOSURE_OPEN%igds_level%igds_level_comment%igds_level_color%igds_level_style%igds_level_weight%igds_level_display%igds_level_freeze%igds_level_lock%igds_level_overrides Level&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER igds_level Number&quot; &quot;&quot; &quot;GUI OPTIONAL TEXT igds_level_comment Comment&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER igds_level_color Color&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER igds_level_style Style&quot; &quot;&quot; &quot;GUI OPTIONAL INTEGER igds_level_weight Weight&quot; &quot;&quot; &quot;GUI CHOICE igds_level_display Yes%No Display&quot; Yes &quot;GUI CHOICE igds_level_freeze Yes%No Freeze&quot; No &quot;GUI CHOICE igds_level_lock Yes%No Lock&quot; No &quot;GUI OPTIONAL DISCLOSUREGROUP igds_level_overrides FME_DISCLOSURE_CLOSED%igds_level_override_color%igds_use_level_override_color%igds_level_override_style%igds_use_level_override_style%igds_level_override_weight%igds_use_level_override_weight Level Overrides&quot; &quot;&quot; &quot;GUI INT_OR_CHOICE igds_level_override_color From_Seed_File Color&quot; From_Seed_File &quot;GUI CHOICE igds_use_level_override_color From_Seed_File%Yes%No Use Color&quot; From_Seed_File &quot;GUI INT_OR_CHOICE igds_level_override_style From_Seed_File Style&quot; From_Seed_File &quot;GUI CHOICE igds_use_level_override_style From_Seed_File%Yes%No Use Style&quot; From_Seed_File &quot;GUI INT_OR_CHOICE igds_level_override_weight From_Seed_File Weight&quot; From_Seed_File &quot;GUI CHOICE igds_use_level_override_weight From_Seed_File%Yes%No Use Weight&quot; From_Seed_File "
+#!   ATTR_INDEX_TYPES=""
+#!   ATTR_NAME_INVALID_CHARS=""
+#!   SUPPORTS_FEATURE_TYPE_FANOUT="true"
+#!   ENABLED="true"
+#!   DYNAMIC_FEATURE_TYPES_LIST_ON_MERGE="true"
+#!   DATASET_TYPE="FILE"
+#!   FTTR_TYPE=""
+#!   GENERATE_FME_BUILD_NUM="19642"
+#!   COORDSYS=""
+#!   FANOUT_EXPRESSION="&lt;Unused&gt;"
+#!   FANOUT_GROUP="NO"
+#! >
+#! <METAFILE_PARAMETER
+#!   NAME="ADVANCED_PARMS"
+#!   VALUE="DGNV8_IN_EXPAND_UNNAMED_CELLS DGNV8_IN_SPLIT_COMPLEX_CHAINS DGNV8_IN_SPLIT_MULTITEXT DGNV8_IN_PRESERVE_UNNAMEDCELL_INSERTS DGNV8_IN_EXPLODE_DIMENSION_ELEM DGNV8_IN_USE_XREF_PARENT_MODEL DGNV8_IN_READ_XREF_NEST_DEPTH DGNV8_IN_UOR_SCALE DGNV8_IN_UORS_PER_SUB DGNV8_IN_SUBS_PER_MASTER DGNV8_IN_ELEVATION_SHIFT_FACTOR DGNV8_IN_CURVE_VERTICES DGNV8_IN_READ_TAGS DGNV8_IN_READ_XATTR_LIST COMPUTE_SEED_FILE_PARMS DGNV8_IN_APPLY_WORLD_FILE DGNV8_IN_REMOVE_DUPLICATES DGNV8_IN_PRESERVE_CURVES DGNV8_IN_ASSUME_MATCHING_UNITS UOR_GLOBAL_ORIGIN_X UOR_GLOBAL_ORIGIN_Y UOR_GLOBAL_ORIGIN_Z DGNV8_OUT_UOR_GLOBAL_ORIGIN_X DGNV8_OUT_UOR_GLOBAL_ORIGIN_Y DGNV8_OUT_UOR_GLOBAL_ORIGIN_Z MASTER_UNIT_NAME SUB_UNIT_NAME UORS_PER_SUB SUBS_PER_MASTER DGNV8_OUT_CREATE_LINE_ELEMENTS DGNV8_OUT_MANGLE_DBCS_TEXT DGNV8_OUT_DEFAULT_CELL_NAME DGNV8_OUT_SPLIT_BIG_DGN7_FILES DGNV8_OUT_SPLIT_SIZE_DGN7_FILES DGNV8_OUT_SCALE_CELL_MODELS DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED DGNV8_OUT_RSC_FONT_FILE"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="DATASET_NAME"
+#!   VALUE="dgn file"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_DEFAULT_NAME"
+#!   VALUE="Level1"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="FEATURE_TYPE_NAME"
+#!   VALUE="Level"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="READER_DATASET_HINT"
+#!   VALUE="Select the DGN V8 file(s)"
+#! />
+#! <METAFILE_PARAMETER
+#!   NAME="WRITER_DATASET_HINT"
+#!   VALUE="Specify a name for the DGN V8 file"
+#! />
+#! </DATASET>
+#! </DATASETS>
+#! <DATA_TYPES>
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(254)"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(21)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(12)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="date"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(31,15)"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="float"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(15,7)"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(20,0)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="logical"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="short"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(4,0)"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(11,0)"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="long"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(6,0)"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="number(width,decimal)"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varchar(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_varbinary(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_char(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(width)"
+#!   FME_TYPE="fme_binary(width)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(14)"
+#!   FME_TYPE="fme_datetime"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(8)"
+#!   FME_TYPE="fme_date"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(6)"
+#!   FME_TYPE="fme_time"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(5)"
+#!   FME_TYPE="fme_boolean"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_buffer"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_binarybuffer"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_xml"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="string"
+#!   FME_TYPE="fme_json"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int32"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int16"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint16"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_int8"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="integer"
+#!   FME_TYPE="fme_uint8"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real32"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_real64"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_decimal(width,decimal)"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="double"
+#!   FME_TYPE="fme_uint32"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_int64"
+#!   FORMAT="DGNV8"
+#! />
+#! <DATA_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="char(20)"
+#!   FME_TYPE="fme_uint64"
+#!   FORMAT="DGNV8"
+#! />
+#! </DATA_TYPES>
+#! <GEOM_TYPES>
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_multipoint"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polyline"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_point"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polyline"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_multipatch"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_multipatch"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_first_feature"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_polygon"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_null"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="true"
+#!   FORMAT_TYPE="shape_null"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="ESRISHAPE"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_point"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_cell"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_shared_cell"
+#!   FME_TYPE="fme_point"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_line"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_curve"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_area"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_multi_text"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_text_node"
+#!   FME_TYPE="fme_text"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_arc"
+#!   FME_TYPE="fme_arc"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_ellipse"
+#!   FME_TYPE="fme_ellipse"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_rectangle"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_shape"
+#!   FME_TYPE="fme_rounded_rectangle"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_3d_solid"
+#!   FME_TYPE="fme_solid"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_mesh"
+#!   FME_TYPE="fme_surface"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_oriented_arc"
+#!   FME_TYPE="fme_line"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_complex_shape"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_complex_chain"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_xref"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_xfmstore"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_polygon_collection"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_nongeom_collection"
+#!   FME_TYPE="fme_no_geom"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_raster"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_solid"
+#!   FME_TYPE="fme_point_cloud"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_feature_table"
+#!   FORMAT="DGNV8"
+#! />
+#! <GEOM_TYPE
+#!   IS_SOURCE="false"
+#!   FORMAT_TYPE="igds_null"
+#!   FME_TYPE="fme_collection"
+#!   FORMAT="DGNV8"
+#! />
+#! </GEOM_TYPES>
+#! <FEATURE_TYPES>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Hydro-518"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="2"
+#!   FEAT_GEOMTYPE="shape_polyline"
+#!   POSITION="-22.96917969179691 -115"
+#!   BOUNDING_RECT="-22.96917969179691 -115 454 71"
+#!   ORDER="500000000000009"
+#!   COLLAPSED="true"
+#!   KEYWORD="ESRISHAPE_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="true"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="OBJECTID" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SITUACION" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CUENCA" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CLASIF" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="CANALIZ" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ESTADO" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="COMPONEN1D" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SUBCUENCA" ATTR_TYPE="char(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_HOJA" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NOMBRE" ATTR_TYPE="char(250)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="NIVEL" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="ID_Fenomen" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="REGIMEN" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="TIPO" ATTR_TYPE="char(5)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="SHAPE_Leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="true"
+#!   NODE_NAME="Hidro_Teruel_Referance_518"
+#!   FEATURE_TYPE_NAME=""
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="false"
+#!   IDENTIFIER="3"
+#!   FEAT_GEOMTYPE="shape_polyline"
+#!   POSITION="-22.96917969179691 -636.72511725117249"
+#!   BOUNDING_RECT="-22.96917969179691 -636.72511725117249 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="ESRISHAPE_2"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   HIDDEN_USER_ATTRS=""
+#!   MERGE_FILTER="*"
+#!   MERGE_FILTER_TYPE="FILTER_TYPE_GLOB"
+#!   MERGE_FILTER_CASE_SENSITIVE="true"
+#!   DYNAMIC_SCHEMA="true"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="d_muni_ine" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="tipo" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="nivel_vert" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="strahler" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="cuenca" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="subcuenca" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="nombre_cat" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="shape_leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="nombre" ATTR_TYPE="char(150)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="objectid" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id_masa" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="inspire_id" ATTR_TYPE="char(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id_demarc" ATTR_TYPE="char(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fuente" ATTR_TYPE="char(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fecha_alta" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="c_muni_ine" ATTR_TYPE="long" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fecha_baja" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_basename" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Hidro_Teruel_Referance_518"
+#!   FEATURE_TYPE_NAME="@Value(nombre)"
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="4"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="3525.7855078550792 -760.72074220742184"
+#!   BOUNDING_RECT="3525.7855078550792 -760.72074220742184 691.00106825772946 71"
+#!   ORDER="500000000000001"
+#!   COLLAPSED="true"
+#!   KEYWORD="DGNV8_1"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="d_muni_ine" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="tipo" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="nivel_vert" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="strahler" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="cuenca" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="subcuenca" ATTR_TYPE="char(50)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="nombre_cat" ATTR_TYPE="char(100)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="shape_leng" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="nombre" ATTR_TYPE="char(150)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="objectid" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id_masa" ATTR_TYPE="double" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="inspire_id" ATTR_TYPE="char(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="id_demarc" ATTR_TYPE="char(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fuente" ATTR_TYPE="char(254)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fecha_alta" ATTR_TYPE="char(10)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="c_muni_ine" ATTR_TYPE="integer" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fecha_baja" ATTR_TYPE="char(200)" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <FEAT_ATTRIBUTE ATTR_NAME="fme_feature_type" ATTR_TYPE="char(50)"  EXPOSABLE_ATTR="true" ATTR_HAS_PORT="true" ATTR_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_color" PARM_VALUE="6"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_comment" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_display" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_freeze" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_lock" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_override_color" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_override_style" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_override_weight" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_overrides" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_properties" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_style" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_weight" PARM_VALUE="3"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_use_level_override_color" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_use_level_override_style" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_use_level_override_weight" PARM_VALUE="From_Seed_File"/>
+#! </FEATURE_TYPE>
+#! <FEATURE_TYPE
+#!   IS_SOURCE="false"
+#!   NODE_NAME="Level1"
+#!   FEATURE_TYPE_NAME="@Value(idgs_level_name)"
+#!   FEATURE_TYPE_NAME_QUALIFIER=""
+#!   IS_EDITABLE="true"
+#!   IDENTIFIER="11"
+#!   FEAT_GEOMTYPE="All"
+#!   POSITION="3642.9741797417983 -207.65597655976563"
+#!   BOUNDING_RECT="3642.9741797417983 -207.65597655976563 454 71"
+#!   ORDER="500000000000000"
+#!   COLLAPSED="true"
+#!   KEYWORD="DGNV8_2"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   SCHEMA_ATTRIBUTE_SOURCE="1"
+#! >
+#!     <DEFLINE_PARM PARM_NAME="igds_level" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_color" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_comment" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_display" PARM_VALUE="Yes"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_freeze" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_lock" PARM_VALUE="No"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_override_color" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_override_style" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_override_weight" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_overrides" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_properties" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_style" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_level_weight" PARM_VALUE=""/>
+#!     <DEFLINE_PARM PARM_NAME="igds_use_level_override_color" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_use_level_override_style" PARM_VALUE="From_Seed_File"/>
+#!     <DEFLINE_PARM PARM_NAME="igds_use_level_override_weight" PARM_VALUE="From_Seed_File"/>
+#! </FEATURE_TYPE>
+#! </FEATURE_TYPES>
+#! <FMESERVER>
+#! <READER_DATASETS>
+#! <DATASET
+#!   NAME="ESRISHAPE_2"
+#!   OVERRIDE="-ESRISHAPE_2_DATASET"
+#!   DATASET="ESRISHAPE_2/520_Client_referance_Hidro_Teruel.shp"
+#! />
+#! <DATASET
+#!   NAME="ESRISHAPE_1"
+#!   OVERRIDE="-ESRISHAPE_1_DATASET"
+#!   DATASET="ESRISHAPE_1/520_Hidrografia_lin.shp"
+#! />
+#! </READER_DATASETS>
+#! <WRITER_DATASETS>
+#! <DATASET
+#!   NAME="DGNV8_1"
+#!   OVERRIDE="-DGNV8_1_DATASET"
+#!   DATASET="DGNV8_1/520_Client_Reference_Lines.dgn"
+#! />
+#! <DATASET
+#!   NAME="DGNV8_2"
+#!   OVERRIDE="-DGNV8_2_DATASET"
+#!   DATASET="DGNV8_2/520_Hydro_Line_Hexagon_Lines.dgn"
+#! />
+#! </WRITER_DATASETS>
+#! </FMESERVER>
+#! <GLOBAL_PARAMETERS>
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE Hexagon_Hydro_Lines INCLUDE_WEB_BROWSER%Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Hexagon_Hydro_Lines"
+#!   DEFAULT_VALUE="H:\Vector\Projects\Sunshine_Validation_2022\3229740005XXXV\Data\520\520_Hidrografia_lin.shp"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES H:&lt;backslash&gt;Vector&lt;backslash&gt;Projects&lt;backslash&gt;Sunshine_Validation_2022&lt;backslash&gt;3229740005XXXV&lt;backslash&gt;Data&lt;backslash&gt;520&lt;backslash&gt;520_Hidrografia_lin.shp,_FORMAT_OVERRIDE_,ESRISHAPE,_DATASET_OVERRIDE_,Hexagon_Hydro_Lines,READER_PARAMETERS,,ENCODING,fme-source-encoding,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,ADVANCED,,TRIM_PRECEDING_SPACES,yes,GEOMETRY,,SIMPLE_DONUT_GEOMETRY,simple,MEASURES_AS_Z,no,DISSOLVE_HOLES,no,REPORT_BAD_GEOMETRY,no,NETWORK_AUTHENTICATION,,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,_MERGE_SCHEMAS,YES,UPPER_CASE_ATTR_NAMES,No,DYNAMIC_WORKFLOW,yes,NUMERIC_TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,CHECK_NUMERIC_FIELDS,yes,_MERGE_SCHEMAS,YES Feature Types to Read"
+#!   DEFAULT_VALUE="520_Hidrografia_lin"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI MULTIFILE SourceDataset_ESRISHAPE_3 INCLUDE_WEB_BROWSER%Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Client_reference_Hydro_Lines"
+#!   DEFAULT_VALUE="H:\Vector\Projects\Sunshine_Validation_2022\3229740005XXXV\Data\520\Hydrography\520_Client_referance_Hidro_Teruel.shp"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES_2 H:&lt;backslash&gt;Vector&lt;backslash&gt;Projects&lt;backslash&gt;Sunshine_Validation_2022&lt;backslash&gt;3229740005XXXV&lt;backslash&gt;Data&lt;backslash&gt;520&lt;backslash&gt;Hydrography&lt;backslash&gt;520_Client_referance_Hidro_Teruel.shp,_FORMAT_OVERRIDE_,ESRISHAPE,_DATASET_OVERRIDE_,SourceDataset_ESRISHAPE_3,READER_PARAMETERS,,ENCODING,fme-source-encoding,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,ADVANCED,,TRIM_PRECEDING_SPACES,yes,GEOMETRY,,SIMPLE_DONUT_GEOMETRY,simple,MEASURES_AS_Z,no,DISSOLVE_HOLES,no,REPORT_BAD_GEOMETRY,no,NETWORK_AUTHENTICATION,,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,_MERGE_SCHEMAS,YES,UPPER_CASE_ATTR_NAMES,No,DYNAMIC_WORKFLOW,yes,NUMERIC_TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,CHECK_NUMERIC_FIELDS,yes,_MERGE_SCHEMAS,YES Feature Types to Read:"
+#!   DEFAULT_VALUE="520_Client_referance_Hidro_Teruel"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_DGNV8 Design_Files(*.dgn)|*.dgn|All_files(*)|* Destination_Hydro_Line_CLIENT_Reference-DGN-Path"
+#!   DEFAULT_VALUE="H:\Vector\Projects\Sunshine_Validation_2022\3229740005XXXV\Data\520\DGN\520_Client_Reference_Lines.dgn"
+#!   IS_STAND_ALONE="false"
+#! />
+#! <GLOBAL_PARAMETER
+#!   GUI_LINE="GUI FILENAME DestDataset_DGNV8_3 Design_Files(*.dgn)|*.dgn|All_files(*)|* Destination_Hydro_Line_Hexagon_Lines-DGN-Path"
+#!   DEFAULT_VALUE="H:\Vector\Projects\Sunshine_Validation_2022\3229740005XXXV\Data\520\DGN\520_Hydro_Line_Hexagon_Lines.dgn"
+#!   IS_STAND_ALONE="false"
+#! />
+#! </GLOBAL_PARAMETERS>
+#! <USER_PARAMETERS
+#!   FORM="eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6Ikg6XFxWZWN0b3JcXFByb2plY3RzXFxTdW5zaGluZV9WYWxpZGF0aW9uXzIwMjJcXDMyMjk3NDAwMDVYWFhWXFxEYXRhXFw1MjBcXDUyMF9IaWRyb2dyYWZpYV9saW4uc2hwIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJTaGFwZWZpbGVzIiwiZmlsdGVyIjpbIiouc2hwIl19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIFNoYXBlZmlsZXMiLCJmaWx0ZXIiOlsiKi5zaHoiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBGaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJIZXhhZ29uX0h5ZHJvX0xpbmVzIiwicHJvbXB0IjoiSGV4YWdvbl9IeWRyb19MaW5lcyIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiY2hvaWNlU2V0dGluZ3MiOnsiY2hvaWNlU2V0IjoicmVhZGVyVmFsdWVzIiwiY29uZmlndXJhdGlvbiI6W3sibmFtZSI6IlJFQURFUl9QQVJBTUVURVJTIiwidmFsdWUiOiIifSx7Im5hbWUiOiJFTkNPRElORyIsInZhbHVlIjoiZm1lLXNvdXJjZS1lbmNvZGluZyJ9LHsibmFtZSI6IlVTRV9TRUFSQ0hfRU5WRUxPUEUiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01JTlgiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUlOWSIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9NQVhYIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01BWFkiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfQ09PUkRJTkFURV9TWVNURU0iLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkNMSVBfVE9fRU5WRUxPUEUiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiQURWQU5DRUQiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlRSSU1fUFJFQ0VESU5HX1NQQUNFUyIsInZhbHVlIjoieWVzIn0seyJuYW1lIjoiR0VPTUVUUlkiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlNJTVBMRV9ET05VVF9HRU9NRVRSWSIsInZhbHVlIjoic2ltcGxlIn0seyJuYW1lIjoiTUVBU1VSRVNfQVNfWiIsInZhbHVlIjoibm8ifSx7Im5hbWUiOiJESVNTT0xWRV9IT0xFUyIsInZhbHVlIjoibm8ifSx7Im5hbWUiOiJSRVBPUlRfQkFEX0dFT01FVFJZIiwidmFsdWUiOiJubyJ9LHsibmFtZSI6Ik5FVFdPUktfQVVUSEVOVElDQVRJT04iLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkNPT1JEU1lTIiwidmFsdWUiOiIifSx7Im5hbWUiOiJTVEFSVF9GRUFUVVJFIiwidmFsdWUiOiIifSx7Im5hbWUiOiJNQVhfRkVBVFVSRVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1BWF9GRUFUVVJFU19QRVJfRkVBVFVSRV9UWVBFIiwidmFsdWUiOiIifSx7Im5hbWUiOiJNSU5fRkVBVFVSRVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Il9NRVJHRV9TQ0hFTUFTIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJVUFBFUl9DQVNFX0FUVFJfTkFNRVMiLCJ2YWx1ZSI6Ik5vIn0seyJuYW1lIjoiRFlOQU1JQ19XT1JLRkxPVyIsInZhbHVlIjoieWVzIn0seyJuYW1lIjoiTlVNRVJJQ19UWVBFX0FUVFJJQlVURV9IQU5ETElORyIsInZhbHVlIjoiU1RBTkRBUkRfVFlQRVMifSx7Im5hbWUiOiJDSEVDS19OVU1FUklDX0ZJRUxEUyIsInZhbHVlIjoieWVzIn0seyJuYW1lIjoiX01FUkdFX1NDSEVNQVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IlJFVFJJRVZFX0FMTF9UQUJMRV9OQU1FUyIsInZhbHVlIjoiWUVTIn1dLCJkYXRhc2V0Ijp7InBhcmFtZXRlciI6IkhleGFnb25fSHlkcm9fTGluZXMifSwiZm9ybWF0IjoiRVNSSVNIQVBFIiwidmFsdWVzVG9Vc2UiOiJmZWF0dXJlVHlwZXMifSwiZGVmYXVsdFZhbHVlIjoiNTIwX0hpZHJvZ3JhZmlhX2xpbiIsIm5hbWUiOiJGRUFUVVJFX1RZUEVTIiwicHJvbXB0IjoiRmVhdHVyZSBUeXBlcyB0byBSZWFkIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoibGlzdGJveCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWRQYXJ0cyJ9LHsiYWNjZXNzTW9kZSI6InJlYWQiLCJkZWZhdWx0VmFsdWUiOiJIOlxcVmVjdG9yXFxQcm9qZWN0c1xcU3Vuc2hpbmVfVmFsaWRhdGlvbl8yMDIyXFwzMjI5NzQwMDA1WFhYVlxcRGF0YVxcNTIwXFxIeWRyb2dyYXBoeVxcNTIwX0NsaWVudF9yZWZlcmFuY2VfSGlkcm9fVGVydWVsLnNocCIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiU2hhcGVmaWxlcyIsImZpbHRlciI6WyIqLnNocCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBTaGFwZWZpbGVzIiwiZmlsdGVyIjpbIiouc2h6Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9FU1JJU0hBUEVfMyIsInByb21wdCI6IkNsaWVudF9yZWZlcmVuY2VfSHlkcm9fTGluZXMiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOnRydWUsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImNob2ljZVNldHRpbmdzIjp7ImNob2ljZVNldCI6InJlYWRlclZhbHVlcyIsImNvbmZpZ3VyYXRpb24iOlt7Im5hbWUiOiJSRUFERVJfUEFSQU1FVEVSUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiRU5DT0RJTkciLCJ2YWx1ZSI6ImZtZS1zb3VyY2UtZW5jb2RpbmcifSx7Im5hbWUiOiJVU0VfU0VBUkNIX0VOVkVMT1BFIiwidmFsdWUiOiJOTyJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9NSU5YIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01JTlkiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUFYWCIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9NQVhZIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX0NPT1JESU5BVEVfU1lTVEVNIiwidmFsdWUiOiIifSx7Im5hbWUiOiJDTElQX1RPX0VOVkVMT1BFIiwidmFsdWUiOiJOTyJ9LHsibmFtZSI6IkFEVkFOQ0VEIiwidmFsdWUiOiIifSx7Im5hbWUiOiJUUklNX1BSRUNFRElOR19TUEFDRVMiLCJ2YWx1ZSI6InllcyJ9LHsibmFtZSI6IkdFT01FVFJZIiwidmFsdWUiOiIifSx7Im5hbWUiOiJTSU1QTEVfRE9OVVRfR0VPTUVUUlkiLCJ2YWx1ZSI6InNpbXBsZSJ9LHsibmFtZSI6Ik1FQVNVUkVTX0FTX1oiLCJ2YWx1ZSI6Im5vIn0seyJuYW1lIjoiRElTU09MVkVfSE9MRVMiLCJ2YWx1ZSI6Im5vIn0seyJuYW1lIjoiUkVQT1JUX0JBRF9HRU9NRVRSWSIsInZhbHVlIjoibm8ifSx7Im5hbWUiOiJORVRXT1JLX0FVVEhFTlRJQ0FUSU9OIiwidmFsdWUiOiIifSx7Im5hbWUiOiJDT09SRFNZUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiU1RBUlRfRkVBVFVSRSIsInZhbHVlIjoiIn0seyJuYW1lIjoiTUFYX0ZFQVRVUkVTIiwidmFsdWUiOiIifSx7Im5hbWUiOiJNQVhfRkVBVFVSRVNfUEVSX0ZFQVRVUkVfVFlQRSIsInZhbHVlIjoiIn0seyJuYW1lIjoiTUlOX0ZFQVRVUkVTIiwidmFsdWUiOiIifSx7Im5hbWUiOiJfTUVSR0VfU0NIRU1BUyIsInZhbHVlIjoiWUVTIn0seyJuYW1lIjoiVVBQRVJfQ0FTRV9BVFRSX05BTUVTIiwidmFsdWUiOiJObyJ9LHsibmFtZSI6IkRZTkFNSUNfV09SS0ZMT1ciLCJ2YWx1ZSI6InllcyJ9LHsibmFtZSI6Ik5VTUVSSUNfVFlQRV9BVFRSSUJVVEVfSEFORExJTkciLCJ2YWx1ZSI6IlNUQU5EQVJEX1RZUEVTIn0seyJuYW1lIjoiQ0hFQ0tfTlVNRVJJQ19GSUVMRFMiLCJ2YWx1ZSI6InllcyJ9LHsibmFtZSI6Il9NRVJHRV9TQ0hFTUFTIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJSRVRSSUVWRV9BTExfVEFCTEVfTkFNRVMiLCJ2YWx1ZSI6IllFUyJ9XSwiZGF0YXNldCI6eyJwYXJhbWV0ZXIiOiJTb3VyY2VEYXRhc2V0X0VTUklTSEFQRV8zIn0sImZvcm1hdCI6IkVTUklTSEFQRSIsInZhbHVlc1RvVXNlIjoiZmVhdHVyZVR5cGVzIn0sImRlZmF1bHRWYWx1ZSI6IjUyMF9DbGllbnRfcmVmZXJhbmNlX0hpZHJvX1RlcnVlbCIsIm5hbWUiOiJGRUFUVVJFX1RZUEVTXzIiLCJwcm9tcHQiOiJGZWF0dXJlIFR5cGVzIHRvIFJlYWQ6IiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoibGlzdGJveCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWRQYXJ0cyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiSDpcXFZlY3RvclxcUHJvamVjdHNcXFN1bnNoaW5lX1ZhbGlkYXRpb25fMjAyMlxcMzIyOTc0MDAwNVhYWFZcXERhdGFcXDUyMFxcREdOXFw1MjBfQ2xpZW50X1JlZmVyZW5jZV9MaW5lcy5kZ24iLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkRlc2lnbiBGaWxlcyIsImZpbHRlciI6WyIqLmRnbiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiRGVzdERhdGFzZXRfREdOVjgiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbl9IeWRyb19MaW5lX0NMSUVOVF9SZWZlcmVuY2UtREdOLVBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiJIOlxcVmVjdG9yXFxQcm9qZWN0c1xcU3Vuc2hpbmVfVmFsaWRhdGlvbl8yMDIyXFwzMjI5NzQwMDA1WFhYVlxcRGF0YVxcNTIwXFxER05cXDUyMF9IeWRyb19MaW5lX0hleGFnb25fTGluZXMuZGduIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJEZXNpZ24gRmlsZXMiLCJmaWx0ZXIiOlsiKi5kZ24iXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3REYXRhc2V0X0RHTlY4XzMiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbl9IeWRyb19MaW5lX0hleGFnb25fTGluZXMtREdOLVBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ=="
+#! >
+#! <PARAMETER_INFO>
+#!     <INFO NAME="DestDataset_DGNV8" IS_STAND_ALONE="false" />
+#!     <INFO NAME="DestDataset_DGNV8_3" IS_STAND_ALONE="false" />
+#!     <INFO NAME="FEATURE_TYPES" IS_STAND_ALONE="false" />
+#!     <INFO NAME="FEATURE_TYPES_2" IS_STAND_ALONE="false" />
+#!     <INFO NAME="Hexagon_Hydro_Lines" IS_STAND_ALONE="false" />
+#!     <INFO NAME="SourceDataset_ESRISHAPE_3" IS_STAND_ALONE="false" />
+#! </PARAMETER_INFO>
+#! </USER_PARAMETERS>
+#! <COMMENTS>
+#! </COMMENTS>
+#! <CONSTANTS>
+#! </CONSTANTS>
+#! <BOOKMARKS>
+#! </BOOKMARKS>
+#! <TRANSFORMERS>
+#! <TRANSFORMER
+#!   IDENTIFIER="6"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1074.5767825195344 -636.72511725117249"
+#!   BOUNDING_RECT="1074.5767825195344 -636.72511725117249 454 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19642"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="idgs_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="idgs_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="d_muni_ine" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tipo" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nivel_vert" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="strahler" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cuenca" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="subcuenca" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nombre_cat" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="shape_leng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nombre" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="objectid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_masa" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="inspire_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_demarc" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fuente" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fecha_alta" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="c_muni_ine" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fecha_baja" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; idgs_level_name SET_TO &lt;at&gt;Value&lt;openparen&gt;nombre&lt;closeparen&gt;  idgs_color SET_TO 6"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="9"
+#!   TYPE="AttributeCreator"
+#!   VERSION="9"
+#!   POSITION="1273.7975247269565 -115"
+#!   BOUNDING_RECT="1273.7975247269565 -115 454 71"
+#!   ORDER="500000000000002"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19642"
+#! >
+#!     <OUTPUT_FEAT NAME="OUTPUT"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="idgs_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CUENCA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CANALIZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COMPONEN1D" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SUBCUENCA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NIVEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="REGIMEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_GRP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTRIBUTE_HANDLING" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_TABLE" PARM_VALUE="&quot;&quot; idgs_level_name SET_TO Input_Hydro_Lines"/>
+#!     <XFORM_PARM PARM_NAME="MULTI_FEATURE_MODE" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_MODE_DISPLAY" PARM_VALUE="No Substitution"/>
+#!     <XFORM_PARM PARM_NAME="NULL_ATTR_VALUE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_PRIOR_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="NUM_SUBSEQUENT_FEATURES" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="AttributeCreator_2"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="13"
+#!   TYPE="LineCombiner"
+#!   VERSION="11"
+#!   POSITION="2398.4614846148456 -180.31195311953124"
+#!   BOUNDING_RECT="2398.4614846148456 -180.31195311953124 454 71"
+#!   ORDER="500000000000003"
+#!   PARMS_EDITED="false"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19642"
+#! >
+#!     <OUTPUT_FEAT NAME="LINE"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="idgs_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CUENCA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="CANALIZ" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="COMPONEN1D" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SUBCUENCA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="NIVEL" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="REGIMEN" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <OUTPUT_FEAT NAME="&lt;REJECTED&gt;"/>
+#!     <FEAT_COLLAPSED COLLAPSED="1"/>
+#!     <XFORM_ATTR ATTR_NAME="idgs_level_name" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="OBJECTID" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SITUACION" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CUENCA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CLASIF" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="CANALIZ" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ESTADO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="COMPONEN1D" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SUBCUENCA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_HOJA" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NOMBRE" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="NIVEL" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="ID_Fenomen" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="REGIMEN" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="TIPO" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="SHAPE_Leng" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_ATTR ATTR_NAME="fme_rejection_code" IS_USER_CREATED="false" FEAT_INDEX="1" />
+#!     <XFORM_PARM PARM_NAME="ACCUM_ATTRS_NAME" PARM_VALUE="Use Attributes From One Feature"/>
+#!     <XFORM_PARM PARM_NAME="ADVANCED_PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="ATTR_ACCUM_GROUP" PARM_VALUE="FME_DISCLOSURE_OPEN"/>
+#!     <XFORM_PARM PARM_NAME="BREAK" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="BREAK_CONNECTION_ATTRIBUTES" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="CONNECT_Z_MODE" PARM_VALUE="First Wins"/>
+#!     <XFORM_PARM PARM_NAME="CONSIDER_NODE_ELEVATION" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="DEAGGREGATE_GEOMETRY" PARM_VALUE="Deaggregate"/>
+#!     <XFORM_PARM PARM_NAME="DIRECTION_NAME" PARM_VALUE="direction"/>
+#!     <XFORM_PARM PARM_NAME="GENERATE_LIST_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="JUNCTIONS_IGNORE_ATTRIBUTES" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="LINES_AS_SEGMENTS" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LIST_ATTRS_TO_INCLUDE_MODE" PARM_VALUE="Selected Attributes"/>
+#!     <XFORM_PARM PARM_NAME="LIST_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="PARAMETERS_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="PRESERVE" PARM_VALUE="no"/>
+#!     <XFORM_PARM PARM_NAME="TOPOLOGY" PARM_VALUE="End noded"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="LineCombiner"/>
+#! </TRANSFORMER>
+#! <TRANSFORMER
+#!   IDENTIFIER="16"
+#!   TYPE="DGNStyler"
+#!   VERSION="0"
+#!   POSITION="2156.2715627156272 -700.72074220742184"
+#!   BOUNDING_RECT="2156.2715627156272 -700.72074220742184 454 71"
+#!   ORDER="500000000000006"
+#!   PARMS_EDITED="true"
+#!   ENABLED="true"
+#!   LAST_PARM_EDIT="19642"
+#! >
+#!     <OUTPUT_FEAT NAME="DGNStyled"/>
+#!     <FEAT_COLLAPSED COLLAPSED="0"/>
+#!     <XFORM_ATTR ATTR_NAME="idgs_level_name" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="idgs_color" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="d_muni_ine" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="tipo" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nivel_vert" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="strahler" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="cuenca" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="subcuenca" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nombre_cat" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="shape_leng" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="nombre" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="objectid" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_masa" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="inspire_id" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="id_demarc" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fuente" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fecha_alta" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="c_muni_ine" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fecha_baja" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_feature_type" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_ATTR ATTR_NAME="fme_basename" IS_USER_CREATED="false" FEAT_INDEX="0" />
+#!     <XFORM_PARM PARM_NAME="CELL_FILE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CELL_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="CELL_MODE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CELL_MODE_RELATIVE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CELL_NAME" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CELL_ROT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CELL_SIZETYPE_DISPLAY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CELL_SIZEX" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CELL_SIZEY" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="CELL_SIZEZ" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="COLOR_BY_LEVEL_DISPLAY" PARM_VALUE="No"/>
+#!     <XFORM_PARM PARM_NAME="COLOR_CHOICE_DISPLAY" PARM_VALUE="RGB"/>
+#!     <XFORM_PARM PARM_NAME="COLOR_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="INDEX_COLOR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="INDEX_FILL_COLOR" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="LINE_STYLE" PARM_VALUE="0"/>
+#!     <XFORM_PARM PARM_NAME="LINE_STYLE_GROUP" PARM_VALUE="YES"/>
+#!     <XFORM_PARM PARM_NAME="LINE_WEIGHT" PARM_VALUE="3"/>
+#!     <XFORM_PARM PARM_NAME="RGB_COLOR" PARM_VALUE="1,0.666667,0"/>
+#!     <XFORM_PARM PARM_NAME="RGB_FILL_COLOR" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="TEXT_BOLD" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEXT_FONT" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEXT_GROUP" PARM_VALUE="NO"/>
+#!     <XFORM_PARM PARM_NAME="TEXT_JUSTIFICATION" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEXT_OVERLINE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEXT_ROTATION" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEXT_SIZE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEXT_SLANT_ANGLE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEXT_STYLE_ID" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEXT_UNDERLINE" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TEXT_WIDTH_MULTIPLIER" PARM_VALUE="&lt;Unused&gt;"/>
+#!     <XFORM_PARM PARM_NAME="TRANSFORMER_GROUP" PARM_VALUE=""/>
+#!     <XFORM_PARM PARM_NAME="XFORMER_NAME" PARM_VALUE="DGNStyler"/>
+#! </TRANSFORMER>
+#! </TRANSFORMERS>
+#! <FEAT_LINKS>
+#! <FEAT_LINK
+#!   IDENTIFIER="10"
+#!   SOURCE_NODE="2"
+#!   TARGET_NODE="9"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="22"
+#!   SOURCE_NODE="3"
+#!   TARGET_NODE="6"
+#!   SOURCE_PORT_DESC="-1"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="17"
+#!   SOURCE_NODE="6"
+#!   TARGET_NODE="16"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="14"
+#!   SOURCE_NODE="9"
+#!   TARGET_NODE="13"
+#!   SOURCE_PORT_DESC="fo 0 OUTPUT"
+#!   TARGET_PORT_DESC="fi 0 "
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="15"
+#!   SOURCE_NODE="13"
+#!   TARGET_NODE="11"
+#!   SOURCE_PORT_DESC="fo 0 LINE"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! <FEAT_LINK
+#!   IDENTIFIER="18"
+#!   SOURCE_NODE="16"
+#!   TARGET_NODE="4"
+#!   SOURCE_PORT_DESC="fo 0 DGNStyled"
+#!   TARGET_PORT_DESC="-1"
+#!   ENABLED="true"
+#!   EXECUTION_IDX="0"
+#!   HIDDEN="false"
+#!   COLOUR="0,0,0,1"
+#!   PEN_WIDTH="4"
+#!   PEN_STYLE="1"
+#!   LINK_STYLE_NAME="&lt;Default&gt;"
+#!   EXTRA_POINTS=""
+#! />
+#! </FEAT_LINKS>
+#! <BREAKPOINTS>
+#! </BREAKPOINTS>
+#! <ATTR_LINKS>
+#! </ATTR_LINKS>
+#! <SUBDOCUMENTS>
+#! </SUBDOCUMENTS>
+#! <LOOKUP_TABLES>
+#! </LOOKUP_TABLES>
+#! </WORKSPACE>
+
+FME_PYTHON_VERSION 38
+ARCGIS_COMPATIBILITY ARCGIS_AUTO
+GUI IGNORE SourceDataset_ESRISHAPE_1,ESRISHAPE_IN_READER_PARAMETERS_ESRISHAPE_1,ESRISHAPE_IN_ENCODING_ESRISHAPE_1,ESRISHAPE_IN_USE_SEARCH_ENVELOPE_ESRISHAPE_1,ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_1,ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_1,ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_1,ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_1,ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_1,ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_1,ESRISHAPE_IN_ADVANCED_ESRISHAPE_1,ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_1,ESRISHAPE_IN_GEOMETRY_ESRISHAPE_1,ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_1,ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_1,ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_1,ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_1,ESRISHAPE_IN_NETWORK_AUTHENTICATION_ESRISHAPE_1,SourceDataset_ESRISHAPE_2,ESRISHAPE_IN_READER_PARAMETERS_ESRISHAPE_2,ESRISHAPE_IN_ENCODING_ESRISHAPE_2,ESRISHAPE_IN_USE_SEARCH_ENVELOPE_ESRISHAPE_2,ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_2,ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_2,ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_2,ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_2,ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_2,ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_2,ESRISHAPE_IN_ADVANCED_ESRISHAPE_2,ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_2,ESRISHAPE_IN_GEOMETRY_ESRISHAPE_2,ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_2,ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_2,ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_2,ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_2,ESRISHAPE_IN_NETWORK_AUTHENTICATION_ESRISHAPE_2,DestDataset_DGNV8_1,SEED_FILE_DGNV8_1,DGNV8_OUT_OUT_UNITS_DGNV8_1,DGNV8_OUT_ALLOW_FILL_DGNV8_1,DGNV8_OUT_WRITE_TAGS_DGNV8_1,DGNV8_OUT_CELL_LIBRARY_DGNV8_1,DGNV8_OUT_DGNV8_WRT_ADV_PARM_GROUP_DGNV8_1,DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_1,DGNV8_OUT_RSC_FONT_FILE_DGNV8_1,DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_1,DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_1,DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_1,DestDataset_DGNV8_2,SEED_FILE_DGNV8_2,DGNV8_OUT_OUT_UNITS_DGNV8_2,DGNV8_OUT_ALLOW_FILL_DGNV8_2,DGNV8_OUT_WRITE_TAGS_DGNV8_2,DGNV8_OUT_CELL_LIBRARY_DGNV8_2,DGNV8_OUT_DGNV8_WRT_ADV_PARM_GROUP_DGNV8_2,DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_2,DGNV8_OUT_RSC_FONT_FILE_DGNV8_2,DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_2,DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_2,DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_2
+# ============================================================================
+DEFAULT_MACRO Hexagon_Hydro_Lines H:\Vector\Projects\Sunshine_Validation_2022\3229740005XXXV\Data\520\520_Hidrografia_lin.shp
+DEFAULT_MACRO FEATURE_TYPES 520_Hidrografia_lin
+DEFAULT_MACRO SourceDataset_ESRISHAPE_3 H:\Vector\Projects\Sunshine_Validation_2022\3229740005XXXV\Data\520\Hydrography\520_Client_referance_Hidro_Teruel.shp
+DEFAULT_MACRO FEATURE_TYPES_2 520_Client_referance_Hidro_Teruel
+DEFAULT_MACRO DestDataset_DGNV8 H:\Vector\Projects\Sunshine_Validation_2022\3229740005XXXV\Data\520\DGN\520_Client_Reference_Lines.dgn
+DEFAULT_MACRO DestDataset_DGNV8_3 H:\Vector\Projects\Sunshine_Validation_2022\3229740005XXXV\Data\520\DGN\520_Hydro_Line_Hexagon_Lines.dgn
+# ============================================================================
+GUI MULTIFILE Hexagon_Hydro_Lines INCLUDE_WEB_BROWSER%Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Hexagon_Hydro_Lines
+GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES H:<backslash>Vector<backslash>Projects<backslash>Sunshine_Validation_2022<backslash>3229740005XXXV<backslash>Data<backslash>520<backslash>520_Hidrografia_lin.shp,_FORMAT_OVERRIDE_,ESRISHAPE,_DATASET_OVERRIDE_,Hexagon_Hydro_Lines,READER_PARAMETERS,,ENCODING,fme-source-encoding,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,ADVANCED,,TRIM_PRECEDING_SPACES,yes,GEOMETRY,,SIMPLE_DONUT_GEOMETRY,simple,MEASURES_AS_Z,no,DISSOLVE_HOLES,no,REPORT_BAD_GEOMETRY,no,NETWORK_AUTHENTICATION,,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,_MERGE_SCHEMAS,YES,UPPER_CASE_ATTR_NAMES,No,DYNAMIC_WORKFLOW,yes,NUMERIC_TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,CHECK_NUMERIC_FIELDS,yes,_MERGE_SCHEMAS,YES Feature Types to Read
+GUI MULTIFILE SourceDataset_ESRISHAPE_3 INCLUDE_WEB_BROWSER%Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|Compressed_Files(*.bz2;*.gz)|*.bz2;*.gz|Archive_Files(*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx)|*.7z;*.7zip;*.rar;*.rvz;*.tar;*.tar.bz2;*.tar.gz;*.tgz;*.zip;*.zipx|All_Files(*)|* Client_reference_Hydro_Lines
+GUI OPTIONAL FEATURE_TYPES_ENCODED FEATURE_TYPES_2 H:<backslash>Vector<backslash>Projects<backslash>Sunshine_Validation_2022<backslash>3229740005XXXV<backslash>Data<backslash>520<backslash>Hydrography<backslash>520_Client_referance_Hidro_Teruel.shp,_FORMAT_OVERRIDE_,ESRISHAPE,_DATASET_OVERRIDE_,SourceDataset_ESRISHAPE_3,READER_PARAMETERS,,ENCODING,fme-source-encoding,USE_SEARCH_ENVELOPE,NO,SEARCH_ENVELOPE_MINX,0,SEARCH_ENVELOPE_MINY,0,SEARCH_ENVELOPE_MAXX,0,SEARCH_ENVELOPE_MAXY,0,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,CLIP_TO_ENVELOPE,NO,ADVANCED,,TRIM_PRECEDING_SPACES,yes,GEOMETRY,,SIMPLE_DONUT_GEOMETRY,simple,MEASURES_AS_Z,no,DISSOLVE_HOLES,no,REPORT_BAD_GEOMETRY,no,NETWORK_AUTHENTICATION,,COORDSYS,,START_FEATURE,,MAX_FEATURES,,MAX_FEATURES_PER_FEATURE_TYPE,,MIN_FEATURES,,_MERGE_SCHEMAS,YES,UPPER_CASE_ATTR_NAMES,No,DYNAMIC_WORKFLOW,yes,NUMERIC_TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,CHECK_NUMERIC_FIELDS,yes,_MERGE_SCHEMAS,YES Feature Types to Read:
+GUI FILENAME DestDataset_DGNV8 Design_Files(*.dgn)|*.dgn|All_files(*)|* Destination_Hydro_Line_CLIENT_Reference-DGN-Path
+GUI FILENAME DestDataset_DGNV8_3 Design_Files(*.dgn)|*.dgn|All_files(*)|* Destination_Hydro_Line_Hexagon_Lines-DGN-Path
+# ============================================================================
+USER_PARAMETERS eyJwYXJhbWV0ZXJzIjpbeyJhY2Nlc3NNb2RlIjoicmVhZCIsImRlZmF1bHRWYWx1ZSI6Ikg6XFxWZWN0b3JcXFByb2plY3RzXFxTdW5zaGluZV9WYWxpZGF0aW9uXzIwMjJcXDMyMjk3NDAwMDVYWFhWXFxEYXRhXFw1MjBcXDUyMF9IaWRyb2dyYWZpYV9saW4uc2hwIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJTaGFwZWZpbGVzIiwiZmlsdGVyIjpbIiouc2hwIl19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIFNoYXBlZmlsZXMiLCJmaWx0ZXIiOlsiKi5zaHoiXX0seyJkZXNjcmlwdGlvbiI6IkNvbXByZXNzZWQgRmlsZXMiLCJmaWx0ZXIiOlsiKi5iejIiLCIqLmd6Il19LHsiZGVzY3JpcHRpb24iOiJBcmNoaXZlIEZpbGVzIiwiZmlsdGVyIjpbIiouN3oiLCIqLjd6aXAiLCIqLnJhciIsIioucnZ6IiwiKi50YXIiLCIqLnRhci5iejIiLCIqLnRhci5neiIsIioudGd6IiwiKi56aXAiLCIqLnppcHgiXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBGaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaW5jbHVkZVdlYkJyb3dzZXIiOnRydWUsIml0ZW1zVG9TZWxlY3QiOiJmaWxlcyIsIm5hbWUiOiJIZXhhZ29uX0h5ZHJvX0xpbmVzIiwicHJvbXB0IjoiSGV4YWdvbl9IeWRyb19MaW5lcyIsInJlcXVpcmVkIjp0cnVlLCJzZWxlY3RNdWx0aXBsZSI6dHJ1ZSwidHlwZSI6ImZpbGUiLCJ2YWxpZGF0ZUV4aXN0ZW5jZSI6ZmFsc2UsInZhbHVlVHlwZSI6InN0cmluZyJ9LHsiY2hvaWNlU2V0dGluZ3MiOnsiY2hvaWNlU2V0IjoicmVhZGVyVmFsdWVzIiwiY29uZmlndXJhdGlvbiI6W3sibmFtZSI6IlJFQURFUl9QQVJBTUVURVJTIiwidmFsdWUiOiIifSx7Im5hbWUiOiJFTkNPRElORyIsInZhbHVlIjoiZm1lLXNvdXJjZS1lbmNvZGluZyJ9LHsibmFtZSI6IlVTRV9TRUFSQ0hfRU5WRUxPUEUiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01JTlgiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUlOWSIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9NQVhYIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01BWFkiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfQ09PUkRJTkFURV9TWVNURU0iLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkNMSVBfVE9fRU5WRUxPUEUiLCJ2YWx1ZSI6Ik5PIn0seyJuYW1lIjoiQURWQU5DRUQiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlRSSU1fUFJFQ0VESU5HX1NQQUNFUyIsInZhbHVlIjoieWVzIn0seyJuYW1lIjoiR0VPTUVUUlkiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IlNJTVBMRV9ET05VVF9HRU9NRVRSWSIsInZhbHVlIjoic2ltcGxlIn0seyJuYW1lIjoiTUVBU1VSRVNfQVNfWiIsInZhbHVlIjoibm8ifSx7Im5hbWUiOiJESVNTT0xWRV9IT0xFUyIsInZhbHVlIjoibm8ifSx7Im5hbWUiOiJSRVBPUlRfQkFEX0dFT01FVFJZIiwidmFsdWUiOiJubyJ9LHsibmFtZSI6Ik5FVFdPUktfQVVUSEVOVElDQVRJT04iLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6IkNPT1JEU1lTIiwidmFsdWUiOiIifSx7Im5hbWUiOiJTVEFSVF9GRUFUVVJFIiwidmFsdWUiOiIifSx7Im5hbWUiOiJNQVhfRkVBVFVSRVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Ik1BWF9GRUFUVVJFU19QRVJfRkVBVFVSRV9UWVBFIiwidmFsdWUiOiIifSx7Im5hbWUiOiJNSU5fRkVBVFVSRVMiLCJ2YWx1ZSI6IiJ9LHsibmFtZSI6Il9NRVJHRV9TQ0hFTUFTIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJVUFBFUl9DQVNFX0FUVFJfTkFNRVMiLCJ2YWx1ZSI6Ik5vIn0seyJuYW1lIjoiRFlOQU1JQ19XT1JLRkxPVyIsInZhbHVlIjoieWVzIn0seyJuYW1lIjoiTlVNRVJJQ19UWVBFX0FUVFJJQlVURV9IQU5ETElORyIsInZhbHVlIjoiU1RBTkRBUkRfVFlQRVMifSx7Im5hbWUiOiJDSEVDS19OVU1FUklDX0ZJRUxEUyIsInZhbHVlIjoieWVzIn0seyJuYW1lIjoiX01FUkdFX1NDSEVNQVMiLCJ2YWx1ZSI6IllFUyJ9LHsibmFtZSI6IlJFVFJJRVZFX0FMTF9UQUJMRV9OQU1FUyIsInZhbHVlIjoiWUVTIn1dLCJkYXRhc2V0Ijp7InBhcmFtZXRlciI6IkhleGFnb25fSHlkcm9fTGluZXMifSwiZm9ybWF0IjoiRVNSSVNIQVBFIiwidmFsdWVzVG9Vc2UiOiJmZWF0dXJlVHlwZXMifSwiZGVmYXVsdFZhbHVlIjoiNTIwX0hpZHJvZ3JhZmlhX2xpbiIsIm5hbWUiOiJGRUFUVVJFX1RZUEVTIiwicHJvbXB0IjoiRmVhdHVyZSBUeXBlcyB0byBSZWFkIiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoibGlzdGJveCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWRQYXJ0cyJ9LHsiYWNjZXNzTW9kZSI6InJlYWQiLCJkZWZhdWx0VmFsdWUiOiJIOlxcVmVjdG9yXFxQcm9qZWN0c1xcU3Vuc2hpbmVfVmFsaWRhdGlvbl8yMDIyXFwzMjI5NzQwMDA1WFhYVlxcRGF0YVxcNTIwXFxIeWRyb2dyYXBoeVxcNTIwX0NsaWVudF9yZWZlcmFuY2VfSGlkcm9fVGVydWVsLnNocCIsImZpbHRlcnMiOlt7ImRlc2NyaXB0aW9uIjoiU2hhcGVmaWxlcyIsImZpbHRlciI6WyIqLnNocCJdfSx7ImRlc2NyaXB0aW9uIjoiQ29tcHJlc3NlZCBTaGFwZWZpbGVzIiwiZmlsdGVyIjpbIiouc2h6Il19LHsiZGVzY3JpcHRpb24iOiJDb21wcmVzc2VkIEZpbGVzIiwiZmlsdGVyIjpbIiouYnoyIiwiKi5neiJdfSx7ImRlc2NyaXB0aW9uIjoiQXJjaGl2ZSBGaWxlcyIsImZpbHRlciI6WyIqLjd6IiwiKi43emlwIiwiKi5yYXIiLCIqLnJ2eiIsIioudGFyIiwiKi50YXIuYnoyIiwiKi50YXIuZ3oiLCIqLnRneiIsIiouemlwIiwiKi56aXB4Il19LHsiZGVzY3JpcHRpb24iOiJBbGwgRmlsZXMiLCJmaWx0ZXIiOlsiKiJdfV0sImluY2x1ZGVXZWJCcm93c2VyIjp0cnVlLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiU291cmNlRGF0YXNldF9FU1JJU0hBUEVfMyIsInByb21wdCI6IkNsaWVudF9yZWZlcmVuY2VfSHlkcm9fTGluZXMiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOnRydWUsInR5cGUiOiJmaWxlIiwidmFsaWRhdGVFeGlzdGVuY2UiOmZhbHNlLCJ2YWx1ZVR5cGUiOiJzdHJpbmcifSx7ImNob2ljZVNldHRpbmdzIjp7ImNob2ljZVNldCI6InJlYWRlclZhbHVlcyIsImNvbmZpZ3VyYXRpb24iOlt7Im5hbWUiOiJSRUFERVJfUEFSQU1FVEVSUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiRU5DT0RJTkciLCJ2YWx1ZSI6ImZtZS1zb3VyY2UtZW5jb2RpbmcifSx7Im5hbWUiOiJVU0VfU0VBUkNIX0VOVkVMT1BFIiwidmFsdWUiOiJOTyJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9NSU5YIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX01JTlkiLCJ2YWx1ZSI6IjAifSx7Im5hbWUiOiJTRUFSQ0hfRU5WRUxPUEVfTUFYWCIsInZhbHVlIjoiMCJ9LHsibmFtZSI6IlNFQVJDSF9FTlZFTE9QRV9NQVhZIiwidmFsdWUiOiIwIn0seyJuYW1lIjoiU0VBUkNIX0VOVkVMT1BFX0NPT1JESU5BVEVfU1lTVEVNIiwidmFsdWUiOiIifSx7Im5hbWUiOiJDTElQX1RPX0VOVkVMT1BFIiwidmFsdWUiOiJOTyJ9LHsibmFtZSI6IkFEVkFOQ0VEIiwidmFsdWUiOiIifSx7Im5hbWUiOiJUUklNX1BSRUNFRElOR19TUEFDRVMiLCJ2YWx1ZSI6InllcyJ9LHsibmFtZSI6IkdFT01FVFJZIiwidmFsdWUiOiIifSx7Im5hbWUiOiJTSU1QTEVfRE9OVVRfR0VPTUVUUlkiLCJ2YWx1ZSI6InNpbXBsZSJ9LHsibmFtZSI6Ik1FQVNVUkVTX0FTX1oiLCJ2YWx1ZSI6Im5vIn0seyJuYW1lIjoiRElTU09MVkVfSE9MRVMiLCJ2YWx1ZSI6Im5vIn0seyJuYW1lIjoiUkVQT1JUX0JBRF9HRU9NRVRSWSIsInZhbHVlIjoibm8ifSx7Im5hbWUiOiJORVRXT1JLX0FVVEhFTlRJQ0FUSU9OIiwidmFsdWUiOiIifSx7Im5hbWUiOiJDT09SRFNZUyIsInZhbHVlIjoiIn0seyJuYW1lIjoiU1RBUlRfRkVBVFVSRSIsInZhbHVlIjoiIn0seyJuYW1lIjoiTUFYX0ZFQVRVUkVTIiwidmFsdWUiOiIifSx7Im5hbWUiOiJNQVhfRkVBVFVSRVNfUEVSX0ZFQVRVUkVfVFlQRSIsInZhbHVlIjoiIn0seyJuYW1lIjoiTUlOX0ZFQVRVUkVTIiwidmFsdWUiOiIifSx7Im5hbWUiOiJfTUVSR0VfU0NIRU1BUyIsInZhbHVlIjoiWUVTIn0seyJuYW1lIjoiVVBQRVJfQ0FTRV9BVFRSX05BTUVTIiwidmFsdWUiOiJObyJ9LHsibmFtZSI6IkRZTkFNSUNfV09SS0ZMT1ciLCJ2YWx1ZSI6InllcyJ9LHsibmFtZSI6Ik5VTUVSSUNfVFlQRV9BVFRSSUJVVEVfSEFORExJTkciLCJ2YWx1ZSI6IlNUQU5EQVJEX1RZUEVTIn0seyJuYW1lIjoiQ0hFQ0tfTlVNRVJJQ19GSUVMRFMiLCJ2YWx1ZSI6InllcyJ9LHsibmFtZSI6Il9NRVJHRV9TQ0hFTUFTIiwidmFsdWUiOiJZRVMifSx7Im5hbWUiOiJSRVRSSUVWRV9BTExfVEFCTEVfTkFNRVMiLCJ2YWx1ZSI6IllFUyJ9XSwiZGF0YXNldCI6eyJwYXJhbWV0ZXIiOiJTb3VyY2VEYXRhc2V0X0VTUklTSEFQRV8zIn0sImZvcm1hdCI6IkVTUklTSEFQRSIsInZhbHVlc1RvVXNlIjoiZmVhdHVyZVR5cGVzIn0sImRlZmF1bHRWYWx1ZSI6IjUyMF9DbGllbnRfcmVmZXJhbmNlX0hpZHJvX1RlcnVlbCIsIm5hbWUiOiJGRUFUVVJFX1RZUEVTXzIiLCJwcm9tcHQiOiJGZWF0dXJlIFR5cGVzIHRvIFJlYWQ6IiwicmVxdWlyZWQiOmZhbHNlLCJ0eXBlIjoibGlzdGJveCIsInZhbHVlVHlwZSI6InN0cmluZ0VuY29kZWRQYXJ0cyJ9LHsiYWNjZXNzTW9kZSI6IndyaXRlIiwiZGVmYXVsdFZhbHVlIjoiSDpcXFZlY3RvclxcUHJvamVjdHNcXFN1bnNoaW5lX1ZhbGlkYXRpb25fMjAyMlxcMzIyOTc0MDAwNVhYWFZcXERhdGFcXDUyMFxcREdOXFw1MjBfQ2xpZW50X1JlZmVyZW5jZV9MaW5lcy5kZ24iLCJmaWx0ZXJzIjpbeyJkZXNjcmlwdGlvbiI6IkRlc2lnbiBGaWxlcyIsImZpbHRlciI6WyIqLmRnbiJdfSx7ImRlc2NyaXB0aW9uIjoiQWxsIGZpbGVzIiwiZmlsdGVyIjpbIioiXX1dLCJpdGVtc1RvU2VsZWN0IjoiZmlsZXMiLCJuYW1lIjoiRGVzdERhdGFzZXRfREdOVjgiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbl9IeWRyb19MaW5lX0NMSUVOVF9SZWZlcmVuY2UtREdOLVBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn0seyJhY2Nlc3NNb2RlIjoid3JpdGUiLCJkZWZhdWx0VmFsdWUiOiJIOlxcVmVjdG9yXFxQcm9qZWN0c1xcU3Vuc2hpbmVfVmFsaWRhdGlvbl8yMDIyXFwzMjI5NzQwMDA1WFhYVlxcRGF0YVxcNTIwXFxER05cXDUyMF9IeWRyb19MaW5lX0hleGFnb25fTGluZXMuZGduIiwiZmlsdGVycyI6W3siZGVzY3JpcHRpb24iOiJEZXNpZ24gRmlsZXMiLCJmaWx0ZXIiOlsiKi5kZ24iXX0seyJkZXNjcmlwdGlvbiI6IkFsbCBmaWxlcyIsImZpbHRlciI6WyIqIl19XSwiaXRlbXNUb1NlbGVjdCI6ImZpbGVzIiwibmFtZSI6IkRlc3REYXRhc2V0X0RHTlY4XzMiLCJwcm9tcHQiOiJEZXN0aW5hdGlvbl9IeWRyb19MaW5lX0hleGFnb25fTGluZXMtREdOLVBhdGgiLCJyZXF1aXJlZCI6dHJ1ZSwic2VsZWN0TXVsdGlwbGUiOmZhbHNlLCJ0eXBlIjoiZmlsZSIsInZhbGlkYXRlRXhpc3RlbmNlIjpmYWxzZSwidmFsdWVUeXBlIjoic3RyaW5nIn1dfQ==
+# ============================================================================
+INCLUDE [ if {{$(Hexagon_Hydro_Lines)} == {}} { puts_real {Parameter 'Hexagon_Hydro_Lines' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(SourceDataset_ESRISHAPE_3)} == {}} { puts_real {Parameter 'SourceDataset_ESRISHAPE_3' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_DGNV8)} == {}} { puts_real {Parameter 'DestDataset_DGNV8' must be given a value.}; exit 1; }; ]
+INCLUDE [ if {{$(DestDataset_DGNV8_3)} == {}} { puts_real {Parameter 'DestDataset_DGNV8_3' must be given a value.}; exit 1; }; ]
+#! START_HEADER
+#! START_WB_HEADER
+READER_TYPE MULTI_READER
+MULTI_READER_TYPE{0} ESRISHAPE
+MULTI_READER_KEYWORD{0} ESRISHAPE_1
+MULTI_READER_GEN_DIRECTIVES{0} _MERGE_SCHEMAS,YES,UPPER_CASE_ATTR_NAMES,No,SEARCH_ENVELOPE_MAXX,0,ESRISHAPE_EXPOSE_FORMAT_ATTRS,,ENCODING,fme-source-encoding,CLIP_TO_ENVELOPE,NO,GEOMETRY,,MEASURES_AS_Z,no,REPORT_BAD_GEOMETRY,no,SEARCH_ENVELOPE_MINY,0,ADVANCED,,SIMPLE_DONUT_GEOMETRY,simple,TRIM_PRECEDING_SPACES,yes,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MINX,0,DISSOLVE_HOLES,no,DYNAMIC_WORKFLOW,yes,SEARCH_ENVELOPE_MAXY,0,NUMERIC_TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,USE_SEARCH_ENVELOPE,NO,CHECK_NUMERIC_FIELDS,yes
+MULTI_READER_TYPE{1} ESRISHAPE
+MULTI_READER_KEYWORD{1} ESRISHAPE_2
+MULTI_READER_GEN_DIRECTIVES{1} _MERGE_SCHEMAS,YES,UPPER_CASE_ATTR_NAMES,No,SEARCH_ENVELOPE_MAXX,0,ESRISHAPE_EXPOSE_FORMAT_ATTRS,,ENCODING,fme-source-encoding,CLIP_TO_ENVELOPE,NO,GEOMETRY,,MEASURES_AS_Z,no,REPORT_BAD_GEOMETRY,no,SEARCH_ENVELOPE_MINY,0,ADVANCED,,SIMPLE_DONUT_GEOMETRY,simple,TRIM_PRECEDING_SPACES,yes,EXPOSE_ATTRS_GROUP,,SEARCH_ENVELOPE_MINX,0,DISSOLVE_HOLES,no,DYNAMIC_WORKFLOW,yes,SEARCH_ENVELOPE_MAXY,0,NUMERIC_TYPE_ATTRIBUTE_HANDLING,STANDARD_TYPES,SEARCH_ENVELOPE_COORDINATE_SYSTEM,,USE_SEARCH_ENVELOPE,NO,CHECK_NUMERIC_FIELDS,yes
+WRITER_TYPE MULTI_WRITER
+MULTI_WRITER_DATASET_ORDER BY_ID
+MULTI_WRITER_FIRST_WRITER_ID 0
+MULTI_WRITER_TYPE{0} DGNV8
+MULTI_WRITER_KEYWORD{0} DGNV8_1
+MULTI_WRITER_TYPE{1} DGNV8
+MULTI_WRITER_KEYWORD{1} DGNV8_2
+#! END_WB_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ESRISHAPE_1"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ESRISHAPE ESRISHAPE_1
+ESRISHAPE_1_DYNAMIC_WORKFLOW YES
+# ============================================================================
+# The following GUI line prompts for the source shapefiles
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ESRISHAPE_1 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ESRISHAPE ESRISHAPE_1
+DEFAULT_MACRO SourceDataset_ESRISHAPE_1 $(Hexagon_Hydro_Lines)
+GUI MULTIFILE SourceDataset_ESRISHAPE_1 Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|All_Files(*)|* Source Esri Shapefile(s):
+# =====================================================================
+# Provide some control over what attributes have the user-selected
+# encoding applied. Normally all attributes are updated after being
+# read, but the following lines exclude from this treatment all
+# attributes whose names start with fme_ or shape_.
+ESRISHAPE_1_UNENCODED_ATTR_PREFIX fme_ shape_
+#Added default value for dissolve holes so that default for DI is consistent with workbench
+DEFAULT_MACRO ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_1 no
+ESRISHAPE_1_DISSOLVE_HOLES "$(ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_1)"
+DEFAULT_MACRO ESRISHAPE_IN_READER_PARAMETERS_ESRISHAPE_1 
+GUI OPTIONAL DISCLOSUREGROUP ESRISHAPE_IN_READER_PARAMETERS_ESRISHAPE_1 ESRISHAPE_IN_UPPER_CASE_ATTR_NAMES%ESRISHAPE_IN_ENCODING_ESRISHAPE_1%ESRISHAPE_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING Reader Parameters
+# ============================================================================
+# Determines whether the attribute names should be uppercased, or whether they
+# should stay as specified in the shapefile. Once the mapping file/workspace
+# has been generated, the value for this keyword should not be changed.
+DEFAULT_MACRO ESRISHAPE_IN_UPPER_CASE_ATTR_NAMES_ESRISHAPE_1 No
+ESRISHAPE_1_UPPER_CASE_ATTR_NAMES "$(ESRISHAPE_IN_UPPER_CASE_ATTR_NAMES_ESRISHAPE_1)"
+# ============================================================================
+# The following keyword allows the user to choose what encoding to
+# use for reading the shapefile, overrides dbf file LDID or .cpg
+# file if present.
+DEFAULT_MACRO ESRISHAPE_IN_ENCODING_ESRISHAPE_1 fme-source-encoding
+ESRISHAPE_1_ENCODING "$(ESRISHAPE_IN_ENCODING_ESRISHAPE_1)"
+GUI STRING_OR_ENCODING ESRISHAPE_IN_ENCODING_ESRISHAPE_1 fme-source-encoding%* Character Encoding
+# ============================================================================
+# Determines whether numeric attributes should be interpreted as binary or as
+# bound number fields (ActualDBFrepresentation)
+DEFAULT_MACRO ESRISHAPE_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_ESRISHAPE_1 STANDARD_TYPES
+ESRISHAPE_1_NUMERIC_TYPE_ATTRIBUTE_HANDLING "$(ESRISHAPE_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_ESRISHAPE_1)"
+#Note: Using the search envelope requires the shape index files (.sbnand.sbx)
+DEFAULT_MACRO ESRISHAPE_IN_EXPOSE_ATTRS_GROUP_ESRISHAPE_1 
+ESRISHAPE_1_EXPOSE_ATTRS_GROUP "$(ESRISHAPE_IN_EXPOSE_ATTRS_GROUP_ESRISHAPE_1)"
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO ESRISHAPE_IN_USE_SEARCH_ENVELOPE_ESRISHAPE_1 NO
+ESRISHAPE_1_USE_SEARCH_ENVELOPE "$(ESRISHAPE_IN_USE_SEARCH_ENVELOPE_ESRISHAPE_1)"
+GUI ACTIVEDISCLOSUREGROUP ESRISHAPE_IN_USE_SEARCH_ENVELOPE_ESRISHAPE_1 ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_1%ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_1%ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_1%ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_1%ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_1%ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_1%ESRISHAPE_IN_SEARCH_METHOD%ESRISHAPE_IN_SEARCH_METHOD_FILTER%ESRISHAPE_IN_SEARCH_ORDER%ESRISHAPE_IN_SEARCH_FEATURE%ESRISHAPE_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_1 <Unused>,0 
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_1 0
+ESRISHAPE_1_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_1)"
+GUI OPTIONAL FLOAT ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_1 Minimum X:
+# ===========================================================================
+GUI LOOKUP ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_1 <Unused>,0 
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_1 0
+ESRISHAPE_1_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_1)"
+GUI OPTIONAL FLOAT ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_1 Minimum Y:
+# ===========================================================================
+GUI LOOKUP ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_1 <Unused>,0 
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_1 0
+ESRISHAPE_1_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_1)"
+GUI OPTIONAL FLOAT ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_1 Maximum X:
+# ===========================================================================
+GUI LOOKUP ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_1 <Unused>,0 
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_1 0
+ESRISHAPE_1_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_1)"
+GUI OPTIONAL FLOAT ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_1 Maximum Y:
+# ===========================================================================
+GUI LOOKUP ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_1 <Unused>, 
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_1 
+ESRISHAPE_1_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_1)"
+GUI OPTIONAL COORDSYS ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_1 Search Envelope Coordinate System:
+# ===========================================================================
+GUI LOOKUP ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_1 <Unused>,NO 
+DEFAULT_MACRO ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_1 NO
+ESRISHAPE_1_CLIP_TO_ENVELOPE "$(ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_1)"
+GUI OPTIONAL CHECKBOX ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_1 YES%NO Clip to Search Envelope
+DEFAULT_MACRO ESRISHAPE_IN_CHECK_NUMERIC_FIELDS_ESRISHAPE_1 yes
+ESRISHAPE_1_CHECK_NUMERIC_FIELDS "$(ESRISHAPE_IN_CHECK_NUMERIC_FIELDS_ESRISHAPE_1)"
+DEFAULT_MACRO ESRISHAPE_IN_ADVANCED_ESRISHAPE_1 
+GUI OPTIONAL DISCLOSUREGROUP ESRISHAPE_IN_ADVANCED_ESRISHAPE_1 ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_1%ESRISHAPE_IN_GEOMETRY_ESRISHAPE_1 Advanced
+DEFAULT_MACRO ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_1 yes
+ESRISHAPE_1_TRIM_PRECEDING_SPACES "$(ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_1)"
+GUI CHOICE ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_1 yes%no Trim Preceding Spaces
+DEFAULT_MACRO ESRISHAPE_IN_GEOMETRY_ESRISHAPE_1 
+GUI OPTIONAL DISCLOSUREGROUP ESRISHAPE_IN_GEOMETRY_ESRISHAPE_1 ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_1%ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_1%ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_1%ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_1 Geometry
+# ============================================================================
+# Option to use simple donut geometry creation, which is faster than the
+# original creation method, but less meticulous at detecting and correcting
+# geometric anomalies (i.e.holeswithinholes)
+DEFAULT_MACRO ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_1 simple
+ESRISHAPE_1_SIMPLE_DONUT_GEOMETRY "$(ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_1)"
+GUI LOOKUP_CHOICE ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_1 "\"Orientation Only\",simple"%"\"Orientation and Spatial Relationship\",complex" Donut Geometry Detection
+# ============================================================================
+# The following GUI line sets whether measure values in the shapefiles should
+# be treated as elevations.
+DEFAULT_MACRO ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_1 no
+ESRISHAPE_1_MEASURES_AS_Z "$(ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_1)"
+GUI CHOICE ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_1 yes%no Treat Measures as Elevation
+# ============================================================================
+# The following keyword sets whether the reader dissolves holes in donuts.
+ESRISHAPE_1_DISSOLVE_HOLES "$(ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_1)"
+GUI CHOICE ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_1 yes%no Dissolve Adjacent Holes
+# ============================================================================
+# The following keyword sets whether bad geometry should be reported via
+# the shape_geometry_error{} list attribute.
+DEFAULT_MACRO ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_1 no
+ESRISHAPE_1_REPORT_BAD_GEOMETRY "$(ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_1)"
+GUI CHOICE ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_1 yes%no Report Geometry Anomalies
+# ===========================================================================
+DEFAULT_MACRO ESRISHAPE_IN_NETWORK_AUTHENTICATION_ESRISHAPE_1 
+ESRISHAPE_1_NETWORK_AUTHENTICATION "$(ESRISHAPE_IN_NETWORK_AUTHENTICATION_ESRISHAPE_1)"
+GUI OPTIONAL AUTHENTICATOR ESRISHAPE_IN_NETWORK_AUTHENTICATION_ESRISHAPE_1 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================ 
+DEFAULT_MACRO ESRISHAPE_IN_ATTRIBUTE_READING_ESRISHAPE_1 ALL
+ESRISHAPE_1_ATTRIBUTE_READING "$(ESRISHAPE_IN_ATTRIBUTE_READING_ESRISHAPE_1)"
+# ============================================================================ 
+ESRISHAPE_1_GENERATE_FME_BUILD_NUM 19642
+ESRISHAPE_1_DATASET "$(SourceDataset_ESRISHAPE_1)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "ESRISHAPE_2"
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ESRISHAPE ESRISHAPE_2
+ESRISHAPE_2_DYNAMIC_WORKFLOW YES
+# ============================================================================
+# The following GUI line prompts for the source shapefiles
+# The dataset this mapping file was generated from was:
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO SourceDataset
+INCLUDE [ if {{$(SourceDataset)} != ""} {                        \
+ puts {DEFAULT_MACRO SourceDataset_ESRISHAPE_2 $(SourceDataset)}     \
+ } ]
+#! END_WB_HEADER
+#! START_SOURCE_HEADER ESRISHAPE ESRISHAPE_2
+DEFAULT_MACRO SourceDataset_ESRISHAPE_2 $(SourceDataset_ESRISHAPE_3)
+GUI MULTIFILE SourceDataset_ESRISHAPE_2 Shapefiles(*.shp)|*.shp|Compressed_Shapefiles(*.shz)|*.shz|All_Files(*)|* Source Esri Shapefile(s):
+# =====================================================================
+# Provide some control over what attributes have the user-selected
+# encoding applied. Normally all attributes are updated after being
+# read, but the following lines exclude from this treatment all
+# attributes whose names start with fme_ or shape_.
+ESRISHAPE_2_UNENCODED_ATTR_PREFIX fme_ shape_
+#Added default value for dissolve holes so that default for DI is consistent with workbench
+DEFAULT_MACRO ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_2 no
+ESRISHAPE_2_DISSOLVE_HOLES "$(ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_2)"
+DEFAULT_MACRO ESRISHAPE_IN_READER_PARAMETERS_ESRISHAPE_2 
+GUI OPTIONAL DISCLOSUREGROUP ESRISHAPE_IN_READER_PARAMETERS_ESRISHAPE_2 ESRISHAPE_IN_UPPER_CASE_ATTR_NAMES%ESRISHAPE_IN_ENCODING_ESRISHAPE_2%ESRISHAPE_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING Reader Parameters
+# ============================================================================
+# Determines whether the attribute names should be uppercased, or whether they
+# should stay as specified in the shapefile. Once the mapping file/workspace
+# has been generated, the value for this keyword should not be changed.
+DEFAULT_MACRO ESRISHAPE_IN_UPPER_CASE_ATTR_NAMES_ESRISHAPE_2 No
+ESRISHAPE_2_UPPER_CASE_ATTR_NAMES "$(ESRISHAPE_IN_UPPER_CASE_ATTR_NAMES_ESRISHAPE_2)"
+# ============================================================================
+# The following keyword allows the user to choose what encoding to
+# use for reading the shapefile, overrides dbf file LDID or .cpg
+# file if present.
+DEFAULT_MACRO ESRISHAPE_IN_ENCODING_ESRISHAPE_2 fme-source-encoding
+ESRISHAPE_2_ENCODING "$(ESRISHAPE_IN_ENCODING_ESRISHAPE_2)"
+GUI STRING_OR_ENCODING ESRISHAPE_IN_ENCODING_ESRISHAPE_2 fme-source-encoding%* Character Encoding
+# ============================================================================
+# Determines whether numeric attributes should be interpreted as binary or as
+# bound number fields (ActualDBFrepresentation)
+DEFAULT_MACRO ESRISHAPE_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_ESRISHAPE_2 STANDARD_TYPES
+ESRISHAPE_2_NUMERIC_TYPE_ATTRIBUTE_HANDLING "$(ESRISHAPE_IN_NUMERIC_TYPE_ATTRIBUTE_HANDLING_ESRISHAPE_2)"
+#Note: Using the search envelope requires the shape index files (.sbnand.sbx)
+DEFAULT_MACRO ESRISHAPE_IN_EXPOSE_ATTRS_GROUP_ESRISHAPE_2 
+ESRISHAPE_2_EXPOSE_ATTRS_GROUP "$(ESRISHAPE_IN_EXPOSE_ATTRS_GROUP_ESRISHAPE_2)"
+# Include this file in source setting section to add native search envelope processing
+# Zero as a default means we don't do any search -- this makes workbench happier
+DEFAULT_MACRO ESRISHAPE_IN_USE_SEARCH_ENVELOPE_ESRISHAPE_2 NO
+ESRISHAPE_2_USE_SEARCH_ENVELOPE "$(ESRISHAPE_IN_USE_SEARCH_ENVELOPE_ESRISHAPE_2)"
+GUI ACTIVEDISCLOSUREGROUP ESRISHAPE_IN_USE_SEARCH_ENVELOPE_ESRISHAPE_2 ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_2%ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_2%ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_2%ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_2%ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_2%ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_2%ESRISHAPE_IN_SEARCH_METHOD%ESRISHAPE_IN_SEARCH_METHOD_FILTER%ESRISHAPE_IN_SEARCH_ORDER%ESRISHAPE_IN_SEARCH_FEATURE%ESRISHAPE_IN_DUMMY_SEARCH_ENVELOPE_PARAMETER Use Search Envelope
+# ===========================================================================
+GUI LOOKUP ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_2 <Unused>,0 
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_2 0
+ESRISHAPE_2_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_2)"
+GUI OPTIONAL FLOAT ESRISHAPE_IN_SEARCH_ENVELOPE_MINX_ESRISHAPE_2 Minimum X:
+# ===========================================================================
+GUI LOOKUP ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_2 <Unused>,0 
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_2 0
+ESRISHAPE_2_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_2)"
+GUI OPTIONAL FLOAT ESRISHAPE_IN_SEARCH_ENVELOPE_MINY_ESRISHAPE_2 Minimum Y:
+# ===========================================================================
+GUI LOOKUP ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_2 <Unused>,0 
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_2 0
+ESRISHAPE_2_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_2)"
+GUI OPTIONAL FLOAT ESRISHAPE_IN_SEARCH_ENVELOPE_MAXX_ESRISHAPE_2 Maximum X:
+# ===========================================================================
+GUI LOOKUP ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_2 <Unused>,0 
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_2 0
+ESRISHAPE_2_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_2)"
+GUI OPTIONAL FLOAT ESRISHAPE_IN_SEARCH_ENVELOPE_MAXY_ESRISHAPE_2 Maximum Y:
+# ===========================================================================
+GUI LOOKUP ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_2 <Unused>, 
+DEFAULT_MACRO ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_2 
+ESRISHAPE_2_SEARCH_ENVELOPE "$(ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_2)"
+GUI OPTIONAL COORDSYS ESRISHAPE_IN_SEARCH_ENVELOPE_COORDINATE_SYSTEM_ESRISHAPE_2 Search Envelope Coordinate System:
+# ===========================================================================
+GUI LOOKUP ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_2 <Unused>,NO 
+DEFAULT_MACRO ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_2 NO
+ESRISHAPE_2_CLIP_TO_ENVELOPE "$(ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_2)"
+GUI OPTIONAL CHECKBOX ESRISHAPE_IN_CLIP_TO_ENVELOPE_ESRISHAPE_2 YES%NO Clip to Search Envelope
+DEFAULT_MACRO ESRISHAPE_IN_CHECK_NUMERIC_FIELDS_ESRISHAPE_2 yes
+ESRISHAPE_2_CHECK_NUMERIC_FIELDS "$(ESRISHAPE_IN_CHECK_NUMERIC_FIELDS_ESRISHAPE_2)"
+DEFAULT_MACRO ESRISHAPE_IN_ADVANCED_ESRISHAPE_2 
+GUI OPTIONAL DISCLOSUREGROUP ESRISHAPE_IN_ADVANCED_ESRISHAPE_2 ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_2%ESRISHAPE_IN_GEOMETRY_ESRISHAPE_2 Advanced
+DEFAULT_MACRO ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_2 yes
+ESRISHAPE_2_TRIM_PRECEDING_SPACES "$(ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_2)"
+GUI CHOICE ESRISHAPE_IN_TRIM_PRECEDING_SPACES_ESRISHAPE_2 yes%no Trim Preceding Spaces
+DEFAULT_MACRO ESRISHAPE_IN_GEOMETRY_ESRISHAPE_2 
+GUI OPTIONAL DISCLOSUREGROUP ESRISHAPE_IN_GEOMETRY_ESRISHAPE_2 ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_2%ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_2%ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_2%ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_2 Geometry
+# ============================================================================
+# Option to use simple donut geometry creation, which is faster than the
+# original creation method, but less meticulous at detecting and correcting
+# geometric anomalies (i.e.holeswithinholes)
+DEFAULT_MACRO ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_2 simple
+ESRISHAPE_2_SIMPLE_DONUT_GEOMETRY "$(ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_2)"
+GUI LOOKUP_CHOICE ESRISHAPE_IN_SIMPLE_DONUT_GEOMETRY_ESRISHAPE_2 "\"Orientation Only\",simple"%"\"Orientation and Spatial Relationship\",complex" Donut Geometry Detection
+# ============================================================================
+# The following GUI line sets whether measure values in the shapefiles should
+# be treated as elevations.
+DEFAULT_MACRO ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_2 no
+ESRISHAPE_2_MEASURES_AS_Z "$(ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_2)"
+GUI CHOICE ESRISHAPE_IN_MEASURES_AS_Z_ESRISHAPE_2 yes%no Treat Measures as Elevation
+# ============================================================================
+# The following keyword sets whether the reader dissolves holes in donuts.
+ESRISHAPE_2_DISSOLVE_HOLES "$(ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_2)"
+GUI CHOICE ESRISHAPE_IN_DISSOLVE_HOLES_ESRISHAPE_2 yes%no Dissolve Adjacent Holes
+# ============================================================================
+# The following keyword sets whether bad geometry should be reported via
+# the shape_geometry_error{} list attribute.
+DEFAULT_MACRO ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_2 no
+ESRISHAPE_2_REPORT_BAD_GEOMETRY "$(ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_2)"
+GUI CHOICE ESRISHAPE_IN_REPORT_BAD_GEOMETRY_ESRISHAPE_2 yes%no Report Geometry Anomalies
+# ===========================================================================
+DEFAULT_MACRO ESRISHAPE_IN_NETWORK_AUTHENTICATION_ESRISHAPE_2 
+ESRISHAPE_2_NETWORK_AUTHENTICATION "$(ESRISHAPE_IN_NETWORK_AUTHENTICATION_ESRISHAPE_2)"
+GUI OPTIONAL AUTHENTICATOR ESRISHAPE_IN_NETWORK_AUTHENTICATION_ESRISHAPE_2 CONTAINER%GROUP%CONTAINER_TITLE%"Network Authentication"%PROMPT_TYPE%NETWORK Network Authentication
+# ============================================================================ 
+DEFAULT_MACRO ESRISHAPE_IN_ATTRIBUTE_READING_ESRISHAPE_2 ALL
+ESRISHAPE_2_ATTRIBUTE_READING "$(ESRISHAPE_IN_ATTRIBUTE_READING_ESRISHAPE_2)"
+# ============================================================================ 
+ESRISHAPE_2_GENERATE_FME_BUILD_NUM 19642
+ESRISHAPE_2_DATASET "$(SourceDataset_ESRISHAPE_2)"
+#! END_SOURCE_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "DGNV8_1"
+#! END_WB_HEADER
+#! START_DEST_HEADER DGNV8 DGNV8_1
+# ============================================================================
+# The following GUI line prompts for a design file to be used as the
+# the destination of the data.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_DGNV8_1 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER DGNV8 DGNV8_1
+DEFAULT_MACRO DestDataset_DGNV8_1 $(DestDataset_DGNV8)
+GUI FILENAME DestDataset_DGNV8_1 Design_Files(*.dgn)|*.dgn|All_files(*)|* Destination Bentley MicroStation Design File:
+DEFAULT_MACRO SEED_FILE_DGNV8_1 $(FME_HOME)design\seed3d_m_v8.dgn
+GUI FILENAME_MUSTEXIST SEED_FILE_DGNV8_1 Design_Files(*.dgn)|*.dgn|All_files(*)|* Seed File (V8 only)
+DGNV8_1_SEED_FILE "$(SEED_FILE_DGNV8_1)"
+# ============================================================================
+# These settings override the global offset and unit information
+# contained in the seed file. By default they are set to blank
+# which means the seed file settings will be used.
+# technically, these are the same macro and directive names that are used by the
+# source as well. should not be a conflict, with the name generation of DEFAULT_VALUE
+# the default macro line and related directive line here are required to allow
+# WB generate calls to get defaults in the nav pane, from the settings box
+# ============================================================================
+# These settings override the global offset and unit information
+# contained in the seed file. By default they are set to blank
+# which means the seed file settings will be used.
+# ============================================================================
+# The following line controls how all the FME coordinates written to the
+# design file will be interpreted.
+# Valid values IGDS_MASTER_UNITS -- FME coordinates are treated as Master Units
+# IGDS_SUB_UNITS -- FME coordinates are treated as Sub Units
+# IGDS_UORS -- FME coordinates are treated as UORs
+DEFAULT_MACRO DGNV8_OUT_OUT_UNITS_DGNV8_1 IGDS_MASTER_UNITS
+DGNV8_1_OUT_UNITS "$(DGNV8_OUT_OUT_UNITS_DGNV8_1)"
+GUI LOOKUP_CHOICE DGNV8_OUT_OUT_UNITS_DGNV8_1 Master<space>Units,IGDS_MASTER_UNITS%Sub<space>Units,IGDS_SUB_UNITS%UORs,IGDS_UORS Output Units
+# ============================================================================
+# And set whether or not we allow area filling
+# lines.
+DEFAULT_MACRO DGNV8_OUT_ALLOW_FILL_DGNV8_1 YES
+DGNV8_1_ALLOW_FILL "$(DGNV8_OUT_ALLOW_FILL_DGNV8_1)"
+GUI CHOICE DGNV8_OUT_ALLOW_FILL_DGNV8_1 YES%NO Allow Area Fills
+# ============================================================================
+# Allow writing tags. Expose for V7, due to proxy, but only used for V8.
+DEFAULT_MACRO DGNV8_OUT_WRITE_TAGS_DGNV8_1 NO
+DGNV8_1_WRITE_TAGS "$(DGNV8_OUT_WRITE_TAGS_DGNV8_1)"
+GUI CHOICE DGNV8_OUT_WRITE_TAGS_DGNV8_1 YES%NO Write tags
+DEFAULT_MACRO DGNV8_OUT_CELL_LIBRARY_DGNV8_1 C:\apps\FME\design\default_v8.cel
+DGNV8_1_CELL_LIBRARY "$(DGNV8_OUT_CELL_LIBRARY_DGNV8_1)"
+GUI OPTIONAL MULTIFILE DGNV8_OUT_CELL_LIBRARY_DGNV8_1 Cell_Library_Files(*.cel)|*.cel|All_files(*)|* Cell Library File:
+DEFAULT_MACRO DGNV8_OUT_DGNV8_WRT_ADV_PARM_GROUP_DGNV8_1 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_OUT_DGNV8_WRT_ADV_PARM_GROUP_DGNV8_1 FME_DISCLOSURE_CLOSED%DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_1%DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_1%DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_1%DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_1%DGNV8_OUT_RSC_FONT_FILE_DGNV8_1%DGNV8_OUT_OVERRIDE_ORIGIN Advanced
+# ============================================================================
+# And set whether or not we allow type 3 elements to be created for 2 point
+# lines.
+# override the settings specification for this to create a different navigator pane GUI
+#GUI CHOICE CREATE_LINE_ELEMENTS YES%NO Create Type 3 Line Elements:
+DEFAULT_MACRO DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_1 YES
+DGNV8_1_CREATE_LINE_ELEMENTS "$(DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_1)"
+GUI LOOKUP_CHOICE DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_1 "\"Type 3 Elements\",YES"%"\"Type 4 Elements\",NO" Two Point Line Output
+DEFAULT_MACRO DGNV8_OUT_RSC_FONT_FILE_DGNV8_1 
+DGNV8_1_RSC_FONT_FILE "$(DGNV8_OUT_RSC_FONT_FILE_DGNV8_1)"
+GUI OPTIONAL FILENAME_MUSTEXIST DGNV8_OUT_RSC_FONT_FILE_DGNV8_1 RSC_Files(*.rsc)|*.rsc|All_files(*)|* Resource Font File:
+# ============================================================================
+# If this is set to YES, then when named cells are written, they
+# will have their member coordinates (fromthecellmodel) scaled according to
+# the destination model (theseedfilemodel).
+DEFAULT_MACRO DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_1 YES
+DGNV8_1_SCALE_CELL_MODELS "$(DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_1)"
+GUI CHOICE DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_1 YES%NO Scale Cells to Destination Model
+#Allow user to create XFM store elements in destination, from seed file
+# This applies to both SS1 xfmstores, and SS3 elements type 106 and 107
+DEFAULT_MACRO DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_1 YES
+DGNV8_1_WRITE_XFM_DGNSTORES_FROM_SEED "$(DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_1)"
+GUI CHOICE DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_1 YES%NO Write XFM Reference Elements from Seed File
+#Allow user to specify a default cell to use when a cell is not in cell lib.
+DEFAULT_MACRO DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_1 
+DGNV8_1_DEFAULT_CELL_NAME "$(DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_1)"
+GUI OPTIONAL TEXT DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_1 Default Cell Name:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO DGNV8_OUT_DESTINATION_DATASETTYPE_VALIDATION_DGNV8_1 Yes
+DGNV8_1_DESTINATION_DATASETTYPE_VALIDATION "$(DGNV8_OUT_DESTINATION_DATASETTYPE_VALIDATION_DGNV8_1)"
+# ============================================================================ 
+DGNV8_1_GENERATE_FME_BUILD_NUM 19642
+DGNV8_1_DATASET "$(DestDataset_DGNV8_1)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+MACRO WB_KEYWORD "DGNV8_2"
+#! END_WB_HEADER
+#! START_DEST_HEADER DGNV8 DGNV8_2
+# ============================================================================
+# The following GUI line prompts for a design file to be used as the
+# the destination of the data.
+#! END_DEST_HEADER
+#! START_WB_HEADER
+DEFAULT_MACRO DestDataset
+INCLUDE [ if {"$(DestDataset)" != ""} {                          \
+ puts {DEFAULT_MACRO DestDataset_DGNV8_2 $(DestDataset)}         \
+ } ]
+#! END_WB_HEADER
+#! START_DEST_HEADER DGNV8 DGNV8_2
+DEFAULT_MACRO DestDataset_DGNV8_2 $(DestDataset_DGNV8_3)
+GUI FILENAME DestDataset_DGNV8_2 Design_Files(*.dgn)|*.dgn|All_files(*)|* Destination Bentley MicroStation Design File:
+DEFAULT_MACRO SEED_FILE_DGNV8_2 $(FME_HOME)design\seed3d_m_v8.dgn
+GUI FILENAME_MUSTEXIST SEED_FILE_DGNV8_2 Design_Files(*.dgn)|*.dgn|All_files(*)|* Seed File (V8 only)
+DGNV8_2_SEED_FILE "$(SEED_FILE_DGNV8_2)"
+# ============================================================================
+# These settings override the global offset and unit information
+# contained in the seed file. By default they are set to blank
+# which means the seed file settings will be used.
+# technically, these are the same macro and directive names that are used by the
+# source as well. should not be a conflict, with the name generation of DEFAULT_VALUE
+# the default macro line and related directive line here are required to allow
+# WB generate calls to get defaults in the nav pane, from the settings box
+# ============================================================================
+# These settings override the global offset and unit information
+# contained in the seed file. By default they are set to blank
+# which means the seed file settings will be used.
+# ============================================================================
+# The following line controls how all the FME coordinates written to the
+# design file will be interpreted.
+# Valid values IGDS_MASTER_UNITS -- FME coordinates are treated as Master Units
+# IGDS_SUB_UNITS -- FME coordinates are treated as Sub Units
+# IGDS_UORS -- FME coordinates are treated as UORs
+DEFAULT_MACRO DGNV8_OUT_OUT_UNITS_DGNV8_2 IGDS_MASTER_UNITS
+DGNV8_2_OUT_UNITS "$(DGNV8_OUT_OUT_UNITS_DGNV8_2)"
+GUI LOOKUP_CHOICE DGNV8_OUT_OUT_UNITS_DGNV8_2 Master<space>Units,IGDS_MASTER_UNITS%Sub<space>Units,IGDS_SUB_UNITS%UORs,IGDS_UORS Output Units
+# ============================================================================
+# And set whether or not we allow area filling
+# lines.
+DEFAULT_MACRO DGNV8_OUT_ALLOW_FILL_DGNV8_2 YES
+DGNV8_2_ALLOW_FILL "$(DGNV8_OUT_ALLOW_FILL_DGNV8_2)"
+GUI CHOICE DGNV8_OUT_ALLOW_FILL_DGNV8_2 YES%NO Allow Area Fills
+# ============================================================================
+# Allow writing tags. Expose for V7, due to proxy, but only used for V8.
+DEFAULT_MACRO DGNV8_OUT_WRITE_TAGS_DGNV8_2 NO
+DGNV8_2_WRITE_TAGS "$(DGNV8_OUT_WRITE_TAGS_DGNV8_2)"
+GUI CHOICE DGNV8_OUT_WRITE_TAGS_DGNV8_2 YES%NO Write tags
+DEFAULT_MACRO DGNV8_OUT_CELL_LIBRARY_DGNV8_2 C:\apps\FME\design\default_v8.cel
+DGNV8_2_CELL_LIBRARY "$(DGNV8_OUT_CELL_LIBRARY_DGNV8_2)"
+GUI OPTIONAL MULTIFILE DGNV8_OUT_CELL_LIBRARY_DGNV8_2 Cell_Library_Files(*.cel)|*.cel|All_files(*)|* Cell Library File:
+DEFAULT_MACRO DGNV8_OUT_DGNV8_WRT_ADV_PARM_GROUP_DGNV8_2 
+GUI OPTIONAL DISCLOSUREGROUP DGNV8_OUT_DGNV8_WRT_ADV_PARM_GROUP_DGNV8_2 FME_DISCLOSURE_CLOSED%DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_2%DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_2%DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_2%DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_2%DGNV8_OUT_RSC_FONT_FILE_DGNV8_2%DGNV8_OUT_OVERRIDE_ORIGIN Advanced
+# ============================================================================
+# And set whether or not we allow type 3 elements to be created for 2 point
+# lines.
+# override the settings specification for this to create a different navigator pane GUI
+#GUI CHOICE CREATE_LINE_ELEMENTS YES%NO Create Type 3 Line Elements:
+DEFAULT_MACRO DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_2 YES
+DGNV8_2_CREATE_LINE_ELEMENTS "$(DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_2)"
+GUI LOOKUP_CHOICE DGNV8_OUT_CREATE_LINE_ELEMENTS_DGNV8_2 "\"Type 3 Elements\",YES"%"\"Type 4 Elements\",NO" Two Point Line Output
+DEFAULT_MACRO DGNV8_OUT_RSC_FONT_FILE_DGNV8_2 
+DGNV8_2_RSC_FONT_FILE "$(DGNV8_OUT_RSC_FONT_FILE_DGNV8_2)"
+GUI OPTIONAL FILENAME_MUSTEXIST DGNV8_OUT_RSC_FONT_FILE_DGNV8_2 RSC_Files(*.rsc)|*.rsc|All_files(*)|* Resource Font File:
+# ============================================================================
+# If this is set to YES, then when named cells are written, they
+# will have their member coordinates (fromthecellmodel) scaled according to
+# the destination model (theseedfilemodel).
+DEFAULT_MACRO DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_2 YES
+DGNV8_2_SCALE_CELL_MODELS "$(DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_2)"
+GUI CHOICE DGNV8_OUT_SCALE_CELL_MODELS_DGNV8_2 YES%NO Scale Cells to Destination Model
+#Allow user to create XFM store elements in destination, from seed file
+# This applies to both SS1 xfmstores, and SS3 elements type 106 and 107
+DEFAULT_MACRO DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_2 YES
+DGNV8_2_WRITE_XFM_DGNSTORES_FROM_SEED "$(DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_2)"
+GUI CHOICE DGNV8_OUT_WRITE_XFM_DGNSTORES_FROM_SEED_DGNV8_2 YES%NO Write XFM Reference Elements from Seed File
+#Allow user to specify a default cell to use when a cell is not in cell lib.
+DEFAULT_MACRO DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_2 
+DGNV8_2_DEFAULT_CELL_NAME "$(DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_2)"
+GUI OPTIONAL TEXT DGNV8_OUT_DEFAULT_CELL_NAME_DGNV8_2 Default Cell Name:
+# ============================================================================
+# Opt in for destination dataset type vs format type validation
+DEFAULT_MACRO DGNV8_OUT_DESTINATION_DATASETTYPE_VALIDATION_DGNV8_2 Yes
+DGNV8_2_DESTINATION_DATASETTYPE_VALIDATION "$(DGNV8_OUT_DESTINATION_DATASETTYPE_VALIDATION_DGNV8_2)"
+# ============================================================================ 
+DGNV8_2_GENERATE_FME_BUILD_NUM 19642
+DGNV8_2_DATASET "$(DestDataset_DGNV8_2)"
+#! END_DEST_HEADER
+#! START_WB_HEADER
+#! END_WB_HEADER
+#! END_HEADER
+
+LOG_FILENAME "$(FME_MF_DIR)Aragon-Hydro-attri-Copy-01.log"
+LOG_APPEND NO
+LOG_FILTER_MASK -1
+LOG_MAX_FEATURES 200
+LOG_MAX_RECORDED_FEATURES 200
+FME_REPROJECTION_ENGINE FME
+FME_IMPLICIT_CSMAP_REPROJECTION_MODE Auto
+FME_GEOMETRY_HANDLING Enhanced
+FME_STROKE_MAX_DEVIATION 0
+FME_NAMES_ENCODING windows-1252
+DEFAULT_MACRO DATASET_KEYWORD_ESRISHAPE_1 ESRISHAPE_1
+DEFAULT_MACRO DATASET_KEYWORD_ESRISHAPE_2 ESRISHAPE_2
+DEFAULT_MACRO DATASET_KEYWORD_DGNV8_1 DGNV8_1
+DEFAULT_MACRO DATASET_KEYWORD_DGNV8_2 DGNV8_2
+# -------------------------------------------------------------------------
+
+ESRISHAPE_1_READER_META_ATTRIBUTES fme_feature_type
+
+# -------------------------------------------------------------------------
+
+ESRISHAPE_2_READER_META_ATTRIBUTES fme_feature_type fme_basename
+
+# -------------------------------------------------------------------------
+
+ESRISHAPE_1_FEATURE_TYPES $(FEATURE_TYPES)
+ESRISHAPE_2_FEATURE_TYPES $(FEATURE_TYPES_2)
+MULTI_READER_CONTINUE_ON_READER_FAILURE No
+
+# -------------------------------------------------------------------------
+
+MACRO WORKSPACE_NAME Aragon-Hydro-attri-Copy-01
+MACRO FME_VIEWER_APP fmedatainspector
+# -------------------------------------------------------------------------
+ESRISHAPE_1_DEF Hydro-518   SHAPE_GEOMETRY               shape_polyline   OBJECTID                     long   SITUACION                    char(5)   CUENCA                       char(10)   CLASIF                       char(5)   CANALIZ                      char(5)   ESTADO                       char(5)   COMPONEN1D                   char(5)   SUBCUENCA                    char(250)   ID_HOJA                      char(5)   NOMBRE                       char(250)   NIVEL                        char(5)   ID_Fenomen                   char(5)   REGIMEN                      char(5)   TIPO                         char(5)   SHAPE_Leng                   double
+# -------------------------------------------------------------------------
+ESRISHAPE_2_DEF Hidro_Teruel_Referance_518   SHAPE_GEOMETRY               shape_polyline   id                           long   d_muni_ine                   char(50)   tipo                         char(50)   nivel_vert                   char(50)   strahler                     double   cuenca                       char(50)   subcuenca                    char(50)   nombre_cat                   char(100)   shape_leng                   double   nombre                       char(150)   objectid                     double   id_masa                      double   inspire_id                   char(254)   id_demarc                    char(254)   fuente                       char(254)   fecha_alta                   char(10)   c_muni_ine                   long   fecha_baja                   char(200)
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory   FACTORY_NAME "Router and Unexpected Input Remover"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE ESRISHAPE ESRISHAPE_1::Hydro-518 multi_reader_keyword,$(DATASET_KEYWORD_ESRISHAPE_1) TO FME_GENERIC ::Hydro-518 ALIAS_GEOMETRY    ROUTE ESRISHAPE ESRISHAPE_2::Hidro_Teruel_Referance_518 multi_reader_keyword,$(DATASET_KEYWORD_ESRISHAPE_2) TO FME_GENERIC ::Hidro_Teruel_Referance_518 ALIAS_GEOMETRY    MERGE_INPUT Yes   OUTPUT ROUTED FEATURE_TYPE *
+ESRISHAPE_1_MERGE_DEF ESRISHAPE_1::Hydro-518 GLOB *
+ESRISHAPE_2_MERGE_DEF ESRISHAPE_2::Hidro_Teruel_Referance_518 GLOB *
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Hidro_Teruel_Referance_518_ESRISHAPE_2 Splitter"    INPUT FEATURE_TYPE Hidro_Teruel_Referance_518    OUTPUT FEATURE_TYPE Hidro_Teruel_Referance_518_ESRISHAPE_2
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory    FACTORY_NAME "Hydro-518_ESRISHAPE_1 Splitter"    INPUT FEATURE_TYPE Hydro-518    OUTPUT FEATURE_TYPE Hydro-518_ESRISHAPE_1
+DEFAULT_MACRO WB_CURRENT_CONTEXT
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Hidro_Teruel_Referance_518_ESRISHAPE_2    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "idgs_level_name" "SET_TO" "<at>Value<openparen>nombre<closeparen>" }      ATTR_ACTION { "" "idgs_color" "SET_TO" "6" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_OUTPUT        }
+# -------------------------------------------------------------------------
+# We need a UNIX / version of the Cell file to avoid \ parsing issues later
+INCLUDE [     puts "MACRO CELL_FILE_UNIX [ regsub -all {\\} {<Unused>} {/} ]"; ]
+# Fish out the writer keywords...
+# Now open up this mapping file
+INCLUDE [   if { {NO} == {YES} } {      if { [string trim {$(CELL_FILE_UNIX)} ] != {} } {         set thisFile [open {$(FME_MF_DIR_UNIX)/$(FME_MF_NAME)} {r}];         set trueDestDataset {unset};         set role {};         set format {};         set keyword {};         set comment {           Loop until we hit the end-of-datasets in the XML at the top of the           mapping file         };         while {[gets $thisFile line] >= 0 && [string first {#! </DATASETS>} $line] == -1  } {             set comment {Fish out ROLE, FORMAT, and KEYWORD};             if {[string first {#! ROLE=} $line] != -1} {                regexp {\"([^\"]+)\"} $line -> role             };             if {[string first {#! FORMAT=} $line] != -1} {                regexp {\"([^\"]+)\"} $line -> format             };             if {[string first {#! KEYWORD=} $line] != -1} {                regexp {\"([^\"]+)\"} $line -> keyword             };             if { $role != {} && $keyword != {} && $format != {} } {                set comment {                   We now have the format keyword and role. If it is                   a design file writer (v7 or v8) then we need to output                   the cell library directive                };                if { $role == {WRITER} && ($format == {IGDS} || $format == {DGNV8} ) } {                   puts "${keyword}_CELL_LIBRARY \"$(CELL_FILE_UNIX)\"";                };                set role {};                set format {};                set keyword {};             };         };         close $thisFile;      };   }; ]
+Tcl2 proc DGNStyler_colorSetter {inRgbColor inRgbFillColor inColorIndex inFillColorIndex} {     if { {YES} == {NO} } {       return;     };     if { {NO} == {YES} } {        FME_SetAttribute igds_color_set_bylevel yes;     } else {        FME_SetAttribute igds_color_set_bylevel no;     };     if { {BYRGB} == {BYRGB} } {        set color [string trim $inRgbColor {()}];        set fillColor [string trim $inRgbFillColor {()}];        if { [string length {$color}] > 0 } {           FME_SetAttribute fme_color $color;           FME_UnsetAttributes igds_color;        };        if { [string length {$fillColor}] > 0 } {           FME_SetAttribute fme_fill_color $fillColor;           FME_UnsetAttributes igds_fill_color;        };     } else {        if { [string length {$inColorIndex}] > 0 } {           FME_SetAttribute igds_color $inColorIndex;        };        if { [string length {$inFillColorIndex}] > 0 } {           FME_SetAttribute igds_fill_color $inFillColorIndex;        };     }; }
+Tcl2 proc DGNStyler_lineStyleSetter {lineWeight lineStyle} {     if { {YES} == {NO} } {       return;     };    if { $lineWeight == {ByLevel} } {        FME_UnsetAttributes igds_weight;        FME_SetAttribute igds_weight_set_bylevel yes;    } else {        FME_SetAttribute igds_weight_set_bylevel no;        FME_SetAttribute igds_weight $lineWeight;    };    if { $lineStyle == {ByLevel} } {        FME_SetAttribute igds_style_set_bylevel yes;        FME_UnsetAttributes igds_style;    } else {        FME_SetAttribute igds_style_set_bylevel no;        FME_SetAttribute igds_style $lineStyle;    }; }
+Tcl2 proc DGNStyler_cellPlacementSetter {cellSizeX cellSizeY cellSizeZ rotation cellName} {     if { {NO} == {NO} } {       return;     };    set fmeType [FME_GetAttribute fme_type];    if { {$cellName} != {} && $fmeType == {fme_point} } {        if { {<Unused>} == {0} } {          FME_SetAttribute igds_cell_size_x $cellSizeX;          FME_SetAttribute igds_cell_size_y $cellSizeY;          FME_UnsetAttributes igds_cell_x_scale;          FME_UnsetAttributes igds_cell_y_scale;          FME_UnsetAttributes igds_cell_z_scale;        } else {          FME_SetAttribute igds_cell_x_scale $cellSizeX;          FME_SetAttribute igds_cell_y_scale $cellSizeY;          FME_SetAttribute igds_cell_z_scale $cellSizeZ;          FME_UnsetAttributes igds_cell_size_x;          FME_UnsetAttributes igds_cell_size_y;        };        FME_SetAttribute igds_cell_name $cellName;        if { {<Unused>} == {Yes} } {           FME_SetAttribute igds_is_graphic_cell_relative yes;        } else {           FME_SetAttribute igds_is_graphic_cell_relative no;        };        if { {<Unused>} == {0} } {           FME_SetAttribute igds_type igds_cell;        } else {           FME_SetAttribute igds_type igds_shared_cell;        };        FME_SetAttribute igds_rotation $rotation;     }; }
+Tcl2 proc DGNStyler_textStyleSetter {textFont textStyleId textSize textWidthMultiplier textJustification textRotation textBold textSlantAngle textUnderline textOverline} {    if { {NO} == {NO} } {       return;    };    set fmeType [FME_GetAttribute fme_type];    if { $fmeType == {fme_text} } {       if { $textFont != {} } {          FME_SetAttribute igds_font $textFont;       };       if { $textStyleId != {} } {          FME_SetAttribute igds_textstyle_id $textStyleId;       };       if { $textSize != {} && $textSize != 0 } {          FME_SetAttribute fme_text_size $textSize;          FME_UnsetAttributes igds_text_size;       };       if { $textWidthMultiplier != {} && $textWidthMultiplier != 0 } {          FME_SetAttribute igds_text_width_multiplier $textWidthMultiplier;       };       if { $textJustification != {} } {          FME_SetAttribute igds_justification $textJustification;          FME_UnsetAttributes igds_original_justification;       };       if { $textRotation != {} } {          FME_SetAttribute fme_rotation $textRotation;          FME_UnsetAttributes igds_rotation;       };       if { $textBold != {} } {          FME_SetAttribute igds_textstyle_bold $textBold;       };       if { $textSlantAngle != {} } {          FME_SetAttribute igds_textstyle_slant $textSlantAngle;       };       if { $textUnderline != {} } {          FME_SetAttribute igds_textstyle_underline $textUnderline;       };       if { $textOverline != {} } {          FME_SetAttribute igds_textstyle_overline $textOverline;       };    }; }
+FACTORY_DEF {*} TeeFactory    FACTORY_NAME { DGNStyler }    INPUT  FEATURE_TYPE AttributeCreator_OUTPUT    OUTPUT { FEATURE_TYPE DGNStyler_DGNStyled         @Tcl2("DGNStyler_textStyleSetter {<Unused>} {<Unused>} {<Unused>} {<Unused>} {<Unused>} {<Unused>} {<Unused>} {<Unused>} {<Unused>} {<Unused>} ")         @Tcl2("DGNStyler_lineStyleSetter {3} {0} ")         @Tcl2("DGNStyler_colorSetter {(1,0.666667,0)} {()} {<Unused>} {<Unused>}")         @Tcl2("DGNStyler_cellPlacementSetter {<Unused>} {<Unused>} {<Unused>} {<Unused>} {<Unused>} ")          }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} AttrSetFactory    FACTORY_NAME { AttributeCreator_2 }    COMMAND_PARM_EVALUATION SINGLE_PASS    INPUT  FEATURE_TYPE Hydro-518_ESRISHAPE_1    MULTI_FEATURE_MODE { NO }    NULL_ATTR_MODE { NO_OP }    ATTRSET_CREATE_DIRECTIVES _PROPAGATE_MISSING_FDIV    ATTR_ACTION { "" "idgs_level_name" "SET_TO" "Input_Hydro_Lines" }    OUTPUT { OUTPUT FEATURE_TYPE AttributeCreator_2_OUTPUT        }
+# -------------------------------------------------------------------------
+FACTORY_DEF {*} ArcFactory    FACTORY_NAME { LineCombiner }    INPUT  FEATURE_TYPE AttributeCreator_2_OUTPUT    END_NODED    PRESERVE_ORIENTATION { no  }    DEAGGREGATE_GEOMETRY { Deaggregate }    CLOSE_LOOPS          { yes }    ACCUMULATE_ATTRIBUTES { ONE }    LIST_ATTRS_TO_INCLUDE { <Unused> }    LIST_ATTRS_TO_INCLUDE_MODE { SELECTED }    DIRECTION_NAME { "direction" }    LINES_AS_SEGMENTS    { No }    CONSIDER_NODE_ELEVATION { NO }    CONNECT_Z_MODE        { FIRST_WINS }    BREAK_CONNECTION_ACROSS_SETS { No }    OUTPUT { LINE FEATURE_TYPE LineCombiner_LINE         }
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * RoutingFactory FACTORY_NAME "Destination Feature Type Routing Correlator"   COMMAND_PARM_EVALUATION SINGLE_PASS   INPUT FEATURE_TYPE *    ROUTE FME_GENERIC LineCombiner_LINE TO DGNV8 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,1,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Level1<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>idgs_level_name<lt>closeparen<gt><comma>Level1<closeparen> GEOMETRY    ROUTE FME_GENERIC DGNStyler_DGNStyled TO DGNV8 __GO_TO_FINAL_OUTPUT_ROUTER__ multi_writer_id,0,<at>SupplyAttributes<openparen>ENCODED<comma>fme_template_feature_type<comma>Hidro_Teruel_Referance_518<closeparen>,<at>EvaluateExpression<openparen>ATTR_CREATE_EXPR<comma>__wb_out_feat_type__<comma><lt>at<gt>Value<lt>openparen<gt>nombre<lt>closeparen<gt><comma>Hidro_Teruel_Referance_518<closeparen> GEOMETRY   FEATURE_TYPE_ATTRIBUTE __wb_out_feat_type__   OUTPUT ROUTED FEATURE_TYPE *    OUTPUT NOT_ROUTED FEATURE_TYPE __nuke_me__ @Tcl2("FME_StatMessage 818059 [FME_GetAttribute fme_template_feature_type] 818060 818061 fme_warn")
+# -------------------------------------------------------------------------
+
+FACTORY_DEF * TeeFactory   FACTORY_NAME "Final Output Nuker"   INPUT FEATURE_TYPE __nuke_me__
+
+# -------------------------------------------------------------------------
+DGNV8_1_DEF Hidro_Teruel_Referance_518   igds_level                   ""   igds_level_comment           ""   igds_level_color             6   igds_level_style             ""   igds_level_weight            3   igds_level_display           Yes   igds_level_freeze            No   igds_level_lock              No   igds_level_override_color    From_Seed_File   igds_use_level_override_color From_Seed_File   igds_level_override_style    From_Seed_File   igds_use_level_override_style From_Seed_File   igds_level_override_weight   From_Seed_File   igds_use_level_override_weight From_Seed_File   id                           integer   d_muni_ine                   char(50)   tipo                         char(50)   nivel_vert                   char(50)   strahler                     double   cuenca                       char(50)   subcuenca                    char(50)   nombre_cat                   char(100)   shape_leng                   double   nombre                       char(150)   objectid                     double   id_masa                      double   inspire_id                   char(254)   id_demarc                    char(254)   fuente                       char(254)   fecha_alta                   char(10)   c_muni_ine                   integer   fecha_baja                   char(200)
+# -------------------------------------------------------------------------
+DGNV8_2_DEF Level1   igds_level                   ""   igds_level_comment           ""   igds_level_color             ""   igds_level_style             ""   igds_level_weight            ""   igds_level_display           Yes   igds_level_freeze            No   igds_level_lock              No   igds_level_override_color    From_Seed_File   igds_use_level_override_color From_Seed_File   igds_level_override_style    From_Seed_File   igds_use_level_override_style From_Seed_File   igds_level_override_weight   From_Seed_File   igds_use_level_override_weight From_Seed_File
